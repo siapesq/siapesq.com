@@ -11,8 +11,13 @@ import mapa from "../imgs/mapa.svg";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+<<<<<<< Updated upstream
 
 export default function Index(){
+=======
+import SectionSiapreps from "../components/sections/siapreps";
+export default function Index() {
+>>>>>>> Stashed changes
 
     const el = useRef(null);
 
@@ -43,7 +48,7 @@ export default function Index(){
                 <article className="article_header_container">
                     <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
                     <h2>
-                        INOVAÇal TECNOLÓGICA ALIADA À SUSTENTILIDADE AMiENTAL
+                        INOVAÇÃO TECNOLÓGICA ALIADA À SUSTENTILIDADE AMiENTAL
                     </h2>
                     <p>
                         Sistema de Inteligência Artificial em Pesquisa Ambiental
@@ -119,6 +124,8 @@ export default function Index(){
                     </h3>
                 </section>
             </main>
+            <SectionSiapreps />
+
         </>
     )
 }
