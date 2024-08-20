@@ -30,7 +30,9 @@ export default function SectionSiapreps() {
                         <h2>A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem</h2>
                         <h2 style={{ marginLeft: '50px' }}>localizar  e monitorar os cardumes com maior facilidade e precisão</h2>
                     </div>
-                    <button className="btn_more">Saiba mais</button>
+                    <div className="btn_more" style={{ width: '370px', height: '120px', borderRadius: '100px', justifyContent: "center" }}>
+
+                    </div>
                 </div>
             </section>
 
