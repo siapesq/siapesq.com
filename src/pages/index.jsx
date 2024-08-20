@@ -1,14 +1,12 @@
 import React, { useRef, useLayoutEffect } from "react";
 import Header from "../components/layouts/header";
 import Card from "../components/common/card";
-
 import mar from "../imgs/mar.png";
 import wave from "../imgs/wave.svg";
 import siaprepsMonitor from "../imgs/siaprepsMonitor.svg";
 import satelite from "../imgs/satelite.svg";
 import lupa from "../imgs/lupa.svg";
 import mapa from "../imgs/mapa.svg";
-
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SectionSiapreps from "../components/sections/siapreps";
