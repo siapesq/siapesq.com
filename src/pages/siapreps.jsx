@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "../components/layouts/header";
 import cardume from "../imgs/cardume.png";
-import cardume2 from "../imgs/cardume2.png";
-import peixes from "../imgs/peixes.png";
+// import cardume2 from "../imgs/cardume2.png";
+// import peixes from "../imgs/peixes.png";
 import siapresqPc from "../imgs/siapresqPc.svg";
-import siapreps from "../imgs/siapreps.svg";
-import logo from "../imgs/logo.svg";
+// import siapreps from "../imgs/siapreps.svg";
+// import logo from "../imgs/logo.svg";
 import SectionBarco from "../components/sections/siaprepsBarco";
 import SectionPlataforma from "../components/sections/siaprepsPlataforma";
+import SectionCardume from "../components/sections/siaprepsCardume";
 
 
 export default function Index(){
@@ -37,6 +38,10 @@ export default function Index(){
   
                 <article >
                 <SectionPlataforma />
+                </article>
+
+                <article >
+                <SectionCardume />
                 </article>
          
             {/* <div className="cards">
