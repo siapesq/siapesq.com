@@ -7,6 +7,7 @@ import siapresqPc from "../imgs/siapresqPc.svg";
 import siapreps from "../imgs/siapreps.svg";
 import logo from "../imgs/logo.svg";
 import SectionBarco from "../components/sections/siaprepsBarco";
+import SectionPlataforma from "../components/sections/siaprepsPlataforma";
 
 
 export default function Index(){
@@ -33,15 +34,11 @@ export default function Index(){
                 <article >
                 <SectionBarco />
                 </article>
-     
-
-            <section className="plataforma">
+  
                 <article >
-                <img src={siapreps} alt="Imagem de platforma siapreps" />
-                <h1 id="azulzinha">A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão.</h1>
-                <button className="fundoInvinsivel"> Começar Agora</button> 
+                <SectionPlataforma />
                 </article>
-            </section>
+         
             {/* <div className="cards">
                           <h1>Veja as principais espécies rastreáveis</h1>
                           <p>Tenha praticidade e eficiencia para atividade pesqueira. Te mostramos a localização do peixe.</p>
@@ -51,7 +48,7 @@ export default function Index(){
                           <h2>Cardume Cardume Cardume</h2>
                           <p>Obs: Nós filtramos áreas com menor probabilidade de haver animais proibidos de pesca, como tubaroes, baleias, e tartarugas</p>
             </div> */}
-            <div className="cards">
+            {/* <div className="cards">
       <h1>Veja as principais espécies rastreáveis</h1>
       <p>Tenha praticidade e eficiência para atividade pesqueira. Te mostramos a localização do peixe.</p>
       <div className="card-container">
@@ -77,13 +74,13 @@ export default function Index(){
         </div>
       </div>
       <p className="obs">Obs: Nós filtramos áreas com menor probabilidade de haver animais proibidos de pesca, como tubarões, baleias, e tartarugas</p>
-    </div>
+    </div> */}
             {/* <div className="form">
                   <h1 className="contato">Entre em contato conosco! </h1>
                   <img src={peixes} alt="" />
                  
             </div> */}
-            <div className="formHead">
+            {/* <div className="formHead">
             <h1 className="contato">Entre em contato conosco!</h1>
             <img src={peixes} alt="Peixes" className="imagem-peixes" />
             </div>
@@ -97,9 +94,9 @@ export default function Index(){
         <textarea name="mensagem" placeholder="Mensagem"></textarea>
         <button type="submit">Enviar</button>
       </form>
-    </div>
+    </div> */}
 
-    <footer className="footer">
+    {/* <footer className="footer">
       <div className="footer-content">
         <div className="social-media">
           <a href="https://www.instagram.com/siapesq" target="_blank" rel="noopener noreferrer">
@@ -118,7 +115,7 @@ export default function Index(){
            </div>
         <img src={logo} alt="SIAPESQ Logo" className="logo" />
       </div>
-    </footer>
+    </footer> */}
         </>
     )
 }
