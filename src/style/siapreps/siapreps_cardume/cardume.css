@@ -1,6 +1,7 @@
 .cards {
     text-align: center;
     padding: 200px;
+}
   
     h1 {
       font-size: 35px;
@@ -18,11 +19,11 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-  
+    }
       .card {
         width: 22%; 
         margin-bottom: 20px;
-  
+      }
         h2 {
           font-size: 25px;
           color: #1e3066;
@@ -40,12 +41,11 @@
           color: #1e3066;
           font-weight: bold;
         }
-      }
-    }
+    
   
     .obs {
       font-size: 25px;
       color: #233363;
       margin-top: 25px;
     }
-  }
+  

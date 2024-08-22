@@ -44,42 +44,6 @@ export default function Index(){
                 <SectionCardume />
                 </article>
          
-            {/* <div className="cards">
-                          <h1>Veja as principais espécies rastreáveis</h1>
-                          <p>Tenha praticidade e eficiencia para atividade pesqueira. Te mostramos a localização do peixe.</p>
-                          <img src={cardume2} alt="" />
-                          <img src={cardume2} alt="" />
-                          <img src={cardume2} alt="" />
-                          <h2>Cardume Cardume Cardume</h2>
-                          <p>Obs: Nós filtramos áreas com menor probabilidade de haver animais proibidos de pesca, como tubaroes, baleias, e tartarugas</p>
-            </div> */}
-            {/* <div className="cards">
-      <h1>Veja as principais espécies rastreáveis</h1>
-      <p>Tenha praticidade e eficiência para atividade pesqueira. Te mostramos a localização do peixe.</p>
-      <div className="card-container">
-        <div className="card">
-          <h2>Tainha</h2>
-          <img src={cardume2} alt="Tainha" />
-          <p>Especies especies</p>
-        </div>
-        <div className="card">
-          <h2>Bagre</h2>
-          <img src={cardume2} alt="Bagre" />
-          <p>Especies especies</p>
-        </div>
-        <div className="card">
-          <h2>Salmão</h2>
-          <img src={cardume2} alt="Salmão" />
-          <p>Especies especies</p>
-        </div>
-        <div className="card">
-          <h2>Peixe lua</h2>
-          <img src={cardume2} alt="Peixe lua" />
-          <p>Especies especies</p>
-        </div>
-      </div>
-      <p className="obs">Obs: Nós filtramos áreas com menor probabilidade de haver animais proibidos de pesca, como tubarões, baleias, e tartarugas</p>
-    </div> */}
             {/* <div className="form">
                   <h1 className="contato">Entre em contato conosco! </h1>
                   <img src={peixes} alt="" />
