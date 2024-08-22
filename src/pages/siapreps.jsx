@@ -10,7 +10,8 @@ import SectionBarco from "../components/sections/siaprepsBarco";
 import SectionPlataforma from "../components/sections/siaprepsPlataforma";
 import SectionCardume from "../components/sections/siaprepsCardume";
 import SectionformS from "../components/sections/siaprepsFormS";
-
+import SectionFooter from "../components/sections/siaprepsFooter";
+import '../style/siapreps/siapreps.css';
 
 
 export default function Index(){
@@ -32,25 +33,25 @@ export default function Index(){
                      <button className="fundoInvinsivel"> Começar Agora</button> 
                 </article>
             </section>
-            
-          
-                <article >
+                <div >
                 <SectionBarco />
-                </article>
-  
-                <article >
+                </div>
+
+                <div >
                 <SectionPlataforma />
-                </article>
+                </div>
 
-                <article >
+                <div >
                 <SectionCardume />
-                </article>
+                </div>
 
-                <article >
+                <div >
                 <SectionformS />
-                </article>
-               
-         
+                </div>
+                     
+                <div >
+                <SectionFooter />
+                </div>
         </>
     )
 }
