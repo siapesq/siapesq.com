@@ -20,16 +20,16 @@ export default function Index(){
     return(
         <>
             <section className="header_container">
-                <img src={cardume} alt="Imagem de fundo" className="bg_img"/>
+                <img src={cardume} alt="Imagem de fundo" className="cardume"/>
                 <Header/>
                 <article className="article_header_container">
-                <h1>
+                <h1 id="siapreps" >
                     SIAPREPS
                 </h1>
-                    <p>
+                    <p id="textosiapreps">
                     A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão
                      </p>
-                    <img src={siapresqPc} alt="Imagem de um notebook da siapreps" />
+                    <img id="notesiapreps" src={siapresqPc} alt="Imagem de um notebook da siapreps" />
                      <button className="fundoInvinsivel"> Começar Agora</button> 
                 </article>
             </section>

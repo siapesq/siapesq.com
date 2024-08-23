@@ -42,15 +42,15 @@
             align-self: end;
         }
 
-        h2{
+        #h2principal{
             grid-column: 2/3;
             grid-row: 1/2;
             width: 27rem;
             align-self: end;
         }
 
-        p{
-            grid-column: 2/3;
+        #pprincipal{
+            grid-column: 2/8;
             grid-row: 2/3;
             width: 37rem ;
             font-size: 1.4rem;
