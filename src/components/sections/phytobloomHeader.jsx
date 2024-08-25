@@ -9,14 +9,14 @@ export default function SectionHeader(){
     
     return(
         <>
-         <section className="header_container">
-                <img src={hidro} alt="Imagem de fundo" className="cardume"/>
+         <section className="headerContainer">
+                <img src={hidro} alt="Imagem de fundo" className="hidro"/>
                 <Header/>
-                <article className="article_header_container">
-                <h1 id="siapreps" >
+                <article className="article-header-container">
+                <h1 id="phytobloom" >
                 PHYTOBLOOM
                 </h1>
-                    <p id="textosiapreps">
+                    <p id="textophytobloom">
                     Com PHYTOBLOOM VISION é possível identificar a proliferação de plantas aquáticas garantindo uma gestão eficiente e oportuna da vegetação.
                      </p>
                      <button className="fundoInvinsivel"> Começar Agora</button> 

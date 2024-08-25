@@ -1,10 +1,10 @@
-.header_container{
+.headerContainer{
     position: relative;
     display: flex;
     flex-direction: column;
     
 
-     .fundoInvinsivel{
+     /* .fundoInvinsivel{
       margin-right: 150px;
       background-color: rgba(240, 248, 255, 0);
       color: whitesmoke;
@@ -13,7 +13,7 @@
       width: 150px;
       border-radius: 15px;
       border: 2px solid whitesmoke
-  }
+  } */
   
 
   #notesiapreps{
@@ -34,7 +34,7 @@
         
     }
 
-    .article_header_container{
+    .articleHeaderContainer{
         margin: auto 80rem auto auto;
         display: grid;
         grid-template-columns: 5% 40%;
@@ -45,7 +45,7 @@
          #notesiapreps{
             width: 38rem;
             grid-row: 1/3;
-            grid-column: 20/40;
+            grid-column: 30/40;
             margin-left: 2rem;
             align-self: end;
         }  

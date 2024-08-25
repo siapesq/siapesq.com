@@ -10,10 +10,10 @@ export default function SectionHeader(){
     
     return(
         <>
-         <section className="header_container">
+         <section className="headerContainer">
                 <img src={cardume} alt="Imagem de fundo" className="cardume"/>
                 <Header/>
-                <article className="article_header_container">
+                <article className="articleHeaderContainer">
                 <h1 id="siapreps" >
                     SIAPREPS
                 </h1>
@@ -21,7 +21,7 @@ export default function SectionHeader(){
                     A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão
                      </p>
                     <img id="notesiapreps" src={siapresqPc} alt="Imagem de um notebook da siapreps" />
-                     <button className="fundoInvinsivel"> Começar Agora</button> 
+                     {/* <button className="fundoInvinsivel"> Começar Agora</button>  */}
                 </article>
             </section>
    
