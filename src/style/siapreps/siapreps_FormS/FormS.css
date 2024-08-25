@@ -4,29 +4,32 @@
     box-sizing: border-box;
   }
   
-  .contact-container {
+  .contato-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #084f77;
     padding: 20px;
     height: 100vh;
     color: white;
+    background-color: #233363;
   }
   
   .form-content {
     flex: 1;
     margin-right: 50px;
+
   }
   
   form {
     display: flex;
     flex-direction: column;
+    
   }
   
   h1 {
     margin-bottom: 30px;
     font-size: 2rem;
+    
   }
   
   .input-group {
@@ -62,6 +65,7 @@
   
   textarea {
     height: 150px;
+    
   }
   
   .peixe-logo {

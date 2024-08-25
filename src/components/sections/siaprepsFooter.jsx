@@ -11,7 +11,7 @@ export default function SectionFooter(){
     
     return(
         <>
-    <footer className="footer">
+    <footer className="footerSiapreps">
       <div className="footer-content">
         <div className="social-media">
           <a href="https://www.instagram.com/siapesq" target="_blank" rel="noopener noreferrer">

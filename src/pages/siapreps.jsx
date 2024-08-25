@@ -1,13 +1,10 @@
 import React from "react";
-// import Header from "../components/layouts/header";
-// import cardume from "../imgs/cardume.png";
-// import siapresqPc from "../imgs/siapresqPc.svg";
+import SectionHeader from "../components/sections/siaprepsHeader";
 import SectionBarco from "../components/sections/siaprepsBarco";
 import SectionPlataforma from "../components/sections/siaprepsPlataforma";
 import SectionCardume from "../components/sections/siaprepsCardume";
 import SectionformS from "../components/sections/siaprepsFormS";
 import SectionFooter from "../components/sections/siaprepsFooter";
-import SectionHeader from "../components/sections/siaprepsHeader";
 
 
 export default function Index(){

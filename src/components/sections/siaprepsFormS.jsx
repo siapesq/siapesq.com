@@ -8,7 +8,7 @@ export default function SectionformS(){
     
     return(
         <>
-     <div className="contact-container">
+     <div className="contato-container">
       <div className="peixe-logo">
         <img src={peixe} alt="babys sharks" />
       </div>
