@@ -12,6 +12,7 @@ export default function SectionBarco(){
       <img src={naviocarga} alt="barco" className="barco" />
       <div className="texto">
         <h1>O problema</h1>
+        </div>
         <div className="porcentagem">
           <div className="textoporcentagem">
             <h2>3%</h2>
@@ -27,7 +28,6 @@ export default function SectionBarco(){
           </div>
         </div>
       </div>
-    </div>
         </>
     )
 }

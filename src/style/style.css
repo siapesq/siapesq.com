@@ -9,13 +9,13 @@
 body {
   /* transform: scale(1); */
   /* 80% de zoom */
-  transform-origin: 0 0;
+  /* transform-origin: 0 0; */
   /* Garante que o zoom seja aplicado a partir do canto superior esquerdo */
   width: 100%;
   /* Ajusta a largura para compensar a redução */
   height: 100%;
   /* Ajusta a altura para compensar a redução */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* Evita barras de rolagem horizontais */
 }
 
