@@ -57,6 +57,7 @@
   grid-column: 1/2;
   margin-left: 2rem;
   align-self: end;
+  margin-top: 5%;
 }
 .header_container .article_header_container #h2principal {
   grid-column: 2/3;
@@ -94,7 +95,6 @@
   pointer-events: none;
   -webkit-user-select: none;
           user-select: none;
-  margin-top: 50px;
 }
 .header_container .footer_header_container article {
   position: absolute;
@@ -151,7 +151,7 @@ main .helps .helps_container {
   gap: 6rem;
 }
 main .helps .helps_container .helps_article {
-  color: #fff;
+  color: #233363;
 }
 main .helps .helps_container .helps_article .title {
   font-size: 3rem;
@@ -179,16 +179,86 @@ main .helps .helps_container .cards .card img {
   width: 6rem;
 }
 main .helps .helps_container .cards .card .title {
-  color: #fff;
+  color: #233363;
 }
 main .helps .helps_container .cards .card p {
-  color: #fff;
+  color: #233363;
 }
 main .helps h3 {
   text-align: center;
-  margin-top: 2rem;
   font-size: 4rem;
-  color: #fff;
+  color: #233363;
+}
+
+.headersobre {
+  background-color: #04517B;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+}
+
+.sistema-img {
+  max-width: 300px;
+  margin-right: 15rem;
+  padding-top: 30px;
+}
+
+.imagemsiapesq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagemsiapesq p {
+  color: white;
+  max-width: 600px;
+}
+
+.imagem-equipe {
+  width: 60rem;
+  display: block;
+  align-items: right;
+  margin: 2rem auto;
+}
+
+.equipe h1 {
+  color: #04517B;
+  text-align: center;
+}
+
+.cards img {
+  border-radius: 20px;
+}
+.cards p {
+  color: #04517B;
+}
+
+.card1 {
+  width: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10rem;
+}
+.card1 p {
+  max-width: 600px;
+  margin-left: auto;
+  margin: auto;
+  padding-top: 30px;
+  margin-right: 5rem;
+}
+
+.card2 {
+  width: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10rem;
+}
+.card2 p {
+  max-width: 600px;
+  margin-left: auto;
+  margin: auto;
+  padding-top: 30px;
+  margin-right: 5rem;
 }
 
 * {

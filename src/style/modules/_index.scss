@@ -40,6 +40,7 @@
             grid-column: 1/2;
             margin-left: 2rem;
             align-self: end;
+            margin-top: 5%;
         }
 
         #h2principal{
@@ -138,7 +139,7 @@ main{
             gap: 6rem;
             
             .helps_article{
-                color: $bgBlue;
+                color: #233363;
 
                 .title{
                     font-size: 3rem;
@@ -171,11 +172,11 @@ main{
                     }
         
                     .title{
-                        color: $bgBlue;
+                        color: #233363;
                     }
         
                     p{
-                        color: $bgBlue;
+                        color: #233363;
                     }
                 }
             }
@@ -184,9 +185,9 @@ main{
 
         h3{
             text-align: center;
-            margin-top: 2rem;
             font-size: 4rem;
-            color: $bgBlue;
+            color: #233363;
+
         }
     }
 }
