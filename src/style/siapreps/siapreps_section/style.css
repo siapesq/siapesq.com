@@ -80,3 +80,27 @@ main .siapreps {
   border: 2px solid #000;
   /* Borda definida */
 }
+#siapreps-enviar{
+ display: flex;
+ margin-top: 5%;
+}
+
+#button{
+  /* background-color: transparent;
+  width: 100px;
+  height: 40px;
+  border: 2px solid #000;
+  color: #fff;
+  border-radius: 10px; */
+
+    background-color: rgba(240, 248, 255, 0);
+    color: whitesmoke;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+    align-items: center;
+    margin-left: 100%;
+    margin-right: 100%;
+    margin-top: 150px;
+}

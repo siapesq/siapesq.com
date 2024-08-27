@@ -1,7 +1,9 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React from "react";
 import siapreps from "../../imgs/siaprepsLogo.png";
 import iconChecked from "../../imgs/iconChecked.png";
 import tubarao from "../../imgs/tubarao.png";
+import peixes from "../../imgs/peixes.svg";
+import tubarao2 from "../../imgs/tubarao2.png";
 export default function SectionSiapreps() {
 
 
@@ -16,9 +18,9 @@ export default function SectionSiapreps() {
 
                     <div className="list-column">
                         <ul className="list">
-                            <li> <img className="iconChecked" src={iconChecked} width={60} /> Localização do Pescado</li>
-                            <li><img className="iconChecked" src={iconChecked} width={60} /> Certificação da Pesca</li>
-                            <li><img className="iconChecked" src={iconChecked} width={60} /> Mapa de bordo automatizado</li>
+                            <li> <img className="iconChecked" src={iconChecked} width={60} alt="check" /> Localização do Pescado</li>
+                            <li><img className="iconChecked" src={iconChecked} width={60} alt="check" /> Certificação da Pesca</li>
+                            <li><img className="iconChecked" src={iconChecked} width={60} alt="check" /> Mapa de bordo automatizado</li>
                         </ul>
                     </div>
                     <div className="tubarao">
@@ -31,7 +33,11 @@ export default function SectionSiapreps() {
                         <h2 style={{ marginLeft: '50px' }}>localizar  e monitorar os cardumes com maior facilidade e precisão</h2>
                     </div>
                     <div className="btn_more" style={{ width: '370px', height: '120px', borderRadius: '100px', justifyContent: "center" }}>
-
+                       <div id="siapreps-enviar">
+                        <img width="300px" src={tubarao2} alt="" />
+                           <button id="button">Saiba mais</button>
+                           <img width="300px" src={peixes} alt="" />
+                       </div>
                     </div>
                 </div>
             </section>
