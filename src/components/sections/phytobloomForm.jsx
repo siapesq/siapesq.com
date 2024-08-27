@@ -8,10 +8,10 @@ export default function SectionForm(){
     return(
         <>
      <div className="contact-container">
-      <div className="form-content">
         <div id="textoform">
         <h1>Entre em contato conosco!</h1>
         </div>
+      <div className="form-content">
         <form>
           <div className="input-group">
             <div className="input-item">

@@ -11,6 +11,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SectionSiapreps from "../components/sections/siapreps";
 import SectionHelps from "../components/sections/helps";
+// import SectionPhytobloom from "../components/sections/phytobloom.jsx";
+
 
 export default function Index() {
 
@@ -87,6 +89,7 @@ export default function Index() {
                 <SectionHelps />
             </main>
             <SectionSiapreps />
+            {/* <SectionPhytobloom /> */}
         </>
     )
 }

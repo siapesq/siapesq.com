@@ -10,10 +10,10 @@ export default function SectionformS(){
         <>
      <div className="contato-container">
       <div className="peixe-logo">
+        <h1 id="peixetext">Entre em contato conosco!</h1>
         <img src={peixe} alt="babys sharks" />
       </div>
       <div className="form-content">
-        <h1>Entre em contato conosco!</h1>
         <form>
           <div className="input-group">
             <div className="input-item">
