@@ -1,5 +1,6 @@
 import React from "react";
 import '../../style/contato/form.css';
+import Header from "../layouts/header";
 
 
 export default function SectionForm(){
@@ -7,6 +8,9 @@ export default function SectionForm(){
     
     return(
         <>
+    <div>
+       <Header/>
+    </div>
      <div className="contactcontainer">
         <div>
         <h1>Entre em contato conosco!</h1>
