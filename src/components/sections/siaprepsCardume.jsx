@@ -40,7 +40,7 @@
 
 
 import React, { useState } from 'react';
-// import peixe from "../../imgs/peixe.svg";
+import peixe from "../../imgs/peixe.svg";
 import '../../style/siapreps/siapreps_cardume/Carrossel.css';
 
 const Carrossel = () => {
@@ -48,7 +48,7 @@ const Carrossel = () => {
 
   const equipe = [
     // { nome: 'Meka', nomeCientifico: 'Xiphias gladius', imagem: {peixe} }, 
-    { nome: 'Meka', nomeCientifico: 'Xiphias gladius', imagem:'https://picsum.photos/200/300' },
+    { nome: 'Meka', nomeCientifico: 'Xiphias gladius', imagem:peixe },
     { nome: 'Atum Olhudo BAT', nomeCientifico: 'Thunnus obesus', imagem: 'https://picsum.photos/200/300' },
     { nome: 'Atum Albacora', nomeCientifico: 'Thunnus alalunga', imagem: 'https://picsum.photos/200/300' },
     { nome: 'Atum YellowFin', nomeCientifico: 'Thunnus alalunga', imagem: 'https://picsum.photos/200/300' },
