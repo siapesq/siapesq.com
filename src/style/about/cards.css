@@ -1,0 +1,48 @@
+.equipe2{
+        border-radius: 10%;
+        width: 25%;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .lorem{
+        color: #04517B;
+        padding-left: 50px;
+        
+    }
+
+.cargo{
+    color: #04517B;
+    margin-left: -100px;
+    margin-right: -100px;
+}
+  
+  .card1{
+    width: 60rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10rem;
+  }
+  .lorem {
+    max-width: 600px;
+    margin-left: auto;
+    margin: auto;
+    padding-top: 30px;
+    margin-right: 5rem; 
+   }
+
+
+.card2{
+        width: 60rem;
+        display: flex;
+        justify-content: flex-end;
+        margin: 10rem;
+}
+      .lorem{
+        max-width: 600px;
+        margin-left: auto;
+        margin: auto;
+        padding-top: 30px;
+        margin-right: 5rem; 
+       }
+    

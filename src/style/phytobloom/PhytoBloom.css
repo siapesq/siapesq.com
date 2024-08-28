@@ -1,0 +1,67 @@
+.container {
+    text-align: center;
+    background-image: url('/src/imgs/hidro.png'); 
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    margin-top: 60%;
+  }
+  
+  /* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  
+  .header-text {
+    text-align: left;
+  }
+  
+  .header h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header h1:before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #00c853;
+  }
+  
+  .logo img {
+    width: 50%; 
+    background-color: #fff;
+    border-radius: 10% ;
+  }
+  
+  main {
+    margin-top: 50px;
+  }
+  
+  main p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .saiba-mais {
+    background-color: #00c853;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .saiba-mais:hover {
+    background-color: #007e33;
+  }
+  

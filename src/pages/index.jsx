@@ -1,15 +1,19 @@
 import React, { useRef, useLayoutEffect } from "react";
 import Header from "../components/layouts/header";
-import Card from "../components/common/card";
+// import Card from "../components/common/card";
 import mar from "../imgs/mar.png";
 import wave from "../imgs/wave.svg";
 import siaprepsMonitor from "../imgs/siaprepsMonitor.svg";
-import satelite from "../imgs/satelite.svg";
-import lupa from "../imgs/lupa.svg";
-import mapa from "../imgs/mapa.svg";
+// import satelite from "../imgs/satelite.svg";
+// import lupa from "../imgs/lupa.svg";
+// import mapa from "../imgs/mapa.svg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-
+import SectionSiapreps from "../components/sections/siapreps";
+import SectionHelps from "../components/sections/helps";
+// import SectionPhytobloom from "../components/sections/phytobloom.jsx";
+// import SectionFooter from "../components/sections/siaprepsFooter.jsx";
+import "../style/index/index.css"
 export default function Index() {
 
     const el = useRef(null);
@@ -40,10 +44,10 @@ export default function Index() {
                 <Header />
                 <article className="article_header_container">
                     <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
-                    <h2>
-                        INOVAÇal TECNOLÓGICA ALIADA À SUSTENTILIDADE AMiENTAL
+                    <h2 id="h2principal" >
+                        INOVAÇÃO TECNOLÓGICA ALIADA À SUSTENTILIDADE AMiENTAL
                     </h2>
-                    <p>
+                    <p id="pprincipal">
                         Sistema de Inteligência Artificial em Pesquisa Ambiental
                         Inovação em Rastreabilidade e Modelagem Ecológica. Otimização e Adequação ESG dos Setores Produtivos.
                     </p>
@@ -80,43 +84,19 @@ export default function Index() {
                     </article>
                 </footer>
             </section>
+
             <main>
-                <section className="helps">
-                    <div className="helps_container">
-                        <article className="helps_article">
-                            <h2 className="title">
-                                Como a SIAPESQ pode te ajudar?
-                            </h2>
-                            <p className="content">
-                                Veja nossa variedade de benefícios
-                            </p>
-                        </article>
-                        <div className="cards">
-                            <Card
-                                id="card-1"
-                                photo={satelite}
-                                title="Rastreamento de espécies"
-                                content="Podemos fazer o rastreamento da espécie animal que você pesquisa, basta entrar em contato!"
-                            />
-                            <Card
-                                id="card-2"
-                                photo={lupa}
-                                title="Análise Ambiental"
-                                content="Baixe nossas predições, e faça o uso offline de onde vocês estiver pelo seu computador"
-                            />
-                            <Card
-                                id="card-3"
-                                photo={mapa}
-                                title="Predição"
-                                content="Com base nos dados registrados no Copernicus podemos fazer predição via satellite de onde uma espécie animal pode estar localizada"
-                            />
-                        </div>
-                    </div>
-                    <h3>
-                        Conheça nossos produtos
-                    </h3>
-                </section>
+                <SectionHelps />
             </main>
+            <main>
+            <SectionSiapreps />
+            </main>
+            {/* <main>
+            <SectionPhytobloom />
+            </main> */}
+            {/* <main>
+            <SectionFooter />
+            </main> */}
         </>
     )
 }

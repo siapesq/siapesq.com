@@ -1,0 +1,107 @@
+.siapreps {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../imgs/section_siapreps_bg.png");
+  margin-top: 100px;
+  background-position-x: center;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  align-items: center;
+}
+
+main .siapreps {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.siapreps_container {
+  display: flex;
+  justify-content: space-between;
+  /* Distribui os elementos com espaço entre eles */
+  width: 100%;
+  /* Garante que a div ocupe 100% da largura da tela */
+}
+
+.siapreps_logo {
+  background-color: white;
+  border-radius: 120px;
+  width: 696px;
+  height: 390px;
+  padding: 50px;
+  margin-top: 100px;
+  margin-left: 150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.list-column {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+  margin-right: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.list-column ul li {
+  list-style-type: none;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+.iconChecked {
+  position: absolute;
+  margin-left: -80px;
+}
+
+.tubarao {
+  margin-top: 120px;
+  margin-right: 170px;
+
+}
+
+.siapreps_bottom {
+  margin-top: 100px;
+  color: white;
+  font-size: 28px;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.btn-more {
+  background-color: transparent;
+  /* Transparente no centro */
+  border: 2px solid #000;
+  /* Borda definida */
+}
+#siapreps-enviar{
+ display: flex;
+ margin-top: 5%;
+}
+
+#button{
+  /* background-color: transparent;
+  width: 100px;
+  height: 40px;
+  border: 2px solid #000;
+  color: #fff;
+  border-radius: 10px; */
+
+    background-color: rgba(240, 248, 255, 0);
+    color: whitesmoke;
+    height: 50px;
+    width: 500px;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+    align-items: center;
+    margin-left: 100%;
+    margin-right: 100%;
+    margin-top: 150px;
+    font-size: 1em;
+}

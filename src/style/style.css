@@ -13,7 +13,7 @@
   gap: 3rem;
 }
 .header nav ul a {
-  color: #233363;
+  color: #fff;
   text-decoration: none;
   font-size: 2rem;
 }
@@ -57,15 +57,16 @@
   grid-column: 1/2;
   margin-left: 2rem;
   align-self: end;
+  margin-top: 5%;
 }
-.header_container .article_header_container h2 {
+.header_container .article_header_container #h2principal {
   grid-column: 2/3;
   grid-row: 1/2;
   width: 27rem;
   align-self: end;
 }
-.header_container .article_header_container p {
-  grid-column: 2/3;
+.header_container .article_header_container #pprincipal {
+  grid-column: 2/8;
   grid-row: 2/3;
   width: 37rem;
   font-size: 1.4rem;
@@ -185,7 +186,6 @@ main .helps .helps_container .cards .card p {
 }
 main .helps h3 {
   text-align: center;
-  margin-top: 2rem;
   font-size: 4rem;
   color: #233363;
 }

@@ -1,0 +1,36 @@
+/* .headersobre{
+    background-color: #04517B;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+}
+.sistema-img{
+    max-width: 300px;
+    margin-right: 15rem;   
+    padding-top: 30px;
+}
+
+.imagemsiapesq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: white;
+        max-width: 600px;
+    }
+}
+
+.imagem-equipe{
+    width: 60rem;
+    display: block;
+    align-items: right;
+    margin: 2rem auto;
+}
+
+.equipe{
+    h1{
+        color: #04517B;
+        text-align: center;
+    }
+} */
