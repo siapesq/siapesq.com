@@ -1,0 +1,193 @@
+
+
+.header_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+ 
+
+    img{
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+        pointer-events: none; 
+        user-select: none;
+    }
+
+    .bg_img{
+        position: absolute;
+        width: 100%;
+        height: 52rem;
+        z-index: -1;
+        @media only screen and (max-width:1600px){
+            height: 46.8rem;
+        }
+        
+    }
+
+    .article_header_container{
+        margin: auto 75rem auto auto;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50% 50%;
+        color: #FFFFFF;
+        gap: 2rem;
+
+        img{
+            width: 28rem;
+            grid-row: 1/3;
+            grid-column: 1/2;
+            margin-left: 2rem;
+            align-self: end;
+            margin-top: 5%;
+        }
+
+        #h2principal{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 27rem;
+            align-self: end;
+        }
+
+        #pprincipal{
+            grid-column: 2/8;
+            grid-row: 2/3;
+            width: 37rem ;
+            font-size: 1.4rem;
+        }
+    }
+    
+    .footer_header_container{
+        position: relative;
+        bottom: 4rem;
+        z-index: -1;
+        @media only screen and (max-width: 1920px){
+            bottom: 3rem;
+        }
+
+        @media only screen and (max-width:1600px){
+            bottom: 6rem;
+        }
+    
+        img{
+            width: 100%;
+            -webkit-user-drag: none;
+            -webkit-touch-callout: none; 
+            -moz-user-select: none; 
+            -ms-user-select: none; 
+            pointer-events: none; 
+            user-select: none;
+        }
+
+        article{
+            position: absolute;
+            bottom: 3.8rem;
+            color: #FFFFFF;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 20rem;
+            align-items: center;
+            z-index: 2;
+
+            @media only screen and (max-width: 1920px){
+                bottom: 2rem;
+            }
+
+            @media only screen and (max-width: 1920px){
+                gap: 15rem;
+            }
+
+            @media only screen and (max-width:1600px){
+               gap: 8rem;
+               bottom: 1rem;
+            }
+
+            .tracejado{
+                width: 2px;
+                border: thin solid #FFFFFF;
+                background-color: #FFFFFF;
+                height: 5rem;
+            }
+
+            div{
+                .title{
+                    font-size: 2.5rem;
+                    @media only screen and (max-width:1600px){
+                        font-size: 1.4rem;
+                    }
+
+
+                }
+                .content{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+main{
+    .helps{
+        display: flex;
+        flex-direction: column;
+
+        .helps_container{
+            display: flex;
+            justify-content: center;
+            gap: 6rem;
+            
+            .helps_article{
+                color: #233363;
+
+                .title{
+                    font-size: 3rem;
+                    width: 26rem;
+                    margin-top: 2rem;
+                }
+
+                .content{
+                    font-size: 1.5rem;
+                    margin-top: 2rem;
+                }
+            }
+
+            .cards{
+
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                align-items: center;
+
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    width: 15rem;
+                    gap: 2rem;
+                    padding: .8rem;
+        
+                    img{
+                        width: 6rem;
+                    }
+        
+                    .title{
+                        color: #233363;
+                    }
+        
+                    p{
+                        color: #233363;
+                    }
+                }
+            }
+
+        }
+
+        h3{
+            text-align: center;
+            font-size: 4rem;
+            color: #233363;
+
+        }
+    }
+}

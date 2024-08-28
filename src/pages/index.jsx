@@ -11,9 +11,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SectionSiapreps from "../components/sections/siapreps";
 import SectionHelps from "../components/sections/helps";
-import SectionPhytobloom from "../components/sections/phytobloom.jsx";
-import SectionFooter from "../components/sections/siaprepsFooter.jsx";
-
+// import SectionPhytobloom from "../components/sections/phytobloom.jsx";
+// import SectionFooter from "../components/sections/siaprepsFooter.jsx";
+import "../style/index/index.css"
 export default function Index() {
 
     const el = useRef(null);
@@ -91,12 +91,12 @@ export default function Index() {
             <main>
             <SectionSiapreps />
             </main>
-            <main>
+            {/* <main>
             <SectionPhytobloom />
-            </main>
-            <main>
+            </main> */}
+            {/* <main>
             <SectionFooter />
-            </main>
+            </main> */}
         </>
     )
 }
