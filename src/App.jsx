@@ -10,7 +10,7 @@ import Contato from "./pages/contato";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
