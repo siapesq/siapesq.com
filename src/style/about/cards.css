@@ -1,20 +1,32 @@
+.cards{
+  margin-top: 500px;
+}
 .equipe2{
         border-radius: 10%;
         width: 25%;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    .lorem{
-        color: #04517B;
-        padding-left: 50px;
+        margin-left: 310px;
+        margin-right: -308px;
+       
         
     }
 
+    .forem{
+        color: #04517B;
+       margin-right: 200px;
+       margin-left: 100px;
+        
+    }
+    .lorem1{
+      color: #04517B;
+     margin-left: 300px;
+     margin-top: 80px;
+      
+  }
+
 .cargo{
     color: #04517B;
-    margin-left: -100px;
-    margin-right: -100px;
+    margin-left: 340px;
+    margin-right: -280px;
 }
   
   .card1{
@@ -26,9 +38,6 @@
   .lorem {
     max-width: 600px;
     margin-left: auto;
-    margin: auto;
-    padding-top: 30px;
-    margin-right: 5rem; 
    }
 
 
@@ -40,9 +49,8 @@
 }
       .lorem{
         max-width: 600px;
-        margin-left: auto;
+        
         margin: auto;
-        padding-top: 30px;
-        margin-right: 5rem; 
+       
        }
     
