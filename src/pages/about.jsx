@@ -8,7 +8,7 @@ export default function About() {
         <>
        
        <div>
-         <SectionHead />
+         <SectionHead/>
        </div>
        
        <div>

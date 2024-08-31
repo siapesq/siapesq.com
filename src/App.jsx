@@ -1,3 +1,4 @@
+// import { React, useEffect, useState } from "react";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./style/style.css";
@@ -9,6 +10,23 @@ import Phytobloom from "./pages/phytobloom";
 import Contato from "./pages/contato";
 
 function App() {
+
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // useEffect(() => {
+
+  //   const handleResize = () => {
+  //     setWindowWidth(window.innerWidth);
+  //   }
+
+  //   window.addEventListener('resize', handleResize);
+
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+
+  // }, [windowWidth]);
+
   return (
     <BrowserRouter>
       <Routes>
