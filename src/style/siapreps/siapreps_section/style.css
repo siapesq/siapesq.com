@@ -66,6 +66,16 @@
 
 }
 
+#siapreps-enviar .tubaraoB{
+
+  justify-content: left;
+
+  img{
+    /* width: 100px; */
+    height: 100px;
+  }
+}
+
 .siapreps_bottom {
   margin-top: 100px;
   color: white;
@@ -86,11 +96,33 @@
   /* Transparente no centro */
   border: 2px solid #000;
   /* Borda definida */
+
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #siapreps-enviar {
   display: flex;
-  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+
+  /* margin-top: 5%; */
+}
+
+#siapreps-enviar div{
+  flex:1 1 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#siapreps-enviar .peixes{
+  justify-content: right;
 }
 
 #button {
@@ -103,14 +135,16 @@
 
   background-color: rgba(240, 248, 255, 0);
   color: whitesmoke;
-  height: 50px;
-  width: 500px;
-  border-radius: 15px;
+  height: 100px;
+  width: 250px;
+  padding: 5px;
+  border-radius: 50px;
   border: 2px solid whitesmoke;
-  align-items: center;
-  margin-left: 100%;
+
+  /* margin-left: 100%;
   margin-right: 100%;
-  margin-top: 150px;
+  margin-top: 150px; */
+
   font-size: 1em;
 }
 
@@ -196,6 +230,7 @@
   
   .siapreps_texto{
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
   
   .siapreps_bottom .btn_more{

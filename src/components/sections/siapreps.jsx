@@ -36,14 +36,22 @@ export default function SectionSiapreps() {
                     <h2>A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem</h2>
                     <h2 style={{ marginLeft: '50px' }}>localizar  e monitorar os cardumes com maior facilidade e precisão</h2>
                 </div>
-                <div className="btn_more" style={
-                    (window.innerWidth>1366)?{ width: '370px', height: '120px', borderRadius: '100px', justifyContent: "center" }
-                    :{ display: 'flex' }
-                    }>
+                <div className="btn_more">
                     <div id="siapreps-enviar">
-                        <img width="300px" src={tubarao2} alt="" className="tubaraoB" />
-                        <button id="button">Saiba mais</button>
-                        <img width="300px" src={peixes} alt="" className="peixes" />
+                        { (window.innerWidth > 1366 ? (
+                            <>
+                                <div className="tubaraoB"><img width="300px" src={tubarao2} alt=""/></div>
+                                <div><button id="button">Saiba mais</button></div>
+                                <div className="peixes"><img width="300px" src={peixes} alt=""/></div>
+                            </>
+                        ): (
+                            <>
+                                <img width="300px" src={tubarao2} alt="" className="tubaraoB" />
+                                <button id="button">Saiba mais</button>
+                                <img width="300px" src={peixes} alt="" className="peixes" />
+                            </>
+                        )
+                        )}
                     </div>
                 </div>
             </div>
