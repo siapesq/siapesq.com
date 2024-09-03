@@ -3,7 +3,7 @@
     margin: 20px auto;
     width: 80%;
     max-width: 800px;
-    margin-top: 10%;
+    margin-top: 200px;
   }
   
   .carrossel {
@@ -36,7 +36,7 @@
   .arrow {
     background: none;
     border: none;
-    font-size: 2em;
+    font-size: 5em;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -45,6 +45,7 @@
   
   .arrow.left {
     left: 0;
+    
   }
   
   .arrow.right {
@@ -53,8 +54,23 @@
   
   .cardumeh2{
     color:#233363;
+    font-size: 2.5em;
   }
 
   .cardumep{
     color:#233363;
+    font-size: 2.5em;
+  }
+
+  @media screen and (max-width: 1366px) {
+
+    .carrossel-container {
+      text-align: center;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 800px;
+      margin-top: 20%;
+    }
+
+
   }

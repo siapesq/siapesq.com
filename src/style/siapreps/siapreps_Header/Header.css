@@ -2,19 +2,20 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    
 
-     /* .fundoInvinsivel{
-      margin-right: 150px;
-      background-color: rgba(240, 248, 255, 0);
-      color: whitesmoke;
-      margin-top: 500px;
-      height: 50px;
-      width: 150px;
-      border-radius: 15px;
-      border: 2px solid whitesmoke
-  } */
+  }
   
+  .botaoSiapreps{
+    background-color: rgba(240, 248, 255, 0);
+    color: whitesmoke;
+    margin-top: 500px;
+    margin-left: 110px;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border: 2px solid whitesmoke
+}
+
 
   #notesiapreps{
         -webkit-user-drag: none;
@@ -45,7 +46,7 @@
          #notesiapreps{
             width: 38rem;
             grid-row: 1/3;
-            grid-column: 30/40;
+            grid-column: 25/40;
             margin-left: 2rem;
             align-self: end;
         }  
@@ -67,4 +68,76 @@
             color: #fff;
         } 
     }
-}
+
+
+    @media screen and (max-width: 1366px) {
+
+        #imgsiapreps{
+            width: 250%;
+        }
+
+
+        .botaoSiapreps{
+            background-color: rgba(240, 248, 255, 0);
+            color: whitesmoke;
+            margin-top: 500px;
+            margin-left: 88px;
+            height: 50px;
+            width: 150px;
+            border-radius: 15px;
+            border: 2px solid whitesmoke
+        }
+        
+        
+          #notesiapreps{
+                -webkit-user-drag: none;
+                -webkit-touch-callout: none; 
+                -moz-user-select: none; 
+                -ms-user-select: none; 
+                pointer-events: none; 
+                user-select: none;
+            }
+        
+            .cardume{
+                position: absolute;
+                width: 100%;
+                height: 100em;
+                z-index: -1;
+              
+                
+            }
+        
+            .articleHeaderContainer{
+                margin: auto 80rem auto auto;
+                display: grid;
+                grid-template-columns: 5% 40%;
+                grid-template-rows: 40% 50%;
+                color: whitesmoke;
+                gap: 1rem;
+            
+                 #notesiapreps{
+                    width: 38rem;
+                    grid-row: 1/3;
+                    grid-column: 5/40;
+                    margin-left: 2rem;
+                    align-self: end;
+                }  
+              
+                #siapreps{
+                    font-size: 100px;
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    width: 10rem;
+                    align-self: end;
+                    color: #fff;
+                }
+        
+                #textosiapreps{
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    width: 26rem ;
+                    font-size: 1.5rem;
+                    color: #fff;
+                } 
+            }
+    }

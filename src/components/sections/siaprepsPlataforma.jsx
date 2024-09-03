@@ -1,5 +1,6 @@
 import React from "react";
 import siapreps from "../../imgs/siapreps.svg";
+import texto from "../../imgs/textoazul.svg"
 import '../../style/siapreps/siapreps_plataforma/plataforma.css';
 
 
@@ -11,7 +12,8 @@ export default function SectionPlataforma(){
           <section className="plataforma">
                 <article >
                 <img id="plataforma" src={siapreps} alt="Imagem de platforma siapreps" />
-                <h1 id="azulzinha">A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão.</h1>
+                {/* <h1 id="azulzinha">A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão.</h1> */}
+                <img src={texto} alt="" id="textoazul" />
                 <button className="fundoInvinsivel"> Começar Agora</button> 
                 </article>
                 </section>
