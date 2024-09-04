@@ -19,8 +19,7 @@ export default function Index( ){
                 <div >
                 <SectionBarco />
                 </div>
-           
-
+        
                 <div >
                 <SectionPlataforma />
                 </div>

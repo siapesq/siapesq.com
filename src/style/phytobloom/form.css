@@ -12,18 +12,19 @@
     padding: 20px;
     height: 100vh;
     color: white;
+    
   }
   
   .form-content {
     flex: 1;
-    margin-right: 50px;
+  
   }
   
   form {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin-left: 50%;
+    
   }
   
   h1 {
@@ -58,9 +59,7 @@
     flex: 1;
   }
   
-  .input-group .input-item:first-child {
-    margin-right: 20px;
-  }
+  
   
   textarea {
     height: 150px;
@@ -78,3 +77,38 @@
     
   }
   
+  #botaoPhytobloom{
+    width: 48px;
+    background-color: #004725;
+    margin-left: 93%;
+    color: #ffffff;
+    border-radius: 10px;
+    height: 30px;
+  }
+
+  @media screen and (max-width: 1366px) {
+
+    #botaoPhytobloom{
+      width: 48px;
+      background-color: #004725;
+      margin-left: 89%;
+      color: #ffffff;
+      border-radius: 10px;
+      height: 30px;
+    }
+
+  }
+
+  
+@media screen and (max-width: 1024px) {
+   
+  #botaoPhytobloom{
+    width: 48px;
+    background-color: #004725;
+    margin-left: 83%;
+    color: #ffffff;
+    border-radius: 10px;
+    height: 30px;
+  }
+
+}

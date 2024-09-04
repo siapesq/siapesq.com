@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../layouts/header";
 import cardume from "../../imgs/cardume.png";
 import siapresqPc from "../../imgs/siapresqPc.svg";
+import siaprepsNome from "../../imgs/NomeSiapreps.svg"
 import '../../style/siapreps/siapreps_Header/Header.css';
 
 
@@ -15,13 +16,13 @@ export default function SectionHeader(){
                 <Header/>
                 <article className="articleHeaderContainer">
                 <h1 id="siapreps" >
-                    SIAPREPS
+                        <img src={siaprepsNome} alt="" id="imgsiapreps" />
                 </h1>
                     <p id="textosiapreps">
                     A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão
                      </p>
                     <img id="notesiapreps" src={siapresqPc} alt="Imagem de um notebook da siapreps" />
-                     {/* <button className="fundoInvinsivel"> Começar Agora</button>  */}
+                     <button className="botaoSiapreps"> Começar Agora</button> 
                 </article>
             </section>
    

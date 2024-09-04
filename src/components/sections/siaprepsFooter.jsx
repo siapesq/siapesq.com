@@ -30,7 +30,7 @@ export default function SectionFooter() {
           </div>
           
           <div>
-            <p>Copyright © 2024 SIAPESQ | Powered by SIAPESQ</p>
+            <p id="copy">Copyright © 2024 SIAPESQ | Powered by SIAPESQ</p>
           </div>
         </div>
       </footer>

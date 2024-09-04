@@ -1,5 +1,7 @@
 import React from "react";
-import naviocarga from "../../imgs/barcocontainer.svg";
+import barcopesca from "../../imgs/barcopesca.svg";
+import textobarco from "../../imgs/textoBarco.svg";
+import bordabarco from "../../imgs/bordabarco.svg";
 import '../../style/siapreps/siapreps_barco/barco.css';
 
 
@@ -8,13 +10,15 @@ export default function SectionBarco(){
     
     return(
         <>
- <div className="container">
-      <img src={naviocarga} alt="barco" className="barco" />
-      <div className="texto">
-        <h1>O problema</h1>
+ <div className="containerPesca">
+      <img src={barcopesca} alt="barco" className="barcoPesca" />
+      <div className="textoPesca">
+        <p>Localização do Pescado</p>
         </div>
         <div className="porcentagem">
-          <div className="textoporcentagem">
+          <img src={bordabarco} alt="" id="borda"/>
+          <img src={textobarco} alt="" id="textoBarco" />
+          {/* <div className="textoporcentagem">
             <h2>3%</h2>
             <p>do total de Gases de Efeito Estufa (GEEs) emitidos globalmente</p>
           </div>
@@ -25,7 +29,7 @@ export default function SectionBarco(){
           <div className="textoporcentagem">
             <h2>Maior</h2>
             <p>Parte do impacto do setor de navegação é atribuído a grandes empresas</p>
-          </div>
+          </div> */}
         </div>
       </div>
         </>

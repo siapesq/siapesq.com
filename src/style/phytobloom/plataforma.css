@@ -1,49 +1,96 @@
 #phytobloom{
     width: 100%;
-  
+      
 }
-#verde{
-    background-color: rgba(0, 255, 8, 0.363);
+/* #verde{
+    background-image: url(../../imgs/plataformaWeb.png);
     margin-left: 800px;
-    margin-top: -800px;
+    margin-top: -600px;
     color: whitesmoke;
-    width: 1000px;
-    font-size: 50px;
-}
-.fundoInvinsivel{
+    width: 970px;
+    font-size: 40px;
+} */
+.botaoPhytobloom{
     margin-left: 1600px;
     background-color: rgba(240, 248, 255, 0);
     color: whitesmoke;
-    margin-top: -800px;
+    margin-top: 20px;
     height: 50px;
     width: 100px;
     border-radius: 15px;
     border: 1px solid whitesmoke
 }
 
+#textoverde{
+    display: flex;
+   margin-top: -700px;
+   margin-left: 610px;
+   
+    
+}
 
-@media screen and (min-width: 1400px) {
+
+@media screen and (max-width: 1366px) {
+
+   
+        #textoverde{
+            display: flex;
+           margin-top: -400px;
+           margin-left: 610px;
+            width: 50%;
+           
+            
+        }
+        
+    
 
     #phytobloom{
         width: 100%;
       
     }
-    #verde{
-        background-color: rgba(0, 255, 8, 0.363);
-        margin-left: 300px;
-        margin-top: -400px;
-        color: whitesmoke;
-        width: 1000px;
-        font-size: 30px;
-    }
-    .fundoInvinsivel{
-        margin-left: 1100px;
+   
+    .botaoPhytobloom{
+        margin-left: 1196px;
         background-color: rgba(240, 248, 255, 0);
         color: whitesmoke;
-        margin-top: -800px;
+        margin-top: 20px;
         height: 50px;
         width: 100px;
         border-radius: 15px;
         border: 1px solid whitesmoke
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+
+
+
+    #textoverde{
+        display: flex;
+       margin-top: -400px;
+       margin-left: 450px;
+        width: 50%;
+       
+        
+    }
+    
+
+
+#phytobloom{
+    width: 100%;
+  
+}
+
+.botaoPhytobloom{
+    margin-left: 860px;
+    background-color: rgba(240, 248, 255, 0);
+    color: whitesmoke;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid whitesmoke
+}
+}
+
