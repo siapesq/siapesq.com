@@ -1,7 +1,7 @@
 .footerSiapreps {
   background-color: #233363;
   color: #fff;
-  padding: 20px 20px;
+  padding: 20px;
 
   box-sizing: border-box;
 
@@ -25,7 +25,7 @@
   }
 
   a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
     text-decoration: none;
     display: inline-flex;
@@ -35,7 +35,7 @@
     row-gap: 10px;
 
     img{
-      width: 30px;
+      width: 20px;
     }
   }
 
@@ -56,7 +56,7 @@
 }
 
 #logo {
-  width: 100px;
+  width: 75px;
   align-items: center;
 }
 

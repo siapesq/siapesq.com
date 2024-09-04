@@ -21,7 +21,7 @@
   /* color: rgb(35, 51, 99); */
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .index nav ul a{
@@ -61,11 +61,10 @@
 .header_container .article_header_container {
   margin: auto 75rem auto auto;
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 45% 55%;
   grid-template-rows: 50% 50%;
   color: #FFFFFF;
-  gap: 2rem;
-
+  gap: 2rem 4rem;
   margin-top: 40px;
 }
 
@@ -81,7 +80,8 @@
 .header_container .article_header_container #h2principal {
   grid-column: 2/3;
   grid-row: 1/2;
-  width: 27rem;
+  width: 100%;
+  font-size: 2rem;
   align-self: end;
 }
 
@@ -192,6 +192,7 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 6rem;
+  padding: 0 20px;
 }
 
 .helps .helps_container .helps_article {
@@ -202,6 +203,23 @@
   font-size: 3rem;
   width: 26rem;
   margin-top: 2rem;
+  position: relative;
+}
+
+.helps .helps_container .helps_article .title::before{
+  content: "";
+  background-image: url("../imgs/setasTitulo.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+
+  position:absolute;
+  left: -25px;
+  top: -15px;
+
+  width: 45px;
+  height: 50px;
 }
 
 .helps .helps_container .helps_article .content {
@@ -220,9 +238,17 @@
 .helps .helps_container .cards .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
   width: 15rem;
   gap: 2rem;
   padding: 0.8rem;
+}
+
+.helps .helps_container .cards .card div{
+  flex-basis: 100px;
 }
 
 .helps .helps_container .cards .card img {

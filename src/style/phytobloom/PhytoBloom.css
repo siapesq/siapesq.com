@@ -100,10 +100,10 @@ main p {
   border: 2px solid white;
   border-radius: 50px;
 
-  padding: 15px 30px;
-  font-size: 1.2em;
+  padding: 15px 40px;
+  font-size: 1.5rem;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 
@@ -139,7 +139,7 @@ main p {
           justify-content: start;
           align-items: center;
           column-gap: 5px;
-          font-size: 1rem;
+          font-size: 1.3rem;
 
           margin-bottom: 20px;
         }
@@ -194,10 +194,10 @@ main p {
     text-align: center;
 
     background-color: rgba(240, 248, 255, 0);
-    height: 50px;
+    /* height: 50px; */
     border-radius: 40px;
     border: 2px solid whitesmoke;
-    padding: 0 20px;
+    padding: 15px 40px;
 
 
     /* font-size: 1.5rem; */
