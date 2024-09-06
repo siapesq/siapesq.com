@@ -1,7 +1,7 @@
 .footerSiapreps {
   background-color: #233363;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
 
   box-sizing: border-box;
 
@@ -41,6 +41,7 @@
 
   p {
     color: #fff;
+    padding: 0 !important;
   }
 
   #copy{
