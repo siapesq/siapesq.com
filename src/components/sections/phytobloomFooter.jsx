@@ -29,7 +29,7 @@ export default function SectionFooter(){
             <img id="logo" src={logo} alt="SIAPESQ Logo" className="logo" />
           </div>
           
-          <div id="copy">
+          <div id="copyphytoblom">
             <p>Copyright © 2024 SIAPESQ | Powered by SIAPESQ</p>
           </div>
         </div>

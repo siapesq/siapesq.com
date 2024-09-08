@@ -1,8 +1,9 @@
 .equipe2 {
   border-radius: 10%;
   width: 25%;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 120px;
+  margin-right: 120px;
+
 }
 
 .lorem {
@@ -21,15 +22,16 @@
   width: 60rem;
   display: flex;
   justify-content: flex-end;
-  margin: 10rem;
+  margin-top: 350px;
+  margin-left: 351px;
 }
 
 .lorem {
-  max-width: 600px;
-  margin-left: auto;
+  max-width: 1000px;
+  margin-left: 50px;
   margin: auto;
   padding-top: 30px;
-  margin-right: 5rem;
+  margin-right:50px;
 }
 
 
@@ -37,7 +39,7 @@
   width: 60rem;
   display: flex;
   justify-content: flex-end;
-  margin: 10rem;
+  margin-left: 585px;
 }
 
 .lorem {
