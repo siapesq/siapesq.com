@@ -25,7 +25,7 @@ jobs:
         run: git config --global user.name ${{ secrets.USERNAME  }}
       
       - name: Set up GitHub repository
-        run: git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/siapesq/landingPage.git
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/siapesq/landingPage.git
           
       - name: Install dependencies
         run: npm install
