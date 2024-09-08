@@ -3,8 +3,7 @@ name: Build and Deploy React App using gh-pages util
 on:
   push:
     branches:
-      - dev
-
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
