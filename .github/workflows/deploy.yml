@@ -18,7 +18,12 @@ jobs:
         with:
           node-version: "20"
 
-      
+      - name: Config Git
+        run: |
+          git config --global user.email ${{ secrets.EMAIL  }}
+          git config --global user.name ${{ secrets.USERNAME  }}
+          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/siapesq/landingPage.git
+          
       - name: Install dependencies
         run: npm install
 
