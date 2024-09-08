@@ -31,7 +31,7 @@ export default function SectionForm(){
             <label htmlFor="mensagem">Mensagem</label>
             <textarea id="mensagem" placeholder="Mensagem"></textarea>
           </div>
-          <button id="botaoPhytobloom"> enviar</button>
+          {/* <button id="botaoPhytobloom"> enviar</button> */}
         </form>
       </div>
     </div>
