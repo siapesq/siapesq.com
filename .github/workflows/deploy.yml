@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - dev
-
+environment: build
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,18 +18,19 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Config Git
+      - name: Config Git user.email
+        run: git config --global user.email ${{ secrets.EMAIL  }}
+
+      - name: Config Git user.name
+        run: git config --global user.name ${{ secrets.USERNAME  }}
+      
+      - name: Set up GitHub repository
         run: git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/siapesq/landingPage.git
           
       - name: Install dependencies
         run: npm install
 
-      
-      - name: Build the app
-        run: npm run build
-
-      
-      - name: Deploy to GitHub Pages
+      - name: Build and Deploy to GitHub Pages
         run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
