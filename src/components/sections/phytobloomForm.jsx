@@ -9,10 +9,10 @@ export default function SectionForm(){
         <>
      <div className="contact-container">
         <div id="textoform">
-        <h1>Entre em contato conosco!</h1>
+        <h1 id="h1Phytobloom">Entre em contato conosco!</h1>
         </div>
       <div className="form-content">
-        <form>
+        <form id="formPhytobloom">
           <div className="input-group">
             <div className="input-item">
               <label htmlFor="nome">Nome</label>

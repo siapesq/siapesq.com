@@ -20,18 +20,19 @@
   
   }
   
-  form {
+  #formPhytobloom {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
     /* width: 50%; */
-    margin-left: 0;
+     margin-left: -200px;
     
   }
-  
-  h1 {
+   
+  #h1Phytobloom {
     margin-bottom: 30px;
     font-size: 2rem;
+    margin-right: 500px;
   }
   
   .input-group {
@@ -76,7 +77,7 @@
 
 
     h1{
-      font-size: 5rem;
+      font-size: 3rem;
     }
    
   }

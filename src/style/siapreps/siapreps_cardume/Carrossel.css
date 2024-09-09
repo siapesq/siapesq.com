@@ -55,11 +55,15 @@
   .cardumeh2{
     color:#233363;
     font-size: 2.5em;
+  
+
   }
 
   .cardumep{
     color:#233363;
     font-size: 2.5em;
+    font-style: italic;
+
   }
 
   @media screen and (max-width: 1366px) {

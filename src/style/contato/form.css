@@ -1,4 +1,4 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@
     
   }
   
-  form {
+  .formContato {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -90,4 +90,4 @@
     color: #ffffff;
     border-radius: 10px;
     height: 30px;
-  } */
+  }

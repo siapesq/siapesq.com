@@ -24,7 +24,7 @@ export default function SectionForm(){
       <div className="form-content">
         <div id="textoform">
         </div>
-        <form>
+        <form className="formContato">
           <div className="input-group">
             <div className="input-item">
               <label htmlFor="nome">Nome</label>
