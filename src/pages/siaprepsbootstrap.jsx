@@ -23,7 +23,7 @@ import cardume from "../imgs/cardume.png";
 
 
 
-export default function Index() {
+export default function Index( ) {
 
 
     return (

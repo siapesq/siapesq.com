@@ -1,56 +1,187 @@
-.headerContainer{
+.headerContainer {
+    height: 70rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    
 
-     .fundoInvinsivel{
-      margin-left: 120px;
-      background-color: rgba(240, 248, 255, 0);
-      color: whitesmoke;
-      margin-top: 500px;
-      height: 50px;
-      width: 150px;
-      border-radius: 15px;
-      border: 2px solid whitesmoke
-  }
-  
 
-    .hidro{
+    .hidro {
         position: absolute;
         width: 100%;
         height: 70rem;
         z-index: -1;
-        @media only screen and (max-width:1600px){
-            height: 48.8rem;
-        }
-        
+
+
     }
 
-    .article-header-container{
-        margin: auto 80rem auto auto;
-        display: grid;
+    .article-header-container {
+        margin: 8rem 0 auto 5rem;
+        color: whitesmoke;
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 1rem;
+
+        /* display: grid;
         grid-template-columns: 5% 40%;
         grid-template-rows: 40% 50%;
         color: whitesmoke;
-        gap: 1rem;
-    
-     
+        gap: 1rem; */
+
+
     }
-        #phytobloom{
-            font-size: 100px;
-            grid-column: 2/3;
-            grid-row: 1/2;
-            width: 10rem;
-            align-self: end;
-            color: #fff;
+
+    #phytobloom {
+        font-size: 100px;
+        /* grid-column: 2/3;
+            grid-row: 1/2; */
+        width: 1085px;
+        /* align-self: end; */
+        color: #fff;
+    }
+
+    #textophytobloom {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 70rem;
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    .fundoInvinsivel {
+
+        background-color: rgba(240, 248, 255, 0);
+        color: whitesmoke;
+        margin: 0;
+        font-size: 2rem;
+        height: auto;
+        width: 300px;
+        padding: 20px;
+        border-radius: 40px;
+        border: 2px solid whitesmoke;
+        margin-top: 20px;
+
+        /* margin-left: 83px; */
+        /* margin-top: 600px; */
+        /* background-color: rgba(240, 248, 255, 0);
+            color: whitesmoke;
+
+            margin: 0;
+
+            height: 50px;
+            width: 150px;
+            border-radius: 15px;
+            border: 2px solid whitesmoke */
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+
+    .headerContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+
+        .hidro {
+            position: absolute;
+            width: 100%;
+            height: 60rem;
+            z-index: -1;
+
+
         }
 
-        #textophytobloom{
+        .article-header-container {
+            margin: auto 80rem auto auto;
+            display: grid;
+            grid-template-columns: 5% 40%;
+            grid-template-rows: 40% 50%;
+            color: whitesmoke;
+            gap: 1rem;
+
+
+        }
+
+        #phytobloom {
+            width: 160%;
+        }
+
+        #textophytobloom {
             grid-column: 2/3;
             grid-row: 2/3;
-            width: 37rem ;
+            width: 30rem;
             font-size: 2rem;
             color: #fff;
-        } 
+
+        }
+
+        .fundoInvinsivel {
+            margin-left: 50px;
+            background-color: rgba(240, 248, 255, 0);
+            color: whitesmoke;
+            margin-top: 680px;
+            height: 50px;
+            width: 150px;
+            border-radius: 15px;
+            border: 2px solid whitesmoke
+        }
     }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .headerContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+
+        .hidro {
+            position: absolute;
+            width: 100%;
+            height: 60rem;
+            z-index: -1;
+
+
+        }
+
+        .article-header-container {
+            margin: auto 80rem auto auto;
+            display: grid;
+            grid-template-columns: 5% 40%;
+            grid-template-rows: 40% 50%;
+            color: whitesmoke;
+            gap: 1rem;
+
+
+        }
+
+        #phytobloom {
+            width: 160%;
+        }
+
+        #textophytobloom {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            width: 30rem;
+            font-size: 2rem;
+            color: #fff;
+
+        }
+
+        .fundoInvinsivel {
+            margin-left: 50px;
+            background-color: rgba(240, 248, 255, 0);
+            color: whitesmoke;
+            margin-top: 680px;
+            height: 50px;
+            width: 150px;
+            border-radius: 15px;
+            border: 2px solid whitesmoke
+        }
+    }
+
+}

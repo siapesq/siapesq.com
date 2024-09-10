@@ -7,7 +7,7 @@ import SectionformS from "../components/sections/siaprepsFormS";
 import SectionFooter from "../components/sections/siaprepsFooter";
 
 
-export default function Index(){
+export default function Index( ){
 
     
     return(
@@ -19,8 +19,7 @@ export default function Index(){
                 <div >
                 <SectionBarco />
                 </div>
-           
-
+        
                 <div >
                 <SectionPlataforma />
                 </div>

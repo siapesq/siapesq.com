@@ -1,6 +1,6 @@
 .cards {
     text-align: center;
-    padding: 200px;
+    /* padding: 200px; */
 }
   
    #h1cardume {
@@ -25,9 +25,11 @@
         margin-bottom: 20px;
       }
        .textopeixe {
-          font-size: 25px;
+          font-size: 2.5em;
           color: #1e3066;
           margin-bottom: 10px;
+          font-style: italic;
+
         }
   
         .imgpeixe {
@@ -37,15 +39,11 @@
         }
   
         .textinho {
-          font-size: 25px;
+          font-size: 2.5em;
           color: #1e3066;
           font-weight: bold;
+          font-style: italic;
+
         }
     
-  
-    .obs {
-      font-size: 25px;
-      color: #233363;
-      margin-top: 25px;
-    }
   

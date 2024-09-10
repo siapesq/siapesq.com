@@ -8,8 +8,6 @@ export default function Contato() {
        <div>
          <SectionContato />
        </div>
-       
-    
         </>
     );
 }

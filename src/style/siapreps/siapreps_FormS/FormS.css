@@ -11,7 +11,7 @@
     padding: 20px;
     height: 100vh;
     color: white;
-    background-color: #233363;
+    background-color: #04517b;
   }
   
   .form-content {
@@ -77,11 +77,13 @@
   }
   
   .peixe-logo img {
-   width: 50%;
+   width: 80%;
   }
   h1{
     color: white;
   }
     #peixetext{
       margin-top: -500px;
+      width: 800px;
     }
+    

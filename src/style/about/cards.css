@@ -1,48 +1,51 @@
-.equipe2{
-        border-radius: 10%;
-        width: 25%;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+.equipe2 {
+  border-radius: 10%;
+  width: 25%;
+  margin-left: 120px;
+  margin-right: 120px;
 
-    .lorem{
-        color: #04517B;
-        padding-left: 50px;
-        
-    }
-
-.cargo{
-    color: #04517B;
-    margin-left: -100px;
-    margin-right: -100px;
 }
-  
-  .card1{
-    width: 60rem;
-    display: flex;
-    justify-content: flex-end;
-    margin: 10rem;
-  }
-  .lorem {
-    max-width: 600px;
-    margin-left: auto;
-    margin: auto;
-    padding-top: 30px;
-    margin-right: 5rem; 
-   }
 
+.lorem {
+  color: #04517B;
+  padding-left: 50px;
 
-.card2{
-        width: 60rem;
-        display: flex;
-        justify-content: flex-end;
-        margin: 10rem;
 }
-      .lorem{
-        max-width: 600px;
-        margin-left: auto;
-        margin: auto;
-        padding-top: 30px;
-        margin-right: 5rem; 
-       }
-    
+
+.cargo {
+  color: #04517B;
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.card1 {
+  width: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 350px;
+  margin-left: 351px;
+}
+
+.lorem {
+  max-width: 1000px;
+  margin-left: 50px;
+  margin: auto;
+  padding-top: 30px;
+  margin-right:50px;
+}
+
+
+.card2 {
+  width: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 585px;
+}
+
+.lorem {
+  max-width: 600px;
+  margin-left: auto;
+  margin: auto;
+  padding-top: 30px;
+  margin-right: 5rem;
+}
