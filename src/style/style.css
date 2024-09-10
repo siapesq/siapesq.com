@@ -59,12 +59,14 @@
 }
 
 .header_container .article_header_container {
+  padding-top: 6rem;
+  width: 100%;
   margin: auto 75rem auto auto;
   display: grid;
   grid-template-columns: 45% 55%;
   grid-template-rows: 50% 50%;
   color: #FFFFFF;
-  gap: 2rem 4rem;
+  gap: 2rem 3rem;
   margin-top: 40px;
 }
 
@@ -80,16 +82,16 @@
 .header_container .article_header_container #h2principal {
   grid-column: 2/3;
   grid-row: 1/2;
-  width: 100%;
-  font-size: 2rem;
+  width: 80%;
+  font-size: 3rem;
   align-self: end;
 }
 
 .header_container .article_header_container #pprincipal {
   grid-column: 2/8;
   grid-row: 2/3;
-  width: 37rem;
-  font-size: 1.4rem;
+  width: 55rem;
+  font-size: 2rem;
 }
 
 .header_container .article_header_container button{
@@ -183,8 +185,12 @@
 
 .helps {
   padding-top: 2rem;
+  padding-bottom: 50px;
+
   display: flex;
   flex-direction: column;
+  row-gap: 3rem;
+
 }
 
 .helps .helps_container {
@@ -402,13 +408,24 @@
   }
 
   .header_container .article_header_container {
+    padding-top: 2rem;
     margin-top: 0;
+    gap: 2rem 3rem;
+  }
+
+  .header_container .article_header_container #h2principal{
+    font-size: 2rem;
+  }
+
+  .header_container .article_header_container #pprincipal{
+    width: 37rem;
+    font-size: 1.4rem;
   }
   
 
   .header_container .footer_header_container {
     position: absolute;
-    bottom: 0rem;
+    bottom: -5px;
   }
 }
 

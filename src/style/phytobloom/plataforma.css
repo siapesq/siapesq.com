@@ -1,15 +1,18 @@
-.plataforma{
-    height: 100vh;
+.plataforma {
+    /* height: 100vh; */
 
     article{
+        width: 100%;
         height: 100%;
+        position: relative;
     }
 }
 
-#phytobloom{
+#phytobloom {
+    width: 100%;
     height: 100%;
-      
 }
+
 /* #verde{
     background-image: url(../../imgs/plataformaWeb.png);
     margin-left: 800px;
@@ -18,7 +21,7 @@
     width: 970px;
     font-size: 40px;
 } */
-.botaoPhytobloom{
+.botaoPhytobloom {
     margin-left: 1450px;
     background-color: rgba(240, 248, 255, 0);
     color: whitesmoke;
@@ -26,40 +29,75 @@
     font-size: 1.5rem;
     font-weight: bold;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 50px;
     border: 1px solid whitesmoke
 }
 
-#textoverde{
+#textoverde {
     display: flex;
-   margin-top: -700px;
-   margin-left: 610px;
-   
-    
+    margin-top: -700px;
+    margin-left: 610px;
+
+
 }
 
 
 @media screen and (max-width: 1366px) {
 
-   
-        #textoverde{
-            display: flex;
-           margin-top: -400px;
-           margin-left: 610px;
-            width: 50%;
-           
-            
-        }
-        
-    
 
-    #phytobloom{
-        width: 100%;
-      
+    #textoverde {
+        display: flex;
+        margin-top: -400px;
+        margin-left: 610px;
+        width: 50%;
     }
-   
-    .botaoPhytobloom{
-        margin-left: 1196px;
+
+    #phytobloom {
+        width: 100%;
+    }
+    
+    .botaoPhytobloom {
+        margin-left: 1075px;
+        background-color: rgba(240, 248, 255, 0);
+        color: whitesmoke;
+        margin-top: 20px;
+        height: auto;
+        width: 225px;
+        border-radius: 50px;
+        border: 1px solid whitesmoke
+    }
+
+    button.fundoInvinsivel {
+        margin: 0;
+        height: auto;
+        width: 275px;
+        border-radius: 50px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+
+    #textoverde {
+        display: flex;
+        margin-top: -400px;
+        margin-left: 450px;
+        width: 50%;
+
+
+    }
+
+
+
+    #phytobloom {
+        width: 100%;
+
+    }
+
+    .botaoPhytobloom {
+        margin-left: 860px;
         background-color: rgba(240, 248, 255, 0);
         color: whitesmoke;
         margin-top: 20px;
@@ -69,37 +107,3 @@
         border: 1px solid whitesmoke
     }
 }
-
-
-@media screen and (max-width: 1024px) {
-
-
-
-    #textoverde{
-        display: flex;
-       margin-top: -400px;
-       margin-left: 450px;
-        width: 50%;
-       
-        
-    }
-    
-
-
-#phytobloom{
-    width: 100%;
-  
-}
-
-.botaoPhytobloom{
-    margin-left: 860px;
-    background-color: rgba(240, 248, 255, 0);
-    color: whitesmoke;
-    margin-top: 20px;
-    height: 50px;
-    width: 100px;
-    border-radius: 15px;
-    border: 1px solid whitesmoke
-}
-}
-

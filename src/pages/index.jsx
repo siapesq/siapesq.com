@@ -88,16 +88,16 @@ export default function Index() {
                                             Inovação
                                         </h2>
                                         <p className="content">
-                                            1° colocada na pré-incubação de Rio Grande (2021)
+                                            Inteligência Artificial em Monitoramento Satelital
                                         </p>
                                     </div>
                                     <span className="tracejado"></span>
                                     <div>
                                         <h2 className="title">
-                                            Aceleração
+                                            Otimização
                                         </h2>
                                         <p className="content">
-                                            Pelo governo estadual do RS
+                                            Suporte para tomada de decisões
                                         </p>
                                     </div>
                                     <span className="tracejado tr2"></span>
@@ -106,7 +106,7 @@ export default function Index() {
                                             Impacto
                                         </h2>
                                         <p className="content">
-                                            Startup destaque no Innovativa
+                                            Resiliência Produtiva e Sustentabilidade
                                         </p>
                                     </div>
                                 </article>
@@ -115,7 +115,7 @@ export default function Index() {
                         }
                     </footer>
                 </section>
-                
+
                 <SectionHelps />
                 <SectionSiapreps />
                 <SectionPhytobloom />
