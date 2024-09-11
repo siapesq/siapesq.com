@@ -1,7 +1,9 @@
 import React from "react";
-import barcopesca from "../../imgs/barcopesca.svg";
+// import barcopesca from "../../imgs/barcopesca.svg";
 import textobarco from "../../imgs/textoBarco.svg";
 import bordabarco from "../../imgs/bordabarco.svg";
+// import mar from "../../imgs/marBarco.jpg";
+import onda from "../../videos/agua.MOV";
 import '../../style/siapreps/siapreps_barco/barco.css';
 
 
@@ -11,10 +13,16 @@ export default function SectionBarco(){
     return(
         <>
  <div className="containerPesca">
-      <img src={barcopesca} alt="barco" className="barcoPesca" />
-      <div className="textoPesca">
-        <p>Localização do Pescado</p>
-        </div>
+          {/* <div>
+            <center>
+            <video id="video" src={onda}  width="100%" height="300" controls="controls" autoplay="true" loop />
+            </center>
+          </div> */}
+      {/* <img src={barcopesca} alt="barco" className="barcoPesca" /> */}
+          <iframe id="tresd" src='https://my.spline.design/untitled-addd9cd5fae5d36c9a045b4b365c04ed/' frameborder='0' width='100%' height='1400px'></iframe>
+      {/* <div className="textoPesca"> */}
+         <p className="textoPesca">Localização do Pescado</p>
+        {/* </div> */}
         <div className="porcentagem">
           <img src={bordabarco} alt="" id="borda"/>
           <img src={textobarco} alt="" id="textoBarco" />
@@ -32,6 +40,7 @@ export default function SectionBarco(){
           </div> */}
         </div>
       </div>
+
         </>
     )
 }
