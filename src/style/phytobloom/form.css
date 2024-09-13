@@ -15,9 +15,8 @@
     column-gap: 50px;
   }
   
-  .form-content {
+  .contact-container .form-content {
     flex: 1 1 50%;
-  
   }
   
   #formPhytobloom {
@@ -25,14 +24,14 @@
     flex-direction: column;
     width: 100%;
     /* width: 50%; */
-     margin-left: -200px;
+     /* margin-left: -200px; */
     
   }
    
   #h1Phytobloom {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    margin-right: 500px;
+    /* margin-bottom: 30px; */
+    font-size: 3rem;
+    /* margin-right: 500px; */
   }
   
   .input-group {
@@ -79,7 +78,7 @@
 
 
     h1{
-      font-size: 3rem;
+      font-size: 5rem;
     }
    
   }
@@ -103,10 +102,15 @@
     .contact-container{
       align-items: start;
       padding: 100px 20px 20px 20px;
+      height: 70vh;
     }
 
     #textoform h1{
       font-size: 3rem;
+    }
+
+    .form-content, #formPhytobloom{
+      margin: 0;
     }
 
     #botaoPhytobloom{
@@ -140,6 +144,15 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+  .contact-container .form-content{
+    margin: 0;
+
+    #formPhytobloom{
+      margin: 0;
+    }
+  }
+
   .contact-container{
     background-color: #fff;
     padding: 2rem 0;
@@ -150,10 +163,11 @@
     #textoform{
       margin: 0;
 
-      h1{
+      #h1Phytobloom{
         font-size: 2rem;
         width: 75%;
         text-align: center;
+        margin: 0;
       }
     }
 
