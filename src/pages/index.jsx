@@ -21,6 +21,8 @@ import SectionSiapreps from "../components/sections/siapreps";
 import SectionHelps from "../components/sections/helps";
 import SectionPhytobloom from "../components/sections/phytobloom.jsx";
 import SectionFooter from "../components/sections/siaprepsFooter.jsx";
+import SectionParceiros from "../components/sections/parceiros.jsx"
+
 
 export default function Index() {
 
@@ -119,6 +121,7 @@ export default function Index() {
                 <SectionHelps />
                 <SectionSiapreps />
                 <SectionPhytobloom />
+                <SectionParceiros />
                 <SectionFooter />
             </div>
         </>
