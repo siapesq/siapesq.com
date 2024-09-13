@@ -406,6 +406,19 @@
   bottom: 0px;
 }
 
+@media screen and (max-width:1600px) {
+  .header_container .article_header_container #h2principal{
+    font-size: 2.6rem;
+  }
+
+  .header_container .article_header_container #pprincipal {
+    font-size: 1.4rem;
+    width: 37rem;
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .header_container {
     padding-bottom: 10%;
