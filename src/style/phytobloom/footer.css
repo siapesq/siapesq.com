@@ -95,6 +95,7 @@
   p {
     color: #fff;
     padding: 0 !important;
+    text-align: center;
   }
 
   /* #copyphytoblom{
@@ -121,25 +122,8 @@
 }
 
 @media (max-width: 1150px){
-
-  .footerSiapreps .social-media {
+  .footer-content .social-media {
     display: none;
     background-color: black;
   }
-
-}
-
-
-
-  
-
-
-
-@media (max-width: 1150px){
-
-  .footerSiapreps .social-media {
-    display: none;
-    background-color: black;
-  }
-
 }

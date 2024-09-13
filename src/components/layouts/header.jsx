@@ -18,7 +18,7 @@ export default function Header({page=''}) {
                             </NavLink>
                             <NavLink to={"/"}>
                                 <img src={
-                                window.innerWidth > 1150 ? (page === 'index' ? logo : logoBranca) 
+                                window.innerWidth > 1000 ? (page === 'index' ? logo : logoBranca) 
                                     : logoResponsivo
                                 } alt="Logo da siapesq" />
                             </NavLink>

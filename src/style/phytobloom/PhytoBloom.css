@@ -2,7 +2,7 @@
   text-align: center;
   background-image: url('/src/imgs/hidro.png');
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,8 @@
   /* margin-top: 60%; */
 
 
-  header,main{
+  header,
+  main {
     flex: 1 1 50%;
     font-size: 2rem;
   }
@@ -24,11 +25,13 @@
   } */
 
 .header {
-  .logo,.header-text{
+
+  .logo,
+  .header-text {
     flex: 1 1 40%;
   }
 
-  .header-text{
+  .header-text {
     flex: 2 2 60%;
   }
 }
@@ -66,12 +69,12 @@
     color: #00c853;
   } */
 
-.logo{
+.logo {
   display: flex;
   align-items: end;
 
 
-  div{
+  div {
     margin-left: 50px;
     width: 60%;
     padding: 20px;
@@ -79,7 +82,7 @@
     border-radius: 80px;
   }
 
-  img{
+  img {
     width: 75%;
   }
 }
@@ -95,6 +98,8 @@ main p {
 }
 
 .saiba-mais {
+  display: inline-block;
+  text-decoration: none;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -160,7 +165,8 @@ main p {
       height: 100%;
     }
 
-    header,main{
+    header,
+    main {
       font-size: 1rem;
     }
   }
@@ -189,7 +195,7 @@ main p {
   }
 
   .saiba-mais {
-    /* display: flex; */
+    text-decoration: none;
     color: whitesmoke;
     text-align: center;
 
@@ -202,4 +208,38 @@ main p {
 
     /* font-size: 1.5rem; */
   }
+}
+
+@media screen and (max-width: 500px) {
+  .container main {
+    p {
+      max-width: 100%;
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+
+  main{
+    margin: 0;
+  }
+
+  .container {
+
+    row-gap: 2rem;
+    min-height: auto;
+    background-image: none;
+    background-color: rgba(16, 70, 23, 0.77);
+
+    .header {
+      flex-flow: column-reverse nowrap;
+      flex-basis: auto;
+
+      row-gap: 2rem;
+    }
+
+    .header-text ul li{
+      font-size: 1rem;
+    }
+  }
+
 }

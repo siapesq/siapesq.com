@@ -15,6 +15,9 @@ export default function SectionPlataforma() {
           {/* <h1 id="verde">A plataforma PHYTOBLOOM VISION proporciona mapas detalhados e em tempo real, permitindo o monitoramento contínuo e a previsão da proliferação de plantas aquáticas. Nossos mapas facilitam a tomada de decisões e o planejamento de intervenções de maneira eficiente.</h1> */}
           <img src={texto} alt="texto" id="textoverde" />
           <button className="botaoPhytobloom"> Começar Agora</button>
+          <div>
+            <p>A plataforma SIAPREPS disponibiliza aos usuários mapas que permitem localizar e monitorar os cardumes em tempo real, mostrando as áreas com maior produtividade para diferentes espécies de pescado.</p>
+          </div>
         </article>
       </section>
     </>

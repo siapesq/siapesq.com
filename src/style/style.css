@@ -212,6 +212,10 @@
   position: relative;
 }
 
+.helps .helps_container .helps_article .title::first-letter{
+  margin-left: 10px;
+}
+
 .helps .helps_container .helps_article .title::before{
   content: "";
   background-image: url("../imgs/setasTitulo.png");
@@ -414,7 +418,7 @@
   }
 
   .header_container .article_header_container #h2principal{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .header_container .article_header_container #pprincipal{
@@ -433,14 +437,14 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1024px) {
   .header_container .footer_header_container {
     display: none;
   }
 
   .header_container .article_header_container {
     width: 100%;
-    padding-left: 20%;
+    padding-left: 5%;
     margin: 4rem 0 0 0;
 
     display: flex;
@@ -465,14 +469,15 @@
     }
 
     #h2principal{
-      width: 50%;
+      width: 100%;
       align-self: flex-start;
     }
 
     p {
-      width: 50%;
+      width: 100%;
       overflow: hidden;
       margin: 1rem 0;
+      font-size: 1.4rem;
     }
 
     .header_container .article_header_container img{
@@ -495,10 +500,12 @@
 
   .header .responsiveButton button {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(3, 4, 94, 1);
     width: 100%;
     height: 50px;
-    padding: 15px;
+    /* padding: 10px; */
     border-radius: 50px;
     color: white;
   }
@@ -509,5 +516,22 @@
 
   .helps h3{
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .helps .helps_container .helps_article .title::before{
+    width: 20px;
+    left: 2px;
+    top: 0px;
+
+  }
+
+  .header img {
+    width: 10rem;
+  }
+
+  .helps .helps_container .helps_article .title{
+    width: 100%;
   }
 }

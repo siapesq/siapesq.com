@@ -4,6 +4,7 @@ import iconChecked from "../../imgs/iconChecked.png";
 import tubarao from "../../imgs/tubarao.png";
 import peixes from "../../imgs/peixes.svg";
 import tubarao2 from "../../imgs/tubarao2.png";
+import { NavLink } from "react-router-dom";
 export default function SectionSiapreps() {
 
 
@@ -33,21 +34,28 @@ export default function SectionSiapreps() {
             </div>
             <div className="siapreps_bottom">
                 <div className="siapreps_texto">
-                    <h2>A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem</h2>
-                    <h2 style={{ marginLeft: '50px' }}>localizar  e monitorar os cardumes com maior facilidade e precisão</h2>
+                    { (window.innerWidth > 1024) ? (
+                        <>
+                        <h2>A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem</h2>
+                        <h2 style={{ marginLeft: '50px' }}>localizar  e monitorar os cardumes com maior facilidade e precisão</h2>
+                        </>
+                    ) : (
+                        <p>A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão</p>
+                    )
+                    }
                 </div>
                 <div className="btn_more">
                     <div id="siapreps-enviar">
                         { (window.innerWidth > 1366 ? (
                             <>
                                 <div className="tubaraoB"><img width="300px" src={tubarao2} alt=""/></div>
-                                <div><button id="button">Saiba mais</button></div>
+                                <div><NavLink to={"/siapreps"} id="button">Saiba mais</NavLink></div>
                                 <div className="peixes"><img width="300px" src={peixes} alt=""/></div>
                             </>
                         ): (
                             <>
                                 <img width="300px" src={tubarao2} alt="" className="tubaraoB" />
-                                <button id="button">Saiba mais</button>
+                                <NavLink to={"/siapreps"} id="button" className="saiba-mais">Saiba mais</NavLink>
                                 <img width="300px" src={peixes} alt="" className="peixes" />
                             </>
                         )

@@ -95,15 +95,15 @@
             row-gap: 2rem;
 
 
-            #phytobloom{
-                width: 750px;
+            #phytobloom {
+                width: 65%;
             }
 
-            #textophytobloom{
+            #textophytobloom {
                 width: 50%;
             }
 
-            button.fundoInvinsivel{
+            button.fundoInvinsivel {
                 margin: 0;
                 height: auto;
                 width: 220px;
@@ -142,6 +142,9 @@
 
 @media screen and (max-width: 1024px) {
 
+
+
+
     .headerContainer {
         position: relative;
         display: flex;
@@ -151,13 +154,13 @@
         .hidro {
             position: absolute;
             width: 100%;
-            height: 60rem;
+            /* height: 60rem; */
             z-index: -1;
 
 
         }
 
-        .article-header-container {
+        /* .article-header-container {
             margin: auto 80rem auto auto;
             display: grid;
             grid-template-columns: 5% 40%;
@@ -166,6 +169,11 @@
             gap: 1rem;
 
 
+        } */
+
+        .article-header-container {
+            margin: auto;
+            padding-left: 1.5rem;
         }
 
         #phytobloom {
@@ -190,6 +198,20 @@
             width: 150px;
             border-radius: 15px;
             border: 2px solid whitesmoke
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .headerContainer .article-header-container {
+        #textophytobloom {
+            width: 80%;
+        }
+
+        #phytobloom{
+            width: 90%;
         }
     }
 

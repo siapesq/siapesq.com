@@ -131,4 +131,40 @@
     height: 30px;
   }
 
+  .contact-container{
+    height: auto;
+    max-height: 100vh;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-container{
+    background-color: #fff;
+    padding: 2rem 0;
+    flex-flow: column nowrap;
+    min-height: auto;
+
+    #textoform{
+      margin: 0;
+
+      h1{
+        font-size: 2rem;
+        width: 75%;
+        text-align: center;
+      }
+    }
+
+    .form-content form{
+      margin: auto;
+
+      input, textArea{
+        border: 1px solid rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    h1,label{
+      color: black;
+    }
+  }
 }
