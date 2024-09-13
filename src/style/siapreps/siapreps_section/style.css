@@ -291,6 +291,9 @@
 
   .siapreps_logo{
     justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 0;
 
     div{
       width: 50%;

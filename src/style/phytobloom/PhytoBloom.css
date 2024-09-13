@@ -210,10 +210,10 @@ main p {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   .container main {
     p {
-      max-width: 100%;
+      max-width: 80%;
       font-size: 1rem;
       text-align: left;
     }
