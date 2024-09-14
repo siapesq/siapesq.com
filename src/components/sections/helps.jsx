@@ -22,8 +22,8 @@ export default function SectionHelps() {
                     <Card
                         id="card-1"
                         photo={satelite}
-                        title="Rastreamento de espécies"
-                        content="Podemos fazer o rastreamento da espécie animal que você pesquisa, basta entrar em contato!"
+                        title="Monitoramento Satelital"
+                        content="Utilizamos satélites para entregar aos nossos clientes informações precisas, e em tempo real"
                     />
                     <Card
                         id="card-2"
@@ -35,7 +35,7 @@ export default function SectionHelps() {
                         id="card-3"
                         photo={mapa}
                         title="Predição"
-                        content="Com base nos dados registrados no Copernicus podemos fazer predição via satellite de onde uma espécie animal pode estar localizada"
+                        content="Através de modelos preditivos, trazemos segurança, resiliência e sustentabilidade para os processos produtivos"
                     />
                 </div>
             </div>
