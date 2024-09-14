@@ -22,7 +22,7 @@ export default function Header({page=''}) {
                                     : logoResponsivo
                                 } alt="Logo da siapesq" />
                             </NavLink>
-                            <NavLink to={"/about"} className='links'>
+                            <NavLink to={"/off"} className='links'>
                                 SOBRE NÓS
                             </NavLink>
                             <NavLink to={"/contato"} className='links'>
