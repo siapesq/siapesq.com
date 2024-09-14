@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../imgs/siaprepsLogo.png";
 import logoBranca from "../../imgs/siaprepsLogoB.png";
 import logoResponsivo from "../../imgs/siapesq.png";
-// import "../../style/styles/header.css"
+import "../../style/styles/header.css"
 
 export default function Header({page=''}) {
     return (

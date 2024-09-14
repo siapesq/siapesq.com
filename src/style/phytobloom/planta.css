@@ -12,6 +12,7 @@
     .planta-imagem {
       /* width: 100%; */
       margin-right: 20px;
+      margin-left: -200px;
       flex: 1 1 20%;
     }
 

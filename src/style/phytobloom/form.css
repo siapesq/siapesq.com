@@ -89,12 +89,14 @@
   }
   
   #botaoPhytobloom{
-    width: 48px;
-    background-color: #004725;
-    margin-left: 93%;
+    width: 200px;
+    background-color: #00472500;
+    margin-left: 860px;
     color: #ffffff;
-    border-radius: 10px;
-    height: 30px;
+    border-color: #fff;
+    border-radius: 40px;
+    height: 80px;
+    font-size: 3em;
   }
 
   @media screen and (max-width: 1366px) {
