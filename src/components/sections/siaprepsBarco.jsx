@@ -19,7 +19,7 @@ export default function SectionBarco(){
             </center>
           </div> */}
       {/* <img src={barcopesca} alt="barco" className="barcoPesca" /> */}
-          <iframe id="tresd" src='https://my.spline.design/untitled-addd9cd5fae5d36c9a045b4b365c04ed/' frameborder='0' width='100%' height='1400px'></iframe>
+          <iframe id="tresd" src='https://my.spline.design/untitled-addd9cd5fae5d36c9a045b4b365c04ed/' frameborder='0' width='100%' height='1400px' title="Barco-3d"></iframe>
       {/* <div className="textoPesca"> */}
          <p className="textoPesca">Localização do Pescado</p>
         {/* </div> */}
