@@ -3,7 +3,7 @@ import React from "react";
 import textobarco from "../../imgs/textoBarco.svg";
 import bordabarco from "../../imgs/bordabarco.svg";
 // import mar from "../../imgs/marBarco.jpg";
-import onda from "../../videos/agua.MOV";
+//import onda from "../../videos/agua.MOV";
 import '../../style/siapreps/siapreps_barco/barco.css';
 
 
