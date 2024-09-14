@@ -68,7 +68,7 @@
 
 #siapreps-enviar .tubaraoB{
 
-  justify-content: left;
+  margin-right: auto;
 
   img{
     /* width: 100px; */
@@ -122,7 +122,7 @@
 }
 
 #siapreps-enviar .peixes{
-  justify-content: right;
+  margin-left: auto;
 }
 
 #button {
@@ -150,11 +150,15 @@
 }
 
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1800px) {
   .siapreps{
     position: relative;
     flex: 1 1 50%;
-    height: calc(100vh);
+    height: calc(90vh);
+
+    .siapreps_texto{
+      font-size: 1.5rem;
+    }
   }
 
   .tubarao {
@@ -338,5 +342,12 @@
     #button{
       margin: auto;
     }
+  }
+}
+
+
+@media screen and (max-width: 1366px) {
+  .siapreps .siapreps_texto{
+    font-size: 1rem;
   }
 }
