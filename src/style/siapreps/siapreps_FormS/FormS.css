@@ -14,16 +14,15 @@
   background-color: #233363;
 }
 
-.form-content {
+.contato-container .form-content {
   flex: 1 1 50%;
   margin-right: 50px;
-
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 

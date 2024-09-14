@@ -53,7 +53,7 @@ export default function Index() {
                 <section className="header_container">
                     <img src={mar} alt="Imagem de fundo" className="bg_img" />
                     <Header page={'index'} />
-                    {(window.innerWidth > 1150)
+                    {(window.innerWidth > 1024)
                         ? (
                             <article className="article_header_container">
                                 <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
