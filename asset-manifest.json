@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e97f52af.css",
-    "main.js": "/static/js/main.4a16d76b.js",
-    "static/media/barcopesca.svg": "/static/media/barcopesca.3a0847c3025b8823f5e6e7b6038b06ff.svg",
+    "main.css": "/static/css/main.455edba4.css",
+    "main.js": "/static/js/main.a2178545.js",
     "static/media/phytonbloom.svg": "/static/media/phytonbloom.7344fe15003fdba1af0481ba2760c099.svg",
     "static/media/hidro.png": "/static/media/hidro.bc90cb057985ab87c8c8.png",
     "static/media/cardume.png": "/static/media/cardume.b94e7373502d46ac1612.png",
     "static/media/mar.png": "/static/media/mar.dfc049dae70a2e3a1bb7.png",
     "static/media/equipe.svg": "/static/media/equipe.1748f907018b68fb330490bd868826a6.svg",
+    "static/media/marBarco.png": "/static/media/marBarco.f3ce1f04ce10a7a0fd48.png",
     "static/media/siaprepsMonitor.svg": "/static/media/siaprepsMonitor.70192c0e84c8af010cf9996021ec94bd.svg",
     "static/media/siapresqPc.svg": "/static/media/siapresqPc.06b36f04f28dacf1199200e8599458ce.svg",
     "static/media/Talles.svg": "/static/media/Talles.f545bb176b3b7b09ac06ce1c8b9805bc.svg",
     "static/media/section_siapreps_bg.png": "/static/media/section_siapreps_bg.98fc7fe2c1f48d1bec08.png",
     "static/media/siapreps.svg": "/static/media/siapreps.dcfc95b3ffd1a573ae2210428629ed6d.svg",
+    "static/media/parceiros.jpg": "/static/media/parceiros.feee42b80bdbfe6763f2.jpg",
     "static/media/planta.svg": "/static/media/planta.5c6dfa749fad8b6ec37087e0b41bf712.svg",
     "static/media/textoverde.svg": "/static/media/textoverde.4093f63433cfeb6536c21ba7cc5f8fe7.svg",
     "static/media/golfinho.svg": "/static/media/golfinho.ce087d4c7dce7ad4887074d9d26bdfb8.svg",
@@ -41,7 +42,6 @@
     "static/media/Merluza.png": "/static/media/Merluza.0b566e6492acf0665fcd.png",
     "static/media/lupa.svg": "/static/media/lupa.383d2f9210a84dc72b5417ed00624c98.svg",
     "static/media/Phytobloom.svg": "/static/media/Phytobloom.a637341b30f4673cf583178088f0df7f.svg",
-    "static/media/siapesqlogoazul.svg": "/static/media/siapesqlogoazul.489f2f85382b679b7ab42e0cc3928b90.svg",
     "static/media/satelite.svg": "/static/media/satelite.b85f7711756d2b84bd74d14850f8fc89.svg",
     "static/media/NomeSiapreps.svg": "/static/media/NomeSiapreps.7af2bf91acda46a2b78d001c0d223eaf.svg",
     "static/media/PhytobloomNome.svg": "/static/media/PhytobloomNome.d1d37dd24c1cd2c58b65ef450dafda86.svg",
@@ -49,11 +49,11 @@
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.9f51993090b3e4f09080715aab71fc2c.svg",
     "static/media/bordabarco.svg": "/static/media/bordabarco.02b463c14cc42d611a1f4e0ddebc6070.svg",
-    "main.e97f52af.css.map": "/static/css/main.e97f52af.css.map",
-    "main.4a16d76b.js.map": "/static/js/main.4a16d76b.js.map"
+    "main.455edba4.css.map": "/static/css/main.455edba4.css.map",
+    "main.a2178545.js.map": "/static/js/main.a2178545.js.map"
   },
   "entrypoints": [
-    "static/css/main.e97f52af.css",
-    "static/js/main.4a16d76b.js"
+    "static/css/main.455edba4.css",
+    "static/js/main.a2178545.js"
   ]
 }
