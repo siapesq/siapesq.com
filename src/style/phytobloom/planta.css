@@ -50,6 +50,12 @@
 }
 
 @media screen and (max-width: 1366px) {
+
+  .planta .monitoring-section {
+    margin: 0;
+    margin-left: 4rem;
+  }
+
   .planta {
     padding-top: 25px;
 
@@ -59,8 +65,12 @@
       /* padding: 10%; */
 
       .planta-imagem {
-        /* flex: 1 1 25%; */
         width: 50%;
+        /* margin-right: 20px; */
+        /* margin-left: -200px; */
+        /* flex: 1 1 20%; */
+
+        margin: 0;
       }
 
       .content {
@@ -141,14 +151,14 @@
     }
   }
 
-  .planta .monitoring-section{
+  .planta .monitoring-section {
     flex-flow: column nowrap;
 
-    .content h2{
+    .content h2 {
       font-size: 2rem;
     }
 
-    ul li{
+    ul li {
       flex-flow: column nowrap;
       justify-content: center;
       row-gap: 1rem;
@@ -158,14 +168,14 @@
 }
 
 @media screen and (max-width:500px) {
-  .planta .monitoring-section{
+  .planta .monitoring-section {
     flex-flow: column nowrap;
 
-    .content h2{
+    .content h2 {
       font-size: 2rem;
     }
 
-    ul li{
+    ul li {
       flex-flow: column nowrap;
       justify-content: center;
       row-gap: 1rem;
