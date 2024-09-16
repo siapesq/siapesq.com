@@ -150,15 +150,15 @@
     @media screen and (max-width: 1024px) {
 
         #imgsiapreps{
-            width: 20%;
+            width: 200%;
         }
 
 
         .botaoSiapreps{
             background-color: rgba(240, 248, 255, 0);
             color: whitesmoke;
-            margin-top: 500px;
-            margin-left: 1px;
+            margin-top: 400px;
+            margin-left: 75px;
             height: 40px;
             width: 250px;
             border-radius: 15px;
@@ -175,6 +175,7 @@
                 -ms-user-select: none; 
                 pointer-events: none; 
                 user-select: none;
+              
             }
         
             .cardume{
@@ -195,8 +196,8 @@
                 gap: 1rem;
             
                  #notesiapreps{
-                    width: 20rem;
-                  
+                    width: 25rem;
+                    grid-row: 1/3;
                     grid-column: 3/3;
                     margin-left: 20px;
                     align-self: end;
