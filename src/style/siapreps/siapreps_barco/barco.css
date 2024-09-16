@@ -1,8 +1,8 @@
 .containerPesca{
-  margin-top: -1px;
+
   background-image: url(/src/imgs/marBarco.png);
   background-repeat: no-repeat;
-  background-size: 100% 1400px;
+  background-size: 100% 1100px;
 
 }
 .Pesca {
@@ -116,25 +116,24 @@
 
 
     #borda{
-      margin-top: -200px;
+      margin-top: -700px;
       width: 800px;
       margin-left: 100px;
     }
     #textoBarco{
       width: 800px;
-      margin-top: -200px;
+      margin-top: -700px;
       margin-left: -800px;
       
     }
 
-    .barcoPesca {
-      width: 100%;
-      height: auto;
+    #tresd{
+      margin-top: -350px;
     }
     
     .textoPesca {
       position: absolute;
-      margin-top: -500px;
+      margin-top: -980px;
       width: 100%;
       height: 100%;
       display: flex;

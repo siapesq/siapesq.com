@@ -8,14 +8,15 @@
   .botaoSiapreps{
     background-color: rgba(240, 248, 255, 0);
     color: whitesmoke;
-    margin-top: 500px;
-    margin-left: 110px;
+    margin-top: 600px;
+    margin-left: 90px;
     height: 80px;
     width: 250px;
     border-radius: 15px;
     border: 2px solid whitesmoke;
     font-size: 2em;
     border-radius: 40px;
+    
 }
 
 
@@ -31,7 +32,7 @@
     .cardume{
         position: absolute;
         width: 100%;
-        height: auto;
+        height: 955px;
         z-index: -1;
       
         
@@ -46,9 +47,9 @@
         gap: 1rem;
     
          #notesiapreps{
-            width: 38rem;
+            width: 150%;
             grid-row: 1/3;
-            grid-column: 20/40;
+            grid-column: 30/40;
             margin-left: 2rem;
             align-self: end;
         }  
@@ -148,8 +149,8 @@
 
     @media screen and (max-width: 1024px) {
 
-        /* #imgsiapreps{
-            width: 250%;
+        #imgsiapreps{
+            width: 20%;
         }
 
 
@@ -157,11 +158,13 @@
             background-color: rgba(240, 248, 255, 0);
             color: whitesmoke;
             margin-top: 500px;
-            margin-left: 88px;
-            height: 50px;
-            width: 150px;
+            margin-left: 1px;
+            height: 40px;
+            width: 250px;
             border-radius: 15px;
-            border: 2px solid whitesmoke
+            border: 2px solid whitesmoke;
+            font-size: 2em;
+            border-radius: 40px;
         }
         
         
@@ -181,9 +184,9 @@
                 z-index: -1;
               
                 
-            } */
+            } 
         
-            /* .articleHeaderContainer{
+             .articleHeaderContainer{
                 margin: auto 80rem auto auto;
                 display: grid;
                 grid-template-columns: 5% 40%;
@@ -192,10 +195,10 @@
                 gap: 1rem;
             
                  #notesiapreps{
-                    width: 38rem;
-                    grid-row: 1/3;
-                    grid-column: 2/40;
-                    margin-left: 400px;
+                    width: 20rem;
+                  
+                    grid-column: 3/3;
+                    margin-left: 20px;
                     align-self: end;
                 }  
               
@@ -215,5 +218,5 @@
                     font-size: 1.5rem;
                     color: #fff;
                 } 
-            } */
+            }
     }

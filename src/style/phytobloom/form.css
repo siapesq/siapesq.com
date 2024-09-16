@@ -133,18 +133,19 @@ h1 {
 
 @media screen and (max-width: 1024px) {
 
-  #botaoPhytobloom {
-    width: 48px;
-    background-color: #004725;
-    margin-left: 83%;
+  #botaoPhytobloom{
+    width: 100px;
+    background-color: #00472500;
+   align-items: center;
     color: #ffffff;
     border-radius: 10px;
-    height: 30px;
+    height: 60px;
   }
 
   .contact-container {
     height: auto;
     max-height: 100vh;
+  
   }
 
 }
@@ -160,7 +161,7 @@ h1 {
   }
 
   .contact-container {
-    background-color: #fff;
+    background-color: #27742B;
     padding: 2rem 0;
     flex-flow: column nowrap;
     align-items: center;
@@ -188,7 +189,7 @@ h1 {
 
     h1,
     label {
-      color: black;
+      color: #fff;
     }
   }
 }

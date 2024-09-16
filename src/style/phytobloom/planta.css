@@ -118,6 +118,7 @@
       .planta-imagem {
         width: 40%;
         /* margin-top: -400px; */
+        align-items: center;
       }
 
       .content {

@@ -133,9 +133,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #textoverde, .botaoPhytobloom{
-        display: none;
-    }
+ 
     .plataforma div{
         display: block;
     }

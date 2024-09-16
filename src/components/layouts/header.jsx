@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../imgs/siaprepsLogo.png";
+import logo from "../../imgs/siapesqlogo.svg";
 import logoBranca from "../../imgs/siaprepsLogoB.png";
 import logoResponsivo from "../../imgs/siapesq.png";
 import "../../style/styles/header.css"
