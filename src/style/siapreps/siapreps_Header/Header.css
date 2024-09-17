@@ -8,7 +8,7 @@
   .botaoSiapreps{
     background-color: rgba(240, 248, 255, 0);
     color: whitesmoke;
-    margin-top: 600px;
+    margin-top: 400px;
     margin-left: 90px;
     height: 80px;
     width: 250px;
@@ -149,8 +149,9 @@
 
     @media screen and (max-width: 1024px) {
 
+        
         #imgsiapreps{
-            width: 200%;
+            width: 260%;
         }
 
 
@@ -158,13 +159,12 @@
             background-color: rgba(240, 248, 255, 0);
             color: whitesmoke;
             margin-top: 400px;
-            margin-left: 75px;
-            height: 40px;
-            width: 250px;
-            border-radius: 15px;
-            border: 2px solid whitesmoke;
+            margin-left: 70px;
+            height: 50px;
+            width: 300px;
+            border: 3px solid whitesmoke;
             font-size: 2em;
-            border-radius: 40px;
+            border-radius: 500px;
         }
         
         
@@ -181,14 +181,14 @@
             .cardume{
                 position: absolute;
                 width: 100%;
-                height: 100em;
+                height: 50em;
                 z-index: -1;
               
                 
             } 
         
              .articleHeaderContainer{
-                margin: auto 80rem auto auto;
+                margin: -10px 80rem auto auto;
                 display: grid;
                 grid-template-columns: 5% 40%;
                 grid-template-rows: 40% 50%;
@@ -196,11 +196,11 @@
                 gap: 1rem;
             
                  #notesiapreps{
-                    width: 25rem;
-                    grid-row: 1/3;
-                    grid-column: 3/3;
-                    margin-left: 20px;
-                    align-self: end;
+                    width: 30rem;
+                    grid-row: 3/3;
+                    grid-column: 1/3;
+                    margin-top: -500px;
+                    margin-left: 530px;
                 }  
               
                 #siapreps{
