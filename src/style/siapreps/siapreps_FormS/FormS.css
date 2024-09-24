@@ -11,10 +11,10 @@
   padding: 20px;
   height: 100vh;
   color: white;
-  background-color: #233363;
+  background-color: #04517B;
 }
 
-.form-content {
+.contato-container .form-content {
   flex: 1 1 50%;
   margin-right: 50px;
 
@@ -23,7 +23,7 @@
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 
@@ -78,7 +78,7 @@ textarea {
 }
 
 .peixe-logo img {
-  width: 50%;
+  width: 25%;
   justify-content: end;
 }
 
@@ -87,7 +87,7 @@ h1 {
 }
 
 #peixetext {
-  font-size: 5rem;
+  font-size: 3rem;
   max-width: 75%;
 }
 

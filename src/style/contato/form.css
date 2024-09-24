@@ -1,96 +1,198 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #27742B;
+  padding: 20px;
+  height: 100vh;
+  color: white;
+  column-gap: 50px;
+}
+
+.contact-container .form-content {
+  flex: 1 1 50%;
+}
+
+#formPhytobloom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* width: 50%; */
+   /* margin-left: -200px; */
   
+}
+ 
+#h1Phytobloom {
+  /* margin-bottom: 30px; */
+  font-size: 3rem;
+  /* margin-right: 500px; */
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-item label {
+  margin-bottom: 5px;
+}
+
+.input-item input,
+.input-item textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  min-height: 50px;
+}
+
+.input-group .input-item {
+  flex: 1;
+}
+
+
+
+textarea {
+  height: 150px;
+}
+
+
+#textoform{
+  display: flex;
+  justify-content: center;
+
+  flex: 1 1 50%;
+  margin-left: 5rem;
+
+
+  h1{
+    font-size: 4rem;
   }
+ 
+}
+
+h1{
+  color: white;
   
-  .contactcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #04517B;
-    padding: 20px;
-    height: 100vh;
-    color: white;
-    margin-top: -10%;
-  }
-  
-  .form-content {
-    flex: 1;
-    margin-right: 50px;
-    
-  }
-  
-  .formContato {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-left: 50%;
-  }
-  
-  h1 {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    
-  }
-  
-  .input-group {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .input-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  .input-item label {
-    margin-bottom: 5px;
-  }
-  
-  .input-item input,
-  .input-item textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-  }
-  
-  .input-group .input-item {
-    flex: 1;
-  }
-  
-  .input-group .input-item:first-child {
-    margin-right: 20px;
-  }
-  
-  textarea {
-    height: 150px;
+}
+
+#botaoPhytobloom{
+  width: auto;
+  font-size: 1.5rem;
+  height: auto;
+  padding: 5px 20px;
+
+  background-color: #00472500;
+  color: #ffffff;
+
+  border: 1px solid white;
+  border-radius: 50px;
+
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1366px) {
+
+  .contact-container{
+    align-items: start;
+    padding: 100px 20px 20px 20px;
+    height: 90vh;
   }
 
+  #textoform h1{
+    font-size: 3rem;
+  }
+
+  .form-content, #formPhytobloom{
+    margin: 0;
+  }
+
+  #botaoPhytobloom{
+    width: auto;
+    background-color: #004725;
+    /* margin-left: 89%; */
+    color: #ffffff;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+ 
+#botaoPhytobloom{
+  /* width: 48px; */
+  width: auto;
+  background-color: #004725;
+  margin-left: 83%;
+  color: #ffffff;
+  border-radius: 10px;
+  /* height: 30px; */
+  height: auto;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.contact-container{
+  height: auto;
+  max-height: 100vh;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+.contact-container .form-content{
+  margin: 0;
+
+  #formPhytobloom{
+    margin: 0;
+  }
+}
+
+.contact-container{
+  background-color: #fff;
+  padding: 2rem 0;
+  flex-flow: column nowrap;
+  align-items: center;
+  min-height: auto;
 
   #textoform{
-    display: flex;
-    justify-content: center;
-   
-  }
-  
-  h1{
-    color: white;
+    margin: 0;
 
-    
+    #h1Phytobloom{
+      font-size: 2rem;
+      width: 75%;
+      text-align: center;
+      margin: 0;
+    }
   }
-  
-  #botao{
-    width: 200px;
-    height: 80px;
-    background-color: #03055e00;
-    margin-left:510px;
-    color: #ffffff;
-    border-radius: 40px;
-    border-color: #ffffff;
-    font-size: 3em;
-   
+
+  .form-content form{
+    margin: auto;
+
+    input, textArea{
+      border: 1px solid rgba(0, 0, 0, 0.4);
+    }
   }
+
+  h1,label{
+    color: black;
+  }
+}
+}

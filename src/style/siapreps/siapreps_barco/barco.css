@@ -1,59 +1,78 @@
-.containerPesca{
-  margin-top: -1px;
+.containerPesca {
   background-image: url(/src/imgs/marBarco.png);
   background-repeat: no-repeat;
-  background-size: 100% 1400px;
+  /* background-size: 100% 1400px; */
+  background-size: 100% 100%;
 
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+
+  padding-top: 25px;
 }
+
 .Pesca {
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* .barcoPesca {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* .barcoPesca {
     width: 100%;
     height: auto;
     margin-top: -120px;
   } */
-  
-  #tresd{
-    margin-top: -250px;
-  }
-  .textoPesca {
-    position: absolute;
-    margin-top: -1100px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 6em;
-    color: #fff;
 
-  }
-  
-  .porcentagem{
-    display: flex;
-    
-  }
+#tresd {
+  margin-top: -250px;
+}
 
-  #borda{
-    margin-top: -500px;
-    margin-left: 150px;
-  }
-  #textoBarco{
-  
- margin-top: -500px;
-    
-    margin-left: -1550px;
-  }
+.textoPesca {
+  /* position: absolute; */
+  /* margin-top: -1100px; */
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
 
-  #video{
-    margin-top: 1000px;
-  }
-  
-  /* .textoporcentagem {
+}
+
+/* .porcentagem {
+  display: flex;
+} */
+
+#borda {
+  /* margin-top: -500px; */
+  /* margin-left: 150px; */
+
+  width: 90%;
+
+
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+}
+
+#textoBarco {
+  /* margin-top: -500px; */
+  /* margin-left: -1550px; */
+  width: 90%;
+
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+}
+
+#video {
+  margin-top: 1000px;
+}
+
+/* .textoporcentagem {
     text-align: center;
     max-width: 200px;
     margin-top: -250px;
@@ -70,86 +89,86 @@
     color: #fff;
   }
    */
-   @media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
 
-    #borda{
-      margin-top: -300px;
-      width: 1000px;
-      margin-left: 200px;
-    }
-    #textoBarco{
-      width: 1000px;
-      margin-top: -300px;
-      margin-left: -1000px;
-      
-    }
+  /* #borda {
+    margin-top: -300px;
+    width: 1000px;
+    margin-left: 200px;
+  }
 
-    .barcoPesca {
-      width: 100%;
-      height: auto;
-    }
-    
-    .textoPesca {
-      position: absolute;
-      margin-top: -700px;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 4em;
-      color: #fff;
-  
-    }
-    
-    .porcentagem{
-      display: flex;
-      
-    }
-  
+  #textoBarco {
+    width: 1000px;
+    margin-top: -300px;
+    margin-left: -1000px;
 
+  } */
 
-   }
+  .barcoPesca {
+    width: 100%;
+    height: auto;
+  }
+
+  /* .textoPesca {
+    position: absolute;
+    margin-top: -700px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4em;
+    color: #fff;
+
+  } */
+
+  .porcentagem {
+    display: flex;
+
+  }
 
 
-   @media screen and (max-width: 1024px) {
+
+}
 
 
-    #borda{
-      margin-top: -200px;
-      width: 800px;
-      margin-left: 100px;
-    }
-    #textoBarco{
-      width: 800px;
-      margin-top: -200px;
-      margin-left: -800px;
-      
-    }
+@media screen and (max-width: 1024px) {
 
-    .barcoPesca {
-      width: 100%;
-      height: auto;
-    }
-    
-    .textoPesca {
-      position: absolute;
-      margin-top: -500px;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 3em;
-      color: #fff;
-  
-    }
-    
-    .porcentagem{
-      display: flex;
-      
-    }
 
-        /* modificaçoes para objeto 3d em 1024px ficar responsivo*/
-   }
-  
+  /* #borda {
+    margin-top: -200px;
+    width: 800px;
+    margin-left: 100px;
+  }
+
+  #textoBarco {
+    width: 800px;
+    margin-top: -200px;
+    margin-left: -800px;
+
+  }
+
+  .barcoPesca {
+    width: 100%;
+    height: auto;
+  }
+
+  .textoPesca {
+    position: absolute;
+    margin-top: -500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3em;
+    color: #fff;
+
+  } */
+
+  /* .porcentagem {
+    display: flex;
+  } */
+
+  /* modificaçoes para objeto 3d em 1024px ficar responsivo*/
+}

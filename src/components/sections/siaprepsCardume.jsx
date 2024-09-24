@@ -48,7 +48,7 @@ const Carrossel = () => {
   return (
     <div className="carrossel-container">
       <h2 className="cardumeh2">Veja as principais espécies rastreáveis</h2>
-      <h2 className="cardumeh2">Tenha praticidade e eficiencia para atividade pesqueira. Te mostramos a localização do peixe.</h2>
+      <h3 className="cardumeh3">Tenha praticidade e eficiencia para atividade pesqueira. Te mostramos a localização do peixe.</h3>
       <div className="carrossel">
         <button className="arrow left" onClick={prevSlide}>
           &#8249;
@@ -71,10 +71,10 @@ const Carrossel = () => {
     <br /><br />
       {/* <h2 className="cardumeh2">Obs: Nós filtramos áreas com menor probabilidade de haver animais proibidos de pesca, como tubarões, baleias, e tartarugas</h2> */}
       <br /><br />
-      <h2 className='cardumeh2'>Nossas indicações levam em consideração a restrição de áreas de capturas onde habitam:</h2>
-      <br />
-      <br />
-      
+      <h2 className='cardumeh2'>Espécies Protegidas que evitamos a captura!</h2>
+      <h3 className="cardumeh3">Nossas indicações levam em consideração a restrição de áreas de capturas onde habitam:</h3>
+      {/* <br /> */}
+      {/* <br /> */}
         <div className="card-container">
           <div className="card">
             <h2 className="textopeixe">Baleia Jubarte</h2>

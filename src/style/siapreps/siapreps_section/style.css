@@ -150,8 +150,42 @@
 }
 
 
-@media screen and (max-width: 1800px) {
-  .siapreps{
+@media screen and (max-width: 1740px) and (min-width: 1367px) {
+
+  .siapreps_logo{
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .header_container .article_header_container{
+    gap: 2rem 2rem;
+  }
+
+  .header_container .article_header_container #h2principal{
+    font-size: 2.5rem;
+  }
+
+  .siapreps_texto{
+    font-size: 1.3rem;
+  }
+
+  .list-column ul li{
+    font-size:24px;
+    margin-left: 100px;
+  }
+
+  .list{
+    margin: auto;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 1366px) {
+.siapreps{
     position: relative;
     flex: 1 1 50%;
     height: calc(90vh);

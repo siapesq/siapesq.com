@@ -7,24 +7,30 @@ import bordabarco from "../../imgs/bordabarco.svg";
 import '../../style/siapreps/siapreps_barco/barco.css';
 
 
-export default function SectionBarco(){
+export default function SectionBarco() {
 
-    
-    return(
-        <>
- <div className="containerPesca">
-          {/* <div>
+
+  return (
+    <>
+      <div className="containerPesca">
+        {/* <div>
             <center>
             <video id="video" src={onda}  width="100%" height="300" controls="controls" autoplay="true" loop />
             </center>
           </div> */}
-      {/* <img src={barcopesca} alt="barco" className="barcoPesca" /> */}
-          <iframe id="tresd" src='https://my.spline.design/untitled-addd9cd5fae5d36c9a045b4b365c04ed/' frameborder='0' width='100%' height='1400px' title="Barco-3d"></iframe>
-      {/* <div className="textoPesca"> */}
-         <p className="textoPesca">Localização do Pescado</p>
+        {/* <img src={barcopesca} alt="barco" className="barcoPesca" /> */}
+        {/* <iframe id="tresd" src='https://my.spline.design/untitled-addd9cd5fae5d36c9a045b4b365c04ed/' frameborder='0' width='100%' height='1400px' title="Barco-3d"></iframe> */}
+        {/* <div className="textoPesca"> */}
+
+
+        <p className="textoPesca">Localização do Pescado</p>
+
+        {/* MUDANDO O LUGAR DO iframe */}
+        <iframe id="tresd" src='https://my.spline.design/untitled-addd9cd5fae5d36c9a045b4b365c04ed/' frameborder='0' width='100%' height='1400px' title="Barco-3d"></iframe>
+
         {/* </div> */}
         <div className="porcentagem">
-          <img src={bordabarco} alt="" id="borda"/>
+          <img src={bordabarco} alt="" id="borda" />
           <img src={textobarco} alt="" id="textoBarco" />
           {/* <div className="textoporcentagem">
             <h2>3%</h2>
@@ -41,6 +47,6 @@ export default function SectionBarco(){
         </div>
       </div>
 
-        </>
-    )
+    </>
+  )
 }

@@ -1,11 +1,11 @@
-.headerContainer{
+section.headerContainer {
     position: relative;
     display: flex;
     flex-direction: column;
+    height: auto;
+}
 
-  }
-  
-  .botaoSiapreps{
+.botaoSiapreps {
     background-color: rgba(240, 248, 255, 0);
     color: whitesmoke;
     margin-top: 500px;
@@ -14,65 +14,69 @@
     width: 250px;
     border-radius: 15px;
     border: 2px solid whitesmoke;
-    font-size: 2em;
+    font-size: 1.6em;
+    padding: 10px;
     border-radius: 40px;
 }
 
 
-  #notesiapreps{
-        -webkit-user-drag: none;
-        -webkit-touch-callout: none; 
-        -moz-user-select: none; 
-        -ms-user-select: none; 
-        pointer-events: none; 
-        user-select: none;
+#notesiapreps {
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cardume {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+
+}
+
+.articleHeaderContainer {
+
+    width: 100%;
+
+    margin: auto 80rem auto auto;
+    display: grid;
+    grid-template-columns: 5% 40%;
+    grid-template-rows: 40% 50%;
+    color: whitesmoke;
+    gap: 0.5rem;
+
+    #notesiapreps {
+        width: 38rem;
+        grid-row: 1/3;
+        grid-column: 20/40;
+        margin-left: 2rem;
+        align-self: end;
     }
 
-    .cardume{
-        position: absolute;
-        width: 100%;
-        height: auto;
-        z-index: -1;
-      
-        
+    #siapreps {
+        font-size: 100px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 10rem;
+        align-self: end;
+        color: #fff;
     }
 
-    .articleHeaderContainer{
-        margin: auto 80rem auto auto;
-        display: grid;
-        grid-template-columns: 5% 40%;
-        grid-template-rows: 40% 50%;
-        color: whitesmoke;
-        gap: 1rem;
-    
-         #notesiapreps{
-            width: 38rem;
-            grid-row: 1/3;
-            grid-column: 20/40;
-            margin-left: 2rem;
-            align-self: end;
-        }  
-      
-        #siapreps{
-            font-size: 100px;
-            grid-column: 2/3;
-            grid-row: 1/2;
-            width: 10rem;
-            align-self: end;
-            color: #fff;
-        }
-
-        #textosiapreps{
-            grid-column: 2/3;
-            grid-row: 2/3;
-            width: 37rem ;
-            font-size: 2rem;
-            color: #fff;
-        } 
+    #textosiapreps {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 37rem;
+        font-size: 2rem;
+        color: #fff;
     }
+}
 
 
-    /* @media screen and (max-width: 1600px) {
+/* @media screen and (max-width: 1600px) {
 
         #imgsiapreps{
             width: 250%;
@@ -145,10 +149,82 @@
     } */
 
 
+@media screen and (max-width: 1920px) {
 
-    @media screen and (max-width: 1024px) {
+    .botaoSiapreps {
+        margin-left: 95px;
+    }
 
-        /* #imgsiapreps{
+    .articleHeaderContainer #notesiapreps {
+        height: 32rem;
+    }
+
+    .articleHeaderContainer {
+        gap: 0.2rem;
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    h1#siapreps img {
+        width: 700px;
+    }
+
+    .articleHeaderContainer #notesiapreps{
+        height: 28rem;
+        width: 34rem;
+    }
+}
+
+
+/* @media screen and (max-width: 1050px) {
+
+    .headerContainer article.articleHeaderContainer{
+
+        margin: 4rem 0 0 4rem !important;
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: start;
+        row-gap: 20px;
+
+        margin: 0;
+    }
+
+    .articleHeaderContainer #siapreps{
+        width: auto;
+        align-self: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .articleHeaderContainer #siapreps img{
+        width: 75%;
+    }
+    
+    .articleHeaderContainer #notesiapreps{
+        order: 5;
+        align-self: auto;
+        margin: 0 0 0 10rem;
+        
+        
+        height: 20rem;
+        width: auto;
+    }
+
+    .articleHeaderContainer .botaoSiapreps{
+        margin: 0;
+    }
+
+} */
+
+
+
+
+
+/* @media screen and (max-width: 1024px) {
+
+    /* #imgsiapreps{
             width: 250%;
         }
 
@@ -182,8 +258,8 @@
               
                 
             } */
-        
-            /* .articleHeaderContainer{
+
+/* .articleHeaderContainer{
                 margin: auto 80rem auto auto;
                 display: grid;
                 grid-template-columns: 5% 40%;
@@ -215,5 +291,6 @@
                     font-size: 1.5rem;
                     color: #fff;
                 } 
-            } */
-    }
+            }
+}
+*/
