@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c9e5dbc4.css",
-    "main.js": "/static/js/main.1e2a4506.js",
+    "main.js": "/static/js/main.8eddc7a7.js",
     "static/media/phytonbloom.svg": "/static/media/phytonbloom.7344fe15003fdba1af0481ba2760c099.svg",
     "static/media/hidro.png": "/static/media/hidro.bc90cb057985ab87c8c8.png",
     "static/media/cardume.png": "/static/media/cardume.b94e7373502d46ac1612.png",
@@ -31,7 +31,7 @@
     "static/media/Atum Olhudo BAT.png": "/static/media/Atum Olhudo BAT.4f507ebb133f57aff81c.png",
     "static/media/Atum YellowFin.png": "/static/media/Atum YellowFin.b6e612460134cd5b0830.png",
     "static/media/Tainha.png": "/static/media/Tainha.475482b4d8aaf01ea2e4.png",
-    "static/media/siaprepsLogoB.png": "/static/media/siaprepsLogoB.19ab8ba5d9be0b883e76.png",
+    "static/media/siapesqLogoB.png": "/static/media/siapesqLogoB.19ab8ba5d9be0b883e76.png",
     "static/media/Abrótea.png": "/static/media/Abrótea.2a6aea6747bf112e18ad.png",
     "static/media/Sardinha.png": "/static/media/Sardinha.3eb235685b1b3fe33956.png",
     "static/media/Atum Albacora.png": "/static/media/Atum Albacora.8469ace72817205ea093.png",
@@ -42,6 +42,7 @@
     "static/media/Merluza.png": "/static/media/Merluza.0b566e6492acf0665fcd.png",
     "static/media/lupa.svg": "/static/media/lupa.383d2f9210a84dc72b5417ed00624c98.svg",
     "static/media/Phytobloom.svg": "/static/media/Phytobloom.a637341b30f4673cf583178088f0df7f.svg",
+    "static/media/siapesqlogoazul.svg": "/static/media/siapesqlogoazul.489f2f85382b679b7ab42e0cc3928b90.svg",
     "static/media/satelite.svg": "/static/media/satelite.b85f7711756d2b84bd74d14850f8fc89.svg",
     "static/media/NomeSiapreps.svg": "/static/media/NomeSiapreps.7af2bf91acda46a2b78d001c0d223eaf.svg",
     "static/media/PhytobloomNome.svg": "/static/media/PhytobloomNome.d1d37dd24c1cd2c58b65ef450dafda86.svg",
@@ -50,10 +51,10 @@
     "static/media/wave.svg": "/static/media/wave.9f51993090b3e4f09080715aab71fc2c.svg",
     "static/media/bordabarco.svg": "/static/media/bordabarco.02b463c14cc42d611a1f4e0ddebc6070.svg",
     "main.c9e5dbc4.css.map": "/static/css/main.c9e5dbc4.css.map",
-    "main.1e2a4506.js.map": "/static/js/main.1e2a4506.js.map"
+    "main.8eddc7a7.js.map": "/static/js/main.8eddc7a7.js.map"
   },
   "entrypoints": [
     "static/css/main.c9e5dbc4.css",
-    "static/js/main.1e2a4506.js"
+    "static/js/main.8eddc7a7.js"
   ]
 }
