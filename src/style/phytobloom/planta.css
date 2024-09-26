@@ -108,6 +108,7 @@
       .planta-imagem {
         width: 40%;
         /* margin-top: -400px; */
+        margin: 0;
       }
 
       .content {
@@ -141,14 +142,14 @@
     }
   }
 
-  .planta .monitoring-section{
+  .planta .monitoring-section {
     flex-flow: column nowrap;
 
-    .content h2{
+    .content h2 {
       font-size: 2rem;
     }
 
-    ul li{
+    ul li {
       flex-flow: column nowrap;
       justify-content: center;
       row-gap: 1rem;
@@ -158,14 +159,20 @@
 }
 
 @media screen and (max-width:500px) {
-  .planta .monitoring-section{
-    flex-flow: column nowrap;
 
-    .content h2{
+  .planta .monitoring-section {
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .planta-imagem {
+      margin: 0;
+    }
+
+    .content h2 {
       font-size: 2rem;
     }
 
-    ul li{
+    ul li {
       flex-flow: column nowrap;
       justify-content: center;
       row-gap: 1rem;

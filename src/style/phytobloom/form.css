@@ -186,3 +186,9 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .contact-container{
+    margin: 0 5px;
+  }
+}

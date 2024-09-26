@@ -548,3 +548,17 @@
     width: 100%;
   }
 }
+
+button{
+  border: 1px solid black;
+}
+
+@media screen and (max-width:500px){
+  .header nav img{
+    width: 6rem;
+  }
+
+  .header .responsiveButton button{
+    font-size: 0.6rem;
+  }
+}
