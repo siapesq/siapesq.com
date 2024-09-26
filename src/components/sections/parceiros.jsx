@@ -18,7 +18,7 @@ import '../../style/principal/parceiros.css';
 // import govrio from "../../imgs/Governo Rio.svg"
 // import uerj from "../../imgs/UERJ.svg"
 // import seas from "../../imgs/SEAS.svg"
-import parceiros from "../../imgs/parceiros.jpg"
+import parceiros from "../../imgs/parceiros.svg"
 
 
 function Partners() {
