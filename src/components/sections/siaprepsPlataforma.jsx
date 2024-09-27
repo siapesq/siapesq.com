@@ -14,7 +14,7 @@ export default function SectionPlataforma(){
                 <img id="plataforma" src={siapreps} alt="Imagem de platforma siapreps" />
                 {/* <h1 id="azulzinha">A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão.</h1> */}
                 <img src={texto} alt="" id="textoazul" />
-                <button className="fundoInvinsivel"> Começar Agora</button> 
+                <button className="fundoInvinsivel2"> Começar Agora</button> 
                 </article>
                 </section>
         </>

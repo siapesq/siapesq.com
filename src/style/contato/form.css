@@ -24,63 +24,7 @@
   flex-direction: column;
   width: 100%;
   /* width: 50%; */
-   /* margin-left: -200px; */
-  
-}
- 
-#h1Phytobloom {
-  /* margin-bottom: 30px; */
-  font-size: 3rem;
-  /* margin-right: 500px; */
-}
-
-.input-group {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.input-item label {
-  margin-bottom: 5px;
-}
-
-.input-item input,
-.input-item textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  width: 100%;
-  min-height: 50px;
-}
-
-.input-group .input-item {
-  flex: 1;
-}
-
-
-
-textarea {
-  height: 150px;
-}
-
-
-#textoform{
-  display: flex;
-  justify-content: center;
-
-  flex: 1 1 50%;
-  margin-left: 5rem;
-
-
-  h1{
-    font-size: 4rem;
-  }
- 
+  /* margin-left: -200px; */
 }
 
 h1{
@@ -172,8 +116,15 @@ h1{
   align-items: center;
   min-height: auto;
 
-  #textoform{
-    margin: 0;
+  
+#textoform{
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  h1{
+    color: white;
 
     #h1Phytobloom{
       font-size: 2rem;
@@ -182,17 +133,44 @@ h1{
       margin: 0;
     }
   }
-
-  .form-content form{
-    margin: auto;
-
-    input, textArea{
-      border: 1px solid rgba(0, 0, 0, 0.4);
-    }
+  
+  #botao{
+    width: 200px;
+    height: 80px;
+    background-color: #03055e00;
+    margin-left:510px;
+    color: #ffffff;
+    border-radius: 40px;
+    border-color: #ffffff;
+    font-size: 3em;
+   
   }
 
-  h1,label{
-    color: black;
+  @media screen and (max-width: 1024px) {
+
+    .contactcontainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #04517B;
+      padding: 20px;
+      height: 150vh;
+      color: white;
+      margin-top: -20%;
+    }
+
+    #botao{
+      width: 120px;
+      height: 50px;
+      background-color: #03055e00;
+      margin-left:150px;
+      color: #ffffff;
+      border-radius: 40px;
+      border-color: #ffffff;
+      font-size: 2em;
+     
+    }
+
   }
 }
 }

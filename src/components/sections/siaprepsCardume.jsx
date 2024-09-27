@@ -69,12 +69,10 @@ const Carrossel = () => {
       <div>
     </div>
     <br /><br />
-      {/* <h2 className="cardumeh2">Obs: Nós filtramos áreas com menor probabilidade de haver animais proibidos de pesca, como tubarões, baleias, e tartarugas</h2> */}
-      <br /><br />
-      <h2 className='cardumeh2'>Espécies Protegidas que evitamos a captura!</h2>
-      <h3 className="cardumeh3">Nossas indicações levam em consideração a restrição de áreas de capturas onde habitam:</h3>
-      {/* <br /> */}
-      {/* <br /> */}
+      <h2 className='cardumeh2'>Nossas indicações levam em consideração a restrição de áreas de capturas onde habitam:</h2>
+      <br />
+      <br />
+      
         <div className="card-container">
           <div className="card">
             <h2 className="textopeixe">Baleia Jubarte</h2>
