@@ -1,48 +1,9 @@
 .plataforma{
     width: 100%;
 }
-
-#plataforma {
-    width: 100%;
-    height: 100%;
-    /* margin-top: -3.2%; */
-}
-
-.fundoInvinsivel {
-    /* margin-left: -125px; */
-    /* margin-top: 650px; */
-
-    background-color: rgba(240, 248, 255, 0);
-    color: whitesmoke;
-    height: 50px;
-    width: 125px;
-
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid whitesmoke;
-
-    position: absolute;
-    bottom: 10%;
-    right: 7%;
-}
-
-#textoazul {
-    display: flex;
-    margin-top: 75px;
-    margin-left: -1200px;
-}
-
-@media screen and (max-width: 1366px) {
-
-    #textoazul {
-       position: absolute;
-       top: 20px;
-       right: 20px;
-        width: 800px;
-    }
-
-    .plataforma article .fundoInvinsivel {
-        /* margin-left: 1100px; */
+   
+    .fundoInvinsivel2{
+        margin-left: -100px;
         background-color: rgba(240, 248, 255, 0);
         color: whitesmoke;
 
@@ -57,7 +18,6 @@
         top: 400px;
     }
 
-}
 
 
 @media screen and (max-width: 1024px) {
@@ -80,4 +40,58 @@
         border: 1px solid whitesmoke
     } */
 
+    #textoazul{
+        display: flex;
+        margin-top: 100px;
+        margin-left: -1200px;
+    }
+
+    @media screen and (max-width: 1366px) {
+
+        #textoazul{
+            display: flex;
+            margin-top: -600px;
+            margin-left: 400px;
+            width: 800px;
+        }
+
+        .fundoInvinsivel{
+            margin-left: 1100px;
+            background-color: rgba(240, 248, 255, 0);
+            color: whitesmoke;
+            margin-top: 50px;
+            height: 50px;
+            width: 100px;
+            border-radius: 15px;
+            border: 1px solid whitesmoke
+        }
+
+    }
+
+
+    @media screen and (max-width: 1024px) {
+
+        #plataforma{
+            width: 100%;
+            margin-top: -253px;
+    }
+        #textoazul{
+            display: flex;
+            margin-top: -400px;
+            margin-left: 400px;
+            width: 550px;
+        }
+
+        .fundoInvinsivel2{
+            margin-left: 850px;
+            background-color: rgba(240, 248, 255, 0);
+            color: whitesmoke;
+            margin-top: 50px;
+            height: 50px;
+            width: 100px;
+            border-radius: 15px;
+            border: 1px solid whitesmoke
+        }
+
+    }
 }
