@@ -484,6 +484,7 @@
     #h2principal{
       width: 100%;
       align-self: flex-start;
+      font-size: 1.3rem;
     }
 
     p {

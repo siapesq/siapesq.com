@@ -211,9 +211,14 @@ main p {
 }
 
 @media screen and (max-width: 1024px) {
+
+  .saiba-mais{
+    margin-top: 20px;
+  }
+
   .container main {
     p {
-      max-width: 80%;
+      max-width: 100%;
       font-size: 1rem;
       text-align: left;
     }
@@ -239,6 +244,7 @@ main p {
 
     .header-text ul li{
       font-size: 1rem;
+      text-align: left;
     }
   }
 
