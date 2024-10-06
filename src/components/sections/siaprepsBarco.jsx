@@ -26,7 +26,10 @@ export default function SectionBarco() {
         <p className="textoPesca">Localização do Pescado</p>
 
         {/* MUDANDO O LUGAR DO iframe */}
-        <iframe id="tresd" src='https://my.spline.design/untitled-35300080a17e90a458b089454c264606/' frameborder='0' width='100%' height='1250px' title="Barco-3d"></iframe>
+        
+        <div class="divBarco">
+          <iframe id="tresd" src='https://my.spline.design/untitled-35300080a17e90a458b089454c264606/' frameborder='0' width='100%' height='100%' title="Barco-3d"></iframe>
+        </div>
 
         {/* </div> */}
         {/* <div className="porcentagem">
