@@ -88,6 +88,11 @@
     }
 }
 
+@media screen and (max-width: 1920px) and (min-width: 1366px) {
+    .headerContainer{
+        height: 55rem;
+    }
+}
 
 @media screen and (max-width: 1366px) {
 
