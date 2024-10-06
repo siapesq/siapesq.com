@@ -71,6 +71,27 @@
             border-radius: 15px;
             border: 2px solid whitesmoke */
     }
+
+    .fundoInvinsivel a{
+
+        text-decoration: none;
+        color: inherit;
+    
+        /* Fazendo o A ocupar toda a área do button
+            E alinha o texto dentro do A
+        */
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1366px) {
+    .headerContainer{
+        height: 55rem;
+    }
 }
 
 

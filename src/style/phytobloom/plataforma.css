@@ -53,6 +53,21 @@
     border: 1px solid whitesmoke
 }
 
+.botaoPhytobloom a{
+
+    text-decoration: none;
+    color: inherit;
+
+    /* Fazendo o A ocupar toda a área do button
+        E alinha o texto dentro do A
+    */
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 #textoverde {
     display: flex;
     position: absolute;

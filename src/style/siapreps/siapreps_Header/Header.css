@@ -18,6 +18,23 @@ section.headerContainer {
     font-size: 1.6em;
     padding: 10px;
     border-radius: 40px;
+
+    z-index: 2;
+}
+
+.botaoSiapreps a{
+
+    text-decoration: none;
+    color: inherit;
+
+    /* Fazendo o A ocupar toda a área do button
+        E alinha o texto dentro do A
+    */
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -162,6 +179,15 @@ section.headerContainer {
 
     .articleHeaderContainer {
         gap: 0.2rem;
+    }
+}
+
+@media screen and (min-width: 1366px),
+screen and (max-height: 768px) 
+{
+
+    .headerContainer{
+        height: 55rem;
     }
 
 }
