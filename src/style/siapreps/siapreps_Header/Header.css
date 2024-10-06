@@ -182,16 +182,6 @@ section.headerContainer {
     }
 }
 
-@media screen and (min-width: 1366px),
-screen and (max-height: 768px) 
-{
-
-    .headerContainer{
-        height: 55rem;
-    }
-
-}
-
 @media screen and (max-width: 1366px) {
     h1#siapreps img {
         width: 700px;
