@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b16b224a.css",
-    "main.js": "/static/js/main.e68f6372.js",
+    "main.css": "/static/css/main.a7c0e6bb.css",
+    "main.js": "/static/js/main.ecd1c622.js",
     "static/media/phytonbloom.svg": "/static/media/phytonbloom.7344fe15003fdba1af0481ba2760c099.svg",
     "static/media/hidro.png": "/static/media/hidro.bc90cb057985ab87c8c8.png",
     "static/media/cardume.png": "/static/media/cardume.b94e7373502d46ac1612.png",
@@ -16,7 +16,6 @@
     "static/media/textoverde.svg": "/static/media/textoverde.4093f63433cfeb6536c21ba7cc5f8fe7.svg",
     "static/media/golfinho.svg": "/static/media/golfinho.ce087d4c7dce7ad4887074d9d26bdfb8.svg",
     "static/media/textoazul.svg": "/static/media/textoazul.e8e798064c56e862a2a92b5021f17eaa.svg",
-    "static/media/textoBarco.svg": "/static/media/textoBarco.3c14c300b1715b4234021a4934649bec.svg",
     "static/media/baleia.svg": "/static/media/baleia.6baa69b6f45cf25123a5e89df0b2a353.svg",
     "static/media/siapesq.png": "/static/media/siapesq.a366a4bdbe25d849e5c0.png",
     "static/media/tartaruga.svg": "/static/media/tartaruga.104eab1ce1accf4a14560e58a167bdba.svg",
@@ -46,12 +45,11 @@
     "static/media/logo.svg": "/static/media/logo.186611bde626fab59893b7db859a5771.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.9f51993090b3e4f09080715aab71fc2c.svg",
-    "static/media/bordabarco.svg": "/static/media/bordabarco.02b463c14cc42d611a1f4e0ddebc6070.svg",
-    "main.b16b224a.css.map": "/static/css/main.b16b224a.css.map",
-    "main.e68f6372.js.map": "/static/js/main.e68f6372.js.map"
+    "main.a7c0e6bb.css.map": "/static/css/main.a7c0e6bb.css.map",
+    "main.ecd1c622.js.map": "/static/js/main.ecd1c622.js.map"
   },
   "entrypoints": [
-    "static/css/main.b16b224a.css",
-    "static/js/main.e68f6372.js"
+    "static/css/main.a7c0e6bb.css",
+    "static/js/main.ecd1c622.js"
   ]
 }
