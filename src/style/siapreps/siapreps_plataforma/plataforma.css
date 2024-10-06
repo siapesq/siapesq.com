@@ -26,6 +26,21 @@
     right: 7%;
 }
 
+.fundoInvinsivel2 a{
+
+    text-decoration: none;
+    color: inherit;
+
+    /* Fazendo o A ocupar toda a área do button
+        E alinha o texto dentro do A
+    */
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 #textoazul {
     display: flex;
     margin-top: 75px;

@@ -6,6 +6,7 @@ section.headerContainer {
     height: auto;
 }
 
+
 .botaoSiapreps {
     background-color: rgba(240, 248, 255, 0);
     color: whitesmoke;
@@ -18,6 +19,27 @@ section.headerContainer {
     font-size: 1.6em;
     padding: 10px;
     border-radius: 40px;
+
+    /* O P Esta sobrepondo o button(que esta fora da sua area de renderização padrão com o position absolute) 
+        Resolvendo a sobreposição com z-index
+    */
+
+    z-index: 2;
+}
+
+.botaoSiapreps a{
+
+    text-decoration: none;
+    color: inherit;
+
+    /* Fazendo o A ocupar toda a área do button
+        E alinha o texto dentro do A
+    */
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 

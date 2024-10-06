@@ -20,7 +20,7 @@ export default function SectionHeader(){
                     <p id="textophytobloom">
                     Com PHYTOBLOOM VISION é possível identificar a proliferação de plantas aquáticas garantindo uma gestão eficiente e oportuna da vegetação.
                      </p>
-                     <button className="fundoInvinsivel"> Começar Agora</button> 
+                     <button className="fundoInvinsivel"> <a href="https://wa.me/555399503671" target="_blank" rel="noopener noreferrer">Começar Agora</a></button> 
                 </article>
             </section>
    
