@@ -55,7 +55,7 @@ export default function SectionSiapreps() {
                         ): (
                             <>
                                 <img width="300px" src={tubarao2} alt="" className="tubaraoB" />
-                                <NavLink to={"/siapreps"} id="button" className="saiba-mais">Saiba mais</NavLink>
+                                <NavLink to={"#cardume"} id="button" className="saiba-mais">Saiba mais</NavLink>
                                 <img width="300px" src={peixes} alt="" className="peixes" />
                             </>
                         )

@@ -12,7 +12,7 @@ export default function SectionHeader(){
     return(
         <>
          <section className="headerContainer">
-                <img src={cardume} alt="Imagem de fundo" className="cardume"/>
+                <img src={cardume} alt="Imagem de fundo" className="cardume" id="cardume"/>
                 <Header/>
                 <article className="articleHeaderContainer">
                 <h1 id="siapreps" >
