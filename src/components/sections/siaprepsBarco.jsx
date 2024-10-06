@@ -1,7 +1,7 @@
 import React from "react";
 // import barcopesca from "../../imgs/barcopesca.svg";
-import textobarco from "../../imgs/textoBarco.svg";
-import bordabarco from "../../imgs/bordabarco.svg";
+// import textobarco from "../../imgs/textoBarco.svg";
+// import bordabarco from "../../imgs/bordabarco.svg";
 // import mar from "../../imgs/marBarco.jpg";
 // import onda from "../../videos/agua.MOV";
 import '../../style/siapreps/siapreps_barco/barco.css';
@@ -26,12 +26,12 @@ export default function SectionBarco() {
         <p className="textoPesca">Localização do Pescado</p>
 
         {/* MUDANDO O LUGAR DO iframe */}
-        <iframe id="tresd" src='https://my.spline.design/untitled-addd9cd5fae5d36c9a045b4b365c04ed/' frameborder='0' width='100%' height='1400px' title="Barco-3d"></iframe>
+        <div className="divBarco"><iframe id="tresd" src='https://my.spline.design/untitled-35300080a17e90a458b089454c264606/' frameborder='0' width='100%' height='100%' title="Barco-3d"></iframe></div>
 
         {/* </div> */}
-        <div className="porcentagem">
+        {/* <div className="porcentagem">
           <img src={bordabarco} alt="" id="borda" />
-          <img src={textobarco} alt="" id="textoBarco" />
+          <img src={textobarco} alt="" id="textoBarco" /> */}
           {/* <div className="textoporcentagem">
             <h2>3%</h2>
             <p>do total de Gases de Efeito Estufa (GEEs) emitidos globalmente</p>
@@ -44,7 +44,7 @@ export default function SectionBarco() {
             <h2>Maior</h2>
             <p>Parte do impacto do setor de navegação é atribuído a grandes empresas</p>
           </div> */}
-        </div>
+        {/* </div> */}
       </div>
 
     </>
