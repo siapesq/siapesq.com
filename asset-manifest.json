@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.84963bb4.css",
-    "main.js": "/static/js/main.ecd1c622.js",
+    "main.css": "/static/css/main.fc312983.css",
+    "main.js": "/static/js/main.c3d775c7.js",
     "static/media/phytonbloom.svg": "/static/media/phytonbloom.7344fe15003fdba1af0481ba2760c099.svg",
     "static/media/hidro.png": "/static/media/hidro.bc90cb057985ab87c8c8.png",
     "static/media/cardume.png": "/static/media/cardume.b94e7373502d46ac1612.png",
     "static/media/mar.png": "/static/media/mar.dfc049dae70a2e3a1bb7.png",
+    "static/media/equipe.svg": "/static/media/equipe.1748f907018b68fb330490bd868826a6.svg",
     "static/media/marBarco.png": "/static/media/marBarco.f3ce1f04ce10a7a0fd48.png",
     "static/media/siaprepsMonitor.svg": "/static/media/siaprepsMonitor.70192c0e84c8af010cf9996021ec94bd.svg",
     "static/media/siapresqPc.svg": "/static/media/siapresqPc.06b36f04f28dacf1199200e8599458ce.svg",
     "static/media/parceiros.svg": "/static/media/parceiros.6cbdfef8d30d4a2ac61a2cc8fcd84649.svg",
+    "static/media/Talles.svg": "/static/media/Talles.f545bb176b3b7b09ac06ce1c8b9805bc.svg",
     "static/media/section_siapreps_bg.png": "/static/media/section_siapreps_bg.98fc7fe2c1f48d1bec08.png",
     "static/media/siapreps.svg": "/static/media/siapreps.dcfc95b3ffd1a573ae2210428629ed6d.svg",
     "static/media/planta.svg": "/static/media/planta.5c6dfa749fad8b6ec37087e0b41bf712.svg",
@@ -19,6 +21,7 @@
     "static/media/baleia.svg": "/static/media/baleia.6baa69b6f45cf25123a5e89df0b2a353.svg",
     "static/media/siapesq.png": "/static/media/siapesq.a366a4bdbe25d849e5c0.png",
     "static/media/tartaruga.svg": "/static/media/tartaruga.104eab1ce1accf4a14560e58a167bdba.svg",
+    "static/media/siapesqq.svg": "/static/media/siapesqq.27bec490aae6b78eb88c2283a469ebd5.svg",
     "static/media/siaprepsLogo.png": "/static/media/siaprepsLogo.9fd30498d74f92defe46.png",
     "static/media/footerV2.png": "/static/media/footerV2.4082f515b16944ec4c0a.png",
     "static/media/Corvina .png": "/static/media/Corvina .66edbb414b3464c729ba.png",
@@ -45,11 +48,11 @@
     "static/media/logo.svg": "/static/media/logo.186611bde626fab59893b7db859a5771.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.9f51993090b3e4f09080715aab71fc2c.svg",
-    "main.84963bb4.css.map": "/static/css/main.84963bb4.css.map",
-    "main.ecd1c622.js.map": "/static/js/main.ecd1c622.js.map"
+    "main.fc312983.css.map": "/static/css/main.fc312983.css.map",
+    "main.c3d775c7.js.map": "/static/js/main.c3d775c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.84963bb4.css",
-    "static/js/main.ecd1c622.js"
+    "static/css/main.fc312983.css",
+    "static/js/main.c3d775c7.js"
   ]
 }
