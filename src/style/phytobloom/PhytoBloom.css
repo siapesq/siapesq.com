@@ -243,3 +243,14 @@ main p {
   }
 
 }
+
+@media screen and (max-width: 500px) {
+  .container main p{
+    max-width: none;
+    width: 90%;
+  }
+
+  .saiba-mais{
+    margin-top: 20px;
+  }
+}

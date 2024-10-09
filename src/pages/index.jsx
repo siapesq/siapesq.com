@@ -75,7 +75,7 @@ export default function Index() {
                                         Sistema de Inteligência Artificial em Pesquisa Ambiental
                                         Inovação em Rastreabilidade e Modelagem Ecológica. Otimização e Adequação ESG dos Setores Produtivos.
                                     </p>
-                                    <button>COMEÇAR</button>
+                                    <button><a href="https://wa.me/555399503671" target="_blank" rel="noopener noreferrer"> Começar</a></button>
                                 </div>
                                 <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
                             </article>

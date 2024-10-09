@@ -435,3 +435,18 @@
     }
   }
 }
+
+@media screen and (max-width:500px) {
+    .siapreps_logo div img{
+      width: 100%;
+      padding: 0;
+    }
+
+    .siapreps_logo div{
+      width: 75%;
+    }
+
+    .siapreps_texto p{
+      font-size: 1rem;
+    }
+}

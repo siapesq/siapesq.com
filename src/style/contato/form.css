@@ -174,3 +174,10 @@ h1{
   }
 }
 }
+
+
+@media screen and (max-width: 500px){
+  #botaoPhytobloom{
+    margin-left: auto;
+  }
+}
