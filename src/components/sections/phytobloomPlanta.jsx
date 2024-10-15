@@ -29,11 +29,11 @@ export default function SectionPlanta() {
                 </li>
                 <li>
                     <img src={binoculos} alt="" />
-                    <p>&nbsp;&nbsp;Monitora e prevê a proliferação de plantas aquáticas</p>
+                    <p>&nbsp;&nbsp;Monitora e prevê Desregulações Ambientais</p>
                 </li>
                 <li>
                     <img src={engrenagem} alt="" />
-                    <p>&nbsp;&nbsp;Gestão eficiente e oportuna da vegetação</p>
+                    <p>&nbsp;&nbsp;Gestão eficiente e oportuna dos corpos d’agua</p>
                 </li>
                 <li>
                     <img src={gestao} alt="" />

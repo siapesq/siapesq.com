@@ -94,6 +94,7 @@ main {
 main p {
   font-size: 1.2em;
   max-width: 75%;
+  font-weight: 700;
   margin: 0 auto;
 }
 
