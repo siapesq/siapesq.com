@@ -170,10 +170,11 @@
 
 @media screen and (max-width:500px) {
   .planta .monitoring-section {
+    margin: 0 auto;
     flex-flow: column nowrap;
 
     .content h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     ul li {
