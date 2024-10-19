@@ -4,7 +4,7 @@ import iconChecked from "../../imgs/iconChecked.png";
 import tubarao from "../../imgs/tubarao.png";
 import peixes from "../../imgs/peixes.svg";
 import tubarao2 from "../../imgs/tubarao2.png";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 export default function SectionSiapreps() {
 
 
@@ -49,13 +49,15 @@ export default function SectionSiapreps() {
                         { (window.innerWidth > 1366 ? (
                             <>
                                 <div className="tubaraoB"><img width="300px" src={tubarao2} alt=""/></div>
-                                <div><NavLink to={"/siapreps"} id="button">Saiba mais</NavLink></div>
+                                <div>
+                                    {/* <NavLink to={"/siapreps"} id="button">Saiba mais</NavLink>  */}
+                                <a href="/siapreps" id="button">Saiba mais</a></div>
                                 <div className="peixes"><img width="300px" src={peixes} alt=""/></div>
                             </>
                         ): (
                             <>
                                 <img width="300px" src={tubarao2} alt="" className="tubaraoB" />
-                                <NavLink to={"/siapreps"} id="button" className="saiba-mais">Saiba mais</NavLink>
+                                <a href="/siapreps" id="button">Saiba mais</a>
                                 <img width="300px" src={peixes} alt="" className="peixes" />
                             </>
                         )
