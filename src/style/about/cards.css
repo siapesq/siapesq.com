@@ -1,4 +1,99 @@
-.equipe2 {
+.cards{
+  width: 100%;
+}
+
+.cards .card{
+  width: 90%;
+  height: 400px;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  column-gap: 20px;
+  text-align: left;
+
+  margin: 20px auto;
+}
+
+.card img{
+  flex: 1 1 10%;
+  margin: 0;
+}
+
+.card div{
+  flex: 1 1 90%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  /* justify-content: center; */
+}
+
+.card div h1{
+  color: #233363;
+
+  font-size: 3rem;
+}
+
+/* .card div h1 sup{
+  color: #585858;
+  font-weight: 500;
+
+  font-size: 1.5rem;
+} */
+
+.card div h1 span{
+  color: #585858;
+  font-weight: 500;
+
+  font-size: 1.5rem;
+  position: relative;
+  top: -15px;
+}
+
+.card div p {
+  color: #010101;
+  font-size: 1.5rem;
+  /* text-align: justify; */
+  line-height: 35px;
+
+  width: 95%;
+}
+
+.cards .cardR{
+  flex-flow: row-reverse nowrap;
+  justify-content: center;
+  text-align: right;
+}
+
+.cards .cardR h1{
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+
+
+.cards .cardR div h1 span{
+  color: #585858;
+  font-weight: 500;
+  font-size: 1.5rem;
+  top: 20px;
+
+  order: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .equipe2 {
   border-radius: 10%;
   width: 25%;
   margin-left: 120px;
@@ -48,4 +143,4 @@
   margin: auto;
   padding-top: 30px;
   margin-right: 5rem;
-}
+} */

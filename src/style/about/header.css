@@ -1,36 +1,72 @@
 .headersobre{
-    background-color: #04517B;
+    /* background-color: #04517B; */
+    background: none;
+
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 35rem;
+
+    /* height: 35rem; */
+    height: 1100px;
 }
-.sistema-img{
-    max-width: 300px;
-    margin-right: 15rem;   
-    padding-top: 30px;
+
+.headersobre .aboutContainer{
+    background-color: #04517B;
+    height: 45rem;
 }
 
 .imagemsiapesq{
+    width: 100%;
+
+    
+    margin: 50px auto 20px auto;
+    /* margin: 40px auto; */
+    
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
     p{
         color: white;
-        max-width: 600px;
+        max-width: 500px;
+        font-size: 1.3rem;
+        line-height: 35px;
+        text-align: justify;
     }
 }
 
+.imagemsiapesq .sistema-img{
+    /* max-width: 300px; */
+    max-width: none;
+    width: 425px;
+
+    /* margin-right: 15rem;    */
+    /* padding-top: 30px; */
+
+    margin: 0;
+}
+/* 
+.imagemsiapesq .textoSobrenos{
+    flex: 0 0 50%;
+} */
+
 .imagem-equipe{
     width: 60rem;
-    display: block;
-    align-items: right;
+    /* display: block; */
+    /* align-items: right; */
+
     margin: 2rem auto;
 }
 
 .equipe{
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
     h1{
         color: #04517B;
-        text-align: center;
+        font-size: 3rem;
+        /* text-align: center; */
     }
 }

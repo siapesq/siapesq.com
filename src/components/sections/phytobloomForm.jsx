@@ -7,7 +7,7 @@ export default function SectionForm(){
     
     return(
         <>
-     <div className="contact-container">
+     <div className="contact-container phytobloomContact">
         <div id="textoform">
         <h1 id="h1Phytobloom">Entre em contato conosco!</h1>
         </div>
