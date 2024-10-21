@@ -48,8 +48,9 @@
 }
 
 .carrosselEquipe .carrossel .membroEquipe img{
-    width: 50%;
+    width: 115px;
     border-radius: 50%;
+    height: 130px;
     /* border: 3px solid #233363; */
 
     margin-bottom: 5px;
