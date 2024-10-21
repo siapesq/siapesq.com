@@ -13,7 +13,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        {/* <Route path="/teste" element={<About />} /> */}
         <Route path="/siapreps" element={<Siapreps />} />
         <Route path="/phytobloom" element={<Phytobloom />} />
         <Route path="/contato" element={<Contato />} />
