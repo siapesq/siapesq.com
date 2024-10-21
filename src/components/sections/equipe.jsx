@@ -9,14 +9,13 @@ import Hugo from "../../imgs/Hugo.png";
 function Carrosel({ membros }) {
 
     // const max = ((membros.length/6) * 1500);
-    let maxClicks= 1;
+    let maxClicks= membros.length/6;
 
     const effect = () => {
+
         const membro1 = document.querySelector('.membroEquipe:first-child');
         const computedStyle = getComputedStyle(membro1);
         const marginAtual = parseInt(computedStyle.marginLeft);
-
-        maxClicks++;
 
         // console.log(max, marginAtual, Math.abs(marginAtual) >= max)
 
@@ -31,7 +30,16 @@ function Carrosel({ membros }) {
             return;
         }
 
-        console.log(computedStyle.width);
+        // Configurando o slider para não haver quebra
+        // console.log((parseInt(computedStyle.width) * 6)*(maxClicks-1));
+        // console.log(Math.abs(marginAtual) >= (parseInt(computedStyle.width) * 6) * (maxClicks-1));
+        // console.log(Math.abs(marginAtual));
+
+        if(Math.abs(marginAtual - (parseInt(computedStyle.width) * 6)) > (parseInt(computedStyle.width) * 6) * (maxClicks-1)){
+            membro1.style.marginLeft= `0px`;    
+            return;
+        }
+
         membro1.style.marginLeft= `${marginAtual - parseInt(computedStyle.width) * 6}px`;
     }    
     
