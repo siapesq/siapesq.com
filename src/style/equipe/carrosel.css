@@ -1,0 +1,102 @@
+.carrosselEquipe{
+    /* height: 70vh; */
+
+    padding: 50px 0 0 0;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrosselEquipe .teamTitle{
+    color: #233363;
+    font-size: 3.5rem;
+}
+
+.carrosselEquipe .carrossel{
+
+    width: 90%;
+    margin: 30px auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+}
+
+.carrosselEquipe .carrossel ul{
+
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+
+    padding: 0 10px;
+}
+
+.carrosselEquipe .carrossel .membroEquipe{
+    flex: 0 0 17%;
+
+    max-width: 250px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.carrosselEquipe .carrossel .membroEquipe img{
+    width: 50%;
+    border-radius: 50%;
+    /* border: 3px solid #233363; */
+
+    margin-bottom: 5px;
+}
+
+.carrosselEquipe .carrossel .membroEquipe:first-child img{
+    border: 3px solid #233363;
+}
+
+.carrosselEquipe .carrossel .membroEquipe .nome{
+    color: #233363;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.carrosselEquipe .carrossel .membroEquipe .cargo{
+    width: 110px;
+    text-align: center;
+}
+
+.carrosselEquipe .botao {
+    background: #03045E;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 700;
+
+    height: 80px;
+    width: 250px;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    border-radius: 40px;
+
+    margin-top: 30px;
+    
+}
+
+.carrosselEquipe .botao a{
+
+    text-decoration: none;
+    color: inherit;
+
+    /* Fazendo o A ocupar toda a área do button
+        E alinha o texto dentro do A
+    */
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
