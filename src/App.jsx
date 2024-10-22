@@ -31,11 +31,11 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} /> */}
         <Route path="/siapreps" element={<Siapreps />} />
         <Route path="/phytobloom" element={<Phytobloom />} />
         <Route path="/contato" element={<Contato />} />
-        <Route path="*" element={<Index/>} />
+        {/* <Route path="*" element={<Index/>} /> */}
       </Routes>
     </BrowserRouter>
   )

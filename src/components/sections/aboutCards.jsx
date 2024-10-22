@@ -1,7 +1,11 @@
 import React from "react";
-import Talles from "../../imgs/Talles.svg";
 import '../../style/about/cards.css';
 import AboutCard from "../common/aboutCard";
+
+import Talles from "../../imgs/Talles.svg";
+import Patrick from '../../imgs/patrick2.png';
+import Hugo from  '../../imgs/hugo2.png';
+import Bruno from '../../imgs/bruno2.png';
 
 export default function SectionHead() {
     return (
@@ -12,13 +16,25 @@ export default function SectionHead() {
                     title: "Talles",
                     tag: "CEO",
                     img: Talles,
-                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque."
+                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
                 }} />
                 <AboutCard className="card cardR" content={{
                     title: "Talles",
                     tag: "CEO",
-                    img: Talles,
-                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque."
+                    img: Patrick,
+                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
+                }} />
+                <AboutCard className="card" content={{
+                    title: "Talles",
+                    tag: "CEO",
+                    img: Bruno,
+                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
+                }} />
+                <AboutCard className="card cardR" content={{
+                    title: "Talles",
+                    tag: "CEO",
+                    img: Hugo,
+                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
                 }} />
 
                 {/* <div className="card">
