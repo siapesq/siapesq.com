@@ -6,8 +6,25 @@
   justify-content: center;
 }
 
+/* Trocando a logo com base no container da página */
+.header .logoAzul, .header .logoResponsiva{
+  display: none;
+}
+
+.index .header .logoBranca, .index .header .logoResponsiva{
+  display: none;
+}
+
+.index .header .logoAzul{
+  display: block;
+}
+
 .header img {
   width: 14rem;
+}
+
+.header_container .article_header_container button{
+  display: none;
 }
 
 .header nav ul {
@@ -100,6 +117,20 @@
   padding: 15px;
   border-radius: 50px;
   color: white;
+}
+
+.header_container .article_header_container div button a{
+  text-decoration: none;
+  color: inherit;
+
+  /* Fazendo o A ocupar toda a área do button
+      E alinha o texto dentro do A
+  */
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .header_container .footer_header_container {
@@ -243,6 +274,8 @@
   justify-content: center;
   gap: 1rem;
   align-items: center;
+
+  width: auto;
 }
 
 .helps .helps_container .cards .card {
@@ -451,9 +484,23 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+  .header .logoBranca, .logoAzul{
+    display: none;
+  }
+
+  .header .logoResponsiva{
+    display: block;
+  }
+
   .header_container .footer_header_container {
     display: none;
   }
+
+  .header_container .bg_img{
+    height: 100%;
+  }
+
 
   .header_container .article_header_container {
     width: 100%;
@@ -484,7 +531,6 @@
     #h2principal{
       width: 100%;
       align-self: flex-start;
-      font-size: 1.3rem;
     }
 
     p {
@@ -498,6 +544,10 @@
       width: 50%;
     }
 
+  }
+
+  .helps .helps_container .helps_article{
+    flex-flow: column;
   }
 
   .header_container {
@@ -534,6 +584,25 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+  .helps .helps_container .helps_article .title {
+    font-size: 2rem;
+  }
+
+  .header_container .article_header_container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+  }
+
+  .header_container .article_header_container button{
+    display: block;
+  }
+
+  .header_container .article_header_container img{
+    order: 3;
+  }
+
   .helps .helps_container .helps_article .title::before{
     width: 20px;
     left: 2px;
@@ -548,6 +617,14 @@
   .helps .helps_container .helps_article .title{
     width: 100%;
   }
+
+  .index .header .logoAzul{
+    display: none;
+  }
+
+  .index .header .logoResponsiva{
+    display: block;
+  }
 }
 
 button{
@@ -556,10 +633,25 @@ button{
 
 @media screen and (max-width:500px){
   .header nav img{
-    width: 6rem;
+    width: 6.5rem;
   }
 
   .header .responsiveButton button{
     font-size: 0.6rem;
+  }
+
+  .header_container .bg_img{
+    height: 100%;
+  }
+
+  .header_container .article_header_container #h2principal{
+    font-size: 1.7rem;
+  }
+
+  .header_container .article_header_container p{
+    width: 90%;
+    overflow: hidden;
+    margin: 1rem 0;
+    font-size: 1.1rem;
   }
 }
