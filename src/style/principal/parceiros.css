@@ -13,8 +13,8 @@
 
 @media screen and (max-width: 1024px) {
   .parceiros img{
-    width: 100%;
+    width: 90%;
     height: 100%;
-    margin: 10px 0;
+    margin: 30px 0;
   }
 }
