@@ -138,6 +138,7 @@ main p {
 
       ul {
         list-style-type: none;
+        margin-top: 20px;
 
         li {
           display: flex;
@@ -214,7 +215,7 @@ main p {
 @media screen and (max-width: 1024px) {
   .container main {
     p {
-      max-width: 80%;
+      max-width: 90%;
       font-size: 1rem;
       text-align: left;
     }
@@ -232,7 +233,7 @@ main p {
     background-color: rgba(16, 70, 23, 0.77);
 
     .header {
-      flex-flow: column-reverse nowrap;
+      /* flex-flow: column-reverse nowrap; */
       flex-basis: auto;
 
       row-gap: 2rem;
@@ -245,13 +246,8 @@ main p {
 
 }
 
-@media screen and (max-width: 500px) {
-  .container main p{
-    max-width: none;
-    width: 90%;
-  }
-
-  .saiba-mais{
-    margin-top: 20px;
+@media screen and (max-width: 600px) {
+  .container .header{
+    flex-flow: column-reverse nowrap;
   }
 }
