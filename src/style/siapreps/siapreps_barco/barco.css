@@ -4,13 +4,28 @@
   background-repeat: no-repeat;
   background-size: 100% 1100px;
 
-  height: 100vh;
+  height: 65vh;
   width: 100%;
   position: relative;
 
 
   padding-top: 25px;
 }
+
+/* IMPROVISO PARA REMOVER A MARCA D'AGUA DO BARCO */
+@media screen and (max-height: 850px) {
+    .containerPesca{
+      height: 80vh;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .containerPesca{
+      height: 100vh;
+    }
+}
+
+/* IMPROVISO(ACIMA) */
 
 .Pesca {
   position: relative;
