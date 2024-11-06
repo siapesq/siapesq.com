@@ -74,9 +74,3 @@
   }
 
 }
-
-@media screen and (max-width: 500px)  {
-  #copy{
-    font-size: 0.6rem;
-  }
-}

@@ -2,7 +2,7 @@ import React from "react";
 import phytobloom from "../../imgs/Phytobloom.svg";
 import '../../style/phytobloom/PhytoBloom.css';
 import iconChecked from "../../imgs/iconChecked.png";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export default function SectionPhytobloom() {
@@ -37,7 +37,7 @@ export default function SectionPhytobloom() {
             monitorar a qualidade de corpos d águas continentais, prever eventos críticos
             de desregulação ambiental e subsidiar o manejo Socio-Ambiental
           </p>
-          <a href="/phytobloom" className="saiba-mais" >Saiba mais</a>
+          <NavLink to={"/phytobloom"} className="saiba-mais">Saiba mais</NavLink>
         </main>
       </div>
     </>
