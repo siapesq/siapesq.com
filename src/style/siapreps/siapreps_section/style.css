@@ -14,14 +14,6 @@
   flex-direction: column;
 }
 
-.siapreps_texto{
-  p{
-    font-size: 2.4rem;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-  }
-}
 
 .siapreps_container {
   /* height: 100%; */
@@ -79,7 +71,7 @@
   margin-right: auto;
 
   img{
-    width: 300px;
+    /* width: 100px; */
     height: 100px;
   }
 }
@@ -90,8 +82,6 @@
   font-size: 28px;
   justify-content: center;
   font-weight: bold;
-
-  max-width: 100%;
 }
 
 /* .btn_more{
@@ -135,10 +125,6 @@
   margin-left: auto;
 }
 
-#siapreps-enviar .peixes img{
-  width: 300px;
-}
-
 #button {
   /* background-color: transparent;
   width: 100px;
@@ -176,11 +162,11 @@
     }
   }
 
-  /* .siapreps_texto{
+  .siapreps_texto{
     h2{
       font-size: 2.4rem;
     }
-  } */
+  }
 
   .siapreps_logo{
     flex: 1 1 50%;
@@ -252,22 +238,6 @@
 
 
 @media screen and (max-width: 1366px) {
-
-  #siapreps-enviar .tubaraoB img{
-    bottom: 75px;
-    left: 75px;
-
-    width: 225px;
-    height: 80px;
-  }
-
-  #siapreps-enviar .peixes img{
-    right: 20px;
-    bottom: 20px;
-
-    width: 200px;
-  }
-
   .siapreps{
     position: relative;
     flex: 1 1 50%;
@@ -353,10 +323,10 @@
   }
   
   .siapreps_texto{
-    p{
-      font-size: 1.7rem;
+    h2{
+      font-size: 2rem;
     }
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   
   .siapreps_bottom .btn_more{
@@ -427,15 +397,14 @@
       justify-content: center;
 
       img{
-        padding: 0;
-        width: 90%;
+        width: 75%;
       }
     }
   }
 
   .siapreps_texto{
     p{
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       width: 75%;
       margin: auto;
     }
@@ -451,14 +420,13 @@
   }
 
   .siapreps_container {
-    /* flex-flow: column nowrap; */
-    /* row-gap: 1rem; */
-  }
-  
-   .tubarao img, .tubaraoB img, .peixes img{
-    display: none;
+    flex-flow: column nowrap;
+    row-gap: 1rem;
   }
 
+  .tubarao, .tubaraoB, .peixes{
+    display: none;
+  }
 
   #siapreps-enviar{
     justify-content: start;
@@ -468,14 +436,17 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .siapreps_container{
-    flex-flow: column nowrap;
-  }
+@media screen and (max-width:500px) {
+    .siapreps_logo div img{
+      width: 100%;
+      padding: 0;
+    }
 
-  .siapreps_texto p{
-    text-align: left;
-    width: 75%;
-    font-size: 1rem;
-  }
+    .siapreps_logo div{
+      width: 75%;
+    }
+
+    .siapreps_texto p{
+      font-size: 1rem;
+    }
 }

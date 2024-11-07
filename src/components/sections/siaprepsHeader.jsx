@@ -22,7 +22,7 @@ export default function SectionHeader(){
                     A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão
                      </p>
                     <img id="notesiapreps" src={siapresqPc} alt="Imagem de um notebook da siapreps" />
-                    <button className="botaoSiapreps"> <a href="https://wa.me/555399503671" target="_blank" rel="noopener noreferrer">Começar Agora</a></button> 
+                     <button className="botaoSiapreps"> <a href="https://wa.me/555399503671" target="_blank" rel="noopener noreferrer"> Começar Agora </a></button>
                 </article>
             </section>
    

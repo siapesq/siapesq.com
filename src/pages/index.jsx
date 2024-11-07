@@ -22,7 +22,6 @@ import SectionHelps from "../components/sections/helps";
 import SectionPhytobloom from "../components/sections/phytobloom.jsx";
 import SectionFooter from "../components/sections/siaprepsFooter.jsx";
 import SectionParceiros from "../components/sections/parceiros.jsx"
-import CarrosselEquipe from "../components/sections/equipe.jsx";
 
 
 export default function Index() {
@@ -54,17 +53,33 @@ export default function Index() {
                 <section className="header_container">
                     <img src={mar} alt="Imagem de fundo" className="bg_img" />
                     <Header page={'index'} />
-                    <article className="article_header_container">
-                        <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
-                        <h2 id="h2principal" >
-                            INOVAÇÃO TECNOLÓGICA ALIADA À SUSTENTILIDADE AMBIENTAL
-                        </h2>
-                        <p id="pprincipal">
-                            Sistema de Inteligência Artificial em Pesquisa Ambiental
-                            Inovação em Rastreabilidade e Modelagem Ecológica. Otimização e Adequação ESG dos Setores Produtivos.
-                        </p>
-                        <button>COMEÇAR</button>
-                    </article>
+                    {(window.innerWidth > 1024)
+                        ? (
+                            <article className="article_header_container">
+                                <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
+                                <h2 id="h2principal" >
+                                    INOVAÇÃO TECNOLÓGICA ALIADA À SUSTENTILIDADE AMBIENTAL
+                                </h2>
+                                <p id="pprincipal">
+                                    Sistema de Inteligência Artificial em Pesquisa Ambiental
+                                    Inovação em Rastreabilidade e Modelagem Ecológica. Otimização e Adequação ESG dos Setores Produtivos.
+                                </p>
+                            </article>
+                        ) : (
+                            <article className="article_header_container">
+                                <div>
+                                    <h2 id="h2principal" >
+                                        INOVAÇÃO TECNOLÓGICA ALIADA À SUSTENTILIDADE AMBIENTAL
+                                    </h2>
+                                    <p id="principal">
+                                        Sistema de Inteligência Artificial em Pesquisa Ambiental
+                                        Inovação em Rastreabilidade e Modelagem Ecológica. Otimização e Adequação ESG dos Setores Produtivos.
+                                    </p>
+                                    <button><a href="https://wa.me/555399503671" target="_blank" rel="noopener noreferrer"> Começar</a></button>
+                                </div>
+                                <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
+                            </article>
+                        )}
                     <footer className="footer_header_container">
                         <img src={window.innerWidth > 1366 ? wave : footerV2} alt="Ondas do rodapé" />
                         {(window.innerWidth > 1366) ?
@@ -106,7 +121,6 @@ export default function Index() {
                 <SectionHelps />
                 <SectionSiapreps />
                 <SectionPhytobloom />
-                {/* <CarrosselEquipe /> */}
                 <SectionParceiros />
                 <SectionFooter />
             </div>

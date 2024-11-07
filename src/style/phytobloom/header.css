@@ -72,11 +72,11 @@
             border: 2px solid whitesmoke */
     }
 
-    .fundoInvinsivel a {
+    .fundoInvinsivel a{
 
         text-decoration: none;
         color: inherit;
-
+    
         /* Fazendo o A ocupar toda a área do button
             E alinha o texto dentro do A
         */
@@ -89,11 +89,10 @@
 }
 
 @media screen and (max-width: 1920px) and (min-width: 1366px) {
-    .headerContainer {
+    .headerContainer{
         height: 55rem;
     }
 }
-
 
 @media screen and (max-width: 1366px) {
 
@@ -234,13 +233,13 @@
             font-size: 1.4rem;
         }
 
-        #phytobloom {
+        #phytobloom{
             width: 90%;
         }
     }
 
-    .headerContainer {
-        height: 40rem;
+    .headerContainer{
+        height: auto;
     }
 
 }

@@ -4,10 +4,17 @@ import SectionCards from "../components/sections/aboutCards";
 
 
 export default function About() {
-  return (
-    <>
-      <SectionHead />
-      <SectionCards />
-    </>
-  );
+    return (
+        <>
+       
+       <div>
+         <SectionHead/>
+       </div>
+       
+       <div>
+         <SectionCards />
+       </div>
+    
+        </>
+    );
 }

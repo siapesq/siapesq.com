@@ -17,9 +17,10 @@ export default function Header({page=''}) {
                                 PHYTOBLOOM
                             </NavLink>
                             <NavLink to={"/"}>
-                                <img src={logo} alt="Logo da siapesq na coloração azul" className="logoAzul"/>
-                                <img src={logoBranca} alt="Logo da siapesq na branca" className="logoBranca"/>
-                                <img src={logoResponsivo} alt="Logo da siapesq branca e com informações adicionais" className="logoResponsiva"/>
+                                <img src={
+                                window.innerWidth > 1000 ? (page === 'index' ? logo : logoBranca) 
+                                    : logoResponsivo
+                                } alt="Logo da siapesq" />
                             </NavLink>
                             <NavLink to={"/off"} className='links'>
                                 SOBRE NÓS
