@@ -88,8 +88,9 @@ function CarrosselEquipe() {
                     { nome: "Patrick", img: Patrick, cargo: "Leader Team & Dev" }
                 ]
             } />
-
-            <button className='botao'> <a href="#">Saiba Mais</a> </button>
+            
+            {/*  eslint-disable-next-line */}
+            <button className='botao'><a href="/">Saiba Mais</a></button>
         </div>
     );
 };

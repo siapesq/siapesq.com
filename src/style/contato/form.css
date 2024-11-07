@@ -62,9 +62,9 @@
   column-gap: 50px;
 } */
 
-/* .contact-container .form-content {
+.contact-container .form-content {
   flex: 1 1 50%;
-} */
+}
 
 #formPhytobloom {
   display: flex;
@@ -195,7 +195,7 @@ h1{
 
   @media screen and (max-width: 1024px) {
 
-    .contactContainer {
+    .contactcontainer {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -220,11 +220,4 @@ h1{
 
   }
 }
-}
-
-
-@media screen and (max-width: 500px){
-  #botaoPhytobloom{
-    margin-left: auto;
-  }
 }
