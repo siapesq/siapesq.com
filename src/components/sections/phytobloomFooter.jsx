@@ -17,7 +17,7 @@ export default function SectionFooter(){
             <a href="https://www.instagram.com/siapesq" target="_blank" rel="noopener noreferrer">
               <img src={insta} alt="" /> @siapesq
             </a>
-            <a href="https://api.whatsapp.com/send?phone=5553999503671" target="_blank" rel="noreferrer noopener">
+            <a href="https://api.whatsapp.com/send?phone=5553999503671">
               <img src={zap} alt="" /> (53) 99950-3671
             </a>
             <a href="mailto:siapesq@gmail.com">

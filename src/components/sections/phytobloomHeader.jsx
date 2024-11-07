@@ -18,7 +18,7 @@ export default function SectionHeader(){
                 {/* <iframe src='https://my.spline.design/untitled-0db1be3080710c809a983f6ac647274f/' frameborder='0' width='100%' height='100%'></iframe> */}
             
                     <p id="textophytobloom">
-                    Com a PHYTOBLOOM VISION identificamos Desregulações Ambientais em Reservatórios Hídricos, propiciando o Manejo Ambiental para Evitar Eventos Críticos!
+                    Com PHYTOBLOOM VISION é possível identificar a proliferação de plantas aquáticas garantindo uma gestão eficiente e oportuna da vegetação.
                      </p>
                      <button className="fundoInvinsivel"> <a href="https://wa.me/555399503671" target="_blank" rel="noopener noreferrer">Começar Agora</a></button> 
                 </article>

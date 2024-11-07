@@ -6,8 +6,25 @@
   justify-content: center;
 }
 
+/* Trocando a logo com base no container da página */
+.header .logoAzul, .header .logoResponsiva{
+  display: none;
+}
+
+.index .header .logoBranca, .index .header .logoResponsiva{
+  display: none;
+}
+
+.index .header .logoAzul{
+  display: block;
+}
+
 .header img {
   width: 14rem;
+}
+
+.header_container .article_header_container button{
+  display: none;
 }
 
 .header nav ul {
@@ -58,7 +75,7 @@
   }
 }
 
-.header_container .article_header_container {
+/* .header_container .article_header_container {
   padding-top: 1rem;
   width: 100%;
   margin: auto 75rem auto auto;
@@ -67,8 +84,21 @@
   grid-template-rows: 50% 50%;
   color: #FFFFFF;
   gap: 2rem 2rem;
-  margin-top: 40px;
+  margin-top: 40px; 
+} */
+
+.header_container .article_header_container {
+  grid-gap: 2rem 2rem;
+  color: #fff;
+  display: grid;
+  gap: 2rem 2rem;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 50% 50%;
+  margin: 40px 75rem auto auto;
+  padding-top: 1rem;
+  width: 100%;
 }
+
 
 .header_container .article_header_container img {
   width: 28rem;
@@ -212,7 +242,7 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 6rem;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .helps .helps_container .helps_article {
@@ -257,6 +287,8 @@
   justify-content: center;
   gap: 1rem;
   align-items: center;
+
+  width: auto;
 }
 
 .helps .helps_container .cards .card {
@@ -264,6 +296,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  flex: 1 1 30%;
 
   height: 100%;
   width: 15rem;
@@ -422,7 +456,7 @@
 
 @media screen and (max-width:1600px) {
   .header_container .article_header_container #h2principal{
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 
   .header_container .article_header_container #pprincipal {
@@ -465,9 +499,23 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+  .header .logoBranca, .logoAzul{
+    display: none;
+  }
+
+  .header .logoResponsiva{
+    display: block;
+  }
+
   .header_container .footer_header_container {
     display: none;
   }
+
+  .header_container .bg_img{
+    height: 100%;
+  }
+
 
   .header_container .article_header_container {
     width: 100%;
@@ -513,6 +561,10 @@
 
   }
 
+  .helps .helps_container .helps_article{
+    flex-flow: column;
+  }
+
   .header_container {
     content: "";
     height: 100%;
@@ -547,6 +599,25 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+  .helps .helps_container .helps_article .title {
+    font-size: 2rem;
+  }
+
+  .header_container .article_header_container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+  }
+
+  .header_container .article_header_container button{
+    display: block;
+  }
+
+  .header_container .article_header_container img{
+    order: 3;
+  }
+
   .helps .helps_container .helps_article .title::before{
     width: 20px;
     left: 2px;
@@ -560,6 +631,14 @@
 
   .helps .helps_container .helps_article .title{
     width: 100%;
+  }
+
+  .index .header .logoAzul{
+    display: none;
+  }
+
+  .index .header .logoResponsiva{
+    display: block;
   }
 }
 

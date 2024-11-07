@@ -14,24 +14,6 @@
   background-color: #04517B;
 }
 
-.message-box {
-  position: fixed;
-  /* Permite que o elemento fique fixo na tela */
-  top: 20px;
-  /* 20 pixels do topo da tela */
-  left: 50%;
-  /* Alinha ao meio da tela */
-  transform: translateX(-50%);
-  /* Move para a esquerda metade da largura do elemento */
-  padding: 10px;
-  border: 1px solid #4CAF50;
-  background-color: #f9f9f9;
-  color: #4CAF50;
-  border-radius: 5px;
-  z-index: 1000;
-  /* Certifica que a mensagem fique acima de outros elementos */
-}
-
 .contato-container .form-content {
   flex: 1 1 50%;
   margin-right: 50px;
@@ -108,26 +90,11 @@ h1 {
   max-width: 75%;
 }
 
-#botaoSiapreps {
-  /* width: 200px; */
-  /* height: 80px; */
-
-  background-color: transparent;
-  margin-left: auto;
-  color: #ffffff;
-  border-color: #fff;
-  border-radius: 50px;
-  font-size: 1.3rem;
-  padding: 10px 30px;
-
-  cursor: pointer;
-}
-
 @media screen and (max-width: 1366px) {
   #peixetext {
     font-size: 3rem;
     max-width: 75%;
-  }
+  }   
 
   .peixe-logo img {
     width: 40%;

@@ -19,7 +19,7 @@ export default function SectionPlanta() {
     <div className="monitoring-section">
         <img src={plantImage} alt="Planta aquática" className="planta-imagem" />
         <div className="content">
-            <h2>Possibilitamos o monitoramento de Reservatórios Hídricos!</h2>
+            <h2>Possibilitamos o monitoramento de plantas aquáticas</h2>
             <br /><br />
             <br />
             <ul>
@@ -29,11 +29,11 @@ export default function SectionPlanta() {
                 </li>
                 <li>
                     <img src={binoculos} alt="" />
-                    <p>&nbsp;&nbsp;Monitora e prevê Desregulações Ambientais</p>
+                    <p>&nbsp;&nbsp;Monitora e prevê a proliferação de plantas aquáticas</p>
                 </li>
                 <li>
                     <img src={engrenagem} alt="" />
-                    <p>&nbsp;&nbsp;Gestão eficiente e oportuna dos corpos d’agua</p>
+                    <p>&nbsp;&nbsp;Gestão eficiente e oportuna da vegetação</p>
                 </li>
                 <li>
                     <img src={gestao} alt="" />

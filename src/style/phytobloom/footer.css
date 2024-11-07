@@ -127,9 +127,3 @@
     background-color: black;
   }
 }
-
-@media screen and (max-width: 500px) {
-  #copyphytoblom{
-    font-size: 0.6rem;
-  }
-}

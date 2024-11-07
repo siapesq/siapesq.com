@@ -4,34 +4,18 @@
   box-sizing: border-box;
 }
 
-.message-box {
-  position: fixed;
-  /* Permite que o elemento fique fixo na tela */
-  top: 20px;
-  /* 20 pixels do topo da tela */
-  left: 50%;
-  /* Alinha ao meio da tela */
-  transform: translateX(-50%);
-  /* Move para a esquerda metade da largura do elemento */
-  padding: 10px;
-  border: 1px solid #4CAF50;
-  background-color: #f9f9f9;
-  color: #4CAF50;
-  border-radius: 5px;
-  z-index: 1000;
-  /* Certifica que a mensagem fique acima de outros elementos */
-}
-
-
 .contact-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  align-items: start;
   background-color: #27742B;
   padding: 20px;
   height: 100vh;
   color: white;
   column-gap: 50px;
+
+  padding-top: 20vh;
 }
 
 .contact-container .form-content {
@@ -47,9 +31,9 @@
 
 }
 
-#h1Phytobloom {
+#textoform #h1Phytobloom {
   /* margin-bottom: 30px; */
-  font-size: 3rem;
+  font-size: 4rem;
   /* margin-right: 500px; */
 }
 
@@ -97,7 +81,7 @@ textarea {
 
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
 }
@@ -117,8 +101,6 @@ h1 {
   /* height: 80px; */
   font-size: 2rem;
   padding: 10px 15px;
-
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1366px) {
@@ -138,15 +120,16 @@ h1 {
     margin: 0;
   }
 
-  #botaoPhytobloom {
-    margin-left: auto;
-    background-color: #004725a2;
+  .phytobloomContact #botaoPhytobloom{
+    width: auto;
+    background-color: #004725;
+    /* margin-left: 89%; */
     color: #ffffff;
+    border: none;
+    border-radius: 10px;
     height: auto;
-    border-radius: 50px;
-    font-size: 1.6rem;
-    width: 150px;
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
   }
 
 }
@@ -154,10 +137,10 @@ h1 {
 
 @media screen and (max-width: 1024px) {
 
-  #botaoPhytobloom {
+  #botaoPhytobloom{
     width: 100px;
     background-color: #00472500;
-    align-items: center;
+   align-items: center;
     color: #ffffff;
     border-radius: 10px;
     height: 60px;
@@ -166,7 +149,7 @@ h1 {
   .contact-container {
     height: auto;
     max-height: 100vh;
-
+  
   }
 
 }
@@ -217,7 +200,7 @@ h1 {
 }
 
 @media screen and (max-width: 500px) {
-  .contact-container {
+  .contact-container{
     margin: 0 5px;
   }
 }
