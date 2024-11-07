@@ -15,7 +15,7 @@
 
 .formContato #botao{
   width: 100px;
-  height: 35px;
+  height: 40px;
 
   border-radius: 10px;
 
@@ -46,12 +46,13 @@
   column-gap: 20px;
   height: 80vh;
 
+  padding-top: 100px;
   padding-top: 10vh;
 
   color: white;
 }
 
-/* .contact-container {
+.contact-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,11 +61,11 @@
   height: 100vh;
   color: white;
   column-gap: 50px;
-} */
-
-.contact-container .form-content {
-  flex: 1 1 50%;
 }
+
+/* .contact-container .form-content {
+  flex: 1 1 50%;
+} */
 
 #formPhytobloom {
   display: flex;
@@ -110,16 +111,16 @@ h1{
     margin: 0;
   }
 
-  /* #botaoPhytobloom{
+  #botaoPhytobloom{
     width: auto;
     background-color: #004725;
-    margin-left: 89%;
+    /* margin-left: 89%; */
     color: #ffffff;
     border-radius: 10px;
     height: auto;
     padding: 10px;
     font-size: 1.5rem;
-  } */
+  }
 
 }
 
@@ -195,7 +196,7 @@ h1{
 
   @media screen and (max-width: 1024px) {
 
-    .contactcontainer {
+    .contactContainer {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -220,4 +221,11 @@ h1{
 
   }
 }
+}
+
+
+@media screen and (max-width: 500px){
+  #botaoPhytobloom{
+    margin-left: auto;
+  }
 }
