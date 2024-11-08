@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a1b70cd.css",
+    "main.css": "/static/css/main.39956020.css",
     "main.js": "/static/js/main.d88bbc44.js",
     "static/media/phytonbloom.svg": "/static/media/phytonbloom.7344fe15003fdba1af0481ba2760c099.svg",
     "static/media/hidro.png": "/static/media/hidro.bc90cb057985ab87c8c8.png",
@@ -45,11 +45,11 @@
     "static/media/logo.svg": "/static/media/logo.186611bde626fab59893b7db859a5771.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.9f51993090b3e4f09080715aab71fc2c.svg",
-    "main.8a1b70cd.css.map": "/static/css/main.8a1b70cd.css.map",
+    "main.39956020.css.map": "/static/css/main.39956020.css.map",
     "main.d88bbc44.js.map": "/static/js/main.d88bbc44.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a1b70cd.css",
+    "static/css/main.39956020.css",
     "static/js/main.d88bbc44.js"
   ]
 }
