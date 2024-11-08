@@ -110,16 +110,20 @@ h1 {
 
 }
 
-#botaoPhytobloom {
-  width: 200px;
+.form-content #botaoPhytobloom {
+  width: 100px;
   background-color: #004725a2;
   margin-left: auto;
   color: #ffffff;
-  border-color: #fff;
-  border-radius: 50px;
+  border-radius: 10px;
   /* height: 80px; */
-  font-size: 2rem;
-  padding: 10px 15px;
+  font-size: 1rem;
+  height: 40px;
+  
+  /* padding: 10px 15px; */
+  
+  border: 1px solid black;
+  /* border-color: #fff; */
 
   cursor: pointer;
 }
