@@ -21,9 +21,10 @@ export default function Header({page=''}) {
                                 <img src={logoBranca} alt="Logo da siapesq na branca" className="logoBranca"/>
                                 <img src={logoResponsivo} alt="Logo da siapesq branca e com informações adicionais" className="logoResponsiva"/>
                             </NavLink>
-                            <NavLink to={"/off"} className='links'>
+                            <a href="https://www.instagram.com/siapesq" className="links">SOBRE NÓS</a>
+                            {/* <NavLink to={"/off"} className='links'>
                                 SOBRE NÓS
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink to={"/contato"} className='links'>
                                 CONTATO
                             </NavLink>

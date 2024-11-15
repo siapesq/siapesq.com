@@ -76,7 +76,7 @@ const Carrossel = () => {
         <div className="card-container">
           <div className="card">
             <h2 className="textopeixe">Baleia Jubarte</h2>
-            <img className="imgpeixe" src={baleia} alt="Tainha" />
+            <img className="imgpeixe baleia" src={baleia} alt="Tainha" />
            <p className="textinho">Megaptera novaeangliae</p>
           </div>
           <div className="card">
