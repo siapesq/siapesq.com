@@ -241,7 +241,18 @@ main p {
 
     .header-text ul li{
       font-size: 1rem;
+      text-align: left;
     }
+  }
+
+  .logo div {
+    width: 75%;
+    border-radius: 75px;
+  }
+
+  .logo img {
+    background: none;
+    width: 50%;
   }
 
 }
@@ -249,5 +260,9 @@ main p {
 @media screen and (max-width: 600px) {
   .container .header{
     flex-flow: column-reverse nowrap;
+  }
+
+  .container .header-text ul li{
+    text-align: left;
   }
 }

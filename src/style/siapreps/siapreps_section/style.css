@@ -421,13 +421,15 @@
     padding: 0;
 
     div{
-      width: 50%;
-      border-radius: 125px;
+      width: 225px;
+      border-radius: 75px;
       display: flex;
       justify-content: center;
 
+      padding: 10px 0;
+
       img{
-        width: 75%;
+        width: 200px;
       }
     }
   }
@@ -449,10 +451,10 @@
     font-size: 1rem;
   }
 
-  .siapreps_container {
-    /* flex-flow: column nowrap; */
-    /* row-gap: 1rem; */
-  }
+  /* .siapreps_container {
+    flex-flow: column nowrap;
+    row-gap: 1rem;
+  } */
   
    .tubarao img, .tubaraoB img, .peixes img{
     display: none;
