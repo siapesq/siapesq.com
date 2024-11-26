@@ -47,8 +47,8 @@ const Carrossel = () => {
 
   return (
     <div className="carrossel-container">
-      <h2 className="cardumeh2">Veja as principais espécies rastreáveis</h2>
-      <h3 className="cardumeh3">Tenha praticidade e eficiencia para atividade pesqueira. Te mostramos a localização do peixe.</h3>
+      <center><h2 className="cardumeh2">Veja as principais espécies rastreáveis</h2>
+      <h3 className="cardumeh3">Tenha praticidade e eficiencia para atividade pesqueira. Te mostramos a localização do peixe.</h3></center>
       <div className="carrossel">
         <button className="arrow left" onClick={prevSlide}> 
           &#8249;
