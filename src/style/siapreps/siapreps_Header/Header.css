@@ -41,7 +41,7 @@ section.headerContainer {
     align-items: center;
     justify-content: center;
 }
-
+ 
 
 #notesiapreps {
     -webkit-user-drag: none;
@@ -87,6 +87,7 @@ section.headerContainer {
         width: 10rem;
         align-self: end;
         color: #fff;
+        
     }
 
     #textosiapreps {
