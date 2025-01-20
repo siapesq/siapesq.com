@@ -20,10 +20,11 @@ export default function SectionHeader() {
                     <p id="textophytobloom">
                         Com a PHYTOBLOOM VISION identificamos Desregulações Ambientais em Reservatórios Hídricos, propiciando o Manejo Ambiental para Evitar Eventos Críticos!
                     </p>
-                    <button className="fundoInvinsivel"> <a href="https://github.com/siapesq/phybloom-release-mirror/releases/download/v2.0.0/phytobloom-Setup-2.0.0.exe" target="_blank" rel="noopener noreferrer">Começar Agora</a></button>
-                    <p>Disponível para: <b>Windows 10 e 11</b></p>
+                    <button className="fundoInvinsivel"> <a href="https://github.com/siapesq/phybloom-release-mirror/releases/download/v2.0.1/phytobloom-Setup-2.0.1.exe" target="_blank" rel="noopener noreferrer">Baixar Software</a></button>
+                    <p style={{ fontSize: '12px' }}>Versão 2.0.1 <br></br> Disponível para: <b>Windows 10 e 11</b></p>
+
                 </article>
-            </section>
+            </section >
 
         </>
     )
