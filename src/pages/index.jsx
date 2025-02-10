@@ -21,8 +21,9 @@ import SectionSiapreps from "../components/sections/siapreps";
 import SectionHelps from "../components/sections/helps";
 import SectionPhytobloom from "../components/sections/phytobloom.jsx";
 import SectionFooter from "../components/sections/siaprepsFooter.jsx";
-import SectionParceiros from "../components/sections/parceiros.jsx"
-
+import SectionParceiros from "../components/sections/parceiros.jsx";
+import "../style/animationWord.css"
+import "../style/opacityZero.css"
 
 export default function Index() {
 
@@ -49,11 +50,11 @@ export default function Index() {
 
     return (
         <>
-            <div className="index">
+            <div className="index animated fade-in">
                 <section className="header_container">
                     <img src={mar} alt="Imagem de fundo" className="bg_img" />
                     <Header page={'index'} />
-                    <article className="article_header_container">
+                    <article className="article_header_container ">
                         <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
                         <h2 id="h2principal" >
                             INOVAÇÃO TECNOLÓGICA ALIADA À SUSTENTILIDADE AMBIENTAL
