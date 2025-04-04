@@ -41,8 +41,8 @@ export default function SectionHeader() {
                         Baixar Software
                     </a>
                 </button>
-                    <p style={{ fontSize: '12px' }}>Versão 2.0.1 <br></br> Disponível para: <b>Windows 10 e 11</b></p>
-              
+                
+                <p style={{ fontSize: '12px' }}>Versão 2.0.1 <br></br> Disponível para: <b>Windows 10 e 11</b></p>
 
             </article>
         </section>
