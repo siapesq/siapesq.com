@@ -1,13 +1,14 @@
-import React from "react";
-import Header from "../layouts/header";
-import cardume from "../../imgs/cardume.png";
-import siapresqPc from "../../imgs/siapresqPc.svg";
-import siaprepsNome from "../../imgs/NomeSiapreps.svg";
-import '../../style/siapreps/siapreps_Header/Header.css';
 import 'animate.css';
+import React from "react";
+import cardume from "../../imgs/cardume.png";
+import siaprepsNome from "../../imgs/NomeSiapreps.svg";
+import siapresqPc from "../../imgs/siapresqPc.svg";
+import '../../style/siapreps/siapreps_Header/Header.css';
+import Header from "../layouts/header";
 
 export default function SectionHeader() {
     return (
+    <>
         <section className="headerContainer">
             <img
                 src={cardume}
@@ -30,16 +31,21 @@ export default function SectionHeader() {
                     alt="Imagem de um notebook da siapreps"
                     className="animate__animated animate__slideInUp"
                 />
+                
                 <button className="botaoSiapreps animate__animated animate__bounceIn">
                     <a
                         href="https://wa.me/555399503671"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Começar Agora
+                        Baixar Software
                     </a>
                 </button>
+                
+                <p style={{ fontSize: '12px' }}>Versão 2.0.1 <br></br> Disponível para: <b>Windows 10 e 11</b></p>
+
             </article>
         </section>
+    </>
     );
 }
