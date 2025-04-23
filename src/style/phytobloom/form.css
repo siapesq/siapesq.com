@@ -177,10 +177,6 @@ h1 {
 
   }
 
-}
-
-@media screen and (max-width: 1024px) {
-
   .contact-container .form-content {
     margin: 0;
 
