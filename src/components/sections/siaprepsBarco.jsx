@@ -27,7 +27,9 @@ export default function SectionBarco() {
 
         {/* MUDANDO O LUGAR DO iframe */}
         <div className="divBarco">
-          <div><iframe src='https://my.spline.design/untitled-7aCS5RiUVzkhHTX8DIpWP4pS/' frameborder='0' width='100%' height='75%'></iframe></div>
+          <div>
+          <iframe src='https://my.spline.design/untitled-7aCS5RiUVzkhHTX8DIpWP4pS/' frameborder='0' width='110%' height='375px'></iframe>
+          </div>
         </div>
 
         <div className="divInfos">
