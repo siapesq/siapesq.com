@@ -7,7 +7,7 @@
   font-size: 35px;
   color: #1e3066;
   margin-bottom: 10px;
-  
+
 }
 
 #peixetextinho {
@@ -35,7 +35,7 @@
   color: #1e3066;
   margin-bottom: 10px;
   /* font-style: italic; */
-  
+
 }
 
 .imgpeixe {
@@ -44,7 +44,7 @@
   margin-bottom: 10px;
 }
 
-.baleia{
+.baleia {
   width: 130%;
 }
 
@@ -55,6 +55,33 @@
   font-style: italic;
 }
 
-.textinho, .textopeixe{
+.textinho,
+.textopeixe {
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .carrossel-container{
+    margin-bottom: 0;
+  }
+
+  h2.cardumeh2 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  h3.cardumeh3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  div.card-container, .carrossel-container > h2.cardumeh2{
+    display: none;
+  }
+
+  p.cardumep{
+    font-size: 1.4rem;
+  }
 }
