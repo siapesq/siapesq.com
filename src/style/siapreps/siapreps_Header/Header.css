@@ -40,8 +40,15 @@ section.headerContainer {
     height: 100%;
     align-items: center;
     justify-content: center;
+
 }
- 
+    .versaoSiapreps {
+        display: flex;
+        position: absolute;
+        padding: 50px;
+        left: 55px;
+        text-align: left;
+    }
 
 #notesiapreps {
     -webkit-user-drag: none;
@@ -58,6 +65,12 @@ section.headerContainer {
     height: 100%;
     z-index: -1;
 }
+
+
+
+
+
+
 
 .articleHeaderContainer {
 
