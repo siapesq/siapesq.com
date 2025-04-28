@@ -30,10 +30,12 @@ export default function SectionHeader() {
                     <button className="fundoInvinsivel  animate__animated animate__bounceIn"> <a href="https://github.com/siapesq/phybloom-release-mirror/releases/download/v2.0.1/phytobloom-Setup-2.0.1.exe" 
                     target="_blank" 
                     rel="noopener noreferrer">Baixar Software</a>
+                    
                     </button>
                     
                     <p style={{ fontSize: '12px' }}>Versão 2.0.1 <br></br> Disponível para: <b>Windows 10 e 11</b></p>
 
+                    
                 </article>
             </section >
 
