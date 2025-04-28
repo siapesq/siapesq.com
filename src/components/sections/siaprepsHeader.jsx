@@ -34,13 +34,13 @@ export default function SectionHeader() {
                 
                 <button className="botaoSiapreps animate__animated animate__bounceIn">
                     <a
-                        href="https://wa.me/555399503671"
+                        href="https://github.com/siapesq/siapreps-release-mirror/releases/download/v1.0.20/SIAPREPS-Setup-1.0.20.exe"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Baixar Software
                     </a>
-                    <p style={{ fontSize: '12px', margin: '15px'}}>Versão 2.0.1 <br></br> Disponível para: <b>Windows 10 e 11</b></p>
+                    <p style={{ fontSize: '12px', margin: '15px'}}>Versão 1.0.20 <br></br> Disponível para: <b>Windows 10 e 11</b></p>
                 </button>
                 
                 
