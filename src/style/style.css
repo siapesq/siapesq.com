@@ -659,7 +659,7 @@
   }
 
   .header img {
-    width: 10rem;
+    width: 15rem;
   }
 
   .helps .helps_container .helps_article .title{
@@ -704,7 +704,7 @@ button{
 
 @media screen and (max-width:500px){
   .header nav img{
-    width: 6.5rem;
+    width: 8rem;
   }
 
   .header .responsiveButton button{

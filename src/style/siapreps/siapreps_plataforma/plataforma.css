@@ -77,6 +77,24 @@
 
 @media screen and (max-width: 1024px) {
 
+    article{
+        display: flex;
+        height: auto;
+    }
+
+    .plataforma article  .fundoInvinsivel2{
+        display: none;
+    }
+
+    .plataforma article #textoazul {
+        display: block;
+        position: static;
+        background-color: #1E2B54;
+        margin: 0;
+
+        width: 100%;
+    }
+
     /* #textoazul {
         display: flex;
         margin-top: -400px;
