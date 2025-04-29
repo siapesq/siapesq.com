@@ -11,7 +11,7 @@ export default function SectionPlataforma() {
     <>
       <section className="plataforma">
         <article >
-          <img id="phytobloom" src="phytonbloom.png" alt="magem de platforma phytonbloom" />
+          <img id="phytobloom" src="phytonbloom.png" alt="imagem de plataforma phytonbloom" />
           {/* modelo antigo
            <img id="phytobloom" src={phytobloom} alt="Imagem de platforma phytonbloom" /> */}
           {/* <h1 id="verde">A plataforma PHYTOBLOOM VISION proporciona mapas detalhados e em tempo real, permitindo o monitoramento contínuo e a previsão da proliferação de plantas aquáticas. Nossos mapas facilitam a tomada de decisões e o planejamento de intervenções de maneira eficiente.</h1> */}
