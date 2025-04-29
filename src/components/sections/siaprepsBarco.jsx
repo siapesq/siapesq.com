@@ -52,7 +52,7 @@ export default function SectionBarco() {
         {/* <div className="porcentagem">
           <img src={bordabarco} alt="" id="borda" />
           <img src={textobarco} alt="" id="textoBarco" /> */}
-        {/* <div className="textoporcentagem">
+          {/* <div className="textoporcentagem">
             <h2>3%</h2>
             <p>do total de Gases de Efeito Estufa (GEEs) emitidos globalmente</p>
           </div>
