@@ -26,7 +26,27 @@ export default function SectionBarco() {
         <p className="textoPesca">Localização do Pescado</p>
 
         {/* MUDANDO O LUGAR DO iframe */}
-        <div className="divBarco"><iframe id="tresd" src='https://my.spline.design/untitled-35300080a17e90a458b089454c264606/' frameborder='0' width='100%' height='85%' title="Barco-3d"></iframe></div>
+        <div className="divBarco">
+          <div>
+          <iframe src='https://my.spline.design/untitled-7aCS5RiUVzkhHTX8DIpWP4pS/' frameBorder='0' width='110%' height='375px' title="Modelo 3D do barco"> </iframe>
+          </div>
+        </div>
+
+        <div className="divInfos">
+          <div>
+            <h2>60%</h2>
+            <p>Redução do Custo no Processo de Procura do Pescado</p>
+          </div>
+          <div>
+            <h2>60%</h2>
+            <p>Redução da Emissão de Gases Estufas para a Atmosfera</p>
+          </div>
+          <div>
+            <h2>70%</h2>
+            <p>Otimização do Tempo das Pescarias</p>
+          </div>
+        </div>
+
 
         {/* </div> */}
         {/* <div className="porcentagem">
