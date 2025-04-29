@@ -5,6 +5,8 @@ import SectionPlataforma from "../components/sections/siaprepsPlataforma";
 import SectionCardume from "../components/sections/siaprepsCardume";
 import SectionformS from "../components/sections/siaprepsFormS";
 import SectionFooter from "../components/sections/siaprepsFooter";
+import "../style/animationWord.css"
+import "../style/opacityZero.css"
 
 
 export default function Index( ){
