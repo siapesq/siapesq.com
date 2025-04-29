@@ -7,34 +7,34 @@ import SectionformS from "../components/sections/siaprepsFormS";
 import SectionFooter from "../components/sections/siaprepsFooter";
 
 
-export default function Index() {
+export default function Index( ){
 
-
-    return (
+    
+    return(
         <>
-            <div>
+                <div>
                 <SectionHeader />
-            </div>
+                </div>
 
-            <div >
+                <div >
                 <SectionBarco />
-            </div>
-
-            <div >
+                </div>
+        
+                <div >
                 <SectionPlataforma />
-            </div>
+                </div>
 
-            <div >
+                <div >
                 <SectionCardume />
-            </div>
+                </div>
 
-            <div >
+                <div >
                 <SectionformS />
-            </div>
-
-            <div >
+                </div>
+                     
+                <div >
                 <SectionFooter />
-            </div>
+                </div>
 
         </>
     )
