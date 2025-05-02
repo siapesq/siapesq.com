@@ -1,6 +1,7 @@
 import React from "react";
 import texto from "../../imgs/textoverde.svg"
 import '../../style/phytobloom/plataforma.css';
+import phytobloom from "../../imgs/phytobloom.png"
 
 
 export default function SectionPlataforma() {
