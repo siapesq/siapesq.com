@@ -28,7 +28,7 @@ export default function SectionBarco() {
         {/* MUDANDO O LUGAR DO iframe */}
         <div className="divBarco">
           <div>
-          <iframe src='https://my.spline.design/untitled-7aCS5RiUVzkhHTX8DIpWP4pS/' frameBorder='0' width='110%' height='375px' title="Modelo 3D do barco"> </iframe>
+          <iframe src='https://my.spline.design/untitled-7aCS5RiUVzkhHTX8DIpWP4pS/' frameborder='0' width='110%' height='375px' title="Modelo 3D do barco"></iframe>
           </div>
         </div>
 
@@ -52,7 +52,7 @@ export default function SectionBarco() {
         {/* <div className="porcentagem">
           <img src={bordabarco} alt="" id="borda" />
           <img src={textobarco} alt="" id="textoBarco" /> */}
-          {/* <div className="textoporcentagem">
+        {/* <div className="textoporcentagem">
             <h2>3%</h2>
             <p>do total de Gases de Efeito Estufa (GEEs) emitidos globalmente</p>
           </div>
