@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.5974abed.css",
-    "main.js": "/static/js/main.03aff0f8.js",
+    "main.css": "/static/css/main.120fa04a.css",
+    "main.js": "/static/js/main.dfeedf1c.js",
     "static/media/phytobloom.png": "/static/media/phytobloom.31acbd1c974fa7b9f580.png",
     "static/media/hidro.png": "/static/media/hidro.bc90cb057985ab87c8c8.png",
     "static/media/cardume.png": "/static/media/cardume.b94e7373502d46ac1612.png",
     "static/media/mar.png": "/static/media/mar.dfc049dae70a2e3a1bb7.png",
-    "static/media/marBarco.png": "/static/media/marBarco.f3ce1f04ce10a7a0fd48.png",
+    "static/media/fundoBarco3.png": "/static/media/fundoBarco3.3b507eec55666c60c30f.png",
     "static/media/siaprepsMonitor.svg": "/static/media/siaprepsMonitor.70192c0e84c8af010cf9996021ec94bd.svg",
     "static/media/siapresqPc.svg": "/static/media/siapresqPc.06b36f04f28dacf1199200e8599458ce.svg",
     "static/media/parceiros.svg": "/static/media/parceiros.6cbdfef8d30d4a2ac61a2cc8fcd84649.svg",
@@ -45,11 +45,11 @@
     "static/media/logo.svg": "/static/media/logo.186611bde626fab59893b7db859a5771.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.9f51993090b3e4f09080715aab71fc2c.svg",
-    "main.5974abed.css.map": "/static/css/main.5974abed.css.map",
-    "main.03aff0f8.js.map": "/static/js/main.03aff0f8.js.map"
+    "main.120fa04a.css.map": "/static/css/main.120fa04a.css.map",
+    "main.dfeedf1c.js.map": "/static/js/main.dfeedf1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.5974abed.css",
-    "static/js/main.03aff0f8.js"
+    "static/css/main.120fa04a.css",
+    "static/js/main.dfeedf1c.js"
   ]
 }
