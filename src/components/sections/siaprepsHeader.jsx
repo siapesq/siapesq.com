@@ -1,4 +1,4 @@
-import 'animate.css';
+// import 'animate.css';
 import React from "react";
 import cardume from "../../imgs/cardume.png";
 import siaprepsNome from "../../imgs/NomeSiapreps.svg";
