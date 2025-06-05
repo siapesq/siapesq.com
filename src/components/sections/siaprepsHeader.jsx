@@ -35,7 +35,7 @@ export default function SectionHeader() {
                     <div className="botaoContainer">
                         <button className="botaoSiapreps animate__animated animate__bounceIn">
                             <a
-                                href="https://github.com/siapesq/siapreps-release-mirror/releases/download/v1.0.20/SIAPREPS-Setup-1.0.20.exe"
+                                href="https://github.com/siapesq/siapreps-release-mirror/releases/latest"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
