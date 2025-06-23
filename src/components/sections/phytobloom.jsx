@@ -38,8 +38,8 @@ export default function SectionPhytobloom() {
             de desregulação ambiental e subsidiar o manejo Socio-Ambiental
           </p>
           <NavLink to={"/phytobloom"} className="saiba-mais" onClick={() =>
-                            window.scroll(0,0)
-                        }>Saiba mais</NavLink>
+            window.scroll(0, 0)
+          }>Saiba mais</NavLink>
         </main>
       </div>
     </>

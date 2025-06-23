@@ -47,8 +47,8 @@ Siapreps header section.headerContainer {
     .versaoSiapreps {
         display: flex;
         position: absolute;
-        padding: 50px;
-        left: 55px;
+        padding: 10px;
+        left: 90px;
         text-align: left;
     }
 
