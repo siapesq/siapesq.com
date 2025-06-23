@@ -37,7 +37,9 @@ export default function SectionPhytobloom() {
             monitorar a qualidade de corpos d águas continentais, prever eventos críticos
             de desregulação ambiental e subsidiar o manejo Socio-Ambiental
           </p>
-          <NavLink to={"/phytobloom"} className="saiba-mais" >Saiba mais</NavLink>
+          <NavLink to={"/phytobloom"} className="saiba-mais" onClick={() =>
+                            window.scroll(0,0)
+                        }>Saiba mais</NavLink>
         </main>
       </div>
     </>
