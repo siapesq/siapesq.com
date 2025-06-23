@@ -67,7 +67,8 @@ export default function SectionformS() {
                   placeholder="Nome"
                   value={formData.nome}
                   onChange={handleChange}
-                />            </div>
+                />
+              </div>
               <div className="input-item">
                 <label htmlFor="sobrenome">Sobrenome</label>
                 <input

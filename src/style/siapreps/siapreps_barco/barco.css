@@ -324,36 +324,44 @@
 
   }
 
-  .containerPesca{
+  .containerPesca {
     min-height: auto;
     height: auto;
     background-color: white;
     background-image: none;
   }
 
-  .containerPesca p, .containerPesca h2{
+  .containerPesca p,
+  .containerPesca h2 {
     color: black;
   }
 
-  .containerPesca::after{
+  .containerPesca::after {
     display: none;
   }
 
-  .divBarco{
+  .divBarco {
     display: none;
   }
 
-  .divInfos{
+  .divInfos {
     flex-flow: column nowrap;
     border: none;
   }
 
-  .divInfos div{
+  .divInfos div {
     border: none;
     min-width: 50%;
   }
 
-  .divInfos div:not(div:last-child)::after{
+  .divInfos div p{
+    font-size: 0.8rem;
+  }
+  .divInfos div h2{
+    font-size: 3rem;
+  }
+
+  .divInfos div:not(div:last-child)::after {
     content: "";
     color: rgba(0, 0, 0, 0.486);
     font-weight: 200;
@@ -379,9 +387,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 3em;
+  font-size: 2rem;
   color: #fff;
 
+  margin: 0;
+
+}
+
+@media screen and (max-width: 576px){
+  .divInfos{
+    gap: 10px;
+  }
 }
 
 /* .porcentagem {

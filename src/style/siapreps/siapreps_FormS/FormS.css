@@ -134,14 +134,42 @@ h1 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 768px) {
+  .contato-container{
+    min-height: 70vh;
+
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #233363;
+  }
+
+  .peixe-logo{
+    flex: 1 1 25%;
+  }
+
   #peixetext {
-    font-size: 3rem;
+    font-size: 2.5rem;
     max-width: 75%;
+    text-align: center;
   }
 
   .peixe-logo img {
-    width: 40%;
-    justify-content: end;
+    /* width: 40%; */
+    /* justify-content: end; */
+    display: none;
+  }
+
+
+  .contato-container .form-content{
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .form-content form{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
   }
 }
