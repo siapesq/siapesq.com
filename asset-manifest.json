@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa53c258.css",
-    "main.js": "/static/js/main.153bec81.js",
+    "main.css": "/static/css/main.fa82ad0d.css",
+    "main.js": "/static/js/main.811543fa.js",
     "static/media/phytobloom.png": "/static/media/phytobloom.31acbd1c974fa7b9f580.png",
     "static/media/hidro.png": "/static/media/hidro.bc90cb057985ab87c8c8.png",
     "static/media/cardume.png": "/static/media/cardume.b94e7373502d46ac1612.png",
@@ -11,11 +11,9 @@
     "static/media/siapresqPc.svg": "/static/media/siapresqPc.06b36f04f28dacf1199200e8599458ce.svg",
     "static/media/parceiros2.svg": "/static/media/parceiros2.bed3f9833fea303e8c7847b44831292e.svg",
     "static/media/section_siapreps_bg.png": "/static/media/section_siapreps_bg.98fc7fe2c1f48d1bec08.png",
-    "static/media/siapreps.svg": "/static/media/siapreps.dcfc95b3ffd1a573ae2210428629ed6d.svg",
+    "static/media/siapreps.svg": "/static/media/siapreps.dcfc95b3ffd1a573ae22.svg",
     "static/media/planta.svg": "/static/media/planta.5c6dfa749fad8b6ec37087e0b41bf712.svg",
     "static/media/golfinho.svg": "/static/media/golfinho.ce087d4c7dce7ad4887074d9d26bdfb8.svg",
-    "static/media/textoazul.svg": "/static/media/textoazul.e8e798064c56e862a2a92b5021f17eaa.svg",
-    "static/media/textoverde.svg": "/static/media/textoverde.c08a2ce2907138e99455c74bd0f2f2db.svg",
     "static/media/baleia.svg": "/static/media/baleia.6baa69b6f45cf25123a5e89df0b2a353.svg",
     "static/media/siapesq.png": "/static/media/siapesq.a366a4bdbe25d849e5c0.png",
     "static/media/tartaruga.svg": "/static/media/tartaruga.104eab1ce1accf4a14560e58a167bdba.svg",
@@ -42,14 +40,16 @@
     "static/media/satelite.svg": "/static/media/satelite.b85f7711756d2b84bd74d14850f8fc89.svg",
     "static/media/NomeSiapreps.svg": "/static/media/NomeSiapreps.7af2bf91acda46a2b78d001c0d223eaf.svg",
     "static/media/PhytobloomNome.svg": "/static/media/PhytobloomNome.d1d37dd24c1cd2c58b65ef450dafda86.svg",
+    "static/media/tubarao2.svg": "/static/media/tubarao2.8f9ce037799955205949cc454bbd5f55.svg",
+    "static/media/tubarao.svg": "/static/media/tubarao.c7245b90220f0cbedbe313761f31e0de.svg",
     "static/media/logo.svg": "/static/media/logo.186611bde626fab59893b7db859a5771.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.9f51993090b3e4f09080715aab71fc2c.svg",
-    "main.aa53c258.css.map": "/static/css/main.aa53c258.css.map",
-    "main.153bec81.js.map": "/static/js/main.153bec81.js.map"
+    "main.fa82ad0d.css.map": "/static/css/main.fa82ad0d.css.map",
+    "main.811543fa.js.map": "/static/js/main.811543fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa53c258.css",
-    "static/js/main.153bec81.js"
+    "static/css/main.fa82ad0d.css",
+    "static/js/main.811543fa.js"
   ]
 }
