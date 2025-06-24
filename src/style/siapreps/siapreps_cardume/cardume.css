@@ -58,3 +58,23 @@
 .textinho, .textopeixe{
   text-align: center;
 }
+
+@media screen and (max-width: 768px){
+  .card-container{
+    display: none;
+  }
+
+  .carrossel-container>.cardumeh2{
+    display: none;
+  }
+
+  .carrossel-container .cardumeh2{
+    font-size: 1.6rem;
+    color: black;
+  }
+
+  .carrossel-container .cardumeh3{
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+}
