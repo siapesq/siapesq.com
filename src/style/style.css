@@ -455,6 +455,11 @@
 }
 
 @media screen and (max-width:1600px) {
+
+  .header nav ul {
+    gap: 2.8rem;
+  }
+
   .header_container .article_header_container #h2principal{
     font-size: 2.3rem;
   }

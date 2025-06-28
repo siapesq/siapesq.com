@@ -5,6 +5,8 @@
     background-image: url('../../../imgs/cardume.png');
     background-size: cover;
     background-position: center;
+
+    min-height: 110vh;
 }
 
 .articleHeaderContainer {
@@ -55,7 +57,18 @@
     top: -10px;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px){
+    section.siaprepsContainer{
+        height: auto;
+    }
+
+    #textosiapreps{
+        max-width: 55%;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
 
     .articleHeaderContainer {
         margin-left: 100px;
@@ -63,11 +76,11 @@
 
     #textosiapreps {
         max-width: 70%;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     #notesiapreps {
-        width: 50%;
+        width: 60%;
         position: static;
     }
 
@@ -80,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     #textosiapreps {
         max-width: 75%;
         font-size: 1.4rem;
@@ -89,9 +102,35 @@
 
 @media screen and (max-width: 768px) {
     .articleHeaderContainer{
-        margin-left: 20px;
+        margin-left: 50px;
     }
+
+    
+    section.siaprepsContainer{
+        min-height: 70vh;
+        height: auto;
+    }
+    
     #textosiapreps{
         font-size: 1.2rem;
+    }
+    
+    .botaoContainer{
+        margin-bottom: 20px;
+    }
+    
+    #imgsiapreps{
+        width: 70%;
+    }
+
+    #notesiapreps {
+        width: 80%;
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #textosiapreps{
+        font-size: 1rem;
     }
 }

@@ -1,4 +1,3 @@
-import React from "react";
 // import barcopesca from "../../imgs/barcopesca.svg";
 // import textobarco from "../../imgs/textoBarco.svg";
 // import bordabarco from "../../imgs/bordabarco.svg";
@@ -8,8 +7,6 @@ import '../../style/siapreps/siapreps_barco/barco.css';
 
 
 export default function SectionBarco() {
-
-
   return (
     <>
       <div className="containerPesca">
@@ -28,7 +25,7 @@ export default function SectionBarco() {
         {/* MUDANDO O LUGAR DO iframe */}
         <div className="divBarco">
           <div>
-          <iframe src='https://my.spline.design/untitled-7aCS5RiUVzkhHTX8DIpWP4pS/' frameborder='0' width='110%' height='375px' title="Modelo 3D do barco"></iframe>
+            <iframe src='https://my.spline.design/untitled-7aCS5RiUVzkhHTX8DIpWP4pS/' frameborder='0' width='115%' height='100%' title='Modelo 3D do barco da SIAPESQ'></iframe>
           </div>
         </div>
 
