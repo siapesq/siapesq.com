@@ -30,18 +30,6 @@ export default function SectionHeader() {
                         </p>
                     </div>
 
-                    <div className="botaoContainer">
-                        <button className="botaoSiapreps animate__animated animate__bounceIn">
-                            <a
-                                href="https://github.com/siapesq/siapreps-release-mirror/releases/download/1.0.21/SIAPREPS.Setup.1.0.21.exe"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Baixar Software
-                            </a>
-                        </button>
-                    </div>
-
                     <div>
                         <img
                             id="notesiapreps"
@@ -50,12 +38,10 @@ export default function SectionHeader() {
                             className="animate__animated animate__slideInUp"
                         />
                     </div>
+                    
+                    <button className="fundoInvinsivel"> <a href="https://github.com/siapesq/siapreps-release-mirror/releases/download/1.0.21/SIAPREPS.Setup.1.0.21.exe" target="_blank" rel="noopener noreferrer">Baixar Software</a></button>
+                    <p style={{ fontSize: '12px' }}>Versão 2.0.1 <br></br> Disponível para: <b>Windows 10 e 11</b></p>
 
-                    <div>
-                        <p className="versaoSiapreps">
-                            Versão 1.0.20 <br /> Disponível para:   Windows 10 e 11
-                        </p>
-                    </div>
 
                 </article>
             </section>

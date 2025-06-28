@@ -15,6 +15,10 @@
     margin-top: 75px;
     margin-left: 50px;
     position: relative;
+    margin: 8rem 0 100px 5rem;
+    color: whitesmoke;
+    display: flex;
+    row-gap: 2rem;
 }
 
 #imgsiapreps {
@@ -42,13 +46,14 @@
     color: white;
     text-decoration: none;
 }
-    .versaoSiapreps {
-        display: flex;
-        position: absolute;
-        padding: 10px;
-        left: 90px;
-        text-align: left;
-    }
+
+.versaoSiapreps {
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    left: 90px;
+    text-align: left;
+}
 
 #notesiapreps {
     width: 600px;
@@ -90,10 +95,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .articleHeaderContainer{
+    .articleHeaderContainer {
         margin-left: 20px;
     }
-    #textosiapreps{
+
+    #textosiapreps {
         font-size: 1.2rem;
     }
 }
