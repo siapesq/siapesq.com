@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa82ad0d.css",
-    "main.js": "/static/js/main.811543fa.js",
+    "main.css": "/static/css/main.ca30f561.css",
+    "main.js": "/static/js/main.5ce37b74.js",
     "static/media/phytobloom.png": "/static/media/phytobloom.31acbd1c974fa7b9f580.png",
     "static/media/hidro.png": "/static/media/hidro.bc90cb057985ab87c8c8.png",
     "static/media/cardume.png": "/static/media/cardume.b94e7373502d46ac1612.png",
@@ -45,11 +45,11 @@
     "static/media/logo.svg": "/static/media/logo.186611bde626fab59893b7db859a5771.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.9f51993090b3e4f09080715aab71fc2c.svg",
-    "main.fa82ad0d.css.map": "/static/css/main.fa82ad0d.css.map",
-    "main.811543fa.js.map": "/static/js/main.811543fa.js.map"
+    "main.ca30f561.css.map": "/static/css/main.ca30f561.css.map",
+    "main.5ce37b74.js.map": "/static/js/main.5ce37b74.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa82ad0d.css",
-    "static/js/main.811543fa.js"
+    "static/css/main.ca30f561.css",
+    "static/js/main.5ce37b74.js"
   ]
 }
