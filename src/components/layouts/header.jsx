@@ -29,7 +29,6 @@ export default function Header({page=''}) {
                                 CONTATO
                             </NavLink>
                             <NavLink to={"/"} className="responsiveButton">
-                                <button>TESTAR AGORA</button>
                             </NavLink>
                         </ul>
                 }

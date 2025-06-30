@@ -34,21 +34,36 @@
     background-color: transparent;
     border: 1px solid white;
     padding: 15px 20px;
-
+    color: whitesmoke;
     border-radius: 25px;
+}
+
+.fundoInvinsivel {
+
+    background-color: rgba(240, 248, 255, 0);
+    color: whitesmoke;
+    margin: 0;
+    font-size: 2rem;
+    height: auto;
+    width: 350px;
+    padding: 15px;
+    border-radius: 40px;
+    border: 2px solid whitesmoke;
+    margin-top: 20px;
+    position: static;
 }
 
 .botaoSiapreps a {
     color: white;
     text-decoration: none;
+   
 }
-    .versaoSiapreps {
-        display: flex;
-        position: absolute;
-        padding: 10px;
-        left: 90px;
-        text-align: left;
-    }
+
+.versaoSiapreps {
+    font-size: 12px;
+    color: whitesmoke;
+    margin: 15px auto auto 10px;
+}
 
 #notesiapreps {
     width: 600px;
@@ -90,10 +105,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .articleHeaderContainer{
+    .articleHeaderContainer {
         margin-left: 20px;
     }
-    #textosiapreps{
+
+    #textosiapreps {
         font-size: 1.2rem;
     }
 }
