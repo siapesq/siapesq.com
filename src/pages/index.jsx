@@ -1,22 +1,8 @@
-// eslint-disable-next-line
-import React, { useRef, useLayoutEffect, } from "react";
-
 import Header from "../components/layouts/header";
-// import Card from "../components/common/card";
 import mar from "../imgs/mar.png";
 import wave from "../imgs/wave.svg";
 import footerV2 from "../imgs/footerV2.png";
 import siaprepsMonitor from "../imgs/siaprepsMonitor.svg";
-// import satelite from "../imgs/satelite.svg";
-// import lupa from "../imgs/lupa.svg";
-// import mapa from "../imgs/mapa.svg";
-
-// eslint-disable-next-line
-import gsap from "gsap";
-// eslint-disable-next-line
-import { ScrollTrigger } from "gsap/all";
-
-
 import SectionSiapreps from "../components/sections/siapreps";
 import SectionHelps from "../components/sections/helps";
 import SectionPhytobloom from "../components/sections/phytobloom.jsx";
@@ -25,27 +11,6 @@ import SectionParceiros from "../components/sections/parceiros.jsx"
 
 
 export default function Index() {
-
-    // const el = useRef(null);
-
-    // useLayoutEffect(() => {
-    //     gsap.registerPlugin(ScrollTrigger);
-
-    //     gsap.context(() => {
-    //         gsap.timeline({
-    //             scrollTrigger: {
-    //                 scrub: true,
-    //                 start: "top 20px",
-    //                 end: "bottom 1000px"
-    //             }
-    //         })
-    //             .fromTo("#card-1", { x: 120, opacity: 0 }, { x: 0, opacity: 1 })
-    //             .fromTo("#card-2", { x: 120, opacity: 0 }, { x: 0, opacity: 1 })
-    //             .fromTo("#card-3", { x: 120, opacity: 0 }, { x: 0, opacity: 1 })
-    //     }, el.current);
-
-    //     return () => gsap.killTweensOf(".helps");
-    // })
 
     return (
         <>
@@ -62,7 +27,6 @@ export default function Index() {
                             Sistema de Inteligência Artificial em Pesquisa Ambiental
                             Inovação em Rastreabilidade e Modelagem Ecológica. Otimização e Adequação ESG dos Setores Produtivos.
                         </p>
-                        <button>COMEÇAR</button>
                     </article>
                     <footer className="footer_header_container">
                         <img src={window.innerWidth > 1366 ? wave : footerV2} alt="Ondas do rodapé" />
