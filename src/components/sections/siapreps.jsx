@@ -1,9 +1,9 @@
 import React from "react";
 import siapreps from "../../imgs/siaprepsLogo.png";
 import iconChecked from "../../imgs/iconChecked.png";
-import tubarao from "../../imgs/tubarao.png";
+import tubarao from "../../imgs/tubarao.svg";
 import peixes from "../../imgs/peixes.svg";
-import tubarao2 from "../../imgs/tubarao2.png";
+import tubarao2 from "../../imgs/tubarao2.svg";
 import { NavLink } from "react-router-dom";
 
 export default function SectionSiapreps() {
@@ -35,7 +35,9 @@ export default function SectionSiapreps() {
                 <div className="btn_more">
                     <div id="siapreps-enviar">
                         <div className="tubaraoB"><img src={tubarao2} alt="" /></div>
-                        <div><NavLink to={"/siapreps"} id="button">Saiba mais</NavLink></div>
+                        <div><NavLink to={"/siapreps"} id="button" onClick={() =>
+                            window.scroll(0,0)
+                        }>Saiba mais</NavLink></div>
                         <div className="peixes"><img src={peixes} alt="" /></div>
                     </div>
                 </div>
