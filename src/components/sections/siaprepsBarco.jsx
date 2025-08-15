@@ -1,4 +1,4 @@
-// import barcopesca from "../../imgs/barcopesca.svg";
+ // import barcopesca from "../../imgs/barcopesca.svg";
 // import textobarco from "../../imgs/textoBarco.svg";
 // import bordabarco from "../../imgs/bordabarco.svg";
 // import mar from "../../imgs/marBarco.jpg";

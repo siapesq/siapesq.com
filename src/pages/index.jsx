@@ -65,40 +65,34 @@ export default function Index() {
                         <button>COMEÇAR</button>
                     </article>
                     <footer className="footer_header_container">
-                        <img src={window.innerWidth > 1366 ? wave : footerV2} alt="Ondas do rodapé" />
-                        {(window.innerWidth > 1366) ?
-                            (
-                                <article>
-                                    <div>
-                                        <h2 className="title">
-                                            Inovação
-                                        </h2>
-                                        <p className="content">
-                                            Inteligência Artificial em Monitoramento Satelital
-                                        </p>
-                                    </div>
-                                    <span className="tracejado"></span>
-                                    <div>
-                                        <h2 className="title">
-                                            Otimização
-                                        </h2>
-                                        <p className="content">
-                                            Suporte para tomada de decisões
-                                        </p>
-                                    </div>
-                                    <span className="tracejado tr2"></span>
-                                    <div>
-                                        <h2 className="title">
-                                            Impacto
-                                        </h2>
-                                        <p className="content">
-                                            Resiliência Produtiva e Sustentabilidade
-                                        </p>
-                                    </div>
-                                </article>
-                            )
-                            : <></>
-                        }
+                        <article>
+                            <div>
+                                <h2 className="title">
+                                    Inovação
+                                </h2>
+                                <p className="content">
+                                    Inteligência Artificial em Monitoramento Satelital
+                                </p>
+                            </div>
+                            <span className="tracejado"></span>
+                            <div>
+                                <h2 className="title">
+                                    Otimização
+                                </h2>
+                                <p className="content">
+                                    Suporte para tomada de decisões
+                                </p>
+                            </div>
+                            <span className="tracejado tr2"></span>
+                            <div>
+                                <h2 className="title">
+                                    Impacto
+                                </h2>
+                                <p className="content">
+                                    Resiliência Produtiva e Sustentabilidade
+                                </p>
+                            </div>
+                        </article>
                     </footer>
                 </section>
 
