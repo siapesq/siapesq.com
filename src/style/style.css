@@ -208,9 +208,9 @@
 
 .header_container .footer_header_container article .tracejado {
   width: 2px;
-  border: thin solid #FFFFFF;
-  background-color: #FFFFFF;
-  height: 5rem;
+  border: thin solid #ffffff65;
+  background-color: #ffffff65;
+  height: 70px;
 }
 
 .header_container .footer_header_container article div .title {
