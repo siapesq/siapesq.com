@@ -7,7 +7,6 @@
   font-size: 35px;
   color: #1e3066;
   margin-bottom: 10px;
-  
 }
 
 #peixetextinho {
@@ -15,7 +14,6 @@
   margin-bottom: 20px;
   font-size: 25px;
 }
-
 
 .card-container {
   display: flex;
@@ -35,7 +33,6 @@
   color: #1e3066;
   margin-bottom: 10px;
   /* font-style: italic; */
-  
 }
 
 .imgpeixe {
@@ -44,7 +41,7 @@
   margin-bottom: 10px;
 }
 
-.baleia{
+.baleia {
   width: 130%;
 }
 
@@ -55,26 +52,27 @@
   font-style: italic;
 }
 
-.textinho, .textopeixe{
+.textinho,
+.textopeixe {
   text-align: center;
 }
 
-@media screen and (max-width: 768px){
-  .card-container{
+@media screen and (max-width: 768px) {
+  .card-container {
     display: none;
   }
 
-  .carrossel-container>.cardumeh2{
+  .carrossel-container > .cardumeh2 {
     display: none;
   }
 
-  .carrossel-container .cardumeh2{
+  .carrossel-container .cardumeh2 {
     font-size: 1.6rem;
     color: black;
   }
 
-  .carrossel-container .cardumeh3{
-    margin-top: 50px;
+  .carrossel-container .cardumeh3 {
+    margin-top: 1.5rem;
     font-size: 1.2rem;
   }
 }

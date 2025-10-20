@@ -65,7 +65,7 @@ export default function Index() {
                         <button>COMEÇAR</button>
                     </article>
                     <footer className="footer_header_container">
-                        <img src={window.innerWidth > 1366 ? wave : footerV2} alt="Ondas do rodapé" />
+                        <img src={wave} alt="Ondas do rodapé" />
                         {(window.innerWidth > 1366) ?
                             (
                                 <article>

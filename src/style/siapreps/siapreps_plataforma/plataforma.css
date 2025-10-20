@@ -1,110 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-.plataformaSiapreps {
-
-    font-family: "Mulish", sans-serif;
-
-    min-height: 100vh;
-    background-image: url('../../../imgs/siapreps.svg');
-    background-size: cover;
-    background-position: top right;
-
-    position: relative;
+:root {
+  font-size: 62.5%;
 }
 
-.plataformaSiapreps .platSiaprepsTxt {
-    background-color: #233363c4;
-    color: white;
-
-    max-width: 700px;
-    padding: 30px 50px;
-    ;
-    border-radius: 20px;
-
-    text-align: justify;
-    font-weight: 700;
+.siaprepsPlataforma {
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-.plataformaSiapreps .platSiaprepsContainer .platSiaprepsTxt p {
-    font-size: 1.5rem;
+.siaprepsPlataforma .container {
+  width: 101%;
+  height: 100%;
+  background-image: url("../../../imgs/siapreps.svg");
+  background-size: cover;
+  background-position: top right;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: center;
 }
 
-.plataformaSiapreps .platSiaprepsContainer {
-    position: absolute;
-    bottom: 50%;
-    right: 50px;
+.siaprepsPlataforma .container div p {
+  background-color: #233363d9;
+  border-radius: 20px;
+  padding: 3rem;
 
-    transform: translateY(50%);
+  text-align: justify;
+
+  font-size: 2.25rem;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: "Inter";
 }
 
+.siaprepsPlataforma .container div {
+  width: 45%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: end;
 
-.plataformaSiapreps .platSiaprepsContainer {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 10px;
+  margin-right: 5rem;
 }
 
-.plataformaSiapreps .platSiaprepsContainer div:last-child {
-    display: flex;
-    justify-content: end;
+.siaprepsPlataforma .container div button {
+  cursor: pointer;
+
+  /* font-family: "Inter", sans-serif; */
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: white;
+
+  margin-top: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: transparent;
+
+  border: 3px solid white;
+  border-radius: 4rem;
 }
 
-.plataformaSiapreps .platSiaprepsContainer div:last-child button {
-    background-color: transparent;
-    border: 2px solid white;
-
-    color: white;
-    font-weight: 700;
-
-    padding: 15px 50px;
-
-    border-radius: 25px;
-
-    cursor: pointer;
-}
-
-
-@media screen and (max-width: 768px) {
-    .plataformaSiapreps {
-        background: none;
-        min-height: auto;
-    }
-
-    .bkImg {
-        height: 300px;
-        background-image: url('../../../imgs/siapreps.svg');
-        background-size: cover;
-    }
-
-    .plataformaSiapreps .platSiaprepsContainer {
-
-        position: static;
-
-        max-width: 100%;
-        width: 100%;
-        border-radius: 0;
-        padding: 0;
-        background-color: #233363;
-
-        transform: translateY(0);
-    }
-
-    .plataformaSiapreps .platSiaprepsContainer .platSiaprepsTxt{
-        background-color: transparent;
-        border-radius: 0;
-        margin: 0;
-        padding: 20px;
-    }
-    
-    .plataformaSiapreps .platSiaprepsContainer .platSiaprepsTxt p{
-        font-size: 0.9rem;
-    }
-
-    .plataformaSiapreps .platSiaprepsContainer div:last-child {
-        display: none;
-    }
-
-    .plataformaSiapreps .platSiaprepsContainer div:last-child button{
-        padding: 15px 40px;
-    }
-}

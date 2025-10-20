@@ -12,7 +12,7 @@
     justify-content: space-between;
     column-gap: 10px;
 
-    >div{
+    > div {
       flex: 1 1 33%;
     }
   }
@@ -34,7 +34,7 @@
     align-items: center;
     row-gap: 10px;
 
-    img{
+    img {
       width: 20px;
     }
   }
@@ -48,11 +48,9 @@
   /* #copy{
     margin-left: 210px;
    } */
-   
-
 }
 
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: center;
 }
@@ -66,17 +64,19 @@
   align-items: center;
 }
 
-@media (max-width: 1150px){
-
+@media (max-width: 1150px) {
   .footerSiapreps .social-media {
     display: none;
     background-color: black;
   }
-
 }
 
-@media screen and (max-width: 500px)  {
-  #copy{
-    font-size: 0.6rem;
+@media screen and (max-width: 500px) {
+  .footerSiapreps #logo {
+    width: 5rem;
+  }
+
+  #copy {
+    font-size: 1rem;
   }
 }
