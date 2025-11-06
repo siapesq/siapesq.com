@@ -31,7 +31,7 @@ export default function SectionHeader() {
                     </div>
 
                     <div className="botaoContainer">
-                        <button className="fundoInvinsivel"> <a href=" https://github.com/siapesq/siapreps-release-mirror/releases/download/1.0.21/SIAPREPS.Setup.1.0.21." target="_blank" rel="noopener noreferrer">
+                        <button id="botao">  <a id="corbotao"  href=" https://github.com/siapesq/siapreps-release-mirror/releases/download/1.0.21/SIAPREPS.Setup.1.0.21." target="_blank" rel="noopener noreferrer">
                             Baixar Software</a>
                         </button>
                         <p className="versaoSiapreps">
