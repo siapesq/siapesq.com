@@ -1,0 +1,46 @@
+/* Estilos aditivos do seletor de idioma.
+   O seletor é posicionado de forma absoluta para NÃO participar do fluxo
+   do <nav>/<ul>, preservando o layout original do header exatamente. */
+
+.header {
+  position: relative;
+}
+
+.header .language-switcher {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 1001;
+}
+
+.header .language-switcher .lang-btn {
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 4px 6px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+/* Na home os links do nav são escuros; o seletor acompanha. */
+.index .header .language-switcher .lang-btn {
+  color: rgba(35, 51, 99, 1);
+}
+
+.header .language-switcher .lang-btn:hover {
+  opacity: 1;
+}
+
+.header .language-switcher .lang-btn.active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

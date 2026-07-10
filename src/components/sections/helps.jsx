@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Card from "../../components/common/card";
 import satelite from "../../imgs/satelite.svg"
 import lupa from "../../imgs/lupa.svg";
 import mapa from "../../imgs/mapa.svg";
 export default function SectionHelps() {
 
+    const { t } = useTranslation();
 
     return (
 
@@ -12,35 +14,35 @@ export default function SectionHelps() {
             <div className="helps_container">
                 <article className="helps_article">
                     <h2 className="title">
-                        Como a SIAPESQ pode te ajudar?
+                        {t("helps.title")}
                     </h2>
                     <p className="content">
-                        Veja nossa variedade de benefícios
+                        {t("helps.subtitle")}
                     </p>
                 </article>
                 <div className="cards">
                     <Card
                         id="card-1"
                         photo={satelite}
-                        title="Monitoramento Satelital"
-                        content="Utilizamos satélites para entregar aos nossos clientes informações precisas, e em tempo real"
+                        title={t("helps.card1Title")}
+                        content={t("helps.card1Text")}
                     />
                     <Card
                         id="card-2"
                         photo={lupa}
-                        title="Análise Ambiental"
-                        content="Baixe nossas predições, e faça o uso offline de onde vocês estiver pelo seu computador"
+                        title={t("helps.card2Title")}
+                        content={t("helps.card2Text")}
                     />
                     <Card
                         id="card-3"
                         photo={mapa}
-                        title="Predição"
-                        content="Através de modelos preditivos, trazemos segurança, resiliência e sustentabilidade para os processos produtivos"
+                        title={t("helps.card3Title")}
+                        content={t("helps.card3Text")}
                     />
                 </div>
             </div>
             <h3>
-                Conheça nossos produtos
+                {t("helps.products")}
             </h3>
         </section>
 

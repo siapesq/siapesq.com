@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from "react-i18next";
 import baleia from "../../imgs/baleia.svg";
 import golfinho from "../../imgs/golfinho.svg";
 import tartaruga from "../../imgs/tartaruga.svg";
@@ -18,21 +19,22 @@ import '../../style/siapreps/siapreps_cardume/Carrossel.css';
 import '../../style/siapreps/siapreps_cardume/cardume.css';
 
 const Carrossel = () => {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const peixe = [
-    { nome: 'Meka', nomeCientifico: 'Xiphias gladius', imagem:meka },
-    { nome: 'Atum Olhudo BAT', nomeCientifico: 'Thunnus obesus', imagem: atumoludo },
-    { nome: 'Atum Albacora', nomeCientifico: 'Thunnus alalunga', imagem: atumalbacora },
-    { nome: 'Atum YellowFin', nomeCientifico: 'Thunnus alalunga', imagem: atumyellowfin },
-    { nome: 'Bonito Listrado', nomeCientifico: 'Katsuwonus pelamis', imagem: bonito },
-    { nome: 'Pescada', nomeCientifico: 'Merluccius merluccius', imagem: pescada },
-    { nome: 'Anchova', nomeCientifico: 'Pomatomus Saltatrix', imagem: anchova },
-    { nome: 'Corvina ', nomeCientifico: 'Micropogonias funieri', imagem: corvina },
-    { nome: 'Abrótea', nomeCientifico: 'Urophycis brasiliensis', imagem: abrotea },
-    { nome: 'Merluza', nomeCientifico: 'merluccius hubbsi', imagem: merluza },
-    { nome: 'Tainha', nomeCientifico: 'Mugil liza', imagem: tainha },
-    { nome: 'Sardinha', nomeCientifico: 'Sardinella brasiliensis', imagem: sardinha },
+    { chave: 'meka', nomeCientifico: 'Xiphias gladius', imagem:meka },
+    { chave: 'atumOlhudo', nomeCientifico: 'Thunnus obesus', imagem: atumoludo },
+    { chave: 'atumAlbacora', nomeCientifico: 'Thunnus alalunga', imagem: atumalbacora },
+    { chave: 'atumYellowfin', nomeCientifico: 'Thunnus alalunga', imagem: atumyellowfin },
+    { chave: 'bonito', nomeCientifico: 'Katsuwonus pelamis', imagem: bonito },
+    { chave: 'pescada', nomeCientifico: 'Merluccius merluccius', imagem: pescada },
+    { chave: 'anchova', nomeCientifico: 'Pomatomus Saltatrix', imagem: anchova },
+    { chave: 'corvina', nomeCientifico: 'Micropogonias funieri', imagem: corvina },
+    { chave: 'abrotea', nomeCientifico: 'Urophycis brasiliensis', imagem: abrotea },
+    { chave: 'merluza', nomeCientifico: 'merluccius hubbsi', imagem: merluza },
+    { chave: 'tainha', nomeCientifico: 'Mugil liza', imagem: tainha },
+    { chave: 'sardinha', nomeCientifico: 'Sardinella brasiliensis', imagem: sardinha },
   ];
 
   const nextSlide = () => {
@@ -47,8 +49,8 @@ const Carrossel = () => {
 
   return (
     <div className="carrossel-container">
-      <center><h2 className="cardumeh2">Veja as principais espécies rastreáveis</h2>
-      <h3 className="cardumeh3">Tenha praticidade e eficiencia para atividade pesqueira. Te mostramos a localização do peixe.</h3></center>
+      <center><h2 className="cardumeh2">{t("siapreps.cardumeTitle")}</h2>
+      <h3 className="cardumeh3">{t("siapreps.cardumeSubtitle")}</h3></center>
       <div className="carrossel">
         <button className="arrow left" onClick={prevSlide}> 
           &#8249;
@@ -56,8 +58,8 @@ const Carrossel = () => {
         <div className="slide" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {peixe.map((membro, index) => (
             <div className="membro" key={index}>
-              <img src={membro.imagem} alt={membro.nome} />
-              <p className='cardumep'>{membro.nome}</p>
+              <img src={membro.imagem} alt={t(`siapreps.species.${membro.chave}`)} />
+              <p className='cardumep'>{t(`siapreps.species.${membro.chave}`)}</p>
               <p className='cardumep'>{membro.nomeCientifico}</p>
             </div>
           ))}
@@ -69,24 +71,24 @@ const Carrossel = () => {
       <div>
     </div>
     <br /><br />
-      <h2 className='cardumeh2'>Nossas indicações levam em consideração a restrição de áreas de capturas onde habitam:</h2>
+      <h2 className='cardumeh2'>{t("siapreps.cardumeProtectedTitle")}</h2>
       <br />
       <br />
-      
+
         <div className="card-container">
           <div className="card">
-            <h2 className="textopeixe">Baleia Jubarte</h2>
-            <img className="imgpeixe baleia" src={baleia} alt="baleia" />
+            <h2 className="textopeixe">{t("siapreps.protectedWhale")}</h2>
+            <img className="imgpeixe baleia" src={baleia} alt={t("siapreps.protectedWhale")} />
            <p className="textinho">Megaptera novaeangliae</p>
           </div>
           <div className="card">
-            <h2 className="textopeixe">Tartaruga Cabeçuda</h2>
-            <img className="imgpeixe" src={tartaruga} alt="tartaruga" />
+            <h2 className="textopeixe">{t("siapreps.protectedTurtle")}</h2>
+            <img className="imgpeixe" src={tartaruga} alt={t("siapreps.protectedTurtle")} />
            <p className="textinho">Caretta caretta</p>
           </div>
           <div className="card">
-            <h2 className="textopeixe">Golfinho Nariz de Garrafa</h2>
-            <img className="imgpeixe" src={golfinho} alt="golfinho" />
+            <h2 className="textopeixe">{t("siapreps.protectedDolphin")}</h2>
+            <img className="imgpeixe" src={golfinho} alt={t("siapreps.protectedDolphin")} />
            <p className="textinho">Tursiops truncatus</p>
           </div>
         </div>

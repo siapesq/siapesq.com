@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import '../../style/about/cards.css';
 import AboutCard from "../common/aboutCard";
 
@@ -8,54 +9,37 @@ import Hugo from  '../../imgs/hugo2.png';
 import Bruno from '../../imgs/bruno2.png';
 
 export default function SectionHead() {
+    const { t } = useTranslation();
     return (
         <>
             <div className="cards">
 
                 <AboutCard className="card" content={{
                     title: "Talles",
-                    tag: "CEO",
+                    tag: t("team.roleCeoFounder"),
                     img: Talles,
-                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
+                    text: t("about.member1Bio")
                 }} />
                 <AboutCard className="card cardR" content={{
-                    title: "Talles",
-                    tag: "CEO",
+                    title: "Patrick",
+                    tag: t("team.roleDev"),
                     img: Patrick,
-                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
+                    text: t("about.member2Bio")
                 }} />
                 <AboutCard className="card" content={{
-                    title: "Talles",
-                    tag: "CEO",
+                    title: "Bruno",
+                    tag: t("team.roleDev"),
                     img: Bruno,
-                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
+                    text: t("about.member3Bio")
                 }} />
                 <AboutCard className="card cardR" content={{
-                    title: "Talles",
-                    tag: "CEO",
+                    title: "Hugo",
+                    tag: t("team.roleDesigner"),
                     img: Hugo,
-                    text: "Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. "
+                    text: t("about.member4Bio")
                 }} />
 
-                {/* <div className="card">
-                    <img className="equipe2" src={Talles} alt="Talles" />
-
-                    <div>
-                        <h1 className="cargo">Talles <sup>CEO</sup></h1>
-                        <p className="lorem">Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
-                    </div>
-                </div>
-
-                <div className="card cardR">
-                    <img className="equipe2" src={Talles} alt="talles" />
-                    <div>
-                        <h1 className="cargo"><span>CEO</span> Talles</h1>
-                        <p className="forem">Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
-                    </div>
-                </div> */}
             </div>
         </>
     )
 }
-
-

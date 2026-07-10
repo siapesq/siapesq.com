@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import '../../style/contato/form.css';
 import Header from "../layouts/header";
 
 
 export default function SectionForm() {
 
+  const { t } = useTranslation();
 
   return (
     <div className="formContato">
@@ -13,13 +15,13 @@ export default function SectionForm() {
       </div>
       <div className="contactContainer">
         <div className="form-infos">
-          <h1>Entre em contato conosco!</h1>
+          <h1>{t("form.title")}</h1>
           <br />
-          <p>@siapesq</p>
+          <p>{t("contact.instagram")}</p>
           <br />
-          <p>(53) 99950-3671</p>
+          <p>{t("contact.phone")}</p>
           <br />
-          <p>siapesq@gmail.com</p>
+          <p>{t("contact.email")}</p>
         </div>
         <div className="form-content">
           <div id="textoform">
@@ -27,23 +29,23 @@ export default function SectionForm() {
           <form className="formContato">
             <div className="input-group">
               <div className="input-item">
-                <label htmlFor="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Nome" />
+                <label htmlFor="nome">{t("form.firstName")}</label>
+                <input type="text" id="nome" placeholder={t("form.firstName")} />
               </div>
               <div className="input-item">
-                <label htmlFor="sobrenome">Sobrenome</label>
-                <input type="text" id="sobrenome" placeholder="Sobrenome" />
+                <label htmlFor="sobrenome">{t("form.lastName")}</label>
+                <input type="text" id="sobrenome" placeholder={t("form.lastName")} />
               </div>
             </div>
             <div className="input-item">
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" placeholder="Email" />
+              <label htmlFor="email">{t("form.email")}</label>
+              <input type="email" id="email" placeholder={t("form.email")} />
             </div>
             <div className="input-item">
-              <label htmlFor="mensagem">Mensagem</label>
-              <textarea id="mensagem" placeholder="Mensagem"></textarea>
+              <label htmlFor="mensagem">{t("form.message")}</label>
+              <textarea id="mensagem" placeholder={t("form.message")}></textarea>
             </div>
-            <button id="botao"> enviar</button>
+            <button id="botao">{t("form.send")}</button>
           </form>
         </div>
       </div>

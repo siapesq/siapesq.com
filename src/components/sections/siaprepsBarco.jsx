@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 // import barcopesca from "../../imgs/barcopesca.svg";
 // import textobarco from "../../imgs/textoBarco.svg";
 // import bordabarco from "../../imgs/bordabarco.svg";
@@ -9,6 +10,7 @@ import '../../style/siapreps/siapreps_barco/barco.css';
 
 export default function SectionBarco() {
 
+  const { t } = useTranslation();
 
   return (
     <>
@@ -23,27 +25,27 @@ export default function SectionBarco() {
         {/* <div className="textoPesca"> */}
 
 
-        <p className="textoPesca">Localização do Pescado</p>
+        <p className="textoPesca">{t("siapreps.barcoLocation")}</p>
 
         {/* MUDANDO O LUGAR DO iframe */}
         <div className="divBarco">
           <div>
-            <iframe src='https://my.spline.design/untitled-J3JQmE2lqIzFAEopaNXctl4J/' frameborder='0' width='110%' height="500px" title="Modelo 3D do barco" style={{zIndex: 1000}}></iframe>
+            <iframe src='https://my.spline.design/untitled-J3JQmE2lqIzFAEopaNXctl4J/' frameborder='0' width='110%' height="500px" title={t("siapreps.barcoIframeTitle")} style={{zIndex: 1000}}></iframe>
           </div>
         </div>
 
         <div className="divInfos">
           <div>
             <h2>60%</h2>
-            <p>Redução do Custo no Processo de Procura do Pescado</p>
+            <p>{t("siapreps.barcoStat1")}</p>
           </div>
           <div>
             <h2>60%</h2>
-            <p>Redução da Emissão de Gases Estufas para a Atmosfera</p>
+            <p>{t("siapreps.barcoStat2")}</p>
           </div>
           <div>
             <h2>70%</h2>
-            <p>Otimização do Tempo das Pescarias</p>
+            <p>{t("siapreps.barcoStat3")}</p>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import insta from "../../imgs/insta.png";
 import zap from "../../imgs/zap.png";
 import email from "../../imgs/email.png";
@@ -8,6 +9,7 @@ import '../../style/siapreps/siapreps_Footer/Footer.css';
 
 export default function SectionFooter() {
 
+  const { t } = useTranslation();
 
   return (
     <>
@@ -26,11 +28,11 @@ export default function SectionFooter() {
           </div>
 
           <div className="footer-bottom">
-            <img id="logo" src={logo} alt="SIAPESQ Logo" className="logo" />
+            <img id="logo" src={logo} alt={t("footer.logoAlt")} className="logo" />
           </div>
-          
+
           <div>
-            <p id="copy">Copyright © 2024 SIAPESQ | Powered by SIAPESQ</p>
+            <p id="copy">{t("footer.copyright")}</p>
           </div>
         </div>
       </footer>

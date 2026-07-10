@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Header from "../components/layouts/header";
 import mar from "../imgs/mar.png";
 import wave from "../imgs/wave.svg";
@@ -12,51 +13,52 @@ import SectionParceiros from "../components/sections/parceiros.jsx"
 
 export default function Index() {
 
+    const { t } = useTranslation();
+
     return (
         <>
             <div className="index">
                 <section className="header_container">
-                    <img src={mar} alt="Imagem de fundo" className="bg_img" />
+                    <img src={mar} alt={t("common.backgroundAlt")} className="bg_img" />
                     <Header page={'index'} />
                     <article className="article_header_container">
-                        <img src={siaprepsMonitor} alt="Imagem de um monitor da siapreps" />
+                        <img src={siaprepsMonitor} alt={t("home.monitorAlt")} />
                         <h2 id="h2principal" >
-                            INOVAÇÃO TECNOLÓGICA ALIADA À SUSTENTILIDADE AMBIENTAL
+                            {t("home.heroTitle")}
                         </h2>
                         <p id="pprincipal">
-                            Sistema de Inteligência Artificial em Pesquisa Ambiental
-                            Inovação em Rastreabilidade e Modelagem Ecológica. Otimização e Adequação ESG dos Setores Produtivos.
+                            {t("home.heroText")}
                         </p>
                     </article>
                     <footer className="footer_header_container">
-                        <img src={window.innerWidth > 1366 ? wave : footerV2} alt="Ondas do rodapé" />
+                        <img src={window.innerWidth > 1366 ? wave : footerV2} alt={t("home.waveAlt")} />
                         {(window.innerWidth > 1366) ?
                             (
                                 <article>
                                     <div>
                                         <h2 className="title">
-                                            Inovação
+                                            {t("home.innovationTitle")}
                                         </h2>
                                         <p className="content">
-                                            Inteligência Artificial em Monitoramento Satelital
+                                            {t("home.innovationText")}
                                         </p>
                                     </div>
                                     <span className="tracejado"></span>
                                     <div>
                                         <h2 className="title">
-                                            Otimização
+                                            {t("home.optimizationTitle")}
                                         </h2>
                                         <p className="content">
-                                            Suporte para tomada de decisões
+                                            {t("home.optimizationText")}
                                         </p>
                                     </div>
                                     <span className="tracejado tr2"></span>
                                     <div>
                                         <h2 className="title">
-                                            Impacto
+                                            {t("home.impactTitle")}
                                         </h2>
                                         <p className="content">
-                                            Resiliência Produtiva e Sustentabilidade
+                                            {t("home.impactText")}
                                         </p>
                                     </div>
                                 </article>
