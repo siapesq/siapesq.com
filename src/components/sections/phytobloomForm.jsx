@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import '../../style/phytobloom/form.css';
 import { enviarEmail } from "../../controllers/sendEmail";
 export default function SectionForm() {
+  const { t } = useTranslation();
   const [formData, setFormData] = React.useState({
     nome: "",
     sobrenome: "",
@@ -29,7 +31,7 @@ export default function SectionForm() {
 
     if (nome === "" || sobrenome === "" || email === "" || mensagem === "") {
 
-      alert("Preencha todos os campos!");
+      alert(t("form.fillAll"));
       return;
     } else {
       const response = await enviarEmail(email, nome, sobrenome, mensagem, "phytobloom");
@@ -45,56 +47,56 @@ export default function SectionForm() {
   return (
     <div className="contact-container">
       <div id="textoform">
-        <h1 id="h1Phytobloom">Entre em contato conosco!</h1>
+        <h1 id="h1Phytobloom">{t("form.title")}</h1>
       </div>
       <div className="form-content">
         <form id="formPhytobloom" onSubmit={sendMail}>
           <div className="input-group">
             <div className="input-item">
-              <label htmlFor="nome">Nome</label>
+              <label htmlFor="nome">{t("form.firstName")}</label>
               <input
                 type="text"
                 id="nome"
                 name="nome"
-                placeholder="Nome"
+                placeholder={t("form.firstName")}
                 value={formData.nome}
                 onChange={handleChange}
               />
             </div>
             <div className="input-item">
-              <label htmlFor="sobrenome">Sobrenome</label>
+              <label htmlFor="sobrenome">{t("form.lastName")}</label>
               <input
                 type="text"
                 id="sobrenome"
                 name="sobrenome"
-                placeholder="Sobrenome"
+                placeholder={t("form.lastName")}
                 value={formData.sobrenome}
                 onChange={handleChange}
               />
             </div>
           </div>
           <div className="input-item">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">{t("form.email")}</label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="Email"
+              placeholder={t("form.email")}
               value={formData.email}
               onChange={handleChange}
             />
           </div>
           <div className="input-item">
-            <label htmlFor="mensagem">Mensagem</label>
+            <label htmlFor="mensagem">{t("form.message")}</label>
             <textarea
               id="mensagem"
               name="mensagem"
-              placeholder="Mensagem"
+              placeholder={t("form.message")}
               value={formData.mensagem}
               onChange={handleChange}
             />
           </div>
-          <button id="botaoPhytobloom" type="submit" onClick={sendMail}>Enviar</button>
+          <button id="botaoPhytobloom" type="submit" onClick={sendMail}>{t("form.send")}</button>
         </form>
       </div>
       {message && (

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import siapreps from "../../imgs/siaprepsLogo.png";
 import iconChecked from "../../imgs/iconChecked.png";
 import tubarao from "../../imgs/tubarao.svg";
@@ -8,36 +9,37 @@ import { NavLink } from "react-router-dom";
 
 export default function SectionSiapreps() {
 
+    const { t } = useTranslation();
 
     return (
         <section className="siapreps">
             <div className="siapreps_container">
                 <div className="siapreps_logo">
-                    <div><img src={siapreps} alt="Logo da Siapreps" width="565px" height="294" /></div>
+                    <div><img src={siapreps} alt={t("siaprepsHome.logoAlt")} width="565px" height="294" /></div>
                 </div>
 
                 <div className="list-column">
                     <ul className="list">
-                        <li> <img className="iconChecked" src={iconChecked} width={60} alt="check" /> Localização do Pescado</li>
-                        <li><img className="iconChecked" src={iconChecked} width={60} alt="check" /> Certificação da Pesca</li>
-                        <li><img className="iconChecked" src={iconChecked} width={60} alt="check" /> Mapa de bordo automatizado</li>
+                        <li> <img className="iconChecked" src={iconChecked} width={60} alt={t("common.checkAlt")} /> {t("siaprepsHome.item1")}</li>
+                        <li><img className="iconChecked" src={iconChecked} width={60} alt={t("common.checkAlt")} /> {t("siaprepsHome.item2")}</li>
+                        <li><img className="iconChecked" src={iconChecked} width={60} alt={t("common.checkAlt")} /> {t("siaprepsHome.item3")}</li>
                     </ul>
                 </div>
                 <div className="tubarao">
-                    <img src={tubarao} alt="Tubarão" />
+                    <img src={tubarao} alt={t("siaprepsHome.sharkAlt")} />
                 </div>
             </div>
             <div className="siapreps_bottom">
                 <div className="siapreps_texto">
 
-                    <p>A plataforma SIAPREPS disponibiliza aos usuários mapas que  permitem localizar  e monitorar os cardumes com maior facilidade e precisão</p>
+                    <p>{t("siaprepsHome.description")}</p>
                 </div>
                 <div className="btn_more">
                     <div id="siapreps-enviar">
                         <div className="tubaraoB"><img src={tubarao2} alt="" /></div>
                         <div><NavLink to={"/siapreps"} id="button" onClick={() =>
                             window.scroll(0,0)
-                        }>Saiba mais</NavLink></div>
+                        }>{t("cta.learnMore")}</NavLink></div>
                         <div className="peixes"><img src={peixes} alt="" /></div>
                     </div>
                 </div>

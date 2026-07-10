@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import phytobloom from "../../imgs/Phytobloom.svg";
 import '../../style/phytobloom/PhytoBloom.css';
 import iconChecked from "../../imgs/iconChecked.png";
@@ -7,6 +8,7 @@ import { NavLink } from "react-router-dom";
 
 export default function SectionPhytobloom() {
 
+  const { t } = useTranslation();
 
   return (
     <>
@@ -15,31 +17,29 @@ export default function SectionPhytobloom() {
           <div className="header-text">
             <ul>
               <li>
-                <img className="iconChecked" src={iconChecked} width={60} alt="check" />
-                Monitoramento de Reservatórios Continentais</li>
+                <img className="iconChecked" src={iconChecked} width={60} alt={t("common.checkAlt")} />
+                {t("phytobloomHome.item1")}</li>
               <li>
-                <img className="iconChecked" src={iconChecked} width={60} alt="check" />
-                Detecção de Desregulações Ambientais</li>
+                <img className="iconChecked" src={iconChecked} width={60} alt={t("common.checkAlt")} />
+                {t("phytobloomHome.item2")}</li>
               <li>
-                <img className="iconChecked" src={iconChecked} width={60} alt="check" />
-                Predição de Blooms de Microalga e Plantas Aquáticas</li>
+                <img className="iconChecked" src={iconChecked} width={60} alt={t("common.checkAlt")} />
+                {t("phytobloomHome.item3")}</li>
             </ul>
           </div>
           <div className="logo">
             <div>
-              <img src={phytobloom} alt="PhytoBloom Logo" />
+              <img src={phytobloom} alt={t("phytobloomHome.logoAlt")} />
             </div>
           </div>
         </header>
         <main>
           <p>
-            A plataforma PhytoBloom disponibiliza aos usuários mapas que permitem
-            monitorar a qualidade de corpos d águas continentais, prever eventos críticos
-            de desregulação ambiental e subsidiar o manejo Socio-Ambiental
+            {t("phytobloomHome.description")}
           </p>
           <NavLink to={"/phytobloom"} className="saiba-mais" onClick={() =>
             window.scroll(0, 0)
-          }>Saiba mais</NavLink>
+          }>{t("cta.learnMore")}</NavLink>
         </main>
       </div>
     </>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import insta from "../../imgs/insta.png";
 import zap from "../../imgs/zap.png";
 import email from "../../imgs/email.png";
@@ -8,7 +9,8 @@ import '../../style/phytobloom/footer.css';
 
 export default function SectionFooter(){
 
-    
+    const { t } = useTranslation();
+
     return(
         <>
        <footer className="footer">
@@ -26,11 +28,11 @@ export default function SectionFooter(){
           </div>
 
           <div className="footer-bottom">
-            <img id="logo" src={logo} alt="SIAPESQ Logo" className="logo" />
+            <img id="logo" src={logo} alt={t("footer.logoAlt")} className="logo" />
           </div>
-          
+
           <div id="copyphytoblom">
-            <p>Copyright © 2024 SIAPESQ | Powered by SIAPESQ</p>
+            <p>{t("footer.copyright")}</p>
           </div>
         </div>
       </footer>

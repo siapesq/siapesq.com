@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "siapreps": "SIAPREPS",
+    "phytobloom": "PHYTOBLOOM",
+    "about": "SOBRE NOSOTROS",
+    "contact": "CONTACTO",
+    "logoAltBlue": "Logo de SIAPESQ en color azul",
+    "logoAltWhite": "Logo de SIAPESQ en blanco",
+    "logoAltResponsive": "Logo blanco de SIAPESQ con información adicional"
+  },
+  "language": {
+    "label": "Idioma"
+  },
+  "cta": {
+    "learnMore": "Saber más",
+    "startNow": "Comenzar Ahora",
+    "downloadSoftware": "Descargar Software"
+  },
+  "download": {
+    "version": "Versión {{version}}",
+    "availableFor": "Disponible para:",
+    "windows": "Windows 10 y 11"
+  },
+  "form": {
+    "title": "¡Ponte en contacto con nosotros!",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "fillAll": "¡Rellena todos los campos!",
+    "sharksAlt": "Crías de tiburón"
+  },
+  "footer": {
+    "logoAlt": "Logo de SIAPESQ",
+    "copyright": "Copyright © 2024 SIAPESQ | Powered by SIAPESQ"
+  },
+  "common": {
+    "cardPhotoAlt": "Foto descriptiva",
+    "checkAlt": "Icono de confirmación",
+    "backgroundAlt": "Imagen de fondo"
+  },
+  "home": {
+    "monitorAlt": "Imagen de un monitor de SIAPREPS",
+    "heroTitle": "INNOVACIÓN TECNOLÓGICA ALIADA A LA SOSTENIBILIDAD AMBIENTAL",
+    "heroText": "Sistema de Inteligencia Artificial en Investigación Ambiental. Innovación en Trazabilidad y Modelado Ecológico. Optimización y Adecuación ESG de los Sectores Productivos.",
+    "waveAlt": "Olas del pie de página",
+    "innovationTitle": "Innovación",
+    "innovationText": "Inteligencia Artificial en Monitoreo Satelital",
+    "optimizationTitle": "Optimización",
+    "optimizationText": "Apoyo a la toma de decisiones",
+    "impactTitle": "Impacto",
+    "impactText": "Resiliencia Productiva y Sostenibilidad"
+  },
+  "helps": {
+    "title": "¿Cómo puede ayudarte SIAPESQ?",
+    "subtitle": "Descubre nuestra variedad de beneficios",
+    "card1Title": "Monitoreo Satelital",
+    "card1Text": "Utilizamos satélites para entregar a nuestros clientes información precisa y en tiempo real",
+    "card2Title": "Análisis Ambiental",
+    "card2Text": "Descarga nuestras predicciones y úsalas sin conexión desde donde estés, en tu computadora",
+    "card3Title": "Predicción",
+    "card3Text": "Mediante modelos predictivos, aportamos seguridad, resiliencia y sostenibilidad a los procesos productivos",
+    "products": "Conoce nuestros productos"
+  },
+  "siaprepsHome": {
+    "logoAlt": "Logo de SIAPREPS",
+    "item1": "Localización del Pescado",
+    "item2": "Certificación de la Pesca",
+    "item3": "Mapa de a bordo automatizado",
+    "sharkAlt": "Tiburón",
+    "description": "La plataforma SIAPREPS ofrece a los usuarios mapas que permiten localizar y monitorear los cardúmenes con mayor facilidad y precisión"
+  },
+  "phytobloomHome": {
+    "item1": "Monitoreo de Embalses Continentales",
+    "item2": "Detección de Desequilibrios Ambientales",
+    "item3": "Predicción de Blooms de Microalgas y Plantas Acuáticas",
+    "logoAlt": "Logo PhytoBloom",
+    "description": "La plataforma PhytoBloom ofrece a los usuarios mapas que permiten monitorear la calidad de los cuerpos de agua continentales, prever eventos críticos de desequilibrio ambiental y apoyar la gestión socioambiental"
+  },
+  "siapreps": {
+    "nameAlt": "SIAPREPS",
+    "description": "La plataforma SIAPREPS ofrece a los usuarios mapas que permiten localizar y monitorear los cardúmenes con mayor facilidad y precisión.",
+    "notebookAlt": "Imagen de una laptop de SIAPREPS",
+    "barcoLocation": "Localización del Pescado",
+    "barcoIframeTitle": "Modelo 3D del barco",
+    "barcoStat1": "Reducción del costo en el proceso de búsqueda del pescado",
+    "barcoStat2": "Reducción de la emisión de gases de efecto invernadero a la atmósfera",
+    "barcoStat3": "Optimización del tiempo de las pescas",
+    "platformText": "¡Inteligencia Artificial y Modelado Ecológico aplicados para monitorear los diferentes cardúmenes de pescado por satélite en tiempo real! Localiza el pescado con mayor eficiencia, evitando la captura de especies protegidas y reduciendo el uso de gasóleo.",
+    "cardumeTitle": "Mira las principales especies rastreables",
+    "cardumeSubtitle": "Ten practicidad y eficiencia para la actividad pesquera. Te mostramos la localización del pez.",
+    "cardumeProtectedTitle": "Nuestras indicaciones tienen en cuenta la restricción de áreas de captura donde habitan:",
+    "protectedWhale": "Ballena Jorobada",
+    "protectedTurtle": "Tortuga Boba",
+    "protectedDolphin": "Delfín Nariz de Botella",
+    "species": {
+      "meka": "Pez Espada",
+      "atumOlhudo": "Atún Patudo",
+      "atumAlbacora": "Atún Blanco",
+      "atumYellowfin": "Atún Aleta Amarilla",
+      "bonito": "Bonito Listado",
+      "pescada": "Pescadilla",
+      "anchova": "Anjova",
+      "corvina": "Corvina",
+      "abrotea": "Brótola",
+      "merluza": "Merluza Argentina",
+      "tainha": "Lisa",
+      "sardinha": "Sardina"
+    }
+  },
+  "phytobloom": {
+    "nameAlt": "PhytoBloom",
+    "headerText": "¡Con PHYTOBLOOM VISION identificamos Desequilibrios Ambientales en Embalses Hídricos, propiciando la Gestión Ambiental para Evitar Eventos Críticos!",
+    "plantaImgAlt": "Planta acuática",
+    "plantaTitle": "¡Hacemos posible el monitoreo de Embalses Hídricos!",
+    "plantaItem1": "Plataforma web",
+    "plantaItem2": "Monitorea y prevé Desequilibrios Ambientales",
+    "plantaItem3": "Gestión eficiente y oportuna de los cuerpos de agua",
+    "plantaItem4": "Planificación de intervenciones de manera eficiente",
+    "youtubeTitle": "Plataforma PhytoBloom",
+    "youtubeIframeTitle": "Reproductor de video de YouTube",
+    "youtubeDemo": "Mira una demostración",
+    "platformImgAlt": "Imagen de la plataforma PhytoBloom",
+    "platformText": "Inteligencia Artificial y Modelado Ecológico aplicados para monitorear la Calidad Ambiental de Embalses Hídricos, localizando y previendo eventos de desequilibrio como Eutrofización, Replicación de Microalgas y de Plantas Acuáticas"
+  },
+  "contact": {
+    "instagram": "@siapesq",
+    "phone": "(53) 99950-3671",
+    "email": "siapesq@gmail.com"
+  },
+  "about": {
+    "systemAlt": "Sistema SIAPESQ",
+    "intro": "SIAPESQ es una startup de innovación ambiental que une inteligencia artificial y modelado ecológico para transformar datos satelitales en decisiones sostenibles, apoyando a los sectores productivos en la adecuación ESG y el uso responsable de los recursos naturales.",
+    "teamAlt": "Equipo SIAPESQ",
+    "teamTitle": "Conoce nuestro equipo",
+    "member1Bio": "Lidera la visión estratégica y la innovación de SIAPESQ, conectando tecnología y sostenibilidad ambiental.",
+    "member2Bio": "Responsable del desarrollo y la ingeniería detrás de las plataformas SIAPREPS y PhytoBloom.",
+    "member3Bio": "Trabaja en el desarrollo de las soluciones tecnológicas que sostienen el monitoreo ambiental de SIAPESQ.",
+    "member4Bio": "Se encarga de la experiencia y el diseño de las plataformas, haciendo los datos ambientales claros y accesibles."
+  },
+  "team": {
+    "title": "¡Conoce nuestro equipo!",
+    "learnMore": "Saber Más",
+    "roleCeoFounder": "CEO & Founder",
+    "roleDev": "Leader Team & Dev",
+    "roleDesigner": "Leader Team & Designer"
+  },
+  "legacy": {
+    "startNow": "Comenzar Ahora",
+    "problemTitle": "El Problema",
+    "stat1Value": "3%",
+    "stat1Text": "del total de Gases de Efecto Invernadero (GEI) lanzados a la atmósfera",
+    "stat2Value": "50%",
+    "stat2Text": "del gasóleo se desperdicia durante la búsqueda de peces",
+    "stat3Value": "MAYOR",
+    "stat3Text": "parte del tiempo de una navegación se utiliza para buscar peces.",
+    "platformText": "La plataforma SIAPREPS ofrece a los usuarios mapas que permiten localizar y monitorear los cardúmenes en tiempo real, mostrando las áreas con mayor productividad para diferentes especies de pescado.",
+    "startNowLight": "comenzar ahora",
+    "startNowDark": "comenzar ahora",
+    "speciesTitle": "Mira las principales especies rastreables",
+    "species1": "Lisa",
+    "species2": "Bagre",
+    "species3": "Salmón",
+    "species4": "Pez luna",
+    "speciesDescription": "Especie disponible para rastreo en la plataforma SIAPREPS.",
+    "practicality": "Ten practicidad y eficiencia para la actividad pesquera. Te mostramos la localización del pez.",
+    "obs": "Nota: filtramos las áreas con menor probabilidad de haber animales prohibidos de pesca, como tiburones, ballenas y tortugas.",
+    "contactTitle": "Ponte en contacto"
+  }
+}

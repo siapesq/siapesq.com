@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "siapreps": "SIAPREPS",
+    "phytobloom": "PHYTOBLOOM",
+    "about": "ABOUT US",
+    "contact": "CONTACT",
+    "logoAltBlue": "SIAPESQ logo in blue",
+    "logoAltWhite": "SIAPESQ logo in white",
+    "logoAltResponsive": "SIAPESQ white logo with additional information"
+  },
+  "language": {
+    "label": "Language"
+  },
+  "cta": {
+    "learnMore": "Learn more",
+    "startNow": "Get Started",
+    "downloadSoftware": "Download Software"
+  },
+  "download": {
+    "version": "Version {{version}}",
+    "availableFor": "Available for:",
+    "windows": "Windows 10 and 11"
+  },
+  "form": {
+    "title": "Get in touch with us!",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "fillAll": "Please fill in all fields!",
+    "sharksAlt": "Baby sharks"
+  },
+  "footer": {
+    "logoAlt": "SIAPESQ logo",
+    "copyright": "Copyright © 2024 SIAPESQ | Powered by SIAPESQ"
+  },
+  "common": {
+    "cardPhotoAlt": "Descriptive photo",
+    "checkAlt": "Confirmation icon",
+    "backgroundAlt": "Background image"
+  },
+  "home": {
+    "monitorAlt": "Image of a SIAPREPS monitor",
+    "heroTitle": "TECHNOLOGICAL INNOVATION ALLIED WITH ENVIRONMENTAL SUSTAINABILITY",
+    "heroText": "Artificial Intelligence System for Environmental Research. Innovation in Traceability and Ecological Modeling. Optimization and ESG Compliance for Production Sectors.",
+    "waveAlt": "Footer waves",
+    "innovationTitle": "Innovation",
+    "innovationText": "Artificial Intelligence in Satellite Monitoring",
+    "optimizationTitle": "Optimization",
+    "optimizationText": "Support for decision-making",
+    "impactTitle": "Impact",
+    "impactText": "Productive Resilience and Sustainability"
+  },
+  "helps": {
+    "title": "How can SIAPESQ help you?",
+    "subtitle": "Explore our range of benefits",
+    "card1Title": "Satellite Monitoring",
+    "card1Text": "We use satellites to deliver accurate, real-time information to our clients",
+    "card2Title": "Environmental Analysis",
+    "card2Text": "Download our predictions and use them offline, wherever you are, on your computer",
+    "card3Title": "Prediction",
+    "card3Text": "Through predictive models, we bring safety, resilience and sustainability to production processes",
+    "products": "Discover our products"
+  },
+  "siaprepsHome": {
+    "logoAlt": "SIAPREPS logo",
+    "item1": "Fish Location",
+    "item2": "Fishing Certification",
+    "item3": "Automated onboard map",
+    "sharkAlt": "Shark",
+    "description": "The SIAPREPS platform provides users with maps that make it easier and more precise to locate and monitor fish schools"
+  },
+  "phytobloomHome": {
+    "item1": "Monitoring of Continental Reservoirs",
+    "item2": "Detection of Environmental Imbalances",
+    "item3": "Prediction of Microalgae and Aquatic Plant Blooms",
+    "logoAlt": "PhytoBloom logo",
+    "description": "The PhytoBloom platform provides users with maps to monitor the quality of continental water bodies, predict critical environmental imbalance events and support socio-environmental management"
+  },
+  "siapreps": {
+    "nameAlt": "SIAPREPS",
+    "description": "The SIAPREPS platform provides users with maps that make it easier and more precise to locate and monitor fish schools.",
+    "notebookAlt": "Image of a SIAPREPS laptop",
+    "barcoLocation": "Fish Location",
+    "barcoIframeTitle": "3D boat model",
+    "barcoStat1": "Reduction in the cost of searching for fish",
+    "barcoStat2": "Reduction in greenhouse gas emissions into the atmosphere",
+    "barcoStat3": "Optimization of fishing time",
+    "platformText": "Artificial Intelligence and Ecological Modeling applied to monitor the different fish schools by satellite in real time! Locate fish more efficiently, avoiding the capture of protected species and reducing diesel oil use.",
+    "cardumeTitle": "See the main trackable species",
+    "cardumeSubtitle": "Get practicality and efficiency for fishing activity. We show you the location of the fish.",
+    "cardumeProtectedTitle": "Our recommendations take into account restricted capture areas inhabited by:",
+    "protectedWhale": "Humpback Whale",
+    "protectedTurtle": "Loggerhead Turtle",
+    "protectedDolphin": "Bottlenose Dolphin",
+    "species": {
+      "meka": "Swordfish",
+      "atumOlhudo": "Bigeye Tuna",
+      "atumAlbacora": "Albacore Tuna",
+      "atumYellowfin": "Yellowfin Tuna",
+      "bonito": "Skipjack Tuna",
+      "pescada": "Weakfish",
+      "anchova": "Bluefish",
+      "corvina": "Whitemouth Croaker",
+      "abrotea": "Brazilian Codling",
+      "merluza": "Argentine Hake",
+      "tainha": "Mullet",
+      "sardinha": "Sardine"
+    }
+  },
+  "phytobloom": {
+    "nameAlt": "PhytoBloom",
+    "headerText": "With PHYTOBLOOM VISION we identify Environmental Imbalances in Water Reservoirs, enabling Environmental Management to Prevent Critical Events!",
+    "plantaImgAlt": "Aquatic plant",
+    "plantaTitle": "We make it possible to monitor Water Reservoirs!",
+    "plantaItem1": "Web platform",
+    "plantaItem2": "Monitors and predicts Environmental Imbalances",
+    "plantaItem3": "Efficient and timely management of water bodies",
+    "plantaItem4": "Efficient planning of interventions",
+    "youtubeTitle": "PhytoBloom Platform",
+    "youtubeIframeTitle": "YouTube video player",
+    "youtubeDemo": "Watch a demonstration",
+    "platformImgAlt": "Image of the PhytoBloom platform",
+    "platformText": "Artificial Intelligence and Ecological Modeling applied to monitor the Environmental Quality of Water Reservoirs, locating and predicting imbalance events such as Eutrophication, Microalgae Replication and Aquatic Plants"
+  },
+  "contact": {
+    "instagram": "@siapesq",
+    "phone": "(53) 99950-3671",
+    "email": "siapesq@gmail.com"
+  },
+  "about": {
+    "systemAlt": "SIAPESQ system",
+    "intro": "SIAPESQ is an environmental innovation startup that combines artificial intelligence and ecological modeling to turn satellite data into sustainable decisions, supporting production sectors in ESG compliance and the responsible use of natural resources.",
+    "teamAlt": "SIAPESQ team",
+    "teamTitle": "Meet our team",
+    "member1Bio": "Leads SIAPESQ's strategic vision and innovation, connecting technology and environmental sustainability.",
+    "member2Bio": "Responsible for the development and engineering behind the SIAPREPS and PhytoBloom platforms.",
+    "member3Bio": "Works on the development of the technological solutions that power SIAPESQ's environmental monitoring.",
+    "member4Bio": "Takes care of the platforms' experience and design, making environmental data clear and accessible."
+  },
+  "team": {
+    "title": "Meet our team!",
+    "learnMore": "Learn More",
+    "roleCeoFounder": "CEO & Founder",
+    "roleDev": "Leader Team & Dev",
+    "roleDesigner": "Leader Team & Designer"
+  },
+  "legacy": {
+    "startNow": "Get Started",
+    "problemTitle": "The Problem",
+    "stat1Value": "3%",
+    "stat1Text": "of the total Greenhouse Gases (GHG) released into the atmosphere",
+    "stat2Value": "50%",
+    "stat2Text": "of diesel oil is wasted while searching for fish",
+    "stat3Value": "MOST",
+    "stat3Text": "of the time during navigation is used to search for fish.",
+    "platformText": "The SIAPREPS platform provides users with maps that let them locate and monitor fish schools in real time, showing the most productive areas for different fish species.",
+    "startNowLight": "get started",
+    "startNowDark": "get started",
+    "speciesTitle": "See the main trackable species",
+    "species1": "Mullet",
+    "species2": "Catfish",
+    "species3": "Salmon",
+    "species4": "Sunfish",
+    "speciesDescription": "Species available for tracking on the SIAPREPS platform.",
+    "practicality": "Get practicality and efficiency for fishing activity. We show you the location of the fish.",
+    "obs": "Note: we filter out the areas least likely to contain protected animals, such as sharks, whales and turtles.",
+    "contactTitle": "Get in touch"
+  }
+}

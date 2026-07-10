@@ -1,20 +1,22 @@
+import { useTranslation } from "react-i18next";
 import '../../style/phytobloom/plataforma.css';
 import phytobloom from "../../imgs/phytobloom.png"
 
 
 export default function SectionPlataforma() {
 
+  const { t } = useTranslation();
 
   return (
     <>
       <section className="plataforma">
         <article >
-          <img id="phytobloom" src={phytobloom} alt="Imagem de platforma phytonbloom" />
+          <img id="phytobloom" src={phytobloom} alt={t("phytobloom.platformImgAlt")} />
           {/* <h1 id="verde">A plataforma PHYTOBLOOM VISION proporciona mapas detalhados e em tempo real, permitindo o monitoramento contínuo e a previsão da proliferação de plantas aquáticas. Nossos mapas facilitam a tomada de decisões e o planejamento de intervenções de maneira eficiente.</h1> */}
           {/* <img src={texto} alt="texto" id="textoverde" /> */}
 
           <div className="textoverde">
-          Inteligência Artificial e Modelagem Ecológica aplicadas para monitorar a Qualidade Ambiental de Reservatórios Hídricos, Localizando e Prevendo Eventos de Desregulação como Eutrofização, Replicação de MicroAlgas e de Plantas Aquáticas
+          {t("phytobloom.platformText")}
           </div>
 
           {/* <button className="botaoPhytobloom"> <a href="https://wa.me/555399503671" target="_blank" rel="noopener noreferrer">Começar Agora</a></button> */}

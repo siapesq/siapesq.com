@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Header from "../components/layouts/header"
 
 // import siapesq from"../imgs/logo.svg";
@@ -25,138 +26,139 @@ import cardume from "../imgs/cardume.png";
 
 export default function Index( ) {
 
+    const { t } = useTranslation();
 
     return (
         <>
 
             <section className="header_container">
-                <img src={cardume} alt="Imagem de fundo" className="bg_img" />
+                <img src={cardume} alt={t("common.backgroundAlt")} className="bg_img" />
                 <Header />
                 <article className="article_header_container">
                     <h1>SIAPREPS </h1>
 
-                    <Button variant="outline-light">Começar&nbsp;Agora</Button>{' '}
+                    <Button variant="outline-light">{t("legacy.startNow")}</Button>{' '}
                 </article>
             </section>
 
             <div className="barco">
                 <br /><br />
-                <center> <h1>O Problema</h1></center>
+                <center> <h1>{t("legacy.problemTitle")}</h1></center>
                 <Image src={navio} fluid />
                 {['sm'].map((breakpoint) => (
                     <ListGroup key={breakpoint} horizontal={breakpoint} className="my-2">
-                        <ListGroup.Item><p className="porcentagem">3%</p><br /><p>do total de Gases do Efeito Estufa (GEE) lançados na atmosfera</p></ListGroup.Item>
-                        <ListGroup.Item><p className="porcentagem">50%</p> <br /><p>do óleo diesel é desperdiçado durante a procura por peixes</p></ListGroup.Item>
-                        <ListGroup.Item><p className="porcentagem">MAIOR</p><br /><p>Parte do tempo de uma navegação é utilizada para procurar peixes.</p></ListGroup.Item>
+                        <ListGroup.Item><p className="porcentagem">{t("legacy.stat1Value")}</p><br /><p>{t("legacy.stat1Text")}</p></ListGroup.Item>
+                        <ListGroup.Item><p className="porcentagem">{t("legacy.stat2Value")}</p> <br /><p>{t("legacy.stat2Text")}</p></ListGroup.Item>
+                        <ListGroup.Item><p className="porcentagem">{t("legacy.stat3Value")}</p><br /><p>{t("legacy.stat3Text")}</p></ListGroup.Item>
                     </ListGroup>
                 ))}
             </div>
 
             <div className="plataforma">
                 <Image src={siapreps} fluid />
-                <p>A plataforma SIAPREPS disponibiliza aos usuários mapas que permitem localizar e monitorar os cardumes em tempo real, mostrando as áreas com maior produtividade para diferentes espécies de pescado.</p>
-                <Button variant="outline-light">começar agora</Button>{' '}
-                <Button variant="outline-dark">começar agora</Button>{' '}
+                <p>{t("legacy.platformText")}</p>
+                <Button variant="outline-light">{t("legacy.startNowLight")}</Button>{' '}
+                <Button variant="outline-dark">{t("legacy.startNowDark")}</Button>{' '}
             </div>
 
             <div>
-                <h1>Veja as principais espécies rastreáveis</h1>
+                <h1>{t("legacy.speciesTitle")}</h1>
                 <br />
             </div>
 
             <div className="especies">
 
                 <Card style={{ width: '18rem' }}>
-                    <Card.Title>Tainha</Card.Title>
+                    <Card.Title>{t("legacy.species1")}</Card.Title>
                     <Card.Img variant="top" src={peixe} />
                     <Card.Body>
                         <Card.Text>
-                            texto provisorio
+                            {t("legacy.speciesDescription")}
                         </Card.Text>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '18rem' }}>
-                    <Card.Title>Bagre</Card.Title>
+                    <Card.Title>{t("legacy.species2")}</Card.Title>
                     <Card.Img variant="top" src={peixe} />
                     <Card.Body>
                         <Card.Text>
-                            texto provisorio
+                            {t("legacy.speciesDescription")}
                         </Card.Text>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '18rem' }}>
-                    <Card.Title>Salmão</Card.Title>
+                    <Card.Title>{t("legacy.species3")}</Card.Title>
                     <Card.Img variant="top" src={peixe} />
                     <Card.Body>
                         <Card.Text>
-                            texto provisorio
+                            {t("legacy.speciesDescription")}
                         </Card.Text>
                     </Card.Body>
                 </Card><Card style={{ width: '18rem' }}>
-                    <Card.Title>Peixe lua</Card.Title>
+                    <Card.Title>{t("legacy.species4")}</Card.Title>
                     <Card.Img variant="top" src={peixe} />
                     <Card.Body>
                         <Card.Text>
-                            texto provisorio
+                            {t("legacy.speciesDescription")}
                         </Card.Text>
                     </Card.Body>
                 </Card>
             </div>
             <div>
                 <br />
-                <h2>Tenha praticidade e eficiencia para atividade pesqueira. Te mostramos a localização do peixe.</h2><br />
-                <h3>Obs: Nós filtramos áreas com menor probabilidade de haver animais proibidos de pesca, como tubaroes, baleias, e tartarugas</h3>
+                <h2>{t("legacy.practicality")}</h2><br />
+                <h3>{t("legacy.obs")}</h3>
             </div>
 
             <div className="formulario">
-                <h1>Entre em contato</h1>
+                <h1>{t("legacy.contactTitle")}</h1>
                 <br />
                 <img src={peixes} alt="" />
                 <Form>
                     <Row className="mb-3">
                         <Form.Group as={Col}>
-                            <Form.Label>Nome</Form.Label>
-                            <Form.Control type="text" placeholder="Nome" />
+                            <Form.Label>{t("form.firstName")}</Form.Label>
+                            <Form.Control type="text" placeholder={t("form.firstName")} />
                         </Form.Group>
 
                         <Form.Group as={Col}>
-                            <Form.Label>Sobrenome</Form.Label>
-                            <Form.Control type="text" placeholder="Sobrenome" />
+                            <Form.Label>{t("form.lastName")}</Form.Label>
+                            <Form.Control type="text" placeholder={t("form.lastName")} />
                         </Form.Group>
                     </Row>
 
                     <Form.Group className="mb-3" >
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Email" />
+                        <Form.Label>{t("form.email")}</Form.Label>
+                        <Form.Control type="email" placeholder={t("form.email")} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" >
-                        <Form.Label>Mensagem</Form.Label>
-                        <Form.Control as="textarea" rows={3} placeholder="Contato" />
+                        <Form.Label>{t("form.message")}</Form.Label>
+                        <Form.Control as="textarea" rows={3} placeholder={t("form.message")} />
                     </Form.Group>
 
 
-                    <center><Button variant="primary" >enviar</Button></center>
+                    <center><Button variant="primary" >{t("form.send")}</Button></center>
                 </Form>
             </div>
             <footer className="footer">
                 <div className="footer-content">
                     <div className="social-media">
                         <a href="https://www.instagram.com/siapesq" target="_blank" rel="noopener noreferrer">
-                            <img src={insta} alt="" /> @siapesq
+                            <img src={insta} alt="" /> {t("contact.instagram")}
                         </a>
                         <a href="https://api.whatsapp.com/send?phone=5553999503671">
-                            <img src={zap} alt="" /> (53) 99950-3671
+                            <img src={zap} alt="" /> {t("contact.phone")}
                         </a>
                         <a href="mailto:siapesq@gmail.com">
-                            <img src={email} alt="" /> siapesq@gmail.com
+                            <img src={email} alt="" /> {t("contact.email")}
                         </a>
 
                         <div className="footer-bottom">
-                            <img src={logoFooter} alt="SIAPESQ Logo" className="logo" />
+                            <img src={logoFooter} alt={t("footer.logoAlt")} className="logo" />
                         </div>
                     </div>
-                    <p>Copyright © 2024 SIAPESQ | Powered by SIAPESQ</p>
+                    <p>{t("footer.copyright")}</p>
                 </div>
             </footer>
         </>

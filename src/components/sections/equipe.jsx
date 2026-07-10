@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 import '../../style/equipe/carrosel.css';
 
 import Talles from "../../imgs/Talles.svg";
@@ -68,29 +69,35 @@ function Carrosel({ membros }) {
 }
 
 function CarrosselEquipe() {
-    
+
+    const { t } = useTranslation();
+
+    const roleFounder = t("team.roleCeoFounder");
+    const roleDev = t("team.roleDev");
+    const roleDesigner = t("team.roleDesigner");
+
     return (
         <div className="carrosselEquipe">
-            <h2 className="teamTitle">Conheça nossa equipe!</h2>
+            <h2 className="teamTitle">{t("team.title")}</h2>
             <Carrosel membros={
                 [
-                    { nome: "Talles", img: Talles, cargo: "CEO & Founder" },
-                    { nome: "Patrick", img: Patrick, cargo: "Leader Team & Dev" },
-                    { nome: "Bruno", img: Bruno, cargo: "Leader Team & Dev" },
-                    { nome: "Hugo", img: Hugo, cargo: "Leader Team & Designer" },
-                    { nome: "Talles", img: Talles, cargo: "Leader Team & Dev" },
-                    { nome: "Hugo", img: Hugo, cargo: "Leader Team & Designer" },
-                    { nome: "Patrick", img: Patrick, cargo: "Leader Team & Dev" },
-                    { nome: "Hugo", img: Hugo, cargo: "Leader Team & Designer" },
-                    { nome: "Patrick", img: Patrick, cargo: "Leader Team & Dev" },
-                    { nome: "Bruno", img: Bruno, cargo: "Leader Team & Dev" },
-                    { nome: "Bruno", img: Bruno, cargo: "Leader Team & Dev" },
-                    { nome: "Patrick", img: Patrick, cargo: "Leader Team & Dev" }
+                    { nome: "Talles", img: Talles, cargo: roleFounder },
+                    { nome: "Patrick", img: Patrick, cargo: roleDev },
+                    { nome: "Bruno", img: Bruno, cargo: roleDev },
+                    { nome: "Hugo", img: Hugo, cargo: roleDesigner },
+                    { nome: "Talles", img: Talles, cargo: roleDev },
+                    { nome: "Hugo", img: Hugo, cargo: roleDesigner },
+                    { nome: "Patrick", img: Patrick, cargo: roleDev },
+                    { nome: "Hugo", img: Hugo, cargo: roleDesigner },
+                    { nome: "Patrick", img: Patrick, cargo: roleDev },
+                    { nome: "Bruno", img: Bruno, cargo: roleDev },
+                    { nome: "Bruno", img: Bruno, cargo: roleDev },
+                    { nome: "Patrick", img: Patrick, cargo: roleDev }
                 ]
             } />
-            
+
             {/*  eslint-disable-next-line */}
-            <button className='botao'><a href="/">Saiba Mais</a></button>
+            <button className='botao'><a href="/">{t("team.learnMore")}</a></button>
         </div>
     );
 };

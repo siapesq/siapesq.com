@@ -1,28 +1,30 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Header from "../layouts/header";
 import siapesq from "../../imgs/siapesqq.svg";
 import equipe from "../../imgs/equipe.svg";
 import '../../style/about/header.css';
 
 export default function SectionHead() {
+    const { t } = useTranslation();
     return (
         <>
             <div className="headersobre">
                 <div className="aboutContainer">
                     <Header/>
                     <div className="imagemsiapesq">
-                        <img className="sistema-img" src={siapesq} alt="Sistema" />
+                        <img className="sistema-img" src={siapesq} alt={t("about.systemAlt")} />
                         <div className="textoSobrenos">
-                            <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
+                            <p>{t("about.intro")}</p>
                         </div>
                     </div>
                     <div className="equipe">
-                        <img className="imagem-equipe" src={equipe} alt="equipe" />
-                        <h1>Conheça nossa equipe</h1>
+                        <img className="imagem-equipe" src={equipe} alt={t("about.teamAlt")} />
+                        <h1>{t("about.teamTitle")}</h1>
                     </div>
                 </div>
            </div>
-                
+
         </>
     );
 }
