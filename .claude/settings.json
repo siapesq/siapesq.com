@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem 'C:\\\\Users\\\\miche\\\\siapesq.com\\\\src\\\\imgs' -File | Sort-Object LastWriteTime -Descending | Select-Object -First 12 Name, @{N='KB';E={[math]::Round\\($_.Length/1KB\\)}}, @{N='Modificado';E={$_.LastWriteTime.ToString\\('dd/MM HH:mm'\\)}} | Format-Table -AutoSize)",
+      "Bash(node -e \"try{require.resolve\\('sharp'\\);console.log\\('sharp: instalado no projeto'\\)}catch\\(e\\){console.log\\('sharp: NAO instalado'\\)}\")",
+      "Bash(cd /c/Users/miche/siapesq.com/src/imgs *)",
+      "Read(//c/Users/miche/siapesq.com/src/imgs/**)",
+      "Bash(sed -i \"s#/c/Users/miche/siapesq.com/src/imgs/siapesqq.svg#C:/Users/miche/siapesq.com/src/imgs/siapesqq.svg#\" /tmp/analyze.js)",
+      "Bash(node /tmp/analyze.js)",
+      "Read(//c/Users/miche/siapesq.com/src/style/plataforma/**)",
+      "Bash(:)",
+      "Bash(grep -nE \"\\\\.plat_\\(mapa|acesso\\)\\( |\\\\{\\)\" pagina.css)",
+      "Bash(awk '/^\\\\.plat_mapa \\\\{/{f=1} f{print NR\": \"$0} /^\\\\}/{if\\(f\\){f=0}}' pagina.css)",
+      "Bash(awk '/^\\\\.plat_acesso \\\\{/{f=1} f{print NR\": \"$0} /^\\\\}/{if\\(f\\){f=0}}' pagina.css)",
+      "Bash(cd /c/Users/miche/siapesq.com/src/style/plataforma *)",
+      "Bash(awk '{print $NativeCommandError$9\" \"$5}')",
+      "Bash(awk '/\\\\/\\\\* =+ \\(PÚBLICO|PUBLICO\\) =/{p=0} /\\\\.plat_acesso/{print NR\": \"$0; g=1; next} g&&/^\\\\}/{print NR\": \"$0; g=0} g{print NR\": \"$0}' pagina.css)",
+      "mcp__claude_ai_Canva__resolve-shortlink",
+      "mcp__claude_ai_Canva__get-design",
+      "mcp__claude_ai_Canva__start-editing-transaction",
+      "mcp__claude_ai_Canva__get-design-content",
+      "mcp__claude_ai_Canva__get-export-formats",
+      "mcp__claude_ai_Canva__export-design",
+      "Read(//c/Users/miche/SIAPREPS-Front-end/renderer/**)",
+      "Read(//c/Users/miche/SIAPREPS-Front-end/renderer/components/atoms/welcome/**)",
+      "Bash(grep -viE '^\\\\s*$')",
+      "Bash(grep -iE \"\\\\.svg$\")",
+      "Bash(grep -iE \"\\\\.\\(svg|png\\)$\")",
+      "Bash(NODE_OPTIONS=--max-old-space-size=4096 npm run build)",
+      "Bash(git ls-remote *)"
+    ]
+  }
+}

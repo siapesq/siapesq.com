@@ -1,0 +1,1092 @@
+/* ==========================================================================
+   Página /plataforma — estilos de todas as seções
+   Prefixo `plat_` para escopar e não colidir com o CSS global do site
+   (o home usa `plataforma_`, esta página usa `plat_`).
+   CSS puro — sem framework.
+   ========================================================================== */
+
+/* Paleta TERRESTRE do SIAPESQ (verde + terra). Trave as cores aqui:
+   mudar um valor repinta a página inteira, sem caçar hex espalhado. */
+:root {
+  --plat-dark: #16261a;    /* verde-floresta escuro — base das seções escuras */
+  --plat-dark-2: #1e3a23;  /* verde médio — profundidade do gradiente */
+  --plat-dark-3: #274b21;  /* verde-musgo — brilho do gradiente */
+  --plat-light: #f2efe3;   /* creme quente — seções claras */
+  --plat-panel: #fbf9f1;   /* branco-quente — cards claros */
+  --plat-border: #e3ddcb;  /* borda quente dos cards claros */
+  --plat-ink: #22401d;     /* texto verde-escuro sobre o claro */
+  --plat-ink-2: #5d6a4c;   /* texto secundário sobre o claro (oliva) */
+  --plat-green: #86bd51;   /* verde vivo — ícones, checks, destaque */
+  --plat-earth: #c07e3f;   /* marrom/terra — eyebrows, acento quente */
+  --plat-ring: rgba(134, 189, 81, 0.35);       /* aro das fotos do carrossel */
+  --plat-ring-hover: rgba(134, 189, 81, 0.75);
+}
+
+/* Tema MARÍTIMO (SIAPREPS) — mesma estrutura, paleta azul-oceano.
+   A página SIAPREPS é envolvida em .plat-mar e reusa as classes plat_.
+   O :root (verde/terrestre) da SIAPESQ continua intacto. */
+.plat-mar {
+  --plat-dark: #0a2138;    /* azul-oceano profundo — base das seções escuras */
+  --plat-dark-2: #103a63;  /* azul médio — profundidade do gradiente */
+  --plat-dark-3: #17568c;  /* azul mais aberto — brilho do gradiente */
+  --plat-light: #eef4fa;   /* azul-gelo claro — seções claras */
+  --plat-panel: #f8fbfe;   /* branco-frio — cards claros */
+  --plat-border: #d7e3f0;  /* borda fria dos cards claros */
+  --plat-ink: #12324f;     /* texto azul-escuro sobre o claro */
+  --plat-ink-2: #4c637c;   /* texto secundário sobre o claro */
+  --plat-green: #2ba7d4;   /* ciano-oceano — ícones, checks, destaque */
+  --plat-earth: #dd8159;   /* coral — eyebrows, acento quente */
+  --plat-ring: rgba(43, 167, 212, 0.4);
+  --plat-ring-hover: rgba(43, 167, 212, 0.8);
+}
+
+/* no tema marítimo, a foto do hero é a tartaruga (no lugar da capivara).
+   A cena é larga: a tartaruga + recife ficam no TERÇO DIREITO e o resto é água
+   vazia. Por isso focamos o enquadramento na tartaruga (à direita) e damos um
+   zoom leve — assim a água vazia sai do corte e a tartaruga preenche o painel.
+   >>> tartaruga maior/menor: mexa no `background-size` (140% = mais zoom).
+   >>> subir/descer ou puxar a tartaruga: mexa no `background-position`. */
+.plat-mar .plat_hero_foto {
+  background-image: url("../../imgs/FUNDO_TARTARUGA.png");
+  /* MESMO esquema do SIAPESQ (herda width 60% + máscara 52%): a esquerda da foto
+     se dissolve no navy escuro e a tartaruga fica nítida à direita, igual a
+     capivara. Só damos zoom e escolhemos o ponto pra enquadrar a tartaruga.
+     >>> tartaruga maior/menor: mexa no `background-size`.
+     >>> puxar pra esquerda/direita: mexa no 1º valor do `background-position`
+         (mantenha <= 100% pra não expor o fundo navy na borda direita). */
+  background-size: 205%;
+  background-position: 100% 40%;
+}
+
+/* A wordmark "SIAPREPS" tem viewBox bem mais esticado (858x134 -> proporção 6.4)
+   que a "SIAPESQ" (444x104 -> 4.27). Na mesma largura (620px) as letras do
+   SIAPREPS saem ~35% menores. Pra igualar a ALTURA das letras à do SIAPESQ,
+   aumentamos só a largura máx. da wordmark marítima e damos um pouco mais de
+   largura ao container pra ela caber (mantendo o padding, então o texto continua
+   alinhado igual). Só no desktop — no mobile as media queries de baixo mandam. */
+@media (min-width: 1025px) {
+  .plat-mar .plat_hero_conteudo {
+    max-width: 1080px;
+  }
+  .plat-mar .plat_hero_marca img {
+    max-width: 700px;
+  }
+
+  /* aumenta o espaço entre a wordmark e o título pra o respiro bater com o do
+     SIAPESQ (que fica com mais folga por causa do recorte do SVG dele). */
+  .plat-mar .plat_hero_marca {
+    margin-bottom: 3.25rem;
+  }
+}
+
+/* linha de versão/SO abaixo do botão (usada no hero de download do SIAPREPS) */
+.plat_hero_meta {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ----------------------------------------------------------- utilitários */
+
+.plat_wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.plat_rotulo {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--plat-earth);
+}
+
+.plat_titulo_seccao {
+  margin: 0 0 1rem;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.plat_intro {
+  margin: 0 0 3rem;
+  max-width: 46rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.plat_btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.plat_btn_claro {
+  background-color: #ffffff;
+  color: var(--plat-dark);
+  border: 2px solid #ffffff;
+}
+
+.plat_btn_claro:hover,
+.plat_btn_claro:focus {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.plat_btn_azul {
+  background-color: #03045e;
+  color: #ffffff;
+  border: 2px solid #03045e;
+}
+
+.plat_btn_azul:hover,
+.plat_btn_azul:focus {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* ================================================================== HERO */
+
+.plat_hero {
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #ffffff;
+
+  overflow: hidden;
+
+  /* Painel NAVY (cor-base da marca) que segura o texto à esquerda. A capivara
+     mora numa camada separada e se dissolve neste navy: foto de natureza sobre
+     a base navy — a cor estrutural é sempre a mesma do header ao footer. */
+  background: linear-gradient(
+    115deg,
+    var(--plat-dark) 0%,
+    var(--plat-dark-2) 55%,
+    var(--plat-dark-3) 100%
+  );
+}
+
+/* A capivara vive só na METADE DIREITA e se dissolve suavemente à esquerda
+   (máscara), deixando o lado esquerdo limpo pro texto — sem zoom, sem cortar o
+   bicho, sem texto por cima do corpo.
+   >>> quer dar mais/menos espaço pro texto? mexa no `width` (ex.: 55% ou 66%).
+   >>> quer a capivara mais centralizada na direita? troque `background-position`. */
+.plat_hero_foto {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 60%;
+  z-index: 0;
+
+  background-image: url("../../imgs/capivara.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* fade longo e suave: a foto se dissolve devagar no verde do painel,
+     sem borda dura. Aumente o 52% pra suavizar ainda mais. */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 52%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 52%);
+  pointer-events: none;
+}
+
+/* garante header e texto acima da foto */
+.plat_hero > .header {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* suaviza o FIM do hero: a base (inclusive a foto) escurece até o MESMO navy em
+   que a seção de Recursos começa (#0a1730), deixando a emenda invisível.
+   Fica acima da foto (z-index 0) e abaixo do texto (z-index 1). */
+.plat_hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(22, 38, 26, 0) 0%, var(--plat-dark) 100%);
+  pointer-events: none;
+}
+
+.plat_hero_conteudo {
+  position: relative;
+  z-index: 1;
+
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* encosta o bloco à ESQUERDA (não centraliza mais) pra preencher o vazio.
+     >>> quer mais/menos respiro à esquerda? mexa no último valor do padding. */
+  width: 100%;
+  max-width: 900px;
+  margin: 0;
+  padding: 3rem 3rem 6rem 8rem;
+}
+
+/* wordmark — hoje é texto; quando entrar o SVG, vira <img> e usa `width` */
+.plat_hero_marca {
+  margin: 0 0 1.75rem;
+  font-size: 7.5rem;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+}
+
+.plat_hero_marca img {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  /* sombra dá profundidade e descola o wordmark da foto */
+  filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.45));
+}
+
+.plat_hero_titulo {
+  margin: 0 0 1.5rem;
+  max-width: 42rem;
+
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.12;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+.plat_hero_titulo span {
+  display: block;
+  color: var(--plat-green);
+}
+
+.plat_hero_desc {
+  margin: 0 0 2.75rem;
+  max-width: 40rem;
+
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.plat_hero .plat_btn {
+  font-size: 1.25rem;
+  padding: 17px 46px;
+}
+
+/* ============================================================== RECURSOS */
+
+.plat_recursos {
+  padding: 5.5rem 3rem;
+  color: #ffffff;
+
+  /* navy contínuo (a cor-base do site): emenda hero → recursos lisa, sem pulo. */
+  background: linear-gradient(180deg, var(--plat-dark) 0%, var(--plat-dark-2) 100%);
+}
+
+/* seção CENTRALIZADA: os 3 recursos são colunas simétricas ocupando a largura,
+   então cabeçalho e itens centralizados ficam equilibrados (à esquerda dava a
+   mesma sensação de "torto" do carrossel). */
+.plat_recursos .plat_wrap {
+  text-align: center;
+}
+
+.plat_recursos .plat_intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plat_recursos_grid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2.5rem;
+}
+
+.plat_recursos_item {
+  flex: 1 1 250px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.plat_recursos_icone {
+  flex: none;
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--plat-green);
+  border-radius: 50%;
+  color: var(--plat-green);
+  box-shadow: 0 0 24px rgba(134, 189, 81, 0.32);
+}
+
+.plat_recursos_item h3 {
+  margin: 0.35rem 0 0.6rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.plat_recursos_item p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* =========================================================== COMO FUNCIONA */
+
+.plat_fluxo {
+  /* tela cheia, conteúdo centralizado (walkthrough é o destaque) */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 6rem 3rem;
+  background-color: var(--plat-light);
+  color: var(--plat-ink);
+}
+
+/* container largo pra os 4 prints em linha ficarem grandes.
+   Cabeçalho CENTRALIZADO: os 4 passos são colunas simétricas ocupando a
+   largura, então centralizar equilibra (mesma regra do Recursos/Espécies). */
+.plat_fluxo .plat_wrap {
+  max-width: 1560px;
+  text-align: center;
+}
+
+.plat_fluxo .plat_intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* dentro do card o texto continua à esquerda (convenção de card) */
+.plat_fluxo_item {
+  text-align: left;
+}
+
+.plat_fluxo .plat_rotulo {
+  color: var(--plat-earth);
+}
+
+.plat_fluxo_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* print real da etapa, com o número em selo por cima */
+.plat_fluxo_shot {
+  position: relative;
+  margin-bottom: 1.15rem;
+
+  /* mais alto (4:3) pra a linha preencher melhor a tela, sem overflow */
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--plat-border);
+  background-color: #dfe6dd;
+  box-shadow: 0 14px 34px rgba(22, 38, 26, 0.16);
+}
+
+.plat_fluxo_shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  display: block;
+}
+
+.plat_fluxo_num {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--plat-dark);
+  color: #ffffff;
+  border-radius: 50%;
+
+  font-size: 1.05rem;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28);
+}
+
+.plat_fluxo_item:last-child .plat_fluxo_num {
+  /* os 4 números na mesma cor — sem destaque isolado que pareça acidental */
+  background-color: var(--plat-dark);
+}
+
+.plat_fluxo_item h3 {
+  margin: 0.25rem 0 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.plat_fluxo_item p {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: #4a5670;
+}
+
+/* ================================================================== MAPA */
+
+.plat_mapa {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  /* ocupa a tela inteira ao rolar, com o conteúdo centralizado verticalmente */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 6rem 3rem;
+  color: #ffffff;
+  background-color: var(--plat-dark);
+}
+
+.plat_mapa_fundo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* No SIAPREPS o fundo é um PRINT do app (1929x1021, proporção ~1.89, quase a de
+   uma tela cheia). "cover" cortava a UI, "contain" deixava faixas e "fill"
+   distorcia. Solução: a IMAGEM define a altura da seção — largura 100% na
+   proporção natural. Preenche a largura toda, sem cortar, sem faixa e sem
+   esticar. O painel fica sobreposto (absoluto) à direita. */
+.plat-mar .plat_mapa {
+  min-height: 0;
+  display: block;
+  padding: 0;
+}
+
+.plat-mar .plat_mapa_fundo {
+  position: static;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.plat-mar .plat_mapa .plat_wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+/* no mobile o print fica pequeno pra sobrepor texto: painel volta ao fluxo,
+   abaixo da imagem, em largura cheia. */
+@media screen and (max-width: 1024px) {
+  .plat-mar .plat_mapa {
+    background-color: var(--plat-dark);
+  }
+
+  .plat-mar .plat_mapa .plat_wrap {
+    position: static;
+    padding: 1.5rem;
+  }
+
+  .plat-mar .plat_mapa_painel--full {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Overlay obrigatório — sem ele o texto branco some sobre as áreas claras.
+   Gradiente: escuro à ESQUERDA (atrás do texto, garante leitura) e mais
+   transparente à DIREITA (deixa as cores do mapa aparecerem vivas). */
+.plat_mapa_overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+    100deg,
+    rgba(22, 38, 26, 0.9) 0%,
+    rgba(22, 38, 26, 0.7) 45%,
+    rgba(22, 38, 26, 0.38) 100%
+  );
+}
+
+.plat_mapa_conteudo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 3rem;
+}
+
+.plat_mapa_texto {
+  flex: 1 1 320px;
+  /* texto direto sobre a foto do mapa: sombra herda para rótulo, título e p */
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.plat_mapa_texto p {
+  margin: 0;
+  max-width: 34rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* painel de vidro */
+.plat_mapa_painel {
+  flex: 1 1 340px;
+
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 26px 72px rgba(3, 16, 31, 0.26);
+}
+
+/* Variante que carrega TODO o conteúdo (rótulo + título + descrição + itens),
+   usada quando o mapa fica SEM overlay (vívido, SIAPREPS). Vidro ESCURO pra
+   garantir leitura sobre qualquer cor do mapa; largura contida e alinhado à
+   esquerda, deixando o resto do mapa aparecer. */
+.plat_mapa_painel--full {
+  flex: none;
+  max-width: 560px;
+  margin-left: auto; /* painel ancorado à DIREITA do wrap */
+  padding: 2.5rem;
+  background-color: rgba(22, 38, 26, 0.82); /* verde-escuro (SIAPESQ) */
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 26px 72px rgba(0, 0, 0, 0.42);
+}
+
+/* no tema marítimo o vidro vira navy, pra casar com o mapa/tema do SIAPREPS */
+.plat-mar .plat_mapa_painel--full {
+  background-color: rgba(10, 33, 56, 0.82);
+}
+
+/* no mapa o container é full-width, então o painel (margin-left:auto) encosta
+   bem à direita da tela (só o respiro do padding da seção). */
+.plat_mapa .plat_wrap {
+  max-width: 100%;
+}
+
+.plat_mapa_painel--full .plat_titulo_seccao {
+  margin-top: 0.3rem;
+}
+
+.plat_mapa_painel_desc {
+  margin: 0.6rem 0 0;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* separa a lista de capacidades do texto acima */
+.plat_mapa_painel--full ul {
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.plat_mapa_painel ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.35rem;
+}
+
+.plat_mapa_painel li {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  column-gap: 0.9rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.plat_mapa_bolinha {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  margin-top: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(134, 189, 81, 0.55);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--plat-green);
+}
+
+/* =============================================================== PÚBLICO */
+
+.plat_publico {
+  padding: 5.5rem 3rem;
+  background-color: var(--plat-light);
+  color: var(--plat-ink);
+}
+
+.plat_publico .plat_rotulo {
+  color: var(--plat-earth);
+}
+
+/* cabeçalho centralizado (4 cards simétricos abaixo) */
+.plat_publico .plat_wrap {
+  text-align: center;
+}
+
+.plat_publico .plat_intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plat_publico_grid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+}
+
+.plat_publico_card {
+  flex: 1 1 240px;
+
+  padding: 1.75rem;
+  background-color: var(--plat-panel);
+  border: 1px solid var(--plat-border);
+  border-radius: 16px;
+  text-align: left; /* dentro do card o texto fica à esquerda (convenção) */
+
+  transition: transform 0.22s ease, box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.plat_publico_card:hover {
+  transform: translateY(-5px);
+  border-color: var(--plat-green);
+  box-shadow: 0 18px 36px rgba(22, 38, 26, 0.12);
+}
+
+.plat_publico_icone {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 1.05rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  background-color: rgba(134, 189, 81, 0.16);
+  color: #4a7d26; /* verde escuro o suficiente pra ler no chip claro */
+}
+
+.plat_publico_card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.plat_publico_card p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--plat-ink-2);
+}
+
+/* ================================================================ ACESSO */
+
+.plat_acesso {
+  /* ocupa a tela inteira ao rolar, com o conteúdo centralizado verticalmente */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 6rem 3rem;
+  background-color: var(--plat-dark);
+  color: #ffffff;
+}
+
+/* ÚLTIMA TELA: acesso + footer dividem UMA tela (100vh).
+   A seção de acesso cresce pra preencher o espaço acima do footer (aproveita o
+   vazio), e o footer fica ancorado embaixo. */
+.plat_final {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.plat_final .plat_acesso {
+  /* cresce pra preencher, mas nunca encolhe abaixo do conteúdo (0 = sem shrink) */
+  flex: 1 0 auto;
+  min-height: 0; /* anula o 100vh próprio; quem manda na altura é o wrapper */
+}
+
+.plat_acesso_conteudo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.plat_acesso_texto {
+  flex: 1 1 380px;
+}
+
+/* título maior só nesta seção (é o CTA final, precisa de peso) */
+.plat_acesso .plat_titulo_seccao {
+  font-size: 3.1rem;
+  line-height: 1.12;
+  margin-bottom: 1.4rem;
+}
+
+.plat_acesso_texto p {
+  margin: 0 0 2.25rem;
+  max-width: 40rem;
+  font-size: 1.22rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.plat_acesso .plat_btn_claro {
+  font-size: 1.15rem;
+  padding: 17px 46px;
+}
+
+.plat_acesso_tags {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.75rem;
+  margin: 0 0 2.25rem;
+}
+
+.plat_acesso_tags span {
+  padding: 10px 22px;
+  border: 1px solid rgba(134, 189, 81, 0.5);
+  border-radius: 50px;
+  background-color: rgba(134, 189, 81, 0.1);
+
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* moldura de navegador com a tela da plataforma */
+.plat_acesso_janela {
+  flex: 1.3 1 520px;
+  max-width: 680px;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #101c33;
+  /* aro verde sutil + sombra profunda pra dar presença ao mockup */
+  box-shadow: 0 0 0 1px rgba(134, 189, 81, 0.2),
+    0 44px 96px rgba(0, 0, 0, 0.5);
+}
+
+.plat_acesso_barra {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding: 10px 14px;
+  background-color: #1b2a4a;
+}
+
+.plat_acesso_barra span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+.plat_acesso_janela img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Mockup do SIAPREPS: a arte (siaprepsMonitor.svg) já é um monitor com o app
+   dentro, então entra SEM a moldura de janela — só o dimensionamento da coluna
+   e uma sombra pra dar profundidade. */
+.plat_acesso_mockup {
+  flex: 1.1 1 440px;
+  max-width: 560px;
+  text-align: center;
+}
+
+.plat_acesso_mockup img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  /* o laptop é alto: limitamos a altura pra ele não esticar a seção além do
+     100vh, deixando acesso + footer caberem juntos numa tela só (como o SIAPESQ) */
+  max-height: 52vh;
+  margin: 0 auto;
+  filter: drop-shadow(0 26px 55px rgba(0, 0, 0, 0.45));
+}
+
+/* na última tela (acesso + footer no mesmo 100vh), o padding vertical do acesso
+   é reduzido no tema marítimo pra sobrar espaço ao footer sem estourar a tela. */
+.plat-mar .plat_final .plat_acesso {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* as tags do acesso são verdes fixas (SIAPESQ); no tema marítimo viram ciano */
+.plat-mar .plat_acesso_tags span {
+  border-color: rgba(43, 167, 212, 0.5);
+  background-color: rgba(43, 167, 212, 0.12);
+}
+
+/* ============================================================= responsivo */
+
+@media screen and (max-width: 1600px) {
+  .plat_hero_marca {
+    font-size: 6rem;
+  }
+
+  .plat_hero_marca img {
+    max-width: 520px;
+  }
+
+  .plat_hero_titulo {
+    font-size: 3rem;
+  }
+
+  .plat_hero_desc {
+    font-size: 1.25rem;
+  }
+
+  .plat_titulo_seccao {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .plat_hero_conteudo,
+  .plat_recursos,
+  .plat_fluxo,
+  .plat_mapa,
+  .plat_publico,
+  .plat_acesso {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .plat_recursos,
+  .plat_fluxo,
+  .plat_mapa,
+  .plat_publico,
+  .plat_acesso {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .plat_hero_marca {
+    font-size: 5rem;
+  }
+
+  .plat_hero_marca img {
+    max-width: 440px;
+  }
+
+  .plat_hero_titulo {
+    font-size: 2.5rem;
+  }
+
+  .plat_hero_desc {
+    font-size: 1.2rem;
+  }
+
+  .plat_titulo_seccao {
+    font-size: 1.85rem;
+  }
+
+  .plat_recursos_icone {
+    width: 56px;
+    height: 56px;
+  }
+
+  .plat_recursos_grid,
+  .plat_fluxo_grid {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* no mobile não dá pra dividir em duas colunas: a foto passa a ocupar a
+     largura toda, escura no topo (onde fica o texto) e revelando a capivara
+     embaixo. */
+  .plat_hero {
+    min-height: auto;
+    background: linear-gradient(160deg, var(--plat-dark) 0%, var(--plat-dark-3) 100%);
+  }
+
+  .plat_hero_foto {
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        rgba(22, 38, 26, 0.82) 0%,
+        rgba(30, 58, 35, 0.4) 55%,
+        rgba(39, 75, 33, 0.15) 100%
+      ),
+      url("../../imgs/capivara.jpg");
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .plat_hero_conteudo {
+    padding: 3rem 1.5rem 4rem;
+  }
+
+  .plat_hero_marca {
+    font-size: 3.6rem;
+  }
+
+  .plat_hero_marca img {
+    max-width: 320px;
+  }
+
+  .plat_hero_titulo {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .plat_hero_desc {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  .plat_recursos,
+  .plat_fluxo,
+  .plat_mapa,
+  .plat_publico,
+  .plat_acesso {
+    /* no mobile a altura volta ao natural (evita telas gigantes com pouco texto) */
+    min-height: auto;
+    padding: 3.5rem 1.5rem;
+  }
+
+  .plat_recursos_grid,
+  .plat_mapa_conteudo,
+  .plat_acesso_conteudo {
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
+
+  /* o grid 2x2 do "como funciona" vira 1 coluna no mobile */
+  .plat_fluxo_grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* no mobile, acesso e footer voltam a ser blocos normais empilhados */
+  .plat_final {
+    min-height: auto;
+    display: block;
+  }
+
+  .plat_final .plat_acesso {
+    flex: none;
+  }
+
+  .plat_titulo_seccao {
+    font-size: 1.6rem;
+  }
+
+  /* no mobile o título grande do CTA volta ao tamanho normal */
+  .plat_acesso .plat_titulo_seccao {
+    font-size: 1.9rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .plat_acesso_texto p {
+    font-size: 1.05rem;
+  }
+
+  .plat_acesso_janela {
+    max-width: 100%;
+  }
+
+  .plat_intro {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .plat_mapa_painel {
+    padding: 1.5rem;
+  }
+
+  .plat_btn {
+    padding: 13px 32px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .plat_hero_marca {
+    font-size: 2.9rem;
+  }
+
+  .plat_hero_marca img {
+    max-width: 260px;
+  }
+
+  .plat_hero_titulo {
+    font-size: 1.7rem;
+  }
+
+  .plat_recursos_item {
+    column-gap: 1rem;
+  }
+
+  .plat_recursos_icone {
+    width: 48px;
+    height: 48px;
+  }
+
+  .plat_publico_card {
+    padding: 1.35rem;
+  }
+}

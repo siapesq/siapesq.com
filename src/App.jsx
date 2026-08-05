@@ -5,6 +5,7 @@ import "./style/siapreps/siapreps_section/style.css";
 import Index from "./pages";
 import Siapreps from "./pages/siapreps";
 import Phytobloom from "./pages/phytobloom";
+import Plataforma from "./pages/plataforma";
 import Contato from "./pages/contato";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         {/* <Route path="/about" element={<About />} /> */}
         <Route path="/siapreps" element={<Siapreps />} />
         <Route path="/phytobloom" element={<Phytobloom />} />
+        <Route path="/plataforma" element={<Plataforma />} />
         <Route path="/contato" element={<Contato />} />
         {/* <Route path="*" element={<Index/>} /> */}
       </Routes>

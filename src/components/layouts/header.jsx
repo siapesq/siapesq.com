@@ -16,6 +16,9 @@ export default function Header({page=''}) {
                             <NavLink to={"/phytobloom"} className='links' >
                                 PHYTOBLOOM
                             </NavLink>
+                            <NavLink to={"/plataforma"} className='links' >
+                                PLATAFORMA
+                            </NavLink>
                             <NavLink to={"/"}>
                                 <img src={logo} alt="Logo da siapesq na coloração azul" className="logoAzul"/>
                                 <img src={logoBranca} alt="Logo da siapesq na branca" className="logoBranca"/>

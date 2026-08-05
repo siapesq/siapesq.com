@@ -1,0 +1,284 @@
+/* ==========================================================================
+   Seção "A Plataforma SIAPESQ" — home
+   Segue o mesmo padrão das seções de produto (SIAPREPS / PhytoBloom):
+   fundo temático + overlay escuro, cartão branco com a logo, lista de
+   benefícios, parágrafo e botão "Saiba mais".
+   Classes escopadas com o prefixo `plataforma_` para não colidir com o CSS
+   global das outras seções.
+   ========================================================================== */
+
+.homeplat {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  /* espalha o conteúdo pela tela toda (logo/lista em cima, texto/botão embaixo)
+     — assim preenche o 100vh como o PhytoBloom, sem ficar amontoado no meio. */
+  justify-content: space-evenly;
+  row-gap: 3rem;
+
+  padding: 5rem 0;
+  color: #ffffff;
+
+  /* Foto de fundo + overlay VERDE (terrestre): escuro à esquerda (cartão e
+     lista) e suave à direita, deixando a capivara aparecer. */
+  background-color: #16261a;
+  background-image: linear-gradient(
+      100deg,
+      rgba(16, 38, 26, 0.92) 0%,
+      rgba(22, 55, 35, 0.74) 48%,
+      rgba(22, 55, 35, 0.32) 100%
+    ),
+    url("../../imgs/capivara.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* --------------------------------------------------------------- topo --- */
+
+.homeplat_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.homeplat_logo {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.homeplat_logo div {
+  background-color: #ffffff;
+  border-radius: 60px;
+  padding: 40px 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* sombra descola o cartão da foto */
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.3);
+}
+
+.homeplat_logo img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+}
+
+/* --------------------------------------------------- lista de benefícios */
+
+.homeplat_list {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.homeplat_list ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+.homeplat_list li {
+  list-style: none;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 20px;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.homeplat_check {
+  flex: none;
+  width: 40px;
+  height: auto;
+}
+
+/* ------------------------------------------------- parágrafo e chamada --- */
+
+.homeplat_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+
+  padding: 0 3rem;
+}
+
+.homeplat_texto {
+  max-width: 60rem;
+  margin: 0;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.homeplat_btn {
+  display: inline-block;
+  text-decoration: none;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+
+  padding: 15px 40px;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.homeplat_btn:hover,
+.homeplat_btn:focus {
+  background-color: #ffffff;
+  color: #16261a;
+}
+
+/* ============================================================ responsivo */
+
+@media screen and (max-width: 1600px) {
+  .homeplat_logo img {
+    max-width: 280px;
+  }
+
+  .homeplat_list li {
+    font-size: 1.5rem;
+  }
+
+  .homeplat_texto {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .homeplat {
+    min-height: auto;
+    padding: 3.5rem 0;
+    row-gap: 2.5rem;
+  }
+
+  .homeplat_container {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .homeplat_logo div {
+    padding: 28px 40px;
+    border-radius: 45px;
+  }
+
+  .homeplat_logo img {
+    max-width: 240px;
+  }
+
+  .homeplat_list ul {
+    row-gap: 2rem;
+  }
+
+  .homeplat_list li {
+    font-size: 1.3rem;
+    column-gap: 14px;
+  }
+
+  .homeplat_check {
+    width: 32px;
+  }
+
+  .homeplat_texto {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* mesma estratégia das demais seções: sem foto de fundo no mobile */
+  .homeplat {
+    background-image: none;
+    background-color: #16261a;
+    padding: 3rem 0;
+  }
+
+  .homeplat_container {
+    flex-flow: column nowrap;
+    gap: 2.5rem;
+  }
+
+  .homeplat_logo,
+  .homeplat_list {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .homeplat_list {
+    justify-content: center;
+  }
+
+  .homeplat_logo div {
+    padding: 20px 32px;
+    border-radius: 40px;
+  }
+
+  .homeplat_logo img {
+    max-width: 200px;
+  }
+
+  .homeplat_list ul {
+    row-gap: 1.5rem;
+  }
+
+  .homeplat_list li {
+    font-size: 1.1rem;
+  }
+
+  .homeplat_check {
+    width: 28px;
+  }
+
+  .homeplat_texto {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  .homeplat_btn {
+    padding: 13px 32px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .homeplat_container,
+  .homeplat_bottom {
+    padding: 0 1.5rem;
+  }
+
+  .homeplat_list li {
+    font-size: 1rem;
+    column-gap: 12px;
+  }
+
+  .homeplat_texto {
+    max-width: 100%;
+    text-align: left;
+  }
+}

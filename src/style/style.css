@@ -21,6 +21,24 @@
 
 .header img {
   width: 14rem;
+  /* Halo escuro em volta do logo: o ícone (degradê verde->azul) perde contraste
+     em fundos coloridos/escuros das páginas internas (hero azul do SIAPREPS,
+     verde da PLATAFORMA, etc.). Uma regra só aqui resolve em todas de uma vez. */
+  filter: drop-shadow(0 0 7px rgba(3, 22, 44, 0.8))
+    drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+  transition: transform 0.25s ease;
+}
+
+/* Logo é link pra home: sobe um pouco no hover pra indicar que é clicável.
+   Só o link do logo tem <img>, então isto não pega os links de texto. */
+.header nav ul a:hover img {
+  transform: translateY(-5px);
+}
+
+/* Na home o fundo é branco e o logo é o colorido (logoAzul) — o halo escuro
+   ficaria como uma mancha. Desligamos só aqui. */
+.index .header img {
+  filter: none;
 }
 
 .header_container .article_header_container button{
@@ -39,10 +57,45 @@
   color: #FFFFFF;
   text-decoration: none;
   font-size: 1.5rem;
+  /* mesma lógica do halo do logo: os links brancos podem lavar nas partes claras
+     das fotos de fundo dos heroes. Sombra mais firme pra destacar bem. */
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.35);
+}
+
+/* Hover dos links de texto (só .links, pra não pegar o logo nem o botão
+   responsivo): sublinhado que desliza da esquerda + realce da sombra. Usa
+   currentColor, então funciona branco nas internas e escuro na home. */
+.header nav ul a.links {
+  position: relative;
+  transition: text-shadow 0.2s ease;
+}
+
+.header nav ul a.links::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header nav ul a.links:hover::after {
+  transform: scaleX(1);
+}
+
+.header nav ul a.links:hover {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 .index nav ul a{
   color: rgba(35, 51, 99, 1);
+  /* na home os links são escuros sobre branco — sombra não faz sentido */
+  text-shadow: none;
 }
 
 .header_container {

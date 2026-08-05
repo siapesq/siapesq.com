@@ -1,0 +1,256 @@
+/* ==========================================================================
+   Seção "Biodiversidade monitorada" — esteira (carrossel) de espécies.
+   Rolagem contínua e automática; pausa quando o mouse está em cima.
+   Usa a paleta terrestre definida em pagina.css (variáveis :root).
+   ========================================================================== */
+
+.esp {
+  padding: 5.5rem 0;
+  overflow: hidden;
+  background-color: var(--plat-light);
+  color: var(--plat-ink);
+}
+
+/* cabeçalho CENTRALIZADO: o carrossel abaixo é full-bleed e simétrico, então o
+   texto centralizado casa com ele (alinhado à esquerda dava sensação de torto). */
+.esp_cabecalho {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+.esp_cabecalho .plat_intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* trilho que desliza; a máscara desbota as bordas esquerda/direita */
+.esp_esteira {
+  margin-top: 2.75rem;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 6%,
+    #000 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 6%,
+    #000 94%,
+    transparent 100%
+  );
+}
+
+.esp_trilho {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.75rem;
+  width: max-content;
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  list-style: none;
+
+  animation: esp-desliza 42s linear infinite;
+}
+
+/* pausa no hover para o usuário conseguir ler */
+.esp_esteira:hover .esp_trilho {
+  animation-play-state: paused;
+}
+
+@keyframes esp-desliza {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* -50% = exatamente um conjunto (a lista está duplicada) → loop perfeito */
+    transform: translateX(-50%);
+  }
+}
+
+.esp_item {
+  flex: none;
+  width: 170px;
+  text-align: center;
+}
+
+.esp_foto {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 0.95rem;
+
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 4px solid #ffffff;
+  /* anel verde sutil (define o círculo sobre o creme) + sombra quente */
+  box-shadow: 0 0 0 1.5px var(--plat-ring),
+    0 16px 34px rgba(22, 38, 26, 0.16);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.esp_item:hover .esp_foto {
+  transform: translateY(-6px);
+  box-shadow: 0 0 0 2px var(--plat-ring-hover),
+    0 24px 46px rgba(22, 38, 26, 0.22);
+}
+
+.esp_foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.esp_item:hover .esp_foto img {
+  transform: scale(1.07);
+}
+
+.esp_nome {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--plat-ink);
+}
+
+.esp_ci {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--plat-ink-2);
+}
+
+/* SIAPREPS: carrossel (pesque estas) + espécies protegidas (evite estas) dividem
+   UMA tela. Só no tema marítimo — no SIAPESQ a seção segue com altura natural. */
+.plat-mar .esp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Bloco das PROTEGIDAS (a evitar): layout limpo estilo referência —
+   nome (topo) / imagem / nome científico. Sem card, sem tag. */
+.esp_evitar {
+  margin-top: 3rem;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.esp_evitar_titulo {
+  margin: 0 auto 2rem;
+  max-width: 46rem;
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--plat-ink);
+}
+
+/* Protegidas SEM círculo (de propósito: destaca/diferencia das rastreáveis).
+   Layout solto: nome (topo) / imagem grande / nome científico. */
+.esp_evitar_lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.esp_evitar_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+}
+
+.esp_evitar_nome {
+  margin: 0 0 1rem;
+  /* reserva a altura de 2 linhas pra nomes de 1 e de 2 linhas (ex.: Golfinho)
+     alinharem a imagem e o nome científico na mesma altura. */
+  min-height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--plat-ink);
+}
+
+.esp_evitar_foto {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* fundo igual ao da seção logo atrás da imagem: o multiply mistura o branco da
+     ilustração com este fundo claro e o retângulo branco some. */
+  background-color: var(--plat-light);
+}
+
+.esp_evitar_foto img {
+  max-height: 100%;
+  max-width: 240px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.esp_evitar_ci {
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--plat-ink-2);
+}
+
+@media screen and (max-width: 1024px) {
+  .esp {
+    padding: 3.5rem 0;
+  }
+
+  .plat-mar .esp {
+    min-height: auto;
+    display: block;
+  }
+
+  .esp_evitar {
+    margin-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .esp_evitar_lista {
+    gap: 2rem;
+  }
+
+  .esp_cabecalho {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .esp_item {
+    width: 140px;
+  }
+
+  .esp_foto {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Mesmo com "reduzir movimento" no SO, mantemos o deslize (é lento e pausa no
+   hover). Só desaceleramos um pouco pra ficar mais suave nesse caso. */
+@media (prefers-reduced-motion: reduce) {
+  .esp_trilho {
+    animation-duration: 60s;
+  }
+}

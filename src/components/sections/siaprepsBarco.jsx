@@ -23,7 +23,11 @@ export default function SectionBarco() {
         {/* <div className="textoPesca"> */}
 
 
-        <p className="textoPesca">Localização do Pescado</p>
+        <p className="textoPesca">Pescar sabendo onde ir muda tudo</p>
+        <p className="subtextoPesca">
+          Menos horas à deriva procurando cardume significa menos combustível
+          queimado, menos custo e menos emissões para você e para o oceano.
+        </p>
 
         {/* MUDANDO O LUGAR DO iframe */}
         <div className="divBarco">
@@ -35,15 +39,15 @@ export default function SectionBarco() {
         <div className="divInfos">
           <div>
             <h2>60%</h2>
-            <p>Redução do Custo no Processo de Procura do Pescado</p>
+            <p>Redução do custo na procura do pescado</p>
           </div>
           <div>
             <h2>60%</h2>
-            <p>Redução da Emissão de Gases Estufas para a Atmosfera</p>
+            <p>Redução da emissão de gases de efeito estufa</p>
           </div>
           <div>
             <h2>70%</h2>
-            <p>Otimização do Tempo das Pescarias</p>
+            <p>Otimização do tempo das pescarias</p>
           </div>
         </div>
 

@@ -8,6 +8,7 @@ import SectionHelps from "../components/sections/helps";
 import SectionPhytobloom from "../components/sections/phytobloom.jsx";
 import SectionFooter from "../components/sections/siaprepsFooter.jsx";
 import SectionParceiros from "../components/sections/parceiros.jsx"
+import SectionPlataforma from "../components/sections/plataforma.jsx";
 
 
 export default function Index() {
@@ -67,6 +68,7 @@ export default function Index() {
                 </section>
 
                 <SectionHelps />
+                <SectionPlataforma />
                 <SectionSiapreps />
                 <SectionPhytobloom />
                 <SectionParceiros />
