@@ -1,2 +1,8 @@
 node_modules
 build
+
+# config local do Claude Code e docs de contexto/handoff — só na máquina local
+.claude
+DESIGN.md
+HANDOFF-PHYTOBLOOM.md
+IMPLEMENTACAO-PLATAFORMA.md
