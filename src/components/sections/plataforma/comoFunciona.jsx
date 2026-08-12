@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "../../common/Reveal";
+import Lightbox from "../../common/Lightbox";
 import "../../../style/plataforma/pagina.css";
 import passo1 from "../../../imgs/passo1.jpg";
 import passo2 from "../../../imgs/passo2.jpg";
@@ -49,14 +50,16 @@ export default function SectionComoFunciona() {
           <div className="plat_fluxo_grid">
           {etapas.map((etapa, indice) => (
             <article className="plat_fluxo_item" key={etapa.titulo}>
-              <div className="plat_fluxo_shot">
-                <img
-                  src={etapa.img}
-                  alt={`Tela da plataforma: ${etapa.titulo}`}
-                  loading="lazy"
-                />
-                <span className="plat_fluxo_num">{indice + 1}</span>
-              </div>
+              <Lightbox src={etapa.img} alt={`Tela da plataforma: ${etapa.titulo}`}>
+                <div className="plat_fluxo_shot">
+                  <img
+                    src={etapa.img}
+                    alt={`Tela da plataforma: ${etapa.titulo}`}
+                    loading="lazy"
+                  />
+                  <span className="plat_fluxo_num">{indice + 1}</span>
+                </div>
+              </Lightbox>
               <h3>{etapa.titulo}</h3>
               <p>{etapa.texto}</p>
             </article>

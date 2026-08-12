@@ -2,60 +2,60 @@ import React from "react";
 import Reveal from "../../common/Reveal";
 import Lightbox from "../../common/Lightbox";
 import "../../../style/plataforma/pagina.css";
-import passo1 from "../../../imgs/passo1.jpg";
-import passo2 from "../../../imgs/passo2.jpg";
-import passo3 from "../../../imgs/passo3.jpg";
-import passo4 from "../../../imgs/passo4.jpg";
+import passo1 from "../../../imgs/comoFuncionaReservatorio.jpeg";
+import passo2 from "../../../imgs/comoFuncionaAnalise.jpeg";
+import passo3 from "../../../imgs/comoFuncionaCamadas.jpeg";
+import passo4 from "../../../imgs/comoFuncionaAlerta.jpeg";
 
 const etapas = [
   {
-    titulo: "Baixe o software",
+    titulo: "Adicione o reservatório",
     img: passo1,
-    texto:
-      "Instale o SIAPREPS no seu computador Windows em poucos minutos, sem complicação.",
+    texto: "Desenhe a área do reservatório no mapa para começar a monitorá-lo.",
   },
   {
-    titulo: "Configure a pescaria",
+    titulo: "Escolha a data da análise",
     img: passo2,
     texto:
-      "Informe a embarcação, o porto de saída, o tipo de pesca e a espécie-alvo do lance.",
+      "Selecione o dia e veja a imagem de satélite processada daquele período.",
   },
   {
-    titulo: "Veja os cardumes no mapa",
+    titulo: "Veja as camadas",
     img: passo3,
     texto:
-      "O mapa de satélite mostra onde o pescado se concentra e as áreas que você deve evitar.",
+      "Ative produtividade primária, cianobactérias, macrófitas ou classificação ambiental sobre o mapa.",
   },
   {
-    titulo: "Pesque e registre o lance",
+    titulo: "Crie áreas de alerta",
     img: passo4,
     texto:
-      "Vá direto ao ponto certo e registre suas capturas e descartes direto no aplicativo.",
+      "Marque os pontos críticos e receba um aviso automático quando o limite for ultrapassado.",
   },
 ];
 
-export default function SectionComoFuncionaSiapreps() {
+export default function SectionComoFuncionaPhytobloom() {
   return (
     <section className="plat_fluxo">
       <div className="plat_wrap">
         <Reveal stagger>
           <p className="plat_rotulo">Como funciona</p>
           <h2 className="plat_titulo_seccao">
-            Do download ao lance, em quatro passos
+            Do reservatório ao alerta, em quatro passos
           </h2>
           <p className="plat_intro">
-            O caminho é direto: você instala o app, configura a pescaria e o
-            mapa de satélite mostra o rumo certo e as áreas a evitar.
+            O caminho é direto: você cadastra o reservatório, escolhe a data
+            da análise e o mapa de calor mostra onde agir antes que vire
+            crise.
           </p>
 
           <div className="plat_fluxo_grid">
             {etapas.map((etapa, indice) => (
               <article className="plat_fluxo_item" key={etapa.titulo}>
-                <Lightbox src={etapa.img} alt={`Tela do SIAPREPS: ${etapa.titulo}`}>
+                <Lightbox src={etapa.img} alt={`Tela do PhytoBloom: ${etapa.titulo}`}>
                   <div className="plat_fluxo_shot">
                     <img
                       src={etapa.img}
-                      alt={`Tela do SIAPREPS: ${etapa.titulo}`}
+                      alt={`Tela do PhytoBloom: ${etapa.titulo}`}
                       loading="lazy"
                     />
                     <span className="plat_fluxo_num">{indice + 1}</span>

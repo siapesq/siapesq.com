@@ -79,6 +79,109 @@
   }
 }
 
+/* Tema ALGAS (PhytoBloom) — mesma estrutura, paleta teal/verde-água.
+   A página PhytoBloom é envolvida em .plat-alga e reusa as classes plat_.
+   --plat-dark casa com o footer sf--phytobloom (--sf-bg: #0a2a23), que é a
+   última seção da página: por isso é um degrau MAIS CLARO que o footer. */
+.plat-alga {
+  --plat-dark: #0f3d33;    /* verde-água escuro — base das seções escuras */
+  --plat-dark-2: #14524a;  /* teal médio — profundidade do gradiente */
+  --plat-dark-3: #1a6b5e;  /* teal mais aberto — brilho do gradiente */
+  --plat-light: #eef8f5;   /* verde-água-gelo claro — seções claras */
+  --plat-panel: #fbfefd;   /* branco-frio — cards claros */
+  --plat-border: #d6ece5;  /* borda fria dos cards claros */
+  --plat-ink: #0d332b;     /* texto verde-escuro sobre o claro */
+  --plat-ink-2: #4c6b62;   /* texto secundário sobre o claro */
+  --plat-green: #3fb9a0;   /* teal vivo — ícones, checks, destaque (= --sf-acc do footer) */
+  --plat-earth: #8bc53f;   /* verde-limão da marca — eyebrows, acento quente */
+  --plat-ring: rgba(63, 185, 160, 0.4);
+  --plat-ring-hover: rgba(63, 185, 160, 0.8);
+}
+
+/* no tema algas, a foto do hero é um close de alga/floração na água
+   (fundo_phytobloom.png) — o "ser vivo" equivalente à capivara/tartaruga.
+   É um close sem um lado vazio óbvio, então cover + posição (sem máscara),
+   igual à represa que usávamos antes.
+   >>> alga maior/menor: mexa no `background-size`.
+   >>> qual trecho aparece: mexa no `background-position`. */
+.plat-alga .plat_hero_foto {
+  background-image: url("../../imgs/fundo_phytobloom.png");
+  background-size: 130%;
+  background-position: 60% 55%;
+}
+
+/* Mapa VÍVIDO (igual ao SIAPREPS): o fundo é um PRINT real do app PhytoBloom
+   (tela de análise do reservatório), então usamos a mesma regra do .plat-mar
+   — a imagem define a altura da seção, sem overlay escuro por cima, painel de
+   vidro escuro sobreposto à direita. */
+.plat-alga .plat_mapa {
+  min-height: 0;
+  display: block;
+  padding: 0;
+}
+
+.plat-alga .plat_mapa_fundo {
+  position: static;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.plat-alga .plat_mapa .plat_wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.plat-alga .plat_mapa_painel--full {
+  background-color: rgba(15, 61, 51, 0.85);
+}
+
+@media screen and (max-width: 1024px) {
+  .plat-alga .plat_mapa {
+    background-color: var(--plat-dark);
+  }
+
+  .plat-alga .plat_mapa .plat_wrap {
+    position: static;
+    padding: 1.5rem;
+  }
+
+  .plat-alga .plat_mapa_painel--full {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* a wordmark "PHYTOBLOOM" (viewBox 1094x127 -> proporção ~8.6) é bem mais
+   esticada que a "SIAPESQ" (proporção 4.27): na mesma largura as letras saem
+   bem menores. Aumentamos a largura máx. só no desktop pra aproximar a altura
+   das letras da dos outros heroes (mesmo ajuste feito para o SIAPREPS). */
+@media (min-width: 1025px) {
+  .plat-alga .plat_hero_marca img {
+    max-width: 860px;
+  }
+
+  .plat-alga .plat_hero_marca {
+    margin-bottom: 3rem;
+  }
+}
+
+/* no tema algas as tags do acesso acompanham o teal da marca */
+.plat-alga .plat_acesso_tags span {
+  border-color: rgba(63, 185, 160, 0.5);
+  background-color: rgba(63, 185, 160, 0.12);
+}
+
+/* idem para o ícone dos cards de "Para quem é" (o padrão do SIAPESQ é
+   verde fixo, sem variável, pois nenhum outro tema usava essa seção antes) */
+.plat-alga .plat_publico_icone {
+  background-color: rgba(63, 185, 160, 0.16);
+  color: #1d7a68;
+}
+
 /* linha de versão/SO abaixo do botão (usada no hero de download do SIAPREPS) */
 .plat_hero_meta {
   margin: 1rem 0 0;
@@ -171,6 +274,9 @@
   /* Painel NAVY (cor-base da marca) que segura o texto à esquerda. A capivara
      mora numa camada separada e se dissolve neste navy: foto de natureza sobre
      a base navy — a cor estrutural é sempre a mesma do header ao footer. */
+  /* SÓLIDO desde o primeiro frame (sem fade aqui) — é o que evita a tela
+     branca por trás durante a troca de rota. Quem entra suave é só o
+     conteúdo (texto), logo abaixo. */
   background: linear-gradient(
     115deg,
     var(--plat-dark) 0%,
@@ -201,10 +307,15 @@
   pointer-events: none;
 }
 
-/* garante header e texto acima da foto */
+/* garante header e texto acima da foto. Entram com fade+leve subida ao
+   MONTAR a página (troca de rota entre SIAPREPS/PhytoBloom/Plataforma) —
+   diferente do <Reveal> (que só anima ao rolar). O fundo do .plat_hero já é
+   sólido desde o 1º frame, então esse fade não expõe nada por trás; só o
+   texto entra suave em vez de aparecer com um corte seco. */
 .plat_hero > .header {
   position: relative;
   z-index: 1;
+  animation: plat_hero_conteudo_entra 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 
@@ -238,6 +349,26 @@
   max-width: 900px;
   margin: 0;
   padding: 3rem 3rem 6rem 8rem;
+
+  animation: plat_hero_conteudo_entra 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+}
+
+@keyframes plat_hero_conteudo_entra {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plat_hero > .header,
+  .plat_hero_conteudo {
+    animation: none;
+  }
 }
 
 /* wordmark — hoje é texto; quando entrar o SVG, vira <img> e usa `width` */
@@ -397,7 +528,8 @@
   gap: 2rem;
 }
 
-/* print real da etapa, com o número em selo por cima */
+/* print real da etapa, com o número em selo por cima. Clicável (abre no
+   Lightbox): sobe uns pixels no hover pra avisar que dá pra ampliar. */
 .plat_fluxo_shot {
   position: relative;
   margin-bottom: 1.15rem;
@@ -409,6 +541,13 @@
   border: 1px solid var(--plat-border);
   background-color: #dfe6dd;
   box-shadow: 0 14px 34px rgba(22, 38, 26, 0.16);
+
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.lightbox_gatilho:hover .plat_fluxo_shot {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 44px rgba(22, 38, 26, 0.24);
 }
 
 .plat_fluxo_shot img {
@@ -417,6 +556,30 @@
   object-fit: cover;
   object-position: top left;
   display: block;
+}
+
+/* Os prints do PhytoBloom são telas reais do app (1600x~858, proporção
+   ~1.86:1) — bem mais largas que o 4:3 (1.33:1) pensado pros prints do
+   SIAPREPS. Com a caixa 4:3 e "object-position: top left", o corte comia
+   ~28% da LARGURA pelo lado direito — exatamente onde ficam os painéis
+   (camadas, alertas) nessas telas. Aqui a caixa casa com a proporção real do
+   print, então o "cover" praticamente não corta nada. */
+.plat-alga .plat_fluxo_shot {
+  aspect-ratio: 1600 / 858;
+}
+
+.plat-alga .plat_fluxo_shot img {
+  object-position: top center;
+}
+
+/* Os prints reais têm muito texto/UI miúda (sidebar, painéis) — continuam em
+   1 linha de 4 (igual às outras páginas), só que o "trilho" ganha mais largura
+   pra cada print crescer proporcionalmente. >>> quer maior/menor? mexa neste
+   max-width (o limite de 1024px pra virar 1 coluna no mobile continua igual). */
+@media (min-width: 1025px) {
+  .plat-alga .plat_fluxo .plat_wrap {
+    max-width: 1880px;
+  }
 }
 
 .plat_fluxo_num {
@@ -456,6 +619,54 @@
   font-size: 1.08rem;
   line-height: 1.6;
   color: #4a5670;
+}
+
+/* =========================================================== DEMONSTRAÇÃO */
+
+.plat_video {
+  padding: 6rem 3rem;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(180deg, var(--plat-dark-2) 0%, var(--plat-dark) 100%);
+}
+
+.plat_video .plat_wrap {
+  max-width: 960px;
+}
+
+.plat_video .plat_intro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plat_video_frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 2.5rem;
+
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 26px 72px rgba(0, 0, 0, 0.4);
+}
+
+.plat_video_frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .plat_video {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .plat_video_frame {
+    margin-top: 1.75rem;
+  }
 }
 
 /* ================================================================== MAPA */

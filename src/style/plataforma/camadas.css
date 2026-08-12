@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Seção "Camadas de análise" (PhytoBloom) — mesma esteira/marquee de
+   especies.css (.esp_esteira/.esp_trilho), só que os itens são as camadas
+   de dados do app (ícone) em vez de espécies (foto).
+   ========================================================================== */
+
+/* O truque do .esp_trilho (duplicar a lista e andar -50%) só fica sem vão em
+   branco se UMA cópia sozinha já for mais larga que a tela — com 12 espécies
+   isso vale, mas com só 5 camadas uma cópia é bem mais estreita que telas
+   largas (~1170px de cópia vs. 1536-1920px de tela). Perto do fim do ciclo, a
+   faixa (2 cópias) acaba antes da tela terminar de "andar", e aparece um vão
+   branco até o loop reiniciar.
+   Fix: 4 cópias em vez de 2 (ver JSX) + anda só 1/4 da faixa (-25%, não
+   -50%) — mesma distância de UMA cópia por ciclo, só que agora sempre sobra
+   cópia de sobra pra cobrir a tela inteira, mesmo em monitores bem largos.
+   Duração mantida em ~19s (mesma velocidade, ~61px/s, do carrossel de
+   espécies) porque a distância percorrida por ciclo é a mesma de antes. */
+.esp_trilho--camadas {
+  animation-name: esp-desliza-camadas;
+  animation-duration: 19s;
+}
+
+@keyframes esp-desliza-camadas {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* -25% = exatamente 1 das 4 cópias → loop perfeito, sem vão */
+    transform: translateX(-25%);
+  }
+}
+
+.esp_item--camada {
+  width: 190px;
+  text-align: center;
+}
+
+.esp_camada_icone {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid var(--plat-green);
+  color: var(--plat-green);
+  box-shadow: 0 0 0 1.5px var(--plat-ring), 0 16px 34px rgba(15, 61, 51, 0.16);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.esp_item--camada:hover .esp_camada_icone {
+  transform: translateY(-6px);
+  box-shadow: 0 0 0 2px var(--plat-ring-hover), 0 24px 46px rgba(15, 61, 51, 0.22);
+}
+
+.esp_camada_nome {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--plat-ink);
+}
+
+.esp_camada_desc {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--plat-ink-2);
+}
+
+@media screen and (max-width: 1024px) {
+  .esp_item--camada {
+    width: 155px;
+  }
+
+  .esp_camada_icone {
+    width: 76px;
+    height: 76px;
+  }
+}

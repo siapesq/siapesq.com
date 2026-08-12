@@ -10,14 +10,14 @@ export default function Header({page=''}) {
         <header className={`header ${page}`}>
             <nav>
                 {<ul>
+                            <NavLink to={"/plataforma"} className='links' >
+                                PLATAFORMA
+                            </NavLink>
                             <NavLink to={"/siapreps"} className='links'>
                                 SIAPREPS
                             </NavLink>
                             <NavLink to={"/phytobloom"} className='links' >
                                 PHYTOBLOOM
-                            </NavLink>
-                            <NavLink to={"/plataforma"} className='links' >
-                                PLATAFORMA
                             </NavLink>
                             <NavLink to={"/"}>
                                 <img src={logo} alt="Logo da siapesq na coloração azul" className="logoAzul"/>
