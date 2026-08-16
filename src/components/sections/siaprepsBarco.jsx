@@ -1,5 +1,5 @@
 import React from "react";
-// import barcopesca from "../../imgs/barcopesca.svg";
+import barcopesca from "../../imgs/barcopesca.svg";
 // import textobarco from "../../imgs/textoBarco.svg";
 // import bordabarco from "../../imgs/bordabarco.svg";
 // import mar from "../../imgs/marBarco.jpg";
@@ -34,6 +34,13 @@ export default function SectionBarco() {
           <div>
             <iframe src='https://my.spline.design/untitled-J3JQmE2lqIzFAEopaNXctl4J/' frameborder='0' width='110%' height="500px" title="Modelo 3D do barco" style={{zIndex: 1000}}></iframe>
           </div>
+          {/* No mobile o modelo 3D (Spline) é pesado e pouco confiável, então
+              some e entra essa imagem estática no lugar (ver barco.css). */}
+          <img
+            src={barcopesca}
+            alt="Barco de pesca"
+            className="barcoPescaFallback"
+          />
         </div>
 
         <div className="divInfos">

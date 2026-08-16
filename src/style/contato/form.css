@@ -4,228 +4,149 @@
   box-sizing: border-box;
 }
 
-
-.formContato{
-  background: #04517B;
+.formContato {
+  background: #04517b;
 }
 
-.form-content .formContato{
-  width: 85%;
-}
+.contactContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
 
-.formContato #botao{
-  width: 100px;
-  height: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 6rem 3rem 8rem;
 
-  border-radius: 10px;
-
-  background: #03045E;
   color: white;
-
-  margin-left: auto;
 }
 
-.form-infos, .form-content{
-  flex: 0 1 40%;
+.form-infos,
+.form-content {
+  flex: 1 1 380px;
 }
 
-.form-infos h1{
-  font-size: 4rem;
+.form-infos h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  line-height: 1.15;
 }
 
-.form-infos p{
-  font-size: 1.2rem;
+.form-infos p {
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
 }
 
-.contactContainer{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  /* align-items: center; */
-  column-gap: 20px;
-  height: 90vh;
-
-  padding-top: 100px;
-  padding-top: 10vh;
-
-  color: white;
+/* o próprio <form> também tem classe .formContato — aqui é só ele (dentro de
+   .form-content), então vira um painel de vidro por cima do azul de fundo */
+.form-content .formContato {
+  width: 100%;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  padding: 2rem;
 }
 
-.contact-container {
+.input-group {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #27742B;
-  padding: 20px;
-  height: 100vh;
-  color: white;
-  column-gap: 50px;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-/* .contact-container .form-content {
-  flex: 1 1 50%;
-} */
+.input-group .input-item {
+  flex: 1 1 160px;
+}
 
-#formPhytobloom {
+.input-item {
   display: flex;
   flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.input-item label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.input-item input,
+.input-item textarea {
   width: 100%;
-  /* width: 50%; */
-  /* margin-left: -200px; */
-}
-
-h1{
-  color: white;
-  
-}
-
-#botaoPhytobloom{
-  width: auto;
-  font-size: 1.5rem;
-  height: auto;
-  padding: 5px 20px;
-
-  background-color: #00472500;
-  color: #ffffff;
-
-  border: 1px solid white;
-  border-radius: 50px;
-
-  margin-left: auto;
-}
-
-@media screen and (max-width: 1366px) {
-
-  .contact-container{
-    align-items: start;
-    padding: 100px 20px 20px 20px;
-    height: 90vh;
-  }
-
-  #textoform h1{
-    font-size: 3rem;
-  }
-
-  .form-content, #formPhytobloom{
-    margin: 0;
-  }
-
-  #botaoPhytobloom{
-    width: auto;
-    background-color: #004725;
-    /* margin-left: 89%; */
-    color: #ffffff;
-    border-radius: 10px;
-    height: auto;
-    padding: 10px;
-    font-size: 1.5rem;
-  }
-
-}
-
-
-@media screen and (max-width: 1024px) {
- 
-#botaoPhytobloom{
-  /* width: 48px; */
-  width: auto;
-  background-color: #004725;
-  margin-left: 83%;
-  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  /* height: 30px; */
-  height: auto;
-  padding: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #233363;
+  font-family: "Mulish", sans-serif;
   font-size: 1rem;
 }
 
-.contact-container{
-  height: auto;
-  max-height: 100vh;
+.input-item textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 
+.input-item input:focus,
+.input-item textarea:focus {
+  outline: 2px solid #2589bd;
+  outline-offset: 1px;
+}
+
+.formContato #botao {
+  align-self: flex-start;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 50px;
+  background: #03045e;
+  color: #ffffff;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.formContato #botao:hover {
+  background: #18a7b3;
+  color: #0a1730;
 }
 
 @media screen and (max-width: 1024px) {
+  .contactContainer {
+    flex-direction: column;
+    padding: 5rem 1.5rem 4rem;
+    gap: 2.5rem;
+  }
 
-.contact-container .form-content{
-  margin: 0;
+  .form-infos h1 {
+    font-size: 2.2rem;
+  }
 
-  #formPhytobloom{
-    margin: 0;
+  .form-content .formContato {
+    max-width: 100%;
   }
 }
 
-.contact-container{
-  background-color: #fff;
-  padding: 2rem 0;
-  flex-flow: column nowrap;
-  align-items: center;
-  min-height: auto;
-
-  
-#textoform{
-    display: flex;
-    justify-content: center;
-   
-  }
-  
-  h1{
-    color: white;
-
-    #h1Phytobloom{
-      font-size: 2rem;
-      width: 75%;
-      text-align: center;
-      margin: 0;
-    }
-  }
-  
-  #botao{
-    width: 200px;
-    height: 80px;
-    background-color: #03055e00;
-    margin-left:510px;
-    color: #ffffff;
-    border-radius: 40px;
-    border-color: #ffffff;
-    font-size: 3em;
-   
+@media screen and (max-width: 500px) {
+  .form-infos h1 {
+    font-size: 1.9rem;
   }
 
-  @media screen and (max-width: 1024px) {
-
-    .contactContainer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #04517B;
-      padding: 20px;
-      height: 150vh;
-      color: white;
-      margin-top: -20%;
-    }
-
-    #botao{
-      width: 120px;
-      height: 50px;
-      background-color: #03055e00;
-      margin-left:150px;
-      color: #ffffff;
-      border-radius: 40px;
-      border-color: #ffffff;
-      font-size: 2em;
-     
-    }
-
+  .input-group {
+    flex-direction: column;
   }
-}
-}
 
+  /* .input-item herda flex-basis:160px do .input-group (pensado pra largura,
+     lado a lado); em coluna isso vira ALTURA MÍNIMA de 160px por campo —
+     por isso o espaço enorme entre os campos. Reseta pra altura natural. */
+  .input-group .input-item {
+    flex: none;
+  }
 
-@media screen and (max-width: 500px){
-  #botaoPhytobloom{
-    margin-left: auto;
+  .formContato #botao {
+    width: 100%;
   }
 }

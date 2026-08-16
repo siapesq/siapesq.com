@@ -6,16 +6,18 @@
   justify-content: center;
 }
 
-/* Trocando a logo com base no container da página */
-.header .logoAzul, .header .logoResponsiva{
+/* Trocando a logo com base no container da página (mesma em qualquer
+   largura de tela — antes trocava pra uma 3ª variante com subtítulo no
+   mobile, mas o texto ficava ilegível de tão pequeno). */
+.header .logoAzul {
   display: none;
 }
 
-.index .header .logoBranca, .index .header .logoResponsiva{
+.index .header .logoBranca {
   display: none;
 }
 
-.index .header .logoAzul{
+.index .header .logoAzul {
   display: block;
 }
 
@@ -234,6 +236,22 @@
   user-select: none;
 }
 
+/* troca de onda por CSS (equivalente ao antigo `window.innerWidth > 1366` em
+   JS, mas reativo a resize/rotação) */
+.header_container .footer_header_container .onda_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .header_container .footer_header_container .onda_desktop {
+    display: none;
+  }
+
+  .header_container .footer_header_container .onda_mobile {
+    display: block;
+  }
+}
+
 .header_container .footer_header_container article {
   position: absolute;
   bottom: 3.8rem;
@@ -284,6 +302,14 @@
 
 .header_container .footer_header_container article div .content {
   font-size: 1rem;
+}
+
+/* precisa vir DEPOIS da declaração base (display:flex) acima pra vencer o
+   empate de especificidade — mesma ideia do `.onda_*` logo acima. */
+@media screen and (max-width: 1366px) {
+  .header_container .footer_header_container article {
+    display: none;
+  }
 }
 
 .helps {
@@ -483,25 +509,6 @@
   align-items: center;
 }
 
-.header .responsiveButton button {
-  display: none;
-  background-color: rgba(3, 4, 94, 1);
-  width: 25%;
-  height: 50px;
-  padding: 15px;
-  border-radius: 50px;
-  color: white;
-}
-
-/* .responsiveHeader button {
-  background-color: rgba(3, 4, 94, 1);
-  width: calc(100% + 10px);
-  height: 50px;
-  padding: 15px;
-  border-radius: 50px;
-  color: white;
-} */
-
 .index section {
   
   width: 100%;
@@ -558,14 +565,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-
-  .header .logoBranca, .logoAzul{
-    display: none;
-  }
-
-  .header .logoResponsiva{
-    display: block;
-  }
 
   .header_container .footer_header_container {
     display: none;
@@ -648,20 +647,10 @@
     display: none;
   }
 
-  .header .responsiveButton button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(3, 4, 94, 1);
-    width: 100%;
-    height: 50px;
-    /* padding: 10px; */
-    border-radius: 50px;
-    color: white;
-  }
-
+  /* só logo + botão hambúrguer ficam visíveis: logo na ponta esquerda,
+     hambúrguer na direita (padrão de header mobile). */
   .header nav ul {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .helps h3{
@@ -725,13 +714,6 @@
     width: 100%;
   }
 
-  .index .header .logoAzul{
-    display: none;
-  }
-
-  .index .header .logoResponsiva{
-    display: block;
-  }
 }
 
 button{
@@ -764,10 +746,6 @@ button{
 @media screen and (max-width:500px){
   .header nav img{
     width: 6.5rem;
-  }
-
-  .header .responsiveButton button{
-    font-size: 0.6rem;
   }
 
   .header_container .bg_img{

@@ -58,6 +58,28 @@
   background-position: 100% 40%;
 }
 
+/* BUG real (não só "espaçamento estranho"): a regra mobile genérica de
+   .plat_hero_foto (mais abaixo no arquivo) tenta trocar a imagem por um
+   degradê+foto escurecida, mas como `.plat-mar .plat_hero_foto` tem mais
+   especificidade (2 classes), ela sempre GANHA o background-image — só que
+   sem o degradê de escurecimento junto. Resultado: no mobile a foto aparece
+   crua, sem nenhum escurecimento, e o texto branco/teal por cima quase some
+   em cima do recife colorido. Aqui repetimos a MESMA foto já COM o degradê,
+   nas cores do tema marítimo. */
+@media screen and (max-width: 1024px) {
+  .plat-mar .plat_hero_foto {
+    background-image: linear-gradient(
+        180deg,
+        rgba(10, 33, 56, 0.82) 0%,
+        rgba(16, 58, 99, 0.4) 55%,
+        rgba(23, 86, 140, 0.15) 100%
+      ),
+      url("../../imgs/FUNDO_TARTARUGA.png");
+    background-size: cover;
+    background-position: center 30%;
+  }
+}
+
 /* A wordmark "SIAPREPS" tem viewBox bem mais esticado (858x134 -> proporção 6.4)
    que a "SIAPESQ" (444x104 -> 4.27). Na mesma largura (620px) as letras do
    SIAPREPS saem ~35% menores. Pra igualar a ALTURA das letras à do SIAPESQ,
@@ -108,6 +130,22 @@
   background-image: url("../../imgs/fundo_phytobloom.png");
   background-size: 130%;
   background-position: 60% 55%;
+}
+
+/* mesmo bug de especificidade do .plat-mar logo acima — aqui nas cores do
+   tema algas. */
+@media screen and (max-width: 1024px) {
+  .plat-alga .plat_hero_foto {
+    background-image: linear-gradient(
+        180deg,
+        rgba(15, 61, 51, 0.82) 0%,
+        rgba(20, 82, 74, 0.4) 55%,
+        rgba(26, 107, 94, 0.15) 100%
+      ),
+      url("../../imgs/fundo_phytobloom.png");
+    background-size: cover;
+    background-position: center 55%;
+  }
 }
 
 /* Mapa VÍVIDO (igual ao SIAPREPS): o fundo é um PRINT real do app PhytoBloom
@@ -1256,7 +1294,13 @@
     font-size: 1.05rem;
   }
 
-  .plat_acesso_janela {
+  /* .plat_acesso_janela/.plat_acesso_mockup usam flex-basis em px pensado
+     pra LARGURA (linha, desktop). Em coluna (mobile) isso vira ALTURA MÍNIMA
+     forçada (520px/440px) — sobra um vão vazio enorme abaixo da imagem, que
+     na real só precisa da altura do seu próprio conteúdo. */
+  .plat_acesso_janela,
+  .plat_acesso_mockup {
+    flex: none;
     max-width: 100%;
   }
 
@@ -1267,6 +1311,23 @@
 
   .plat_mapa_painel {
     padding: 1.5rem;
+  }
+
+  /* Tema padrão (SIAPESQ /plataforma): a foto ficava position:absolute atrás
+     do painel o tempo todo. Sem os 100vh do desktop, a seção encolhe pro
+     tamanho do texto e a foto "some" atrás do painel quase opaco. SIAPREPS e
+     PhytoBloom já tinham esse ajuste (foto volta pro fluxo normal, vira uma
+     faixa acima do painel); faltava só a SIAPESQ. */
+  .plat_mapa_fundo {
+    position: static;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .plat_mapa_painel--full {
+    max-width: 100%;
+    margin-left: 0;
   }
 
   .plat_btn {

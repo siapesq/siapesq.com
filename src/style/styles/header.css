@@ -4,3 +4,178 @@
 li{
   list-style: none;
 }
+
+/* ==========================================================================
+   Menu mobile (hambúrguer + painel) — visível só ≤1024px (mesmo breakpoint
+   que já esconde os links de texto em style.css). Acima disso o botão fica
+   escondido e a nav normal do header assume.
+   ========================================================================== */
+
+.menu_hamburguer {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu_hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+
+    width: 44px;
+    height: 44px;
+    padding: 0;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    /* branco por padrão (páginas internas, hero escuro) */
+    color: #ffffff;
+  }
+
+  /* na home o fundo é claro — ícone escuro, igual ao resto do header */
+  .index .menu_hamburguer {
+    color: rgba(35, 51, 99, 1);
+  }
+
+  .menu_hamburguer span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: currentColor;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  /* linhas viram um X quando o menu está aberto */
+  .menu_hamburguer[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .menu_hamburguer[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu_hamburguer[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* Painel — sempre via portal pro <body> (position:fixed precisa ficar fora
+   de qualquer ancestral com will-change/transform, mesma lição do Lightbox).
+   Vidro fosco: escurece + desfoca o que está atrás (a própria foto/gradiente
+   da página) em vez de um fundo sólido — mesma linguagem "glassmorphism" já
+   documentada no DESIGN.md (card-glass). O blur também evita o problema de
+   texto de trás "vazando" por cima do menu (já não dá pra ler, só embaça). */
+.menu_overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  background-color: rgba(10, 23, 48, 0.55);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  animation: menu-fade 0.2s ease;
+}
+
+@keyframes menu-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu_logo {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.75rem;
+  height: 32px;
+  width: auto;
+}
+
+.menu_fechar {
+  position: fixed;
+  top: 1.4rem;
+  right: 1.5rem;
+
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(24, 167, 179, 0.6);
+  border-radius: 12px;
+  background-color: rgba(24, 167, 179, 0.14);
+  color: #ffffff;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.menu_fechar:hover {
+  background-color: rgba(24, 167, 179, 0.3);
+  transform: rotate(90deg);
+}
+
+/* painel de vidro flutuante que segura os links — token card-glass do
+   DESIGN.md (glass-fill/glass-border), não o overlay inteiro. */
+.menu_painel {
+  width: 100%;
+  max-width: 340px;
+  padding: 3rem 1.5rem;
+
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.4);
+}
+
+.menu_lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.6rem;
+}
+
+.menu_lista a {
+  display: block;
+  /* alvo de toque generoso (convenção mobile: mín. ~44px de altura) */
+  padding: 0.5rem 1rem;
+
+  font-family: "Mulish", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+
+  transition: color 0.2s ease;
+}
+
+.menu_lista a:hover,
+.menu_lista a.active {
+  color: #18a7b3;
+}
+
+@media screen and (max-width: 340px) {
+  .menu_lista a {
+    font-size: 1.2rem;
+  }
+
+  .menu_painel {
+    padding: 2.5rem 1rem;
+  }
+}

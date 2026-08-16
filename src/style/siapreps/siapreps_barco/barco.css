@@ -36,6 +36,12 @@
   overflow: hidden;
 }
 
+/* fallback estático do mobile (ver @media 1024px mais abaixo) — escondido
+   no desktop, onde o modelo 3D (iframe) é o protagonista. */
+.barcoPescaFallback {
+  display: none;
+}
+
 .containerPesca::after {
   content: " ";
 
@@ -340,8 +346,25 @@
     display: none;
   }
 
+  /* o iframe do Spline some (pesado/instável no mobile) e dá lugar à imagem
+     estática do barco — mesmo conteúdo, sem depender de carregar o 3D. */
   .divBarco {
+    display: block;
+    height: auto;
+    overflow: visible;
+  }
+
+  .divBarco > div {
     display: none;
+  }
+
+  .barcoPescaFallback {
+    display: block;
+    width: 70%;
+    max-width: 340px;
+    margin: 0 auto 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
   }
 
   .divInfos {

@@ -233,7 +233,10 @@ main p {
     background-color: rgba(16, 70, 23, 0.77);
 
     .header {
-      /* flex-flow: column-reverse nowrap; */
+      /* antes só quebrava pra coluna em 600px — entre 601-1024px ficava
+         espremido lado a lado. Alinhado ao resto do site, que quebra em
+         1024px. */
+      flex-flow: column-reverse nowrap;
       flex-basis: auto;
 
       row-gap: 2rem;
@@ -255,14 +258,4 @@ main p {
     width: 50%;
   }
 
-}
-
-@media screen and (max-width: 600px) {
-  .container .header{
-    flex-flow: column-reverse nowrap;
-  }
-
-  .container .header-text ul li{
-    text-align: left;
-  }
 }
