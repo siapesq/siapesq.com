@@ -1,6 +1,6 @@
 import React from "react";
 import Reveal from "../../common/Reveal";
-import mapaSiapreps from "../../../imgs/siapreps.svg";
+import mapaSiapreps from "../../../imgs/siapreps.webp";
 import "../../../style/plataforma/pagina.css";
 
 const svgProps = {

@@ -1,9 +1,5 @@
 import React from "react";
-import barcopesca from "../../imgs/barcopesca.svg";
-// import textobarco from "../../imgs/textoBarco.svg";
-// import bordabarco from "../../imgs/bordabarco.svg";
-// import mar from "../../imgs/marBarco.jpg";
-// import onda from "../../videos/agua.MOV";
+import barcopesca from "../../imgs/barcopesca.webp";
 import '../../style/siapreps/siapreps_barco/barco.css';
 
 

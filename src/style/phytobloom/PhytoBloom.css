@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  background-image: url('/src/imgs/hidro.png');
+  background-image: url('/src/imgs/hidro.webp');
   background-size: cover;
   min-height: 100vh;
   display: flex;

@@ -47,7 +47,7 @@
    >>> tartaruga maior/menor: mexa no `background-size` (140% = mais zoom).
    >>> subir/descer ou puxar a tartaruga: mexa no `background-position`. */
 .plat-mar .plat_hero_foto {
-  background-image: url("../../imgs/FUNDO_TARTARUGA.png");
+  background-image: url("../../imgs/FUNDO_TARTARUGA.webp");
   /* MESMO esquema do SIAPESQ (herda width 60% + máscara 52%): a esquerda da foto
      se dissolve no navy escuro e a tartaruga fica nítida à direita, igual a
      capivara. Só damos zoom e escolhemos o ponto pra enquadrar a tartaruga.
@@ -74,7 +74,7 @@
         rgba(16, 58, 99, 0.4) 55%,
         rgba(23, 86, 140, 0.15) 100%
       ),
-      url("../../imgs/FUNDO_TARTARUGA.png");
+      url("../../imgs/FUNDO_TARTARUGA.webp");
     background-size: cover;
     background-position: center 30%;
   }
@@ -127,7 +127,7 @@
    >>> alga maior/menor: mexa no `background-size`.
    >>> qual trecho aparece: mexa no `background-position`. */
 .plat-alga .plat_hero_foto {
-  background-image: url("../../imgs/fundo_phytobloom.png");
+  background-image: url("../../imgs/fundo_phytobloom.webp");
   background-size: 130%;
   background-position: 60% 55%;
 }
@@ -142,7 +142,7 @@
         rgba(20, 82, 74, 0.4) 55%,
         rgba(26, 107, 94, 0.15) 100%
       ),
-      url("../../imgs/fundo_phytobloom.png");
+      url("../../imgs/fundo_phytobloom.webp");
     background-size: cover;
     background-position: center 55%;
   }
