@@ -7,10 +7,16 @@ import SectionMapa from "../components/sections/plataforma/mapa";
 import SectionPublico from "../components/sections/plataforma/publico";
 import SectionAcesso from "../components/sections/plataforma/acesso";
 import SectionFooter from "../components/sections/siaprepsFooter";
+import Seo from "../components/common/Seo";
 
 export default function Plataforma() {
   return (
     <>
+      <Seo
+        title="Plataforma"
+        description="Monitoramento inteligente de espécies: mapas interativos, estatísticas e projeções climáticas com precisão científica, direto no navegador."
+        path="/plataforma"
+      />
       <SectionHero />
       <SectionEspecies />
       <SectionRecursos />
