@@ -1,6 +1,6 @@
 import React from "react";
 import Reveal from "../../common/Reveal";
-import mapaPhytobloom from "../../../imgs/phytobloom.png";
+import mapaPhytobloom from "../../../imgs/phytobloom.webp";
 import "../../../style/plataforma/pagina.css";
 
 const svgProps = {

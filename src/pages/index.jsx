@@ -1,20 +1,22 @@
 import Header from "../components/layouts/header";
-import mar from "../imgs/mar.png";
+import mar from "../imgs/mar.webp";
 import wave from "../imgs/wave.svg";
 import footerV2 from "../imgs/footerV2.png";
-import siaprepsMonitor from "../imgs/siaprepsMonitor.svg";
+import siaprepsMonitor from "../imgs/siaprepsMonitor.webp";
 import SectionSiapreps from "../components/sections/siapreps";
 import SectionHelps from "../components/sections/helps";
 import SectionPhytobloom from "../components/sections/phytobloom.jsx";
 import SectionFooter from "../components/sections/siaprepsFooter.jsx";
 import SectionParceiros from "../components/sections/parceiros.jsx"
 import SectionPlataforma from "../components/sections/plataforma.jsx";
+import Seo from "../components/common/Seo";
 
 
 export default function Index() {
 
     return (
         <>
+            <Seo description="Plataforma de inteligência artificial e monitoramento por satélite para pesca e meio ambiente: localize o pescado, acompanhe espécies e reduza custos e emissões. Conheça SIAPREPS, PhytoBloom e a Plataforma SIAPESQ." />
             <div className="index">
                 <section className="header_container">
                     <img src={mar} alt="Imagem de fundo" className="bg_img" />

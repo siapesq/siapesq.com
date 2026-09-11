@@ -1,6 +1,6 @@
 import React from "react";
 import Reveal from "../../common/Reveal";
-import notebook from "../../../imgs/siapresqPc.svg";
+import notebook from "../../../imgs/siapresqPc.webp";
 import { URL_DOWNLOAD_SIAPREPS } from "./hero";
 import "../../../style/plataforma/pagina.css";
 
