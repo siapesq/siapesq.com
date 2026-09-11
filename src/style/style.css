@@ -570,6 +570,15 @@
     display: none;
   }
 
+  /* com os pilares escondidos, só sobram header + bloco de texto — e
+     space-between (pensado pra 3 blocos) empurra o texto lá pro fundo da
+     tela de 100vh, deixando um vão enorme de céu vazio no meio. Centraliza
+     o par em vez de esticar o espaço entre os dois. */
+  .header_container {
+    justify-content: center;
+    row-gap: 3rem;
+  }
+
   .header_container .bg_img{
     height: 100%;
   }

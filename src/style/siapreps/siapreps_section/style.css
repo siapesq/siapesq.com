@@ -406,7 +406,13 @@
   }
 
   .siapreps{
-    background-image: none;
+    /* antes a foto sumia (background-image:none) e ficava só uma cor
+       chapada — mantém a foto, com um degradê azul por cima pra garantir
+       contraste, no mesmo espírito do resto do site. */
+    background-image: linear-gradient(rgba(45, 129, 175, 0.78), rgba(45, 129, 175, 0.78)),
+      url("../../../imgs/section_siapreps_bg.webp");
+    background-size: cover;
+    background-position: center;
     background-color: rgba(45, 129, 175, 1);
 
     padding: 2rem 0;
