@@ -76,7 +76,10 @@
       ),
       url("../../imgs/FUNDO_TARTARUGA.png");
     background-size: cover;
-    background-position: center 30%;
+    /* a tartaruga (cabeça) fica bem à direita da foto original — sem isso o
+       "cover" recorta perto do centro e mostra só água vazia/corpo.
+       >>> cabeça sumiu de novo? mexa no 1º valor (%, da esquerda). */
+    background-position: 88% center;
   }
 }
 
@@ -177,14 +180,22 @@
   background-color: rgba(15, 61, 51, 0.85);
 }
 
+/* mesmo tratamento "card" do tema padrão/marítimo (respiro + cantos
+   arredondados na foto) — ver comentário equivalente em .plat-mar acima. */
 @media screen and (max-width: 1024px) {
   .plat-alga .plat_mapa {
     background-color: var(--plat-dark);
+    padding: 3.5rem 1.5rem;
+  }
+
+  .plat-alga .plat_mapa_fundo {
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
   }
 
   .plat-alga .plat_mapa .plat_wrap {
     position: static;
-    padding: 1.5rem;
+    padding: 0;
   }
 
   .plat-alga .plat_mapa_painel--full {
@@ -764,15 +775,24 @@
 }
 
 /* no mobile o print fica pequeno pra sobrepor texto: painel volta ao fluxo,
-   abaixo da imagem, em largura cheia. */
+   abaixo da imagem, em largura cheia. Mesmo tratamento "card" (respiro +
+   cantos arredondados) usado no tema padrão (SIAPESQ), pra não ficar um
+   sangrado até a borda e o outro não — ver .plat_mapa_fundo mobile mais
+   abaixo no arquivo. */
 @media screen and (max-width: 1024px) {
   .plat-mar .plat_mapa {
     background-color: var(--plat-dark);
+    padding: 3.5rem 1.5rem;
+  }
+
+  .plat-mar .plat_mapa_fundo {
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
   }
 
   .plat-mar .plat_mapa .plat_wrap {
     position: static;
-    padding: 1.5rem;
+    padding: 0;
   }
 
   .plat-mar .plat_mapa_painel--full {
@@ -1206,14 +1226,20 @@
 @media screen and (max-width: 1024px) {
   /* no mobile não dá pra dividir em duas colunas: a foto passa a ocupar a
      largura toda, escura no topo (onde fica o texto) e revelando a capivara
-     embaixo. */
+     embaixo. min-height continua 100vh (herdado da regra base) — igual ao
+     desktop, o hero preenche a tela cheia em vez de parar no fim do texto. */
   .plat_hero {
-    min-height: auto;
     background: linear-gradient(160deg, var(--plat-dark) 0%, var(--plat-dark-3) 100%);
   }
 
   .plat_hero_foto {
     width: 100%;
+    /* desfoque leve SÓ no mobile: mesmo com o degradê escuro, o detalhe fino
+       da foto (recife, pelo, água) ainda compete com o texto por cima. Um
+       blur sutil borra a textura sem perder o "sujeito" (bicho) reconhecível.
+       Vale pras 3 fotos (nenhuma regra de tema redeclara `filter`).
+       >>> texto ainda difícil de ler? aumenta o valor do blur. */
+    filter: blur(3px);
     background-image: linear-gradient(
         180deg,
         rgba(22, 38, 26, 0.82) 0%,
@@ -1221,6 +1247,10 @@
         rgba(39, 75, 33, 0.15) 100%
       ),
       url("../../imgs/capivara.jpg");
+    /* a capivara (cabeça) fica à direita da foto original — sem isso o
+       "cover" recorta centralizado e mostra só o corpo, sem cabeça.
+       >>> cabeça sumiu de novo? mexa no 1º valor (%, da esquerda). */
+    background-position: 75% center;
     -webkit-mask-image: none;
     mask-image: none;
   }
@@ -1292,6 +1322,15 @@
 
   .plat_acesso_texto p {
     font-size: 1.05rem;
+  }
+
+  /* com 3 badges, "quebrar linha" (flex-wrap) deixa o 3º sobrando sozinho,
+     pendurado à esquerda sem alinhar com nada acima — parece acidente. Em
+     coluna, cada badge fica na sua própria linha, sempre alinhado. */
+  .plat_acesso_tags {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
   }
 
   /* .plat_acesso_janela/.plat_acesso_mockup usam flex-basis em px pensado

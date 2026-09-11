@@ -212,6 +212,43 @@
   color: var(--plat-ink-2);
 }
 
+/* wrapper com as setas — no desktop as setas ficam escondidas (a lista
+   inteira já aparece lado a lado, não tem o que "passar"); no mobile viram
+   um carrossel de 1 item por vez (ver @media abaixo). */
+.esp_evitar_carrossel {
+  display: flex;
+  align-items: center;
+  /* BUG: no desktop as setas somem (display:none) e sobra só o <ul> como
+     filho visível — sem isso ele encolhe pro tamanho do conteúdo e fica
+     "flex-start" (colado à esquerda) dentro do wrapper, mesmo a lista
+     internamente centralizando os 3 itens nela mesma. */
+  justify-content: center;
+  gap: 1rem;
+}
+
+.esp_evitar_seta {
+  display: none;
+  flex: none;
+
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid var(--plat-border);
+  border-radius: 50%;
+  background-color: var(--plat-panel);
+  color: var(--plat-ink);
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.esp_evitar_seta:hover {
+  border-color: var(--plat-green);
+  color: var(--plat-green);
+}
+
 @media screen and (max-width: 1024px) {
   .esp {
     padding: 3.5rem 0;
@@ -228,8 +265,39 @@
     padding-right: 1.5rem;
   }
 
+  /* no mobile a lista vira carrossel de 1 item por vez (em vez de empilhar
+     baleia/tartaruga/golfinho um embaixo do outro) — desliza tocando OU
+     pelas setas, que só aparecem aqui. */
   .esp_evitar_lista {
-    gap: 2rem;
+    flex-wrap: nowrap;
+    /* herdado do desktop: com conteúdo mais largo que a tela, justify-content
+       center faz o navegador "cortar" o excesso do lado esquerdo de um jeito
+       que não dá pra rolar até ele — o 1º item (Baleia) ficava inacessível,
+       parecia que só existiam 2 no carrossel. flex-start resolve. */
+    justify-content: flex-start;
+    gap: 0;
+
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    /* esconde a barra de rolagem nativa (o scroll continua funcionando) */
+    scrollbar-width: none;
+  }
+
+  .esp_evitar_lista::-webkit-scrollbar {
+    display: none;
+  }
+
+  .esp_evitar_item {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+
+  .esp_evitar_seta {
+    display: flex;
   }
 
   .esp_cabecalho {

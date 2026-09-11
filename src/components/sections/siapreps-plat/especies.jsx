@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Reveal from "../../common/Reveal";
 import "../../../style/plataforma/pagina.css";
 import "../../../style/plataforma/especies.css";
@@ -43,6 +43,16 @@ const protegidas = [
 
 export default function SectionEspeciesSiapreps() {
   const trilho = [...especies, ...especies];
+  const evitarListaRef = useRef(null);
+
+  // Setinhas: só têm efeito no mobile (onde o CSS vira carrossel de 1 item
+  // por vez, ver especies.css); no desktop a lista não rola, então isso não
+  // faz nada — sem precisar de outra implementação por breakpoint.
+  const irParaVizinho = (direcao) => {
+    const lista = evitarListaRef.current;
+    if (!lista) return;
+    lista.scrollBy({ left: direcao * lista.clientWidth, behavior: "smooth" });
+  };
 
   return (
     <section className="esp">
@@ -78,17 +88,41 @@ export default function SectionEspeciesSiapreps() {
           Nossas indicações levam em consideração a restrição de áreas de captura
           onde habitam:
         </p>
-        <ul className="esp_evitar_lista">
-          {protegidas.map((e) => (
-            <li className="esp_evitar_item" key={e.nome}>
-              <p className="esp_evitar_nome">{e.nome}</p>
-              <div className="esp_evitar_foto">
-                <img src={e.img} alt={e.nome} loading="lazy" />
-              </div>
-              <p className="esp_evitar_ci">{e.ci}</p>
-            </li>
-          ))}
-        </ul>
+        <div className="esp_evitar_carrossel">
+          <button
+            type="button"
+            className="esp_evitar_seta esp_evitar_seta--prev"
+            aria-label="Espécie anterior"
+            onClick={() => irParaVizinho(-1)}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+
+          <ul className="esp_evitar_lista" ref={evitarListaRef}>
+            {protegidas.map((e) => (
+              <li className="esp_evitar_item" key={e.nome}>
+                <p className="esp_evitar_nome">{e.nome}</p>
+                <div className="esp_evitar_foto">
+                  <img src={e.img} alt={e.nome} loading="lazy" />
+                </div>
+                <p className="esp_evitar_ci">{e.ci}</p>
+              </li>
+            ))}
+          </ul>
+
+          <button
+            type="button"
+            className="esp_evitar_seta esp_evitar_seta--next"
+            aria-label="Próxima espécie"
+            onClick={() => irParaVizinho(1)}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+              <path d="m9 6 6 6-6 6" />
+            </svg>
+          </button>
+        </div>
       </Reveal>
     </section>
   );

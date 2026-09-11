@@ -36,12 +36,6 @@
   overflow: hidden;
 }
 
-/* fallback estático do mobile (ver @media 1024px mais abaixo) — escondido
-   no desktop, onde o modelo 3D (iframe) é o protagonista. */
-.barcoPescaFallback {
-  display: none;
-}
-
 .containerPesca::after {
   content: " ";
 
@@ -331,40 +325,20 @@
   }
 
   .containerPesca {
+    /* mantém a foto de fundo escura + overlay do desktop (era trocado por
+       fundo branco/texto preto no mobile, o que destoava do resto do site,
+       todo escuro e cinematográfico). Só a altura volta ao natural. */
     min-height: auto;
     height: auto;
-    background-color: white;
-    background-image: none;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
   }
 
-  .containerPesca p,
-  .containerPesca h2 {
-    color: black;
-  }
-
-  .containerPesca::after {
-    display: none;
-  }
-
-  /* o iframe do Spline some (pesado/instável no mobile) e dá lugar à imagem
-     estática do barco — mesmo conteúdo, sem depender de carregar o 3D. */
+  /* o iframe do Spline some por completo no mobile (pesado/instável) — fica
+     só a foto do mar de fundo da própria seção (.containerPesca), sem
+     nenhuma imagem substituta no lugar do 3D. */
   .divBarco {
-    display: block;
-    height: auto;
-    overflow: visible;
-  }
-
-  .divBarco > div {
     display: none;
-  }
-
-  .barcoPescaFallback {
-    display: block;
-    width: 70%;
-    max-width: 340px;
-    margin: 0 auto 1.5rem;
-    border-radius: 14px;
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
   }
 
   .divInfos {
@@ -386,9 +360,8 @@
 
   .divInfos div:not(div:last-child)::after {
     content: "";
-    color: rgba(0, 0, 0, 0.486);
     font-weight: 200;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.4);
     width: 3px;
     height: 50px;
     border-radius: 20px;

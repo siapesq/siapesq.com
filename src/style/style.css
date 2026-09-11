@@ -648,9 +648,11 @@
   }
 
   /* só logo + botão hambúrguer ficam visíveis: logo na ponta esquerda,
-     hambúrguer na direita (padrão de header mobile). */
+     hambúrguer na direita (padrão de header mobile). Padding lateral pra não
+     ficarem colados na borda da tela. */
   .header nav ul {
     justify-content: space-between;
+    padding: 0 1.25rem;
   }
 
   .helps h3{

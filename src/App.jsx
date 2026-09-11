@@ -7,6 +7,7 @@ import Siapreps from "./pages/siapreps";
 import Phytobloom from "./pages/phytobloom";
 import Plataforma from "./pages/plataforma";
 import Contato from "./pages/contato";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <Route path="/contato" element={<Contato />} />
         {/* <Route path="*" element={<Index/>} /> */}
       </Routes>
+      {/* global: header não é fixo, então é o único jeito rápido de voltar
+          ao topo em páginas longas. Cor de acento troca sozinha por tema. */}
+      <ScrollToTop />
     </Router>
   );
 }
