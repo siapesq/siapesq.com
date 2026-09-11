@@ -212,9 +212,21 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* mesma estratégia das demais seções: sem foto de fundo no mobile */
+  /* antes a foto sumia (background-image:none) e ficava só uma cor chapada
+     — mesmo bug já corrigido no SIAPREPS/PhytoBloom (home) e no barco do
+     SIAPREPS. Mantém a foto (capivara.jpg, mesma do desktop), com um
+     degradê mais transparente no topo (dá pra ver a foto de relance) e
+     mais forte embaixo (onde a lista/parágrafo precisam de mais contraste). */
   .homeplat {
-    background-image: none;
+    background-image: linear-gradient(
+        180deg,
+        rgba(16, 38, 26, 0.42) 0%,
+        rgba(16, 38, 26, 0.6) 45%,
+        rgba(16, 38, 26, 0.8) 100%
+      ),
+      url("../../imgs/capivara.jpg");
+    background-size: cover;
+    background-position: center;
     background-color: #16261a;
     padding: 3rem 0;
   }

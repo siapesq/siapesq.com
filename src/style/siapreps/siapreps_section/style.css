@@ -407,9 +407,17 @@
 
   .siapreps{
     /* antes a foto sumia (background-image:none) e ficava só uma cor
-       chapada — mantém a foto, com um degradê azul por cima pra garantir
-       contraste, no mesmo espírito do resto do site. */
-    background-image: linear-gradient(rgba(45, 129, 175, 0.78), rgba(45, 129, 175, 0.78)),
+       chapada — mantém a foto. Primeira tentativa usou um véu azul CHAPADO
+       (opacidade uniforme 0.78), forte demais: ainda parecia fundo sólido,
+       não dava pra "flagrar" a foto. Degradê mais transparente no topo (dá
+       pra ver a foto de relance) e mais forte embaixo (onde o parágrafo
+       precisa de mais contraste). */
+    background-image: linear-gradient(
+        180deg,
+        rgba(45, 129, 175, 0.42) 0%,
+        rgba(45, 129, 175, 0.6) 45%,
+        rgba(45, 129, 175, 0.8) 100%
+      ),
       url("../../../imgs/section_siapreps_bg.webp");
     background-size: cover;
     background-position: center;
