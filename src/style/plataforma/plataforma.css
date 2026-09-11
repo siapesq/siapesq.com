@@ -220,13 +220,16 @@
   .homeplat {
     background-image: linear-gradient(
         180deg,
-        rgba(16, 38, 26, 0.42) 0%,
-        rgba(16, 38, 26, 0.6) 45%,
-        rgba(16, 38, 26, 0.8) 100%
+        rgba(16, 38, 26, 0.55) 0%,
+        rgba(16, 38, 26, 0.68) 45%,
+        rgba(16, 38, 26, 0.82) 100%
       ),
       url("../../imgs/capivara.jpg");
     background-size: cover;
-    background-position: center;
+    /* a cabeça da capivara fica à DIREITA da foto original (mesmo motivo
+       documentado no hero, pagina.css) — "center" cortava e só mostrava o
+       corpo. */
+    background-position: 75% center;
     background-color: #16261a;
     padding: 3rem 0;
   }

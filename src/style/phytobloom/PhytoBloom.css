@@ -237,9 +237,9 @@ main p {
        parágrafo precisa de mais contraste). */
     background-image: linear-gradient(
         180deg,
-        rgba(16, 70, 23, 0.42) 0%,
-        rgba(16, 70, 23, 0.6) 45%,
-        rgba(16, 70, 23, 0.8) 100%
+        rgba(16, 70, 23, 0.55) 0%,
+        rgba(16, 70, 23, 0.68) 45%,
+        rgba(16, 70, 23, 0.82) 100%
       ),
       url('/src/imgs/hidro.webp');
     background-size: cover;

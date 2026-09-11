@@ -414,9 +414,9 @@
        precisa de mais contraste). */
     background-image: linear-gradient(
         180deg,
-        rgba(45, 129, 175, 0.42) 0%,
-        rgba(45, 129, 175, 0.6) 45%,
-        rgba(45, 129, 175, 0.8) 100%
+        rgba(45, 129, 175, 0.55) 0%,
+        rgba(45, 129, 175, 0.68) 45%,
+        rgba(45, 129, 175, 0.82) 100%
       ),
       url("../../../imgs/section_siapreps_bg.webp");
     background-size: cover;
