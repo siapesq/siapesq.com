@@ -35,7 +35,7 @@ const etapas = [
 
 export default function SectionComoFuncionaPhytobloom() {
   return (
-    <section className="plat_fluxo">
+    <section className="plat_fluxo plat_fluxo--telas">
       <div className="plat_wrap">
         <Reveal stagger>
           <p className="plat_rotulo">Como funciona</p>

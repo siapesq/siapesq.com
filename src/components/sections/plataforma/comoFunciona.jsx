@@ -2,10 +2,10 @@ import React from "react";
 import Reveal from "../../common/Reveal";
 import Lightbox from "../../common/Lightbox";
 import "../../../style/plataforma/pagina.css";
-import passo1 from "../../../imgs/passo1.jpg";
-import passo2 from "../../../imgs/passo2.jpg";
-import passo3 from "../../../imgs/passo3.jpg";
-import passo4 from "../../../imgs/passo4.jpg";
+import passo1 from "../../../imgs/comoFuncionaPlataforma1.webp";
+import passo2 from "../../../imgs/comoFuncionaPlataforma2.webp";
+import passo3 from "../../../imgs/comoFuncionaPlataforma3.webp";
+import passo4 from "../../../imgs/comoFuncionaPlataforma4.webp";
 
 const etapas = [
   {
@@ -36,7 +36,7 @@ const etapas = [
 
 export default function SectionComoFunciona() {
   return (
-    <section className="plat_fluxo">
+    <section className="plat_fluxo plat_fluxo--telas">
       <div className="plat_wrap">
         <Reveal stagger>
           <p className="plat_rotulo">Como funciona</p>

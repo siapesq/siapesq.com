@@ -607,26 +607,25 @@
   display: block;
 }
 
-/* Os prints do PhytoBloom são telas reais do app (1600x~858, proporção
-   ~1.86:1) — bem mais largas que o 4:3 (1.33:1) pensado pros prints do
-   SIAPREPS. Com a caixa 4:3 e "object-position: top left", o corte comia
-   ~28% da LARGURA pelo lado direito — exatamente onde ficam os painéis
-   (camadas, alertas) nessas telas. Aqui a caixa casa com a proporção real do
-   print, então o "cover" praticamente não corta nada. */
-.plat-alga .plat_fluxo_shot {
+/* Variante pra prints de TELA CHEIA de app (PhytoBloom e Plataforma SIAPESQ,
+   ~1.86:1) — bem mais largos que o 4:3 pensado pros prints do SIAPREPS. Com a
+   caixa 4:3 e "object-position: top left", o corte comia ~28% da LARGURA pelo
+   lado direito, exatamente onde ficam painéis, fotos e o mapa nessas telas.
+   Aqui a caixa casa com a proporção real do print, então o "cover" quase não
+   corta nada. Uso: <section className="plat_fluxo plat_fluxo--telas">. */
+.plat_fluxo--telas .plat_fluxo_shot {
   aspect-ratio: 1600 / 858;
 }
 
-.plat-alga .plat_fluxo_shot img {
+.plat_fluxo--telas .plat_fluxo_shot img {
   object-position: top center;
 }
 
-/* Os prints reais têm muito texto/UI miúda (sidebar, painéis) — continuam em
-   1 linha de 4 (igual às outras páginas), só que o "trilho" ganha mais largura
-   pra cada print crescer proporcionalmente. >>> quer maior/menor? mexa neste
-   max-width (o limite de 1024px pra virar 1 coluna no mobile continua igual). */
+/* Os prints têm muito texto/UI miúda — continuam em 1 linha de 4, só que o
+   "trilho" ganha mais largura pra cada print crescer proporcionalmente.
+   >>> quer maior/menor? mexa neste max-width (abaixo de 1024px vira 1 coluna). */
 @media (min-width: 1025px) {
-  .plat-alga .plat_fluxo .plat_wrap {
+  .plat_fluxo--telas .plat_wrap {
     max-width: 1880px;
   }
 }
