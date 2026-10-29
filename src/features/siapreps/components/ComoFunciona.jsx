@@ -4,8 +4,8 @@ import Lightbox from "../../../components/common/Lightbox";
 import "../../../style/plataforma/pagina.css";
 import passo1 from "../../../imgs/tutorial-siapreps/login.png";
 import passo2 from "../../../imgs/tutorial-siapreps/home.png";
-import passo3 from "../../../imgs/tutorial-siapreps/map-analise.png";
-import passo4 from "../../../imgs/tutorial-siapreps/map-lance.png";
+import passo3 from "../../../imgs/tutorial-siapreps/map-analise.jpg";
+import passo4 from "../../../imgs/tutorial-siapreps/map-lance.jpg";
 
 const etapas = [
   {

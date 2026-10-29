@@ -1,6 +1,6 @@
 import React from "react";
 import Reveal from "../../../components/common/Reveal";
-import mapaSiapreps from "../../../imgs/tutorial-siapreps/map-analise.png";
+import mapaSiapreps from "../../../imgs/tutorial-siapreps/map-analise.jpg";
 import "../../../style/plataforma/pagina.css";
 
 const svgProps = {
@@ -53,6 +53,9 @@ export default function SectionMapaSiapreps() {
         className="plat_mapa_fundo"
         src={mapaSiapreps}
         alt="Mapa de análise do SIAPREPS com áreas de probabilidade de pescado"
+        width="1917"
+        height="985"
+        loading="lazy"
       />
 
       <div className="plat_wrap">

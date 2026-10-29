@@ -747,6 +747,11 @@
   user-select: none;
 }
 
+/* A captura da Plataforma e mais larga que a secao: exibir inteira, sem corte. */
+.plat_mapa--sem-corte .plat_mapa_fundo {
+  object-fit: contain;
+}
+
 /* No SIAPREPS o fundo é um PRINT do app (1929x1021, proporção ~1.89, quase a de
    uma tela cheia). "cover" cortava a UI, "contain" deixava faixas e "fill"
    distorcia. Solução: a IMAGEM define a altura da seção — largura 100% na

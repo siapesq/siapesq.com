@@ -1,6 +1,6 @@
 import React from "react";
 import Reveal from "../../../components/common/Reveal";
-import mapaPlataforma from "../../../imgs/mapaReal.jpg";
+import mapaPlataforma from "../../../imgs/map-siapesq-analise.png";
 import "../../../style/plataforma/pagina.css";
 
 const svgProps = {
@@ -49,10 +49,13 @@ const capacidades = [
 
 export default function SectionMapa() {
   return (
-    <section className="plat_mapa">
+    <section className="plat_mapa plat_mapa--sem-corte">
       <img
         className="plat_mapa_fundo"
         src={mapaPlataforma}
+        width="1873"
+        height="779"
+        loading="lazy"
         alt="Mapa de distribuição de espécies da plataforma SIAPESQ"
       />
 

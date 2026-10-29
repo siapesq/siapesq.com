@@ -55,6 +55,7 @@ export default function SectionMapaPhytobloom() {
         className="plat_mapa_fundo"
         src={mapaPhytobloom}
         alt="Tela do PhytoBloom analisando um reservatório, com o mapa de calor de produtividade primária"
+        loading="lazy"
       />
 
       <div className="plat_wrap">

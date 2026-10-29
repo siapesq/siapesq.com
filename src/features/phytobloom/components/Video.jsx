@@ -19,6 +19,7 @@ export default function SectionVideoPhytobloom() {
             <iframe
               src="https://www.youtube.com/embed/QWzZbOT9eRw?si=doZaJVB7qHK8pK17"
               title="Demonstração da plataforma PhytoBloom"
+              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen

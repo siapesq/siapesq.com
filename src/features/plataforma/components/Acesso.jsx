@@ -41,6 +41,7 @@ export default function SectionAcesso() {
             <img
               src={mapaPlataforma}
               alt="Tela inicial da plataforma SIAPESQ com o catálogo de espécies"
+              loading="lazy"
             />
           </div>
         </Reveal>

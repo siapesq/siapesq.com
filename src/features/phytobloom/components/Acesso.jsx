@@ -47,6 +47,7 @@ export default function SectionAcessoPhytobloom() {
             <img
               src={telaPhytobloom}
               alt="PhytoBloom aberto, analisando um reservatório"
+              loading="lazy"
             />
           </div>
         </Reveal>

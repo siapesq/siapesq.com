@@ -42,6 +42,7 @@ export default function SectionAcessoSiapreps() {
             <img
               src={notebook}
               alt="SIAPREPS aberto em um notebook, com o mapa de satélite do pescado"
+              loading="lazy"
             />
           </div>
         </Reveal>
