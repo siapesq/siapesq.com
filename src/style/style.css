@@ -105,8 +105,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
-  padding-bottom: 10%;
+  min-height: 90vh;
   box-sizing: border-box;
 }
 
@@ -130,12 +129,6 @@
   z-index: -1;
 }
 
-@media only screen and (max-width: 1600px) {
-  .header_container .bg_img {
-    height: 90%;
-  }
-}
-
 /* .header_container .article_header_container {
   padding-top: 1rem;
   width: 100%;
@@ -149,21 +142,19 @@
 } */
 
 .header_container .article_header_container {
-  grid-gap: 2rem 2rem;
+  grid-gap: 0rem;
   color: #fff;
   display: grid;
-  gap: 2rem 2rem;
+  gap: 0rem 2rem;
   grid-template-columns: 45% 55%;
-  grid-template-rows: 50% 50%;
-  margin: 40px 75rem auto auto;
-  padding-top: 1rem;
+  grid-template-rows: 50% 45%;
   width: 100%;
 }
 
 
 .header_container .article_header_container img {
   width: 28rem;
-  grid-row: 1/3;
+  grid-row: 2/3;
   grid-column: 1/2;
   margin-left: 2rem;
   align-self: end;
@@ -205,111 +196,6 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-}
-
-.header_container .footer_header_container {
-  position: relative;
-  bottom: 4rem;
-  z-index: -1;
-}
-
-@media only screen and (max-width: 1920px) {
-  .header_container .footer_header_container {
-    bottom: 3rem;
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .header_container .footer_header_container {
-    bottom: 6rem;
-  }
-}
-
-.header_container .footer_header_container img {
-  width: 100%;
-  -webkit-user-drag: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  pointer-events: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-/* troca de onda por CSS (equivalente ao antigo `window.innerWidth > 1366` em
-   JS, mas reativo a resize/rotação) */
-.header_container .footer_header_container .onda_mobile {
-  display: none;
-}
-
-@media screen and (max-width: 1366px) {
-  .header_container .footer_header_container .onda_desktop {
-    display: none;
-  }
-
-  .header_container .footer_header_container .onda_mobile {
-    display: block;
-  }
-}
-
-.header_container .footer_header_container article {
-  position: absolute;
-  bottom: 3.8rem;
-  color: #FFFFFF;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 20rem;
-  align-items: center;
-  z-index: 2;
-}
-
-@media only screen and (max-width: 1920px) {
-  .header_container .footer_header_container article {
-    bottom: 2rem;
-  }
-}
-
-@media only screen and (max-width: 1920px) {
-  .header_container .footer_header_container article {
-    gap: 15rem;
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .header_container .footer_header_container article {
-    gap: 8rem;
-    bottom: 1rem;
-  }
-}
-
-.header_container .footer_header_container article .tracejado {
-  width: 2px;
-  border: thin solid #FFFFFF;
-  background-color: #FFFFFF;
-  height: 5rem;
-}
-
-.header_container .footer_header_container article div .title {
-  font-size: 2.5rem;
-}
-
-@media only screen and (max-width: 1600px) {
-  .header_container .footer_header_container article div .title {
-    font-size: 1.4rem;
-  }
-}
-
-.header_container .footer_header_container article div .content {
-  font-size: 1rem;
-}
-
-/* precisa vir DEPOIS da declaração base (display:flex) acima pra vencer o
-   empate de especificidade — mesma ideia do `.onda_*` logo acima. */
-@media screen and (max-width: 1366px) {
-  .header_container .footer_header_container article {
-    display: none;
-  }
 }
 
 .helps {
@@ -515,11 +401,6 @@
   position: relative;
 }
 
-.header_container .footer_header_container {
-  position: absolute;
-  bottom: 0px;
-}
-
 @media screen and (max-width:1600px) {
   .header_container .article_header_container #h2principal{
     font-size: 2.3rem;
@@ -554,10 +435,6 @@
   }
   
 
-  .header_container .footer_header_container {
-    position: absolute;
-    bottom: -5px;
-  }
 }
 
 .principal{
@@ -566,14 +443,8 @@
 
 @media screen and (max-width: 1024px) {
 
-  .header_container .footer_header_container {
-    display: none;
-  }
-
-  /* com os pilares escondidos, só sobram header + bloco de texto — e
-     space-between (pensado pra 3 blocos) empurra o texto lá pro fundo da
-     tela de 100vh, deixando um vão enorme de céu vazio no meio. Centraliza
-     o par em vez de esticar o espaço entre os dois. */
+  /* Com a área dos pilares fora do Hero, centraliza apenas o conteúdo
+     principal no espaço disponível em telas menores. */
   .header_container {
     justify-content: center;
     row-gap: 3rem;
@@ -736,6 +607,10 @@ button{
     display: flex;
     flex-flow: column nowrap;
     align-items: start;
+  }
+
+  .index .header_container .article_header_container > img {
+    display: none;
   }
 
   .header_container .article_header_container #h2principal{

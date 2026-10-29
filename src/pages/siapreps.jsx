@@ -1,12 +1,12 @@
 import React from "react";
-import SectionHeroSiapreps from "../components/sections/siapreps-plat/hero";
-import SectionEspeciesSiapreps from "../components/sections/siapreps-plat/especies";
-import SectionRecursosSiapreps from "../components/sections/siapreps-plat/recursos";
-import SectionComoFuncionaSiapreps from "../components/sections/siapreps-plat/comoFunciona";
-import SectionBarco from "../components/sections/siaprepsBarco";
-import SectionMapaSiapreps from "../components/sections/siapreps-plat/mapa";
-import SectionAcessoSiapreps from "../components/sections/siapreps-plat/acesso";
-import SectionFooter from "../components/sections/siaprepsFooter";
+import SectionHeroSiapreps from "../features/siapreps/components/Hero";
+import SectionEspeciesSiapreps from "../features/siapreps/components/Especies";
+import SectionRecursosSiapreps from "../features/siapreps/components/Recursos";
+import SectionComoFuncionaSiapreps from "../features/siapreps/components/ComoFunciona";
+import SectionBarco from "../features/siapreps/components/SiaprepsBarco";
+import SectionMapaSiapreps from "../features/siapreps/components/Mapa";
+import SectionAcessoSiapreps from "../features/siapreps/components/Acesso";
+import SectionFooter from "../components/layout/Footer";
 import Seo from "../components/common/Seo";
 
 export default function Siapreps() {

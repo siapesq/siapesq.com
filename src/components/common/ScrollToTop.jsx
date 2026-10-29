@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "../../style/scrollToTop.css";
+import "../../styles/scrollToTop.css";
 
 // mesma cor de acento (--plat-green) definida por tema em pagina.css. O botão
 // fica FORA da div de tema (.plat-mar/.plat-alga só existe dentro da página),

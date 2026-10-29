@@ -1,12 +1,12 @@
 import React from "react";
-import SectionHero from "../components/sections/plataforma/hero";
-import SectionEspecies from "../components/sections/plataforma/especies";
-import SectionRecursos from "../components/sections/plataforma/recursos";
-import SectionComoFunciona from "../components/sections/plataforma/comoFunciona";
-import SectionMapa from "../components/sections/plataforma/mapa";
-import SectionPublico from "../components/sections/plataforma/publico";
-import SectionAcesso from "../components/sections/plataforma/acesso";
-import SectionFooter from "../components/sections/siaprepsFooter";
+import SectionHero from "../features/plataforma/components/Hero";
+import SectionEspecies from "../features/plataforma/components/Especies";
+import SectionRecursos from "../features/plataforma/components/Recursos";
+import SectionComoFunciona from "../features/plataforma/components/ComoFunciona";
+import SectionMapa from "../features/plataforma/components/Mapa";
+import SectionPublico from "../features/plataforma/components/Publico";
+import SectionAcesso from "../features/plataforma/components/Acesso";
+import SectionFooter from "../components/layout/Footer";
 import Seo from "../components/common/Seo";
 
 export default function Plataforma() {

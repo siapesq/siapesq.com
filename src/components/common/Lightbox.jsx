@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import "../../style/lightbox.css";
+import "../../styles/lightbox.css";
 
 /*
  * Envolve qualquer imagem/print clicável: no clique, abre ela ampliada e

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../../style/reveal.css";
+import "../../styles/reveal.css";
 
 /*
  * Anima o conteúdo entrando (fade + subida) quando ele aparece na tela ao rolar.

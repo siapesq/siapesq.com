@@ -1,13 +1,13 @@
 import React from "react";
-import SectionHeroPhytobloom from "../components/sections/phytobloom-plat/hero";
-import SectionCamadasPhytobloom from "../components/sections/phytobloom-plat/camadas";
-import SectionRecursosPhytobloom from "../components/sections/phytobloom-plat/recursos";
-import SectionComoFuncionaPhytobloom from "../components/sections/phytobloom-plat/comoFunciona";
-import SectionVideoPhytobloom from "../components/sections/phytobloom-plat/video";
-import SectionMapaPhytobloom from "../components/sections/phytobloom-plat/mapa";
-import SectionPublicoPhytobloom from "../components/sections/phytobloom-plat/publico";
-import SectionAcessoPhytobloom from "../components/sections/phytobloom-plat/acesso";
-import SectionFooter from "../components/sections/siaprepsFooter";
+import SectionHeroPhytobloom from "../features/phytobloom/components/Hero";
+import SectionCamadasPhytobloom from "../features/phytobloom/components/Camadas";
+import SectionRecursosPhytobloom from "../features/phytobloom/components/Recursos";
+import SectionComoFuncionaPhytobloom from "../features/phytobloom/components/ComoFunciona";
+import SectionVideoPhytobloom from "../features/phytobloom/components/Video";
+import SectionMapaPhytobloom from "../features/phytobloom/components/Mapa";
+import SectionPublicoPhytobloom from "../features/phytobloom/components/Publico";
+import SectionAcessoPhytobloom from "../features/phytobloom/components/Acesso";
+import SectionFooter from "../components/layout/Footer";
 import Seo from "../components/common/Seo";
 
 export default function Phytobloom() {

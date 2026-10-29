@@ -1,15 +1,14 @@
-import Header from "../components/layouts/header";
+import Header from "../components/layout/Header";
 import Reveal from "../components/common/Reveal";
 import mar from "../imgs/mar.webp";
-import wave from "../imgs/wave.svg";
-import footerV2 from "../imgs/footerV2.png";
 import siaprepsMonitor from "../imgs/siaprepsMonitor.webp";
-import SectionSiapreps from "../components/sections/siapreps";
-import SectionHelps from "../components/sections/helps";
-import SectionPhytobloom from "../components/sections/phytobloom.jsx";
-import SectionFooter from "../components/sections/siaprepsFooter.jsx";
-import SectionParceiros from "../components/sections/parceiros.jsx"
-import SectionPlataforma from "../components/sections/plataforma.jsx";
+import "../styles/home-features.css";
+import SectionSiapreps from "../features/siapreps/components/Siapreps";
+import SectionHelps from "../features/institutional/components/Helps";
+import SectionPhytobloom from "../features/phytobloom/components/Phytobloom.jsx";
+import SectionFooter from "../components/layout/Footer.jsx";
+import SectionParceiros from "../features/institutional/components/Parceiros.jsx"
+import SectionPlataforma from "../features/plataforma/components/Plataforma.jsx";
 import Seo from "../components/common/Seo";
 
 
@@ -34,43 +33,34 @@ export default function Index() {
                             </p>
                         </article>
                     </Reveal>
-                    <footer className="footer_header_container">
-                        {/* qual onda mostrar (e se mostra os pilares) é decidido por CSS
-                            (@media max-width:1366px), não por JS — window.innerWidth só
-                            era lido uma vez no mount e não reagia a resize/rotação. */}
-                        <img src={wave} alt="Ondas do rodapé" className="onda_desktop" />
-                        <img src={footerV2} alt="Ondas do rodapé" className="onda_mobile" />
-                        <Reveal stagger>
-                            <article>
-                                <div>
-                                    <h2 className="title">
-                                        Inovação
-                                    </h2>
-                                    <p className="content">
-                                        Inteligência Artificial em Monitoramento Satelital
-                                    </p>
-                                </div>
-                                <span className="tracejado"></span>
-                                <div>
-                                    <h2 className="title">
-                                        Otimização
-                                    </h2>
-                                    <p className="content">
-                                        Suporte para tomada de decisões
-                                    </p>
-                                </div>
-                                <span className="tracejado tr2"></span>
-                                <div>
-                                    <h2 className="title">
-                                        Impacto
-                                    </h2>
-                                    <p className="content">
-                                        Resiliência Produtiva e Sustentabilidade
-                                    </p>
-                                </div>
+                </section>
+
+                <section className="home-features" aria-label="Pilares da SIAPESQ">
+                    <svg
+                        className="home-features__wave"
+                        viewBox="0 0 1440 160"
+                        preserveAspectRatio="none"
+                        aria-hidden="true"
+                    >
+                        <path d="M0 24C180 82 360 108 560 78C750 48 890 -18 1110 10C1280 34 1340 82 1440 62V160H0V24Z" />
+                    </svg>
+
+                    <Reveal className="home-features__reveal">
+                        <div className="home-features__content">
+                            <article className="home-features__item">
+                                <h2>Inovação</h2>
+                                <p>Inteligência Artificial em Monitoramento Satelital</p>
                             </article>
-                        </Reveal>
-                    </footer>
+                            <article className="home-features__item">
+                                <h2>Otimização</h2>
+                                <p>Suporte para tomada de decisões</p>
+                            </article>
+                            <article className="home-features__item">
+                                <h2>Impacto</h2>
+                                <p>Resiliência Produtiva e Sustentabilidade</p>
+                            </article>
+                        </div>
+                    </Reveal>
                 </section>
 
                 <SectionHelps />

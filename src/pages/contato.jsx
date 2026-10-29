@@ -1,5 +1,5 @@
 import React from "react";
-import SectionContato from "../components/sections/formContato";
+import SectionContato from "../features/institutional/components/FormContato";
 import Seo from "../components/common/Seo";
 
 
