@@ -2,10 +2,10 @@ import React from "react";
 import Reveal from "../../../components/common/Reveal";
 import Lightbox from "../../../components/common/Lightbox";
 import "../../../style/plataforma/pagina.css";
-import passo1 from "../../../imgs/tutorial-siapreps/login.png";
-import passo2 from "../../../imgs/tutorial-siapreps/home.png";
-import passo3 from "../../../imgs/tutorial-siapreps/map-analise.jpg";
-import passo4 from "../../../imgs/tutorial-siapreps/map-lance.jpg";
+import passo1 from "../../../imgs/como-funciona/siapreps/passo1.png";
+import passo2 from "../../../imgs/como-funciona/siapreps/passo2.png";
+import passo3 from "../../../imgs/como-funciona/siapreps/passo3.png";
+import passo4 from "../../../imgs/como-funciona/siapreps/passo4.jpg";
 
 const etapas = [
   {

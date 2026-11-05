@@ -2,10 +2,10 @@ import React from "react";
 import Reveal from "../../../components/common/Reveal";
 import Lightbox from "../../../components/common/Lightbox";
 import "../../../style/plataforma/pagina.css";
-import passo1 from "../../../imgs/comoFuncionaPlataforma1.webp";
-import passo2 from "../../../imgs/comoFuncionaPlataforma2.webp";
-import passo3 from "../../../imgs/comoFuncionaPlataforma3.webp";
-import passo4 from "../../../imgs/comoFuncionaPlataforma4.webp";
+import passo1 from "../../../imgs/como-funciona/siapesq-plataforma/comoFuncionaPlataforma1.jpg";
+import passo2 from "../../../imgs/como-funciona/siapesq-plataforma/comoFuncionaPlataforma2.webp";
+import passo3 from "../../../imgs/como-funciona/siapesq-plataforma/comoFuncionaPlataforma3.webp";
+import passo4 from "../../../imgs/como-funciona/siapesq-plataforma/comoFuncionaPlataforma4.webp";
 
 const etapas = [
   {

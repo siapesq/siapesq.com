@@ -1,7 +1,17 @@
 .parceiros {
-  --logo-gap: clamp(1.5rem, 4vw, 4rem);
+  --logo-gap: clamp(1rem, 3vw, 3rem);
+  align-items: center;
+  column-gap: clamp(0.5rem, 2vw, 1.5rem);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   overflow: hidden;
-  padding: 4rem 0;
+  padding: 4rem clamp(1rem, 3vw, 3rem);
+}
+
+.parceiros__linhas {
+  display: grid;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  min-width: 0;
 }
 
 .parceiros__viewport {
@@ -10,7 +20,6 @@
 }
 
 .parceiros__track {
-  animation: parceiros-scroll 48s linear infinite;
   display: flex;
   width: max-content;
   will-change: transform;
@@ -28,8 +37,8 @@
 .parceiros__item {
   align-items: center;
   display: flex;
-  flex: 0 0 clamp(140px, 16vw, 240px);
-  height: clamp(90px, 10vw, 140px);
+  flex: 0 0 clamp(130px, 14vw, 200px);
+  height: clamp(80px, 8vw, 110px);
   justify-content: center;
 }
 
@@ -40,38 +49,51 @@
   width: 100%;
 }
 
-.parceiros:hover .parceiros__track {
-  animation-play-state: paused;
+.parceiros__seta {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #233363;
+  border-radius: 50%;
+  color: #233363;
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.2s, color 0.2s;
+  width: 44px;
 }
 
-@keyframes parceiros-scroll {
-  to {
-    transform: translateX(-50%);
-  }
+.parceiros__seta:hover {
+  background: #233363;
+  color: #fff;
+}
+
+.parceiros__seta:focus-visible {
+  outline: 3px solid #5d9fbd;
+  outline-offset: 3px;
+}
+
+.parceiros__seta svg {
+  fill: none;
+  height: 22px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.4;
+  width: 22px;
 }
 
 @media screen and (max-width: 1024px) {
   .parceiros {
-    padding: 2.5rem 0;
-  }
-
-  .parceiros__item {
-    flex-basis: 150px;
-    height: 100px;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .parceiros__viewport {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-  }
-
-  .parceiros__track {
-    animation: none;
-  }
-
-  .parceiros__group[aria-hidden='true'] {
-    display: none;
+@media screen and (max-width: 480px) {
+  .parceiros__seta {
+    height: 36px;
+    width: 36px;
   }
 }

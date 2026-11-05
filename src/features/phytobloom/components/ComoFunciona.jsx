@@ -2,10 +2,10 @@ import React from "react";
 import Reveal from "../../../components/common/Reveal";
 import Lightbox from "../../../components/common/Lightbox";
 import "../../../style/plataforma/pagina.css";
-import passo1 from "../../../imgs/comoFuncionaReservatorio.jpeg";
-import passo2 from "../../../imgs/comoFuncionaAnalise.jpeg";
-import passo3 from "../../../imgs/comoFuncionaCamadas.jpeg";
-import passo4 from "../../../imgs/comoFuncionaAlerta.jpeg";
+import passo1 from "../../../imgs/como-funciona/phytobloom/comoFuncionaReservatorio.jpeg";
+import passo2 from "../../../imgs/como-funciona/phytobloom/comoFuncionaAnalise.jpeg";
+import passo3 from "../../../imgs/como-funciona/phytobloom/comoFuncionaCamadas.jpeg";
+import passo4 from "../../../imgs/como-funciona/phytobloom/comoFuncionaAlerta.jpeg";
 
 const etapas = [
   {
