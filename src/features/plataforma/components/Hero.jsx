@@ -4,7 +4,7 @@ import wordmark from "../../../imgs/NomeSiapesq.svg";
 import "../../../style/plataforma/pagina.css";
 
 // TODO: substituir pela URL real do sistema da plataforma SIAPESQ
-export const URL_PLATAFORMA = "#";
+export const URL_PLATAFORMA = "https://plataforma.apps.siapesq.com";
 
 export default function SectionHero() {
   return (
@@ -28,7 +28,12 @@ export default function SectionHero() {
         </p>
 
         <div>
-          <a href={URL_PLATAFORMA} className="plat_btn plat_btn_claro">
+          <a
+            href={URL_PLATAFORMA}
+            className="plat_btn plat_btn_claro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Acessar Plataforma
           </a>
         </div>

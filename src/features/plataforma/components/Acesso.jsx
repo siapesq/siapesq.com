@@ -27,7 +27,12 @@ export default function SectionAcesso() {
               ))}
             </div>
 
-            <a href={URL_PLATAFORMA} className="plat_btn plat_btn_claro">
+            <a
+              href={URL_PLATAFORMA}
+              className="plat_btn plat_btn_claro"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Acessar a plataforma
             </a>
           </div>
