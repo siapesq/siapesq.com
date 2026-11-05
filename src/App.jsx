@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import "./style/style.css";
 import "./style/siapreps/siapreps_section/style.css";
-import Index from "./pages/Index";
+import Index from "./pages/index";
 import ScrollToTop from "./components/common/ScrollToTop";
 
-const Siapreps = lazy(() => import("./pages/Siapreps"));
-const Phytobloom = lazy(() => import("./pages/Phytobloom"));
-const Plataforma = lazy(() => import("./pages/Plataforma"));
-const Contato = lazy(() => import("./pages/Contato"));
+const Siapreps = lazy(() => import("./pages/siapreps"));
+const Phytobloom = lazy(() => import("./pages/phytobloom"));
+const Plataforma = lazy(() => import("./pages/plataforma"));
+const Contato = lazy(() => import("./pages/contato"));
 
 function App() {
   return (
