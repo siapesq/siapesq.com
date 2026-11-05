@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>SIAPESQ</title>
+    <!--
+      Fallback de SPA para GitHub Pages (técnica rafgraph/spa-github-pages).
+      O GitHub Pages não faz rewrite de rotas: ao acessar/atualizar /siapreps
+      direto, ele serve este 404.html. O script abaixo redireciona para
+      "/?/siapreps" (codificando o caminho na query) e o index.html decodifica
+      de volta antes do React carregar. Domínio raiz (siapesq.com) => manter 0
+      segmentos de caminho.
+    -->
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join("/") +
+          "/?/" +
+          l.pathname
+            .slice(1)
+            .split("/")
+            .slice(pathSegmentsToKeep)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

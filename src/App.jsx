@@ -1,24 +1,34 @@
-import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import "./style/style.css";
 import "./style/siapreps/siapreps_section/style.css";
-import Index from "./pages";
-import Siapreps from "./pages/siapreps";
-import Phytobloom from "./pages/phytobloom";
-import Contato from "./pages/contato";
+import Index from "./pages/Index";
+import ScrollToTop from "./components/common/ScrollToTop";
+
+const Siapreps = lazy(() => import("./pages/Siapreps"));
+const Phytobloom = lazy(() => import("./pages/Phytobloom"));
+const Plataforma = lazy(() => import("./pages/Plataforma"));
+const Contato = lazy(() => import("./pages/Contato"));
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        {/* <Route path="/about" element={<About />} /> */}
-        <Route path="/siapreps" element={<Siapreps />} />
-        <Route path="/phytobloom" element={<Phytobloom />} />
-        <Route path="/contato" element={<Contato />} />
-        {/* <Route path="*" element={<Index/>} /> */}
-      </Routes>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Suspense fallback={<p role="status">Carregando página...</p>}>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/siapreps" element={<Siapreps />} />
+            <Route path="/phytobloom" element={<Phytobloom />} />
+            <Route path="/plataforma" element={<Plataforma />} />
+            <Route path="/contato" element={<Contato />} />
+          </Routes>
+        </Suspense>
+        {/* global: header não é fixo, então é o único jeito rápido de voltar
+            ao topo em páginas longas. Cor de acento troca sozinha por tema. */}
+        <ScrollToTop />
+      </Router>
+    </HelmetProvider>
   );
 }
 

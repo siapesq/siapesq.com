@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Página de contato — fundo navy em degradê (coeso com os heroes do site),
+   ocupando a tela inteira (sem faixa branca embaixo). */
+.contato {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(160deg, #0a2138 0%, #0e3a5c 55%, #0a5a86 100%);
+  color: #ffffff;
+}
+
+/* conteúdo centralizado verticalmente no espaço abaixo do header */
+.contactContainer {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 3rem 5rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.form-infos {
+  flex: 1 1 380px;
+}
+
+.contato_eyebrow {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6fd0ec;
+}
+
+.form-infos h1 {
+  margin: 0 0 1.25rem;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.12;
+  color: #ffffff;
+}
+
+.contato_lead {
+  margin: 0;
+  max-width: 32rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* lista de contatos com ícone em "chip" — cada item é um link clicável */
+.contato_list {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contato_list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  width: fit-content;
+  color: #eaf4fb;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.contato_icon {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  color: #6fd0ec;
+  background: rgba(57, 182, 216, 0.14);
+  border: 1px solid rgba(57, 182, 216, 0.32);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contato_list a:hover {
+  color: #ffffff;
+}
+
+.contato_list a:hover .contato_icon {
+  background: rgba(57, 182, 216, 0.28);
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------------------------------- formulário */
+.form-content {
+  flex: 1 1 420px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contato_form {
+  width: 100%;
+  max-width: 480px;
+  padding: 2.25rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.input-group .input-item {
+  flex: 1 1 160px;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.input-item label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.input-item input,
+.input-item textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #12324f;
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+}
+
+.input-item input::placeholder,
+.input-item textarea::placeholder {
+  color: #90a4b8;
+}
+
+.input-item textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.input-item input:focus,
+.input-item textarea:focus {
+  outline: 2px solid #39b6d8;
+  outline-offset: 1px;
+}
+
+.contato_form #botao {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 15px 36px;
+  border: none;
+  border-radius: 50px;
+  background: #2ba7d4;
+  color: #06283b;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contato_form #botao:hover {
+  background: #46bce6;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1024px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 3rem 1.5rem 4rem;
+    gap: 2.5rem;
+  }
+
+  .form-infos h1 {
+    font-size: 2.3rem;
+  }
+
+  .form-content {
+    justify-content: stretch;
+  }
+
+  .contato_form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-infos h1 {
+    font-size: 1.95rem;
+  }
+
+  /* em coluna, o flex-basis:160px viraria altura mínima; reseta */
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group .input-item {
+    flex: none;
+  }
+}

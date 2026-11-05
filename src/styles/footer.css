@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Footer padronizado do site — estrutura única, COR por plataforma (tema).
+   Uso: <SectionFooter tema="plataforma" | "siapreps" | "phytobloom" | "siapesq" />
+   A cor sempre casa com a última seção da página, então a emenda é invisível.
+   Prefixo `sf_` (site footer) pra não colidir com o resto.
+   ========================================================================== */
+
+.sf {
+  background-color: var(--sf-bg);
+  color: #ffffff;
+  font-family: "Mulish", sans-serif;
+  /* linha sutil demarcando o footer da seção acima */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- temas (cor por bioma/plataforma) ---
+   Cada cor é um DEGRAU mais escuro que a última seção da página: fica na
+   mesma família (não é um pulo de cor), mas se diferencia como footer. */
+.sf--siapesq {
+  --sf-bg: #14203a; /* corporativo — navy escuro */
+  --sf-acc: #5bbcd0;
+}
+.sf--plataforma {
+  --sf-bg: #101d14; /* terrestre — verde mais escuro que a seção de acesso */
+  --sf-acc: #86bd51;
+}
+.sf--siapreps {
+  --sf-bg: #06182c; /* mar — azul-marinho bem profundo */
+  --sf-acc: #2ea3d6;
+}
+.sf--phytobloom {
+  --sf-bg: #0a2a23; /* algas — verde-água escuro */
+  --sf-acc: #3fb9a0;
+}
+
+.sf_top {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3.75rem 3rem 2.75rem;
+
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.25fr;
+  gap: 2.5rem;
+}
+
+/* marca */
+.sf_logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin-bottom: 1.1rem;
+}
+
+.sf_marca p {
+  margin: 0;
+  max-width: 26rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+/* colunas de links */
+.sf_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.sf_col h3 {
+  margin: 0 0 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.sf_col a {
+  margin-bottom: 0.75rem;
+
+  display: inline-flex;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  font-size: 0.95rem;
+
+  transition: color 0.2s ease;
+}
+
+.sf_col a:hover,
+.sf_col a:focus {
+  color: var(--sf-acc);
+}
+
+.sf_contato a img {
+  width: 18px;
+  height: 18px;
+  margin-right: 9px;
+  object-fit: contain;
+}
+
+/* barra inferior */
+.sf_base {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.35rem 3rem;
+  text-align: center;
+}
+
+.sf_base p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ============================================================= responsivo */
+
+@media screen and (max-width: 1024px) {
+  .sf_top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 2.5rem;
+    padding: 2.75rem 1.5rem 2rem;
+  }
+
+  .sf_marca {
+    grid-column: 1 / -1;
+  }
+
+  .sf_base {
+    padding: 1.35rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sf_top {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import SectionHead from "../components/sections/aboutHeader";
-import SectionCards from "../components/sections/aboutCards";
+import SectionHead from "../features/institutional/components/AboutHeader";
+import SectionCards from "../features/institutional/components/AboutCards";
 
 
 export default function About() {
